@@ -23,10 +23,10 @@
     "ready_for_use": "True"
   },
   "Kruszynska": {
-    "F087": [{"region":"Rubin galactic plane footprint"}],
-    "F213": [{"region":"Rubin galactic plane footprint"}],
+    "F087": [{"survey_footprint": "rubin_galactic_plane"}],
+    "F213": [{"survey_footprint": "rubin_galactic_plane"}],
     "comment": "Galactic Plane science, Rubin synergies",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Benecchi": {
     "F146": [

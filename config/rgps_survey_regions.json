@@ -30,10 +30,10 @@
   },
   "Benecchi": {
     "F146": [
-      {"region": "RA=289.4, DEC=-20.2, 3xWFI FOV"}
+      {"pointing": [17.43229895, -14.63082839, 0.52]}
     ],
-    "comment": "Solar System",
-    "ready_for_use": "False"
+    "comment": "Solar System, RA=289.4, DEC=-20.2, 3xWFI FOV\"",
+    "ready_for_use": "True"
   },
   "Kupfer": {
     "F062 and the F087": [
@@ -73,12 +73,12 @@
   "Werner": {
     "F213": [
       {"l": [-90.0, 90.0], "b": [-3, 3.0]},
-      "Orion SFR",
-      "Rho Ophiuchi SFR",
-      "Taurus SFR"
+      {"pointing":  [209.0095, -19.3818, 1.1]},
+      {"l":  [348.2210, 358.2210], "b": [12.5334, 20.5334]},
+      {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]}
     ],
-    "comment": "Star Forming Regions",
-    "ready_for_use": "False"
+    "comment": "Star Forming Regions; inc Orion SFR, Rho Ophiuchi SFR, Taurus SFR",
+    "ready_for_use": "True"
   },
   "Bryant": {
     "questions": "regions (Galatic Plane?), filters",
@@ -92,8 +92,8 @@
     "ready_for_use": "False"
   },
   "Lian": {
-    "filter": [{"Carina nebula": "4.0 radius"}],
-    "comment": "Stellar-mass Black Holes",
+    "filter": [{"pointing": [287.60158, -00.64452, 4.0]}],
+    "comment": "Stellar-mass Black Holes in Carina nebula",
     "questions": "filter choice",
     "ready_for_use": "False"
   },
@@ -147,12 +147,12 @@
     "ready_for_use": "False"
   },
   "Minniti": {
-    "F106": [{"region": "Lower Centaurus Crux (LCC) 200 sqdeg"}],
-    "F158": [{"region": "Lower Centaurus Crux (LCC) 200 sqdeg"}],
-    "F213": [{"region": "Lower Centaurus Crux (LCC) 200 sqdeg"}],
-    "comment": "Free-floating planets in stellar associations",
+    "F106": [{"pointing": [298.5171 +05.4934, 8.0]}],
+    "F158": [{"pointing": [298.5171 +05.4934, 8.0]}],
+    "F213": [{"pointing": [298.5171 +05.4934, 8.0]}],
+    "comment": "Free-floating planets in stellar associations; Lower Centaurus Crux (LCC)",
     "questions": "Preferred cluster region(s), or all 200deg in Centaurus?",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Smith": {
     "filter": [{"region": "galactic plane"}],
@@ -167,23 +167,23 @@
     "ready_for_use": "False"
   },
   "De Furio": {
-    "F129": [{"region": "Taurus"},
-            {"region": "Sco-Cen"},
-            {"region": "Orion Nebula Cluster"},
-            {"region": "Orion molecular Cloud"},
+    "F129": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
+            {"pointing": [351.3857, 18.9749, 8.0]},
+            {"pointing": [209.0666, -19.4873, 8.0]},
+            {"pointing":  [209.0095, -19.3818, 1.1]},
             {"region": "other SFRs"}],
-    "F184": [{"region": "Taurus"},
-            {"region": "Sco-Cen"},
-            {"region": "Orion Nebula Cluster"},
-            {"region": "Orion molecular Cloud"},
+    "F184": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
+            {"pointing": [351.3857, 18.9749, 8.0]},
+            {"pointing": [209.0666, -19.4873, 8.0]},
+            {"pointing":  [209.0095, -19.3818, 1.1]},
             {"region": "other SFRs"}],
-    "F213": [{"region": "Taurus"},
-            {"region": "Sco-Cen"},
-            {"region": "Orion Nebula Cluster"},
-            {"region": "Orion molecular Cloud"},
+    "F213": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
+            {"pointing": [351.3857, 18.9749, 8.0]},
+            {"pointing": [209.0666, -19.4873, 8.0]},
+            {"pointing":  [209.0095, -19.3818, 1.1]},
             {"region": "other SFRs"}],
-    "comment": "Star forming regions",
-    "questions": "confirm catalog of SFRs",
+    "comment": "Star forming regions; Taurus; Sco-Cen; Orion Nebula Cluster; Orion molecular Cloud",
+    "questions": "confirm catalog of SFRs, and cluster extents",
     "ready_for_use": "False"
   },
   "Baravalle": {
@@ -204,9 +204,9 @@
     "ready_for_use": "True"
   },
   "Wang": {
-    "F106": [{"region": "Sgr A*"}],
-    "F158": [{"region": "Sgr A*"}],
-    "F213": [{"region": "Sgr A*"}],
+    "F106": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
+    "F158": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
+    "F213": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
     "comment": "Galactic Center",
     "questions": "Define extent of desired footprint",
     "ready_for_use": "False"
@@ -218,26 +218,35 @@
   },
   "Lim2": {
     "F213": [
-      {"region": "Orion Nebula (M42)"},
+      {"pointing": [209.0666, -19.4873, 8.0]},
+      {"pointing": [287.60158, -00.64452, 4.0]},
+      {"pointing": [158.3430, -20.5052, 8.0]},
+      {"pointing": [160.4863, -17.8108, 8.0]},
+      {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
+      {"pointing": [166.4628, -23.6146, 1.2]},
+      {"pointing": [265.3458, -0.2328, 0.3]},
+      {"region": "Cepheus OB3"},
+      {"pointing": [79.5043879158, 01.0005912558, 0.3]},
+    ],
+    "comment": "Triggered star formation",
+    "targets": [{"region": "Orion Nebula (M42)"},
       {"region": "Eta Carinae Nebula (NGC 3372)"},
       {"region": "Perseus Molecular Cloud (including NGC 1333 and IC 348)"},
       {"region": "Taurus Molecular Cloud (including Taurus-Auriga)"},
       {"region": "Pleiades (M45)"},
       {"region": "Vela Molecular Ridge (including Vela Molecular Clouds)"},
       {"region": "Cepheus OB3"},
-      {"region": "Cygnus X complex (including Cygnus OB2)"}
-    ],
-    "comment": "Triggered star formation",
+      {"region": "Cygnus X complex (including Cygnus OB2)"}],
     "questions": "Define specific desired regions",
     "ready_for_use": "False"
   },
   "Daylan": {
     "filter": [
-      {"region":  "NGC 869, WFI FOV"},
-      {"region": "King 7, WFI FOV"},
-      {"region": "NGC 2099, WFI FOV"},
-      {"region": "NGC 2158, WFI FOV"},
-      {"region": "Berkeley 53, WFI FOV"}
+      {"pointing": [134.6257, -3.7372, 0.3]},
+      {"pointing": [149.7997, -1.0172, 0.3]},
+      {"pointing": [177.6422, 3.0864, 0.3]},
+      {"pointing": [186.6355, 1.7881, 0.3]},
+      {"pointing": [90.2998, 3.7617, 0.3]},
     ],
     "comment": "Free-floating planet microlensing",
     "questions": "Confirm filter choice",

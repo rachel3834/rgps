@@ -1,0 +1,306 @@
+{
+  "Paladini": {
+    "F213": [
+      {"l": [10.0, 60.0], "b": [-2.5, 2.5]},
+      {"l": [60.0, 10.0], "b": [-2.5, 2.5]},
+      {"l": [-10, 80.0], "b": [-8.0,8.0]},
+      {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
+    ],
+    "comment": "Galactic Plane Science",
+    "ready_for_use": "True"
+  },
+  "Zari": {
+    "F106": [
+      {"l":  [-90.0, 90.0], "b": [-2.0, 2.0]}
+    ],
+    "F158": [
+      {"l":  [-90.0, 90.0], "b": [-2.0, 2.0]}
+    ],
+    "F213": [
+      {"l":  [-90.0, 90.0], "b": [-2.0, 2.0]}
+    ],
+    "comment": "Young Stars",
+    "ready_for_use": "True"
+  },
+  "Kruszynska": {
+    "F087": [{"region":"Rubin galactic plane footprint"}],
+    "F213": [{"region":"Rubin galactic plane footprint"}],
+    "comment": "Galactic Plane science, Rubin synergies",
+    "ready_for_use": "False"
+  },
+  "Benecchi": {
+    "F146": [
+      {"region": "RA=289.4, DEC=-20.2, 3xWFI FOV"}
+    ],
+    "comment": "Solar System",
+    "ready_for_use": "False"
+  },
+  "Kupfer": {
+    "F062 and the F087": [
+      {"region": "100sqdeg in Plane regions of high stellar density"}
+    ],
+    "comment": "High cadence; galactic binaries",
+    "ready_for_use": "False"
+  },
+  "Elowitz": {
+    "questions": "choice of filters, preference of area",
+    "comment": "Interstellar Objects",
+    "ready_for_use": "False"
+  },
+  "Amrar": {
+    "questions": "choice of area, filters",
+    "comment": "Variable stars",
+    "ready_for_use": "False"
+  },
+  "Lodieu": {
+    "blue": "galactic_plane",
+    "red": "galactic_plane",
+    "comment": "Ultra-low mass Brown Dwarfs",
+    "questions": "choice of areas, filters",
+    "ready_for_use": "False"
+  },
+  "Soam": {
+    "questions": "choice of target clouds, filters",
+    "comment": "High latitude clouds",
+    "ready_for_use": "False"
+  },
+  "Hunt": {
+    "blue":"known star clusters",
+    "red": "known star clusters",
+    "comment": "Star clusters",
+    "ready_for_use": "False"
+  },
+  "Werner": {
+    "F213": [
+      {"l": [-90.0, 90.0], "b": [-3, 3.0]},
+      "Orion SFR",
+      "Rho Ophiuchi SFR",
+      "Taurus SFR"
+    ],
+    "comment": "Star Forming Regions",
+    "ready_for_use": "False"
+  },
+  "Bryant": {
+    "questions": "regions (Galatic Plane?), filters",
+    "comment": "Stellar associations in the Galactic Plane",
+    "ready_for_use": "False"
+  },
+  "Morihana": {
+    "F129": ["galactic plane"],
+    "F184": ["galactic plane"],
+    "comment": "Cataclysmic Variables",
+    "ready_for_use": "False"
+  },
+  "Lian": {
+    "filter": [{"Carina nebula": "4.0 radius"}],
+    "comment": "Stellar-mass Black Holes",
+    "questions": "filter choice",
+    "ready_for_use": "False"
+  },
+  "Anderson": {
+    "F184": [{"region": "galactic plane"}],
+    "G150": [{"region": "galactic plane"}],
+    "comment": "Ionized Hydrogen in ISM",
+    "ready_for_use": "False"
+  },
+  "Lim1": {
+    "G150": [{"l": "60deg", "b": "2deg", "region": "4th quadrant GP"}],
+    "comment": "Young Stellar Object spectroscopy",
+    "questions": "confirm definition of 4th quadrant",
+    "ready_for_use": "False"
+  },
+  "D'Ammando": {
+    "questions": "filter choice, galactic plane area",
+    "comment": "Jetted AGN",
+    "ready_for_use": "False"
+  },
+  "Freeman": {
+    "F158": [
+      {"l": [-1,1.0], "b": [-3.0,3.0]},
+      {"l": [89.0, 91.0], "b": [-3.0,3.0]},
+      {"l": [179.0,181.0], "b": [-3.0,3.0]},
+      {"l": [269.0,271.0], "b": [-3.0,3.0]}
+    ],
+    "F213": [
+      {"l": [-1,1.0], "b": [-3.0,3.0]},
+      {"l": [89.0, 91.0], "b": [-3.0,3.0]},
+      {"l": [179.0,181.0], "b": [-3.0,3.0]},
+      {"l": [269.0,271.0], "b": [-3.0,3.0]}
+    ],
+    "comment": "RR Lyrae",
+    "ready_for_use": "True"
+  },
+  "Bachelet": {
+    "F087": [{"region": "galactic plane"}],
+    "F213": [{"region": "galactic plane"}],
+    "F158": [{"region": "galacitc plane"}],
+    "comment": "Microlensing",
+    "questions": "define survey area",
+    "ready_for_use": "False"
+  },
+  "Villasenor": {
+    "F062": [{"region": "star clusters"}],
+    "F129":  [{"region": "star clusters"}],
+    "F213": [{"region": "star clusters"}],
+    "comment": "Young massive stars",
+    "questions": "Goal is ~20 clusters, as for regions and preference",
+    "ready_for_use": "False"
+  },
+  "Minniti": {
+    "F106": [{"region": "Lower Centaurus Crux (LCC) 200 sqdeg"}],
+    "F158": [{"region": "Lower Centaurus Crux (LCC) 200 sqdeg"}],
+    "F213": [{"region": "Lower Centaurus Crux (LCC) 200 sqdeg"}],
+    "comment": "Free-floating planets in stellar associations",
+    "questions": "Preferred cluster region(s), or all 200deg in Centaurus?",
+    "ready_for_use": "False"
+  },
+  "Smith": {
+    "filter": [{"region": "galactic plane"}],
+    "questions": "define filter choice and region",
+    "comment": "Hypervelocity stars",
+    "ready_for_use": "False"
+  },
+  "Navarro": {
+    "filter": [{"region": "set of specific target regions around candidates in galactic plane"}],
+    "questions": "define target set and locations, preferred filters",
+    "comment": "Microlensing",
+    "ready_for_use": "False"
+  },
+  "De Furio": {
+    "F129": [{"region": "Taurus"},
+            {"region": "Sco-Cen"},
+            {"region": "Orion Nebula Cluster"},
+            {"region": "Orion molecular Cloud"},
+            {"region": "other SFRs"}],
+    "F184": [{"region": "Taurus"},
+            {"region": "Sco-Cen"},
+            {"region": "Orion Nebula Cluster"},
+            {"region": "Orion molecular Cloud"},
+            {"region": "other SFRs"}],
+    "F213": [{"region": "Taurus"},
+            {"region": "Sco-Cen"},
+            {"region": "Orion Nebula Cluster"},
+            {"region": "Orion molecular Cloud"},
+            {"region": "other SFRs"}],
+    "comment": "Star forming regions",
+    "questions": "confirm catalog of SFRs",
+    "ready_for_use": "False"
+  },
+  "Baravalle": {
+    "questions": "define preferred filters and region",
+    "comment": "Galaxies and Quasars",
+    "ready_for_use": "False"
+  },
+  "Meli": {
+    "questions": "define preferred filters and region",
+    "comment": "Galactic magnetic fields and cosmic rays",
+    "ready_for_use": "False"
+  },
+  "Morihana": {
+    "F129": [{"l": [20.0, 50.0], "b":  [-1.0, 1.0]}],
+    "F158": [{"l": [20.0, 50.0], "b":  [-1.0, 1.0]}],
+    "F213": [{"l": [20.0, 50.0], "b":  [-1.0, 1.0]}],
+    "comment": "Subaru-Roman synergies",
+    "ready_for_use": "True"
+  },
+  "Wang": {
+    "F106": [{"region": "Sgr A*"}],
+    "F158": [{"region": "Sgr A*"}],
+    "F213": [{"region": "Sgr A*"}],
+    "comment": "Galactic Center",
+    "questions": "Define extent of desired footprint",
+    "ready_for_use": "False"
+  },
+  "Lucas": {
+    "questions": "confirm whole galactic plane region and filters",
+    "comment": "Clusters and YSOs",
+    "ready_for_use": "False"
+  },
+  "Lim2": {
+    "F213": [
+      {"region": "Orion Nebula (M42)"},
+      {"region": "Eta Carinae Nebula (NGC 3372)"},
+      {"region": "Perseus Molecular Cloud (including NGC 1333 and IC 348)"},
+      {"region": "Taurus Molecular Cloud (including Taurus-Auriga)"},
+      {"region": "Pleiades (M45)"},
+      {"region": "Vela Molecular Ridge (including Vela Molecular Clouds)"},
+      {"region": "Cepheus OB3"},
+      {"region": "Cygnus X complex (including Cygnus OB2)"}
+    ],
+    "comment": "Triggered star formation",
+    "questions": "Define specific desired regions",
+    "ready_for_use": "False"
+  },
+  "Daylan": {
+    "filter": [
+      {"region":  "NGC 869, WFI FOV"},
+      {"region": "King 7, WFI FOV"},
+      {"region": "NGC 2099, WFI FOV"},
+      {"region": "NGC 2158, WFI FOV"},
+      {"region": "Berkeley 53, WFI FOV"}
+    ],
+    "comment": "Free-floating planet microlensing",
+    "questions": "Confirm filter choice",
+    "ready_for_use": "False"
+  },
+ "Bahramian": {
+   "F087": [{"region": "galactic plane"}],
+   "F129": [{"region": "galactic plane"}],
+   "F158": [{"region": "galactic plane"}],
+   "F184": [{"region": "galactic plane"}],
+   "F213": [{"region": "galactic plane"}],
+   "F146": [{"region": "galactic plane"}],
+   "comment": "X-ray binaries",
+   "questions": "preferred region",
+    "ready_for_use": "False"
+ },
+  "Carey1": {
+    "filters": [{"region": "survey regions of WISE, Spitzer and Herschel "}],
+    "comment": "Synergies with existing IR surveys",
+    "questions": "define survey regions and filters",
+    "ready_for_use": "False"
+  },
+  "Kuzuhara": {
+    "F129": [{"region": "all sky?"}],
+    "F146": [{"region": "all sky?"}],
+    "comment": "Accelerated stars",
+    "questions": "Define survey area",
+    "ready_for_use": "False"
+  },
+  "Carey2": {
+    "questions": "which 3 filters and preferred survey fields",
+    "comment": "Synergies with NEOSurveyor",
+    "ready_for_use": "False"
+  },
+  "Rich": {
+    "F184": [
+      {"l": [-90.0, 90.0], "b": [-0.5, 0.5]},
+      {"l": [-30.0,30.0], "b": [-1.0, 1.0]},
+      {"l": [-10.0, 10.0], "b": [-2.0, 2.0]}
+    ],
+    "F213": [
+      {"l": [-90.0, 90.0], "b": [-0.5, 0.5]},
+      {"l": [-30.0,30.0], "b": [-1.0, 1.0]},
+      {"l": [-10.0, 10.0], "b": [-2.0, 2.0]}
+    ],
+    "G150": [
+      {"l": [-90.0, 90.0], "b": [-0.5, 0.5]},
+      {"l": [-30.0,30.0], "b": [-1.0, 1.0]},
+      {"l": [-10.0, 10.0], "b": [-2.0, 2.0]}
+    ],
+    "P127": [
+      {"l": [-90.0, 90.0], "b": [-0.5, 0.5]},
+      {"l": [-30.0,30.0], "b": [-1.0, 1.0]},
+      {"l": [-10.0, 10.0], "b": [-2.0, 2.0]}
+    ],
+    "comment": "Stellar populations",
+    "ready_for_use": "True"
+  },
+  "Ivanov": {
+    "F158": [{"region": "galactic plane"}],
+    "F213": [{"region": "galactic plane?"}],
+    "comment": "Star clusters",
+    "questions": "Define survey region",
+    "ready_for_use": "False"
+  }
+}

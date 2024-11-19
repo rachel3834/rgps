@@ -92,9 +92,9 @@
     "ready_for_use": "False"
   },
   "Lian": {
-    "filter": [{"pointing": [287.60158, -00.64452, 4.0]}],
+    "filter": [{"pointing": [287.60158, -0.64452, 4.0]}],
     "comment": "Stellar-mass Black Holes in Carina nebula",
-    "questions": "filter choice; conatcted",
+    "questions": "filter choice; contacted",
     "ready_for_use": "False"
   },
   "Anderson": {
@@ -147,9 +147,9 @@
     "ready_for_use": "False"
   },
   "Minniti": {
-    "F106": [{"pointing": [298.5171 +05.4934, 8.0]}],
-    "F158": [{"pointing": [298.5171 +05.4934, 8.0]}],
-    "F213": [{"pointing": [298.5171 +05.4934, 8.0]}],
+    "F106": [{"pointing": [298.5171, 5.4934, 8.0]}],
+    "F158": [{"pointing": [298.5171, 5.4934, 8.0]}],
+    "F213": [{"pointing": [298.5171, 5.4934, 8.0]}],
     "comment": "Free-floating planets in stellar associations; Lower Centaurus Crux (LCC)",
     "questions": "Preferred cluster region(s), or all 200deg in Centaurus?",
     "ready_for_use": "True"
@@ -204,9 +204,9 @@
     "ready_for_use": "True"
   },
   "Wang": {
-    "F106": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
-    "F158": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
-    "F213": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
+    "F106": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
+    "F158": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
+    "F213": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
     "comment": "Galactic Center",
     "questions": "Define extent of desired footprint; contacted",
     "ready_for_use": "False"
@@ -219,14 +219,14 @@
   "Lim2": {
     "F213": [
       {"pointing": [209.0666, -19.4873, 8.0]},
-      {"pointing": [287.60158, -00.64452, 4.0]},
+      {"pointing": [287.60158, -0.64452, 4.0]},
       {"pointing": [158.3430, -20.5052, 8.0]},
       {"pointing": [160.4863, -17.8108, 8.0]},
       {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
       {"pointing": [166.4628, -23.6146, 1.2]},
       {"pointing": [265.3458, -0.2328, 0.3]},
       {"region": "Cepheus OB3"},
-      {"pointing": [79.5043879158, 01.0005912558, 0.3]},
+      {"pointing": [79.5043879158, 1.0005912558, 0.3]}
     ],
     "comment": "Triggered star formation; contacted",
     "targets": [{"region": "Orion Nebula (M42)"},
@@ -246,7 +246,7 @@
       {"pointing": [149.7997, -1.0172, 0.3]},
       {"pointing": [177.6422, 3.0864, 0.3]},
       {"pointing": [186.6355, 1.7881, 0.3]},
-      {"pointing": [90.2998, 3.7617, 0.3]},
+      {"pointing": [90.2998, 3.7617, 0.3]}
     ],
     "comment": "Free-floating planet microlensing",
     "questions": "Confirm filter choice; contacted",
@@ -317,6 +317,8 @@
     "F158":    [{ "l": [-57, 57], "b": [-2.5,2.5]}],
     "F184":    [{ "l": [-57, 57], "b": [-2.5,2.5]}],
     "F213":    [{ "l": [-57, 57], "b": [-2.5,2.5]}],
+    "ready_for_use": "True",
+    "comment": "Member"
   },
   "Drew": {
     "F106":    [
@@ -337,12 +339,16 @@
       { "l": [-30.0, 20.0], "b": [-3.0, 3.0]},
       { "l": [20.0, 35.0], "b": [-2.0, 4.0]}
     ],
+    "ready_for_use": "True",
+    "comment": "Member"
   },
   "Zucker": {
     "F106":     [{ "l": [-60, 60], "b": [-2.5,2.5]}],
     "F129":     [{ "l": [-60, 60], "b": [-2.5, 2.5]}],
     "F158":     [{ "l": [-60, 60], "b": [-2.5, 2.5]}],
-    "F213":     [{ "l": [-60, 60], "b": [-2.5, 2.5]}]
+    "F213":     [{ "l": [-60, 60], "b": [-2.5, 2.5]}],
+    "ready_for_use": "True",
+    "comment": "Member"
   },
   "De Furio": {
     "F129":    [{ "l": [-82, -10], "b": [-2.5,2.5]},
@@ -353,7 +359,9 @@
                 { "l": [10, 82], "b": [-2.5,2.5]}],
     "F213":    [{ "l": [-82, -10], "b": [-2.5, 2.5]},
                 { "l": [-10, 10], "b": [-7, 7]},
-                { "l": [10, 82], "b": [-2.5,2.5]}]
+                { "l": [10, 82], "b": [-2.5,2.5]}],
+    "ready_for_use": "True",
+    "comment": "Member"
   },
   "De": {
     "F087":    [{ "l": [-60, 60], "b": [-2.0, 2.0]}],
@@ -362,7 +370,9 @@
     "F146":    [
       { "l": [-180, -60], "b": [-2.0, 2.0]},
       { "l": [60, 180], "b": [-2.0, 2.0]}
-    ]
+    ],
+    "ready_for_use": "True",
+    "comment": "Member"
   },
   "Carey": {
         "F087": [
@@ -388,6 +398,8 @@
         "F213": [
                 {"l":[-70.0, 70.0], "b": [-1.0, 1.0]},
                 {"l":[-5.0, 5.0], "b": [-5.0, 5.0]}
-        ]
+        ],
+    "ready_for_use": "True",
+    "comment": "Member"
   }
 }

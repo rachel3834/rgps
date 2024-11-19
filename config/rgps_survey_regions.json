@@ -39,7 +39,7 @@
     "F062 and the F087": [
       {"region": "100sqdeg in Plane regions of high stellar density"}
     ],
-    "comment": "High cadence; galactic binaries",
+    "comment": "High cadence; galactic binaries; contacted",
     "ready_for_use": "False"
   },
   "Elowitz": {
@@ -55,19 +55,19 @@
   "Lodieu": {
     "blue": "galactic_plane",
     "red": "galactic_plane",
-    "comment": "Ultra-low mass Brown Dwarfs",
+    "comment": "Ultra-low mass Brown Dwarfs; contacted",
     "questions": "choice of areas, filters",
     "ready_for_use": "False"
   },
   "Soam": {
     "questions": "choice of target clouds, filters",
-    "comment": "High latitude clouds",
+    "comment": "High latitude clouds; contacted",
     "ready_for_use": "False"
   },
   "Hunt": {
     "blue":"known star clusters",
     "red": "known star clusters",
-    "comment": "Star clusters",
+    "comment": "Star clusters; contacted",
     "ready_for_use": "False"
   },
   "Werner": {
@@ -88,30 +88,30 @@
   "Morihana": {
     "F129": ["galactic plane"],
     "F184": ["galactic plane"],
-    "comment": "Cataclysmic Variables",
+    "comment": "Cataclysmic Variables; contacted",
     "ready_for_use": "False"
   },
   "Lian": {
     "filter": [{"pointing": [287.60158, -00.64452, 4.0]}],
     "comment": "Stellar-mass Black Holes in Carina nebula",
-    "questions": "filter choice",
+    "questions": "filter choice; conatcted",
     "ready_for_use": "False"
   },
   "Anderson": {
     "F184": [{"region": "galactic plane"}],
     "G150": [{"region": "galactic plane"}],
-    "comment": "Ionized Hydrogen in ISM",
+    "comment": "Ionized Hydrogen in ISM; contacted",
     "ready_for_use": "False"
   },
   "Lim1": {
     "G150": [{"l": "60deg", "b": "2deg", "region": "4th quadrant GP"}],
-    "comment": "Young Stellar Object spectroscopy",
+    "comment": "Young Stellar Object spectroscopy; contacted",
     "questions": "confirm definition of 4th quadrant",
     "ready_for_use": "False"
   },
   "D'Ammando": {
     "questions": "filter choice, galactic plane area",
-    "comment": "Jetted AGN",
+    "comment": "Jetted AGN; contacted",
     "ready_for_use": "False"
   },
   "Freeman": {
@@ -133,16 +133,16 @@
   "Bachelet": {
     "F087": [{"region": "galactic plane"}],
     "F213": [{"region": "galactic plane"}],
-    "F158": [{"region": "galacitc plane"}],
+    "F158": [{"region": "galactic plane"}],
     "comment": "Microlensing",
-    "questions": "define survey area",
+    "questions": "define survey area; contacted",
     "ready_for_use": "False"
   },
   "Villasenor": {
     "F062": [{"region": "star clusters"}],
     "F129":  [{"region": "star clusters"}],
     "F213": [{"region": "star clusters"}],
-    "comment": "Young massive stars",
+    "comment": "Young massive stars; contacted",
     "questions": "Goal is ~20 clusters, as for regions and preference",
     "ready_for_use": "False"
   },
@@ -157,13 +157,13 @@
   "Smith": {
     "filter": [{"region": "galactic plane"}],
     "questions": "define filter choice and region",
-    "comment": "Hypervelocity stars",
+    "comment": "Hypervelocity stars; contacted",
     "ready_for_use": "False"
   },
   "Navarro": {
     "filter": [{"region": "set of specific target regions around candidates in galactic plane"}],
     "questions": "define target set and locations, preferred filters",
-    "comment": "Microlensing",
+    "comment": "Microlensing; contacted",
     "ready_for_use": "False"
   },
   "De Furio": {
@@ -183,17 +183,17 @@
             {"pointing":  [209.0095, -19.3818, 1.1]},
             {"region": "other SFRs"}],
     "comment": "Star forming regions; Taurus; Sco-Cen; Orion Nebula Cluster; Orion molecular Cloud",
-    "questions": "confirm catalog of SFRs, and cluster extents",
+    "questions": "confirm catalog of SFRs, and cluster extents; contacted",
     "ready_for_use": "False"
   },
   "Baravalle": {
     "questions": "define preferred filters and region",
-    "comment": "Galaxies and Quasars",
+    "comment": "Galaxies and Quasars; contacted",
     "ready_for_use": "False"
   },
   "Meli": {
     "questions": "define preferred filters and region",
-    "comment": "Galactic magnetic fields and cosmic rays",
+    "comment": "Galactic magnetic fields and cosmic rays; contacted",
     "ready_for_use": "False"
   },
   "Morihana": {
@@ -208,12 +208,12 @@
     "F158": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
     "F213": [{"pointing": [359.94423568, -00.04616002, 0.3]}],
     "comment": "Galactic Center",
-    "questions": "Define extent of desired footprint",
+    "questions": "Define extent of desired footprint; contacted",
     "ready_for_use": "False"
   },
   "Lucas": {
     "questions": "confirm whole galactic plane region and filters",
-    "comment": "Clusters and YSOs",
+    "comment": "Clusters and YSOs; contacted",
     "ready_for_use": "False"
   },
   "Lim2": {
@@ -228,7 +228,7 @@
       {"region": "Cepheus OB3"},
       {"pointing": [79.5043879158, 01.0005912558, 0.3]},
     ],
-    "comment": "Triggered star formation",
+    "comment": "Triggered star formation; contacted",
     "targets": [{"region": "Orion Nebula (M42)"},
       {"region": "Eta Carinae Nebula (NGC 3372)"},
       {"region": "Perseus Molecular Cloud (including NGC 1333 and IC 348)"},
@@ -249,7 +249,7 @@
       {"pointing": [90.2998, 3.7617, 0.3]},
     ],
     "comment": "Free-floating planet microlensing",
-    "questions": "Confirm filter choice",
+    "questions": "Confirm filter choice; contacted",
     "ready_for_use": "False"
   },
  "Bahramian": {
@@ -260,25 +260,25 @@
    "F213": [{"region": "galactic plane"}],
    "F146": [{"region": "galactic plane"}],
    "comment": "X-ray binaries",
-   "questions": "preferred region",
+   "questions": "preferred region; contacted",
     "ready_for_use": "False"
  },
   "Carey1": {
     "filters": [{"region": "survey regions of WISE, Spitzer and Herschel "}],
     "comment": "Synergies with existing IR surveys",
-    "questions": "define survey regions and filters",
+    "questions": "define survey regions and filters; contacted",
     "ready_for_use": "False"
   },
   "Kuzuhara": {
     "F129": [{"region": "all sky?"}],
     "F146": [{"region": "all sky?"}],
     "comment": "Accelerated stars",
-    "questions": "Define survey area",
+    "questions": "Define survey area; contacted",
     "ready_for_use": "False"
   },
   "Carey2": {
     "questions": "which 3 filters and preferred survey fields",
-    "comment": "Synergies with NEOSurveyor",
+    "comment": "Synergies with NEOSurveyor; contacted",
     "ready_for_use": "False"
   },
   "Rich": {
@@ -309,7 +309,7 @@
     "F158": [{"region": "galactic plane"}],
     "F213": [{"region": "galactic plane?"}],
     "comment": "Star clusters",
-    "questions": "Define survey region",
+    "questions": "Define survey region; contacted",
     "ready_for_use": "False"
   },
   "Schlafly": {

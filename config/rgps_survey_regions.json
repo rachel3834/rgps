@@ -32,13 +32,13 @@
     "F146": [
       {"pointing": [17.43229895, -14.63082839, 0.52]}
     ],
-    "comment": "Solar System, RA=289.4, DEC=-20.2, 3xWFI FOV\"",
+    "comment": "Solar System, RA=289.4, DEC=-20.2, 3xWFI FOV",
     "ready_for_use": "True"
   },
   "Kupfer": {
-    "F062 and the F087": [
-      {"region": "100sqdeg in Plane regions of high stellar density"}
-    ],
+    "F062": [{"survey_footprint": "stellar_density"}],
+    "F087": [{"survey_footprint": "stellar_density"}],
+    "region": "100sqdeg in Plane regions of high stellar density",
     "comment": "High cadence; galactic binaries; contacted",
     "ready_for_use": "False"
   },
@@ -56,7 +56,7 @@
     "blue": "galactic_plane",
     "red": "galactic_plane",
     "comment": "Ultra-low mass Brown Dwarfs; contacted",
-    "questions": "choice of areas, filters",
+    "questions": "Effectively an all-sky survey, all filters",
     "ready_for_use": "False"
   },
   "Soam": {
@@ -104,10 +104,10 @@
     "ready_for_use": "False"
   },
   "Lim1": {
-    "G150": [{"l": "60deg", "b": "2deg", "region": "4th quadrant GP"}],
+    "G150": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
     "comment": "Young Stellar Object spectroscopy; contacted",
-    "questions": "confirm definition of 4th quadrant",
-    "ready_for_use": "False"
+    "questions": "Author suggests alternative regions if this is too large",
+    "ready_for_use": "True"
   },
   "D'Ammando": {
     "questions": "filter choice, galactic plane area",
@@ -161,10 +161,13 @@
     "ready_for_use": "False"
   },
   "Navarro": {
-    "filter": [{"region": "set of specific target regions around candidates in galactic plane"}],
-    "questions": "define target set and locations, preferred filters",
+    "F213": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
+    "F106": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
+    "F129": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
+    "F158": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
+    "questions": "Follow stellar density, especially in given region, preferred filters Ks~F213, Z~F106, Y~F106, J~F129, and H~F158",
     "comment": "Microlensing; contacted",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "De Furio": {
     "F129": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
@@ -187,9 +190,37 @@
     "ready_for_use": "False"
   },
   "Baravalle": {
+    "F129": [
+          {"l": [230.0, 350.0], "b": [-4.5, 4.5]},
+          {"l": [10.0, 20.0], "b": [-4.5, 4.5]},
+          {"l": [350.0, 359.9], "b": [-15.0, 10.0]},
+          {"l": [0.0, 10.0], "b": [-15.0, 10.0]},
+          {"l": [315.0, 330.0], "b": [-4.5, 4.5]},
+          {"l": [354.0, 356.0], "b": [-11.0, -9.0]},
+          {"l": [359.0, 1.0], "b": [8.0, 11.0]}
+        ],
+    "F158": [
+          {"l": [230.0, 350.0], "b": [-4.5, 4.5]},
+          {"l": [10.0, 20.0], "b": [-4.5, 4.5]},
+          {"l": [350.0, 359.9], "b": [-15.0, 10.0]},
+          {"l": [0.0, 10.0], "b": [-15.0, 10.0]},
+          {"l": [315.0, 330.0], "b": [-4.5, 4.5]},
+          {"l": [354.0, 356.0], "b": [-11.0, -9.0]},
+          {"l": [359.0, 1.0], "b": [8.0, 11.0]}
+        ],
+    "F213": [
+          {"l": [230.0, 350.0], "b": [-4.5, 4.5]},
+          {"l": [10.0, 20.0], "b": [-4.5, 4.5]},
+          {"l": [350.0, 359.9], "b": [-15.0, 10.0]},
+          {"l": [0.0, 10.0], "b": [-15.0, 10.0]},
+          {"l": [315.0, 330.0], "b": [-4.5, 4.5]},
+          {"l": [354.0, 356.0], "b": [-11.0, -9.0]},
+          {"l": [359.0, 1.0], "b": [8.0, 11.0]}
+        ],
     "questions": "define preferred filters and region",
     "comment": "Galaxies and Quasars; contacted",
-    "ready_for_use": "False"
+    "regions": "Northern and Southern Galactic Disk, Galactic Bulge, Norma and Ophiuchus regions",
+    "ready_for_use": "True"
   },
   "Meli": {
     "questions": "define preferred filters and region",
@@ -225,8 +256,10 @@
       {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
       {"pointing": [166.4628, -23.6146, 1.2]},
       {"pointing": [265.3458, -0.2328, 0.3]},
-      {"region": "Cepheus OB3"},
-      {"pointing": [79.5043879158, 1.0005912558, 0.3]}
+      {"pointing": [115.0, 8.5, 1.0]},
+      {"pointing": [79.5043879158, 1.0005912558, 0.3]},
+      {"pointing":  [28.75738558, 3.46541019, 1.0]},
+      {"pointing": [265.13135863, 1.4629818, 1.0]}
     ],
     "comment": "Triggered star formation; contacted",
     "targets": [{"region": "Orion Nebula (M42)"},
@@ -236,9 +269,11 @@
       {"region": "Pleiades (M45)"},
       {"region": "Vela Molecular Ridge (including Vela Molecular Clouds)"},
       {"region": "Cepheus OB3"},
-      {"region": "Cygnus X complex (including Cygnus OB2)"}],
+      {"region": "Cygnus X complex (including Cygnus OB2)"},
+      {"region": "W40"},
+      {"region": "RCW36"}],
     "questions": "Define specific desired regions",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Daylan": {
     "filter": [
@@ -253,15 +288,15 @@
     "ready_for_use": "False"
   },
  "Bahramian": {
-   "F087": [{"region": "galactic plane"}],
-   "F129": [{"region": "galactic plane"}],
-   "F158": [{"region": "galactic plane"}],
-   "F184": [{"region": "galactic plane"}],
-   "F213": [{"region": "galactic plane"}],
-   "F146": [{"region": "galactic plane"}],
+   "F087": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
+   "F129": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
+   "F158": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
+   "F184": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
+   "F213": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
+   "F146": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
    "comment": "X-ray binaries",
    "questions": "preferred region; contacted",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
  },
   "Carey1": {
     "filters": [{"region": "survey regions of WISE, Spitzer and Herschel "}],

@@ -59,16 +59,79 @@
     "questions": "Effectively an all-sky survey, all filters",
     "ready_for_use": "False"
   },
+  "Lodieu2": {
+    "F062": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "F087": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "F106": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "F129": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "F146": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "F158": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "F184": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "F213": [
+      {"pointing": [53.37088107, -35.76976315, 0.43]},
+      {"pointing": [338.16501394, -11.95952266, 0.53]},
+      {"pointing": [305.8948115, -44.88933794, 0.73]},
+      {"pointing": [336.49291329, -25.62835244, 0.33]},
+      {"pointing": [65.01263732, -27.31262586, 0.3]}
+    ],
+    "comment": "Selected Globular Clusters spanning a range of metallicities",
+    "regions": ["M4 (NGC 6121)", "NGC 6397", "47 Tucanae (NGC 104)", "NGC 6752", "M15 (NGC 7078)"],
+    "ready_for_use": "True"
+  },
   "Soam": {
     "questions": "choice of target clouds, filters",
     "comment": "High latitude clouds; contacted",
     "ready_for_use": "False"
   },
   "Hunt": {
-    "blue":"known star clusters",
-    "red": "known star clusters",
-    "comment": "Star clusters; contacted",
-    "ready_for_use": "False"
+    "F106": [{"l": [-60, 60.0], "b": [-2.5, 2.5]}],
+    "F158": [{"l": [-60, 60.0], "b": [-2.5, 2.5]}],
+    "F129": [{"l": [-60, 60.0], "b": [-2.5, 2.5]}],
+    "F213": [{"l": [-60, 60.0], "b": [-2.5, 2.5]}],
+    "comment": "Contiguous area survey for Star clusters; filter choice determined for CMD",
+    "ready_for_use": "True"
   },
   "Werner": {
     "F213": [
@@ -155,10 +218,12 @@
     "ready_for_use": "True"
   },
   "Smith": {
-    "filter": [{"region": "galactic plane"}],
-    "questions": "define filter choice and region",
-    "comment": "Hypervelocity stars; contacted",
-    "ready_for_use": "False"
+    "F129": [{"l": [-5.0, 5.0],  "b":[-3.0, 3.0]}],
+    "F158": [{"l": [-5.0, 5.0],  "b":[-3.0, 3.0]}],
+    "F213": [{"l": [-5.0, 5.0],  "b":[-3.0, 3.0]}],
+    "questions": "Confirmed survey region and filter choices",
+    "comment": "Hypervelocity stars",
+    "ready_for_use": "True"
   },
   "Navarro": {
     "F213": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
@@ -299,10 +364,33 @@
     "ready_for_use": "True"
  },
   "Carey1": {
-    "filters": [{"region": "survey regions of WISE, Spitzer and Herschel "}],
-    "comment": "Synergies with existing IR surveys",
-    "questions": "define survey regions and filters; contacted",
-    "ready_for_use": "False"
+      "F087": [
+              {"l":[-70.0, 70.0], "b": [-1.0, 1.0] },
+              {"l":[-5.0, 5.0], "b": [-5.0, 5.0] }
+      ],
+      "F106": [
+              {"l":[-70.0, 70.0], "b": [-1.0, 1.0]},
+              {"l":[-5.0, 5.0], "b": [-5.0, 5.0]}
+      ],
+      "F129": [
+              {"l":[-70.0, 70.0], "b": [-1.0, 1.0]},
+              {"l":[-5.0, 5.0], "b": [-5.0, 5.0]}
+      ],
+      "F158": [
+              {"l":[-70.0, 70.0], "b": [-1.0, 1.0]},
+              {"l":[-5.0, 5.0], "b": [-5.0, 5.0]}
+      ],
+      "F184": [
+              {"l":[-70.0, 70.0], "b": [-1.0, 1.0]},
+              {"l":[-5.0, 5.0], "b": [-5.0, 5.0] }
+      ],
+      "F213": [
+              {"l":[-70.0, 70.0], "b": [-1.0, 1.0]},
+              {"l":[-5.0, 5.0], "b": [-5.0, 5.0]}
+      ],
+    "comment": "Survey regions of existing IR surveys WISE, Spitzer and Herschel",
+    "questions": "define survey regions and filters; refined to GRIPS footprint in all filters",
+    "ready_for_use": "True"
   },
   "Kuzuhara": {
     "F129": [{"region": "all sky?"}],
@@ -312,9 +400,13 @@
     "ready_for_use": "False"
   },
   "Carey2": {
-    "questions": "which 3 filters and preferred survey fields",
-    "comment": "Synergies with NEOSurveyor; contacted",
-    "ready_for_use": "False"
+    "F213": [{"l": [-5.0,5.0], "b":  [-5.0, 5.0]}],
+    "F158": [{"l": [-5.0,5.0], "b":  [-5.0, 5.0]}],
+    "F087": [{"l": [-5.0,5.0], "b":  [-5.0, 5.0]}],
+    "F106": [{"l": [-5.0,5.0], "b":  [-5.0, 5.0]}],
+    "questions": "Confirmed filters and preferred survey fields",
+    "comment": "Synergies with NEOSurveyor",
+    "ready_for_use": "True"
   },
   "Rich": {
     "F184": [

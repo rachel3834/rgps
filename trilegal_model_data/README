@@ -1,0 +1,9 @@
+Galactic Model data generated from Trilegal v1.6
+Using the webform at http://stev.oapd.inaf.it/cgi-bin/trilegal
+
+Default settings used throughout except:
+Limiting magnitude in 4th filter =30mag
+No dust extinction
+Field area = 0.001sq.deg to keep star counts to a level where the 
+output files are manageable.
+

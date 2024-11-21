@@ -22,6 +22,7 @@ class CelestialRegion:
         self.b_center = None
         self.l_width = None
         self.b_height = None
+        self.radius = None
         self.predefined_pixels = False
         self.pixel_priority = None
         self.NSIDE = 64
@@ -58,8 +59,8 @@ class CelestialRegion:
             self.skycoord = self.skycoord.transform_to('icrs')
             phi = np.deg2rad(self.skycoord.ra.deg)
             theta = (np.pi / 2.0) - np.deg2rad(self.skycoord.dec.deg)
-            radius = max(np.deg2rad(self.halfwidth.data),
-                         np.deg2rad(hp.max_pixrad(self.NSIDE, degrees=True) / 2.0))
+            radius = max(np.deg2rad(self.radius),
+                         np.deg2rad(hp.max_pixrad(self.NSIDE, degrees=True)))
             xyz = hp.ang2vec(theta, phi)
             self.pixels = hp.query_disc(self.NSIDE, xyz, radius)
 
@@ -153,7 +154,7 @@ def create_region(params):
 
         lspan = params['l'][1] - params['l'][0]
         bspan = params['b'][1] - params['b'][0]
-        params = {
+        rparams = {
             'l_center': (params['l'][0] + lspan / 2.0) * u.deg,
             'b_center': (params['b'][0] + bspan / 2.0) * u.deg,
             'l_width': lspan,
@@ -161,7 +162,7 @@ def create_region(params):
             'label': params['label'],
             'optic': params['optic']
         }
-        r = CelestialRegion(params)
+        r = CelestialRegion(rparams)
 
         # Calculate which HEALpixels belong to this region.
         # This method creates the pixels list attribute
@@ -180,15 +181,14 @@ def create_region(params):
     # Circular regions defined by a central galactic longitude, latitude and radial extent,
     # all in units of degrees.
     elif 'pointing' in params.keys():
-        params = {
+        rparams = {
             'l_center': (params['pointing'][0]),
             'b_center': (params['pointing'][1]),
-            'l_width': params['pointing'][2],
-            'b_height': params['pointing'][2],
+            'radius': params['pointing'][2],
             'label': params['label'],
             'optic': params['optic']
         }
-        r = CelestialRegion(params)
+        r = CelestialRegion(rparams)
 
         # Calculate which HEALpixels belong to this region.
         r.calc_hp_healpixels_for_circular_region()
@@ -197,11 +197,14 @@ def create_region(params):
     # If the region is valid, the list of included pixels will be non-zero.
     # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
     # for each science case.
+    r.pixel_priority = np.zeros(r.NPIX)
     if len(r.pixels) > 0:
-        r.pixel_priority = np.zeros(r.NPIX)
         r.pixel_priority[r.pixels] = 1.0
         r.predefined_pixels = True
-        r.make_map()
+    else:
+        raise IOError('Warning: region ' + r.label + ', ' + r.optic
+              + ' has zero valid pixels, parameters: ' + repr(params))
+    r.make_map()
 
     return r
 
@@ -233,6 +236,7 @@ def combine_regions(region_list):
     r_merge.optic = ''
 
     map = np.zeros(r_merge.NPIX)
+    pix_priority = np.zeros(r.NPIX)
     pixels = np.array([], dtype='int')
 
     for r in region_list:
@@ -240,8 +244,10 @@ def combine_regions(region_list):
         r_merge = merge_string_param('optic', r_merge, r)
         map += r.region_map
         pixels = np.concatenate((pixels, r.pixels))
+        pix_priority += r.pixel_priority
 
-    r_merge.map = map
+    r_merge.region_map = map
+    r_merge.pixel_priority = pix_priority
     uniq = set()
     uniq_pixels = [int(x) for x in pixels if x not in uniq and (uniq.add(x) or True)]
     r_merge.pixels = uniq_pixels

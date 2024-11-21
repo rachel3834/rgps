@@ -236,7 +236,7 @@ def combine_regions(region_list):
     r_merge.optic = ''
 
     map = np.zeros(r_merge.NPIX)
-    pix_priority = np.zeros(r.NPIX)
+    pix_priority = np.zeros(r_merge.NPIX)
     pixels = np.array([], dtype='int')
 
     for r in region_list:

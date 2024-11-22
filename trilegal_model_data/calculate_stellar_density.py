@@ -1,9 +1,11 @@
 from os import path
 from astropy.table import Table, Column
-from astropy.coordinates import SkyCoord
+from astropy.coordinates import SkyCoord, Galactic, TETE
 from astropy import units as u
 import numpy as np
+from scipy.interpolate import LinearNDInterpolator
 import healpy as hp
+from astropy_healpix import HEALPix
 import argparse
 import glob
 import json
@@ -14,6 +16,7 @@ NSIDE = 64
 NPIX = hp.nside2npix(NSIDE)
 HPRADIUS = hp.max_pixrad(NSIDE, degrees=True)
 HPAREA = hp.nside2pixarea(NSIDE, degrees = True)
+
 def build_stellar_density_map(args):
     """
     Function to build a HEALpixel map of stellar density based on input from the Trilegal Galactic model v1.6.
@@ -44,39 +47,161 @@ def build_stellar_density_map(args):
     model_file_list = glob.glob(path.join(args.model_data_dir, 'l*_b*.dat'))
     model_data = [parse_trilegal_output(f) for f in model_file_list]
 
+    # Mapping of the Roman optical elements to the column names used in Trilegal files
+    optical_components = {
+        'F087': 'F087',
+        'F106': 'F106',
+        'F129': 'F129',
+        'F158': 'F158',
+        'F184': 'F184',
+        'F213': 'F213',
+        'F146': 'F146',
+        'G150': 'Grism_0thOrder',
+        'P127': 'SNprism'
+    }
+
     # Calculate the density of stars for each point in the grid, and store the results in
-    # a HEALpixel map.
+    # a HEALpixel map, for each filter.
     # Stars from the model output are selected based on Roman WFI's saturation and limiting magnitudes
     # These were estimated from https://roman.gsfc.nasa.gov/science/anticipated_performance_tables.html
-    # The number of stars is factored because the models could only be generated for a very
-    # small stamp, just 0.001sq.deg due to the excessive number of stars.  This factor scales the
-    # star count to estimate that for a 1sq.deg. stamp.
-    density_map = np.zeros(NPIX)
-    factor = HPAREA / 0.001
-    x = []
-    y = []
-    z = []
-    for s, data in model_data:
-        pixels, s = calc_healpixels_skycoord(s)
-        result = np.logical_and(data['F213'] >= 16.0, data['F213'] <= 25.0)
-        sidx = (np.where(result)[0]).astype(int)
-        nstars = len(sidx) * 1000
-        density_map[pixels] = nstars
-        x.append(s.ra.deg)
-        y.append(s.dec.deg)
-        z.append(np.log10(nstars))
-    z = np.array(z)
+    density_maps = {}
+    for optic, column_name in optical_components.items():
+        density_maps[optic] = calc_density_map(args, model_data, optic, column_name)
 
-    # For plotting purposes, skyproj takes RA, Dec pairs of points
+    # Output stellar density as log10 HEALpix map to JSON file
+    output_density_map(args, density_maps)
+
+def calc_density_map(args, model_data, optic, column_name):
+    """
+    Function calculates the stellar density for a grid of points on the sky
+
+    The number of stars is factored because the models could only be generated for a very
+    small stamp, just 0.001sq.deg due to the excessive number of stars.  This factor scales the
+    star count to estimate that for a 1sq.deg. stamp.
+
+    :param args: commandline arguments object
+    :param model_data: Model data table for the given optic
+    :param optic: string indicating the filter/prism/grism currently under consideration
+    :return: HEALpix array of the density map for this optic
+    """
+    ahp = HEALPix(nside=NSIDE, order='ring', frame=TETE())
+
+    # Calculate the stellar density for all regions of the sky included in the grid
+    # Find the minimum stellar density of the available grid - this will be
+    # used to fill in the unsampled regions of the map
+    factor = HPAREA / 0.001
+    z = []
+    l = []
+    b = []
+    lplot = []
+    min_density = 1e32
+    for sgal, data in model_data:
+        # Offset to avoid interpolating over wrap over zero deg
+        if sgal.l.deg > 180.0:
+            l.append(sgal.l.deg-360.0)
+        else:
+            l.append(sgal.l.deg)
+        lplot.append(sgal.l.deg)
+        b.append(sgal.b.deg)
+        result = np.logical_and(data[column_name] >= 16.0, data[column_name] <= 25.0)
+        sidx = (np.where(result)[0]).astype(int)
+        nstars = len(sidx) * factor
+        z.append(np.log10(nstars))
+        min_density = min(min_density, np.log10(nstars))
+    z = np.array(z)
+    l = np.array(l)
+    b = np.array(b)
+
+    # Plot a map of the original discrete set of model stellar densities
     fig, ax = plt.subplots(figsize=(8, 5))
     sp = skyproj.HammerSkyproj(ax=ax, galactic=True, longitude_ticks='symmetric', celestial=True)
     cmap = plt.get_cmap('viridis')
     z = z / z.max()
-    for i in range(0,len(x),1):
-        sp.plot(x[i], y[i], c=cmap(float(z[i])), marker='s')
-    plt.show()
+    for i in range(0, len(l), 1):
+        sp.plot(lplot[i], b[i], c=cmap(float(z[i])), marker='s')
+    sp.draw_milky_way()
+    plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_discrete_map.png'))
+    plt.close()
 
-def calc_healpixels_skycoord(s):
+    # Interpolate over the discrete data to obtain a smooth density function
+    # Note this only generates values within the grid of available datapoints,
+    # so it isn't a full sky map
+    # X, Y ranges here are in galactic coordinates.
+    #idx1 = np.where(l < 180.0)[0]
+    #idx2 = np.where(l > 180.0)[0]
+    #x1 = np.linspace(0.0, l[idx1].max(), 50)
+    #x2 = np.linspace(l[idx2].min(), 360.0, 50)
+    #Xrange = np.concatenate((x2, x1))
+    Xrange = np.linspace(l.min(), l.max(), 100)
+    Yrange = np.linspace(b.min(), b.max(), 50)
+    print('Xrange: ', Xrange.min(), Xrange.max(), l.min(), l.max())
+    print('Yrange: ', Yrange.min(), Yrange.max(), b.min(), b.max())
+
+    XX, YY = np.meshgrid(Xrange, Yrange)  # 2D grid for interpolation
+    interp = LinearNDInterpolator(list(zip(l, b)), z)
+    ZZ = interp(XX, YY)
+
+    #fig, ax = plt.subplots(figsize=(8, 5))
+    #plt.imshow(ZZ)
+    #plt.show()
+
+    # Now we place the interpolated function onto the HEALpixel sky map
+    # Note these coordinates are input in galactic coordinates,
+    # but s converts to RA, Dec for plotting
+    map = np.zeros(NPIX)
+    plotx = []
+    ploty = []
+    plotz = []
+    for ix, x in enumerate(Xrange):
+        for iy, y in enumerate(Yrange):
+            sgal = SkyCoord(l=x, b=y, frame='galactic', unit=(u.deg, u.deg))
+            pixels = calc_healpixels_skycoord(sgal, ahp, coord='galactic')
+
+            if not np.isnan(ZZ[iy,ix]):
+                map[pixels] = ZZ[iy,ix]
+                plotx.append(sgal.l.deg)
+                ploty.append(sgal.b.deg)
+                plotz.append(ZZ[iy,ix])
+
+    plotx = np.array(plotx)
+    ploty = np.array(ploty)
+    plotz = np.array(plotz)
+    print('Plotx range: l ', plotx.min(), plotx.max())
+    print('Ploty range: b', ploty.min(), ploty.max())
+
+    # Plot a map of the interpolated discrete set of model stellar densities
+    fig, ax = plt.subplots(figsize=(8, 5))
+    sp = skyproj.HammerSkyproj(ax=ax, galactic=True, longitude_ticks='symmetric', celestial=True)
+    cmap = plt.get_cmap('viridis')
+    plotz = plotz / plotz.max()
+    for i in range(0, len(plotx), 1):
+        sp.plot(plotx[i], ploty[i], c=cmap(float(plotz[i])), marker='s')
+    sp.draw_milky_way()
+    plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_map.png'))
+    plt.close()
+
+    print('Output interpolated density map for ' + optic)
+
+    return map
+
+def output_density_map(args, density_maps):
+    output = {
+        "label": "Trilegal_v1.6_log10_density",
+        "nside": NSIDE,
+        "healpix_resolution_deg": HPAREA,
+        "n_healpix": NPIX,
+    }
+    for optic, map in density_maps.items():
+        output['healpix_map_'+optic] = map.tolist()
+
+    # Serializing json
+    json_object = json.dumps(output, indent=4)
+
+    # Writing to sample.json
+    with open(path.join(args.output_dir,'trilegal_nir_stellar_density.json'), "w") as f:
+        f.write(json_object)
+
+def calc_healpixels_skycoord(s, ahp, coord='galactic'):
     """Function converts a SkyCoord in the Galactic frame to the corrsponding
     set of HEALpixel indices.
     If the radius of the region is smaller than half that of the HEALpixel map
@@ -88,13 +213,18 @@ def calc_healpixels_skycoord(s):
     :pixels:  list of HEALpixel indices covered by a circle of HPRADIUS
     """
 
-    skycoord = s.transform_to('icrs')
-    phi = np.deg2rad(skycoord.ra.deg)
-    theta = (np.pi / 2.0) - np.deg2rad(skycoord.dec.deg)
-    xyz = hp.ang2vec(theta, phi)
-    pixels = hp.query_disc(NSIDE, xyz, HPRADIUS)
+    if coord == 'galactic':
+        skycoord = s.transform_to('icrs')
+    else:
+        skycoord = s
+    #phi = np.deg2rad(skycoord.ra.deg)
+    #theta = (np.pi / 2.0) - np.deg2rad(skycoord.dec.deg)
+    #xyz = hp.ang2vec(theta, phi)
+    #pixels = hp.query_disc(NSIDE, xyz, HPRADIUS)
 
-    return pixels, skycoord
+    pixels = ahp.cone_search_skycoord(skycoord, HPRADIUS*u.deg)
+
+    return pixels
 
 def parse_trilegal_output(file_path):
     """
@@ -132,7 +262,7 @@ def parse_trilegal_output(file_path):
         'F213',
         'SNprism',
         'Grism_1stOrder',
-        'Grism_0thOrder'
+        'Grism_0thOrder',
         'Mact'
     ]
 
@@ -142,7 +272,7 @@ def parse_trilegal_output(file_path):
     coords = [
         int(x.replace('l','').replace('b','').replace('n','-')) for x in entries
     ]
-    field_center = SkyCoord(coords[0], coords[1], frame='galactic', unit=(u.deg, u.deg))
+    field_center = SkyCoord(l=coords[0], b=coords[1], frame='galactic', unit=(u.deg, u.deg))
 
     if not path.isfile(file_path):
         raise IOError('Cannot find Trilegal model file ' + file_path)
@@ -157,6 +287,7 @@ def parse_trilegal_output(file_path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('model_data_dir', help='Path to input Trilegal model data directory')
+    parser.add_argument('output_dir', help='Path to output directory')
     args = parser.parse_args()
 
     build_stellar_density_map(args)

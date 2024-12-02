@@ -310,9 +310,13 @@
     "ready_for_use": "False"
   },
   "Lucas": {
-    "questions": "confirm whole galactic plane region and filters",
-    "comment": "Clusters and YSOs; contacted",
-    "ready_for_use": "False"
+    "F129": {"l": [-120.0, 120.0], "b": [-1.0, 1.0]},
+    "F158": {"l": [-120.0, 120.0], "b": [-1.0, 1.0]},
+    "F213": {"l": [-120.0, 120.0], "b": [-1.0, 1.0]},
+    "questions": "confirmed whole galactic plane region and filters",
+    "comment": "Clusters and YSOs; Three filters: either (F129, F158, F213) or (F129, F184, F213).  F213 only for second epoch",
+    "proper_motions": "True",
+    "ready_for_use": "True"
   },
   "Lim2": {
     "F213": [

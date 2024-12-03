@@ -1,5 +1,5 @@
 import healpy as hp
-from os import getcwd
+from os import getcwd, path
 import survey_footprints
 from mw_plot import MWSkyMap, MWSkyMapBokeh
 from astropy_healpix import HEALPix
@@ -207,6 +207,26 @@ def create_region(params):
     r.make_map()
 
     return r
+
+def create_region_set(params):
+    """
+    Function to create a set of regions from a list of region dictionaries.
+
+    :param params: list of region specification dictionaries
+    :return: list of regions
+    """
+
+    region_list = []
+
+    cat_dir = path.join(getcwd(), 'config')
+    pointing_set = survey_footprints.load_catalog(cat_dir, params['catalog'])
+    for pointing in pointing_set:
+        pointing['label'] = params['label']
+        pointing['optic'] = params['optic']
+        r = create_region(pointing)
+        region_list.append(r)
+
+    return region_list
 
 def combine_regions(region_list):
     """

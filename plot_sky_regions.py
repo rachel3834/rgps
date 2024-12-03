@@ -51,7 +51,13 @@ def plot_all_regions(args):
                     for params in info[optic]:
                         params['label'] = author
                         params['optic'] = optic
-                        region_list.append(regions.create_region(params))
+                        if 'catalog' in params.keys():
+                            region_set = regions.create_region_set(params)
+                        else:
+                            region_set = [regions.create_region(params)]
+
+                        region_list += region_set
+
                     r_merge = regions.combine_regions(region_list)
 
                     # Use the CelestialRegion's built-in methods to plot a sky map of the region

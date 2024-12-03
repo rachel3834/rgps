@@ -147,12 +147,6 @@
     "comment": "Stellar associations in the Galactic Plane",
     "ready_for_use": "False"
   },
-  "Morihana": {
-    "F129": ["galactic plane"],
-    "F184": ["galactic plane"],
-    "comment": "Cataclysmic Variables; contacted",
-    "ready_for_use": "False"
-  },
   "Lian": {
     "filter": [{"pointing": [287.60158, -0.64452, 4.0]}],
     "comment": "Stellar-mass Black Holes in Carina nebula",
@@ -160,10 +154,10 @@
     "ready_for_use": "False"
   },
   "Anderson": {
-    "F184": [{"region": "galactic plane"}],
-    "G150": [{"region": "galactic plane"}],
+    "F184": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
+    "G150": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
     "comment": "Ionized Hydrogen in ISM; contacted",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Lim1": {
     "G150": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
@@ -172,9 +166,10 @@
     "ready_for_use": "True"
   },
   "D'Ammando": {
+    "F184": [{"catalog": "table-4LAC-DR3-l.fits"}],
     "questions": "filter choice, galactic plane area",
     "comment": "Jetted AGN; contacted",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Freeman": {
     "F158": [
@@ -237,21 +232,24 @@
     "F129": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
             {"pointing": [351.3857, 18.9749, 8.0]},
             {"pointing": [209.0666, -19.4873, 8.0]},
-            {"pointing":  [209.0095, -19.3818, 1.1]},
-            {"region": "other SFRs"}],
+            {"pointing":  [208.821, -19.261, 1.1]},
+            {"pointing": [297.1559, -15.6172, 1.5]},
+            {"catalog": "SFRs_for_Roman.csv"}],
     "F184": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
             {"pointing": [351.3857, 18.9749, 8.0]},
             {"pointing": [209.0666, -19.4873, 8.0]},
-            {"pointing":  [209.0095, -19.3818, 1.1]},
-            {"region": "other SFRs"}],
+            {"pointing":  [208.821, -19.261, 1.1]},
+            {"pointing": [297.1559, -15.6172, 1.5]},
+            {"catalog": "SFRs_for_Roman.csv"}],
     "F213": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
             {"pointing": [351.3857, 18.9749, 8.0]},
             {"pointing": [209.0666, -19.4873, 8.0]},
-            {"pointing":  [209.0095, -19.3818, 1.1]},
-            {"region": "other SFRs"}],
-    "comment": "Star forming regions; Taurus; Sco-Cen; Orion Nebula Cluster; Orion molecular Cloud",
+            {"pointing":  [208.821, -19.261, 1.1]},
+            {"pointing": [297.1559, -15.6172, 1.5]},
+            {"catalog": "SFRs_for_Roman.csv"}],
+    "comment": "Star forming regions; Taurus; Sco-Cen; Orion Nebula Cluster; Orion molecular Cloud (TEMPO region), Chamaeleon I",
     "questions": "confirm catalog of SFRs, and cluster extents; contacted",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Baravalle": {
     "F129": [
@@ -290,29 +288,75 @@
     "ready_for_use": "True"
   },
   "Meli": {
+    "F158": [
+      {"l": [-90.0, 90.0], "b": [-5.0, 5.0]},
+      {"pointing": [359.94423568, -0.04616002, 0.3]},
+      {"pointing": [97.363851, -87.964547, 0.3]},
+      {"pointing": [141.409467, 40.566962, 0.3]},
+      {"pointing": [121.174329, -21.573309, 0.3]},
+      {"pointing": [184.5547, -5.7833, 0.3]},
+      {"pointing": [263.9390, -3.3683, 0.3]},
+      {"pointing": [120.0924, 1.4129, 0.3]},
+      {"pointing": [339.5459, -0.4010, 0.3]},
+      {"pointing": [287.4107, -0.5794, 0.3]}
+    ],
+    "F184": [
+      {"l": [-90.0, 90.0], "b": [-5.0, 5.0]},
+      {"pointing": [359.94423568, -0.04616002, 0.3]},
+      {"pointing": [97.363851, -87.964547, 0.3]},
+      {"pointing": [141.409467, 40.566962, 0.3]},
+      {"pointing": [121.174329, -21.573309, 0.3]},
+      {"pointing": [184.5547, -5.7833, 0.3]},
+      {"pointing": [263.9390, -3.3683, 0.3]},
+      {"pointing": [120.0924, 1.4129, 0.3]},
+      {"pointing": [339.5459, -0.4010, 0.3]},
+      {"pointing": [287.4107, -0.5794, 0.3]}
+    ],
+    "F106": [
+      {"l": [-90.0, 90.0], "b": [-5.0, 5.0]},
+      {"pointing": [359.94423568, -0.04616002, 0.3]},
+      {"pointing": [97.363851, -87.964547, 0.3]},
+      {"pointing": [141.409467, 40.566962, 0.3]},
+      {"pointing": [121.174329, -21.573309, 0.3]},
+      {"pointing": [184.5547, -5.7833, 0.3]},
+      {"pointing": [263.9390, -3.3683, 0.3]},
+      {"pointing": [120.0924, 1.4129, 0.3]},
+      {"pointing": [339.5459, -0.4010, 0.3]},
+      {"pointing": [287.4107, -0.5794, 0.3]}
+    ],
     "questions": "define preferred filters and region",
     "comment": "Galactic magnetic fields and cosmic rays; contacted",
+    "regions": ["Galactic Plane, Sgr A*, Starburst galaxies, SNRs, Massive star clusters, "],
     "ready_for_use": "False"
   },
   "Morihana2": {
-    "F129": [{"l": [20.0, 50.0], "b":  [-1.0, 1.0]}],
-    "F158": [{"l": [20.0, 50.0], "b":  [-1.0, 1.0]}],
-    "F213": [{"l": [20.0, 50.0], "b":  [-1.0, 1.0]}],
-    "comment": "Subaru-Roman synergies",
+    "F129": [
+      {"pointing": [28.5, 0.0, 0.3]},
+      {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
+    ],
+    "F158": [
+      {"pointing": [28.5, 0.0, 0.3]},
+      {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
+    ],
+    "F213": [
+      {"pointing": [28.5, 0.0, 0.3]},
+      {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
+    ],
+    "comment": "Subaru-Roman synergies; Cataclysmic Variables",
     "ready_for_use": "True"
   },
   "Wang": {
-    "F106": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
-    "F158": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
-    "F213": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
-    "comment": "Galactic Center",
+    "F106": [{"pointing": [359.94423568, -0.04616002, 0.6]}],
+    "F158": [{"pointing": [359.94423568, -0.04616002, 0.6]}],
+    "F213": [{"pointing": [359.94423568, -0.04616002, 0.6]}],
+    "comment": "Galactic Center; Sgr A*",
     "questions": "Define extent of desired footprint; contacted",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Lucas": {
-    "F129": {"l": [-120.0, 120.0], "b": [-1.0, 1.0]},
-    "F158": {"l": [-120.0, 120.0], "b": [-1.0, 1.0]},
-    "F213": {"l": [-120.0, 120.0], "b": [-1.0, 1.0]},
+    "F129": [{"l": [-120.0, 120.0], "b": [-1.0, 1.0]}],
+    "F158": [{"l": [-120.0, 120.0], "b": [-1.0, 1.0]}],
+    "F213": [{"l": [-120.0, 120.0], "b": [-1.0, 1.0]}],
     "questions": "confirmed whole galactic plane region and filters",
     "comment": "Clusters and YSOs; Three filters: either (F129, F158, F213) or (F129, F184, F213).  F213 only for second epoch",
     "proper_motions": "True",
@@ -483,7 +527,7 @@
     "ready_for_use": "True",
     "comment": "Member"
   },
-  "De_Furio": {
+  "De_Furio2": {
     "F129":    [{ "l": [-82, -10], "b": [-2.5,2.5]},
                 { "l": [-10, 10], "b": [-7, 7]},
                 { "l": [10, 82], "b": [-2.5, 2.5]}],

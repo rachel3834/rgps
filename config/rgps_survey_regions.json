@@ -5,7 +5,10 @@
       {"l": [-60.0, -10.0], "b": [-2.5, 2.5]},
       {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
     ],
-    "comment": "Galactic Plane Science",
+    "comment": "Galactic Plane Science.  Time domain study of small region in W40/Serpens South",
+    "proper_motions": "True",
+    "time_domain": "True",
+    "cadence": "multi-epoch",
     "ready_for_use": "True"
   },
   "Zari": {
@@ -19,12 +22,16 @@
       {"l":  [-90.0, 90.0], "b": [-2.0, 2.0]}
     ],
     "comment": "Young Stars",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Kruszynska": {
     "F087": [{"survey_footprint": "rubin_galactic_plane"}],
     "F213": [{"survey_footprint": "rubin_galactic_plane"}],
     "comment": "Galactic Plane science, Rubin synergies",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Benecchi": {
@@ -122,6 +129,8 @@
   "Soam": {
     "questions": "choice of target clouds, filters",
     "comment": "High latitude clouds; contacted",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Hunt": {
@@ -140,6 +149,9 @@
       {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]}
     ],
     "comment": "Star Forming Regions; inc Orion SFR, Rho Ophiuchi SFR, Taurus SFR",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "minimum_area": 100,
     "ready_for_use": "True"
   },
   "Bryant": {
@@ -157,12 +169,17 @@
     "F184": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
     "G150": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
     "comment": "Ionized Hydrogen in ISM; contacted",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Lim1": {
     "G150": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
     "comment": "Young Stellar Object spectroscopy; contacted",
     "questions": "Author suggests alternative regions if this is too large",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "minimum_area": 100,
     "ready_for_use": "True"
   },
   "D'Ammando": {
@@ -201,6 +218,8 @@
     "F213": [{"region": "star clusters"}],
     "comment": "Young massive stars; contacted",
     "questions": "Goal is ~20 clusters, as for regions and preference",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Minniti": {
@@ -249,6 +268,8 @@
             {"catalog": "SFRs_for_Roman.csv"}],
     "comment": "Star forming regions; Taurus; Sco-Cen; Orion Nebula Cluster; Orion molecular Cloud (TEMPO region), Chamaeleon I",
     "questions": "confirm catalog of SFRs, and cluster extents; contacted",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Baravalle": {
@@ -327,9 +348,11 @@
     "questions": "define preferred filters and region",
     "comment": "Galactic magnetic fields and cosmic rays; contacted",
     "regions": ["Galactic Plane, Sgr A*, Starburst galaxies, SNRs, Massive star clusters, "],
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
-  "Morihana2": {
+  "Morihana": {
     "F129": [
       {"pointing": [28.5, 0.0, 0.3]},
       {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
@@ -343,6 +366,9 @@
       {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
     ],
     "comment": "Subaru-Roman synergies; Cataclysmic Variables",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "multi-epoch",
     "ready_for_use": "True"
   },
   "Wang": {
@@ -351,6 +377,8 @@
     "F213": [{"pointing": [359.94423568, -0.04616002, 0.6]}],
     "comment": "Galactic Center; Sgr A*",
     "questions": "Define extent of desired footprint; contacted",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Lucas": {
@@ -360,6 +388,7 @@
     "questions": "confirmed whole galactic plane region and filters",
     "comment": "Clusters and YSOs; Three filters: either (F129, F158, F213) or (F129, F184, F213).  F213 only for second epoch",
     "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Lim2": {
@@ -388,6 +417,8 @@
       {"region": "W40"},
       {"region": "RCW36"}],
     "questions": "Define specific desired regions",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Daylan": {
@@ -440,6 +471,8 @@
       ],
     "comment": "Survey regions of existing IR surveys WISE, Spitzer and Herschel",
     "questions": "define survey regions and filters; refined to GRIPS footprint in all filters",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Kuzuhara": {
@@ -456,6 +489,8 @@
     "F106": [{"l": [-5.0,5.0], "b":  [-5.0, 5.0]}],
     "questions": "Confirmed filters and preferred survey fields",
     "comment": "Synergies with NEOSurveyor",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Rich": {
@@ -469,17 +504,21 @@
       {"l": [-30.0,30.0], "b": [-1.0, 1.0]},
       {"l": [-10.0, 10.0], "b": [-2.0, 2.0]}
     ],
-    "G150": [
-      {"l": [-90.0, 90.0], "b": [-0.5, 0.5]},
-      {"l": [-30.0,30.0], "b": [-1.0, 1.0]},
-      {"l": [-10.0, 10.0], "b": [-2.0, 2.0]}
-    ],
-    "P127": [
-      {"l": [-90.0, 90.0], "b": [-0.5, 0.5]},
-      {"l": [-30.0,30.0], "b": [-1.0, 1.0]},
-      {"l": [-10.0, 10.0], "b": [-2.0, 2.0]}
-    ],
     "comment": "Stellar populations",
+    "proper_motions": "True",
+    "time_domain": "False",
+    "ready_for_use": "True"
+  },
+  "Rich2": {
+    "F184": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
+    "F213": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
+    "G150": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
+    "P127": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
+    "comment": "Stellar populations; time domain survey of nuclear region",
+    "questions": "None; contacted",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "multi-epoch",
     "ready_for_use": "True"
   },
   "Ivanov": {

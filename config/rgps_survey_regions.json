@@ -580,7 +580,7 @@
     "G150": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
     "P127": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
     "comment": "Stellar populations; time domain survey of nuclear region",
-    "questions": "None; contacted",
+    "questions": "Cadence; contacted",
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "multi-epoch",

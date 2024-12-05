@@ -39,23 +39,34 @@
       {"pointing": [17.43229895, -14.63082839, 0.52]}
     ],
     "comment": "Solar System, RA=289.4, DEC=-20.2, 3xWFI FOV",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "3 visits per season over 2 seasons",
     "ready_for_use": "True"
   },
   "Kupfer": {
     "F062": [{"survey_footprint": "stellar_density"}],
     "F087": [{"survey_footprint": "stellar_density"}],
     "region": "100sqdeg in Plane regions of high stellar density",
+    "minimum_area": 100,
     "comment": "High cadence; galactic binaries; contacted",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "1min over 24hrs",
     "ready_for_use": "False"
   },
   "Elowitz": {
     "questions": "choice of filters, preference of area",
     "comment": "Interstellar Objects",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Amrar": {
     "questions": "choice of area, filters",
     "comment": "Variable stars",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Lodieu": {
@@ -63,6 +74,8 @@
     "red": "galactic_plane",
     "comment": "Ultra-low mass Brown Dwarfs; contacted",
     "questions": "Effectively an all-sky survey, all filters",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Lodieu2": {
@@ -124,6 +137,8 @@
     ],
     "comment": "Selected Globular Clusters spanning a range of metallicities",
     "regions": ["M4 (NGC 6121)", "NGC 6397", "47 Tucanae (NGC 104)", "NGC 6752", "M15 (NGC 7078)"],
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Soam": {
@@ -139,6 +154,8 @@
     "F129": [{"l": [-60, 60.0], "b": [-2.5, 2.5]}],
     "F213": [{"l": [-60, 60.0], "b": [-2.5, 2.5]}],
     "comment": "Contiguous area survey for Star clusters; filter choice determined for CMD",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Werner": {
@@ -157,12 +174,18 @@
   "Bryant": {
     "questions": "regions (Galatic Plane?), filters",
     "comment": "Stellar associations in the Galactic Plane",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Lian": {
     "filter": [{"pointing": [287.60158, -0.64452, 4.0]}],
+    "minimum_area": 4.0,
     "comment": "Stellar-mass Black Holes in Carina nebula",
     "questions": "filter choice; contacted",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "10 visits over 5yrs",
     "ready_for_use": "False"
   },
   "Anderson": {
@@ -186,6 +209,8 @@
     "F184": [{"catalog": "table-4LAC-DR3-l.fits"}],
     "questions": "filter choice, galactic plane area",
     "comment": "Jetted AGN; contacted",
+    "proper_motions": "False",
+    "time_domain": "True",
     "ready_for_use": "True"
   },
   "Freeman": {
@@ -201,7 +226,11 @@
       {"l": [179.0,181.0], "b": [-3.0,3.0]},
       {"l": [269.0,271.0], "b": [-3.0,3.0]}
     ],
-    "comment": "RR Lyrae",
+    "comment": "RR Lyrae; well-separated survey regions",
+    "minimum_area": 48
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "30 visits over 1 year",
     "ready_for_use": "True"
   },
   "Bachelet": {
@@ -210,6 +239,8 @@
     "F158": [{"region": "galactic plane"}],
     "comment": "Microlensing",
     "questions": "define survey area; contacted",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Villasenor": {
@@ -228,6 +259,9 @@
     "F213": [{"pointing": [298.5171, 5.4934, 8.0]}],
     "comment": "Free-floating planets in stellar associations; Lower Centaurus Crux (LCC)",
     "questions": "Preferred cluster region(s), or all 200deg in Centaurus?",
+    "proper_motions": "True",
+    "time_domain": "False",
+    "minimum_area": 200,
     "ready_for_use": "True"
   },
   "Smith": {
@@ -236,6 +270,8 @@
     "F213": [{"l": [-5.0, 5.0],  "b":[-3.0, 3.0]}],
     "questions": "Confirmed survey region and filter choices",
     "comment": "Hypervelocity stars",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Navarro": {
@@ -245,6 +281,9 @@
     "F158": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
     "questions": "Follow stellar density, especially in given region, preferred filters Ks~F213, Z~F106, Y~F106, J~F129, and H~F158",
     "comment": "Microlensing; contacted",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "once every few months",
     "ready_for_use": "True"
   },
   "De_Furio": {
@@ -306,6 +345,8 @@
     "questions": "define preferred filters and region",
     "comment": "Galaxies and Quasars; contacted",
     "regions": "Northern and Southern Galactic Disk, Galactic Bulge, Norma and Ophiuchus regions",
+    "proper_motions": "False",
+    "time_domain": "False",
     "ready_for_use": "True"
   },
   "Meli": {
@@ -352,7 +393,23 @@
     "time_domain": "False",
     "ready_for_use": "False"
   },
-  "Morihana": {
+  "Morihana2": {
+    "F184": [
+      {"pointing": [28.5, 0.0, 0.3]},
+      {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
+    ],
+    "F129": [
+      {"pointing": [28.5, 0.0, 0.3]},
+      {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
+    ],
+    "comment": "Cataclysmic Variables in the Galactic Plane.  Minimum of 1 filter, ideally 2",
+    "questions": "Is this is same region as the ULTIMATE-Subaru footprint?",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "30min",
+    "ready_for_use": "False"
+  },
+  "Morihana1": {
     "F129": [
       {"pointing": [28.5, 0.0, 0.3]},
       {"l": [20.0, 50.0], "b":  [-3.0, 3.0]}
@@ -430,7 +487,10 @@
       {"pointing": [90.2998, 3.7617, 0.3]}
     ],
     "comment": "Free-floating planet microlensing",
-    "questions": "Confirm filter choice; contacted",
+    "questions": "Confirm filter choice; contacted also need time cadence",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "cadence": "sub-hour",
     "ready_for_use": "False"
   },
  "Bahramian": {
@@ -441,7 +501,10 @@
    "F213": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
    "F146": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
    "comment": "X-ray binaries",
-   "questions": "preferred region; contacted",
+   "questions": "preferred region; contacted. Also need minimum cadence",
+    "proper_motions": "False",
+    "time_domain": "True",
+   "cadence": "multi-epoch",
     "ready_for_use": "True"
  },
   "Carey1": {
@@ -480,6 +543,8 @@
     "F146": [{"region": "all sky?"}],
     "comment": "Accelerated stars",
     "questions": "Define survey area; contacted",
+    "proper_motions": "True",
+    "time_domain": "False",
     "ready_for_use": "False"
   },
   "Carey2": {
@@ -524,6 +589,9 @@
   "Ivanov": {
     "F158": [{"region": "galactic plane"}],
     "F213": [{"region": "galactic plane?"}],
+    "minimum_area": 240,
+    "proper_motions": "False",
+    "time_domain": "False",
     "comment": "Star clusters",
     "questions": "Define survey region; contacted",
     "ready_for_use": "False"

@@ -6,6 +6,7 @@
       {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
     ],
     "comment": "Galactic Plane Science.  Time domain study of small region in W40/Serpens South",
+    "question": "Area and minimum cadence needed for the time domain region",
     "proper_motions": "True",
     "time_domain": "True",
     "cadence": "multi-epoch",
@@ -22,8 +23,10 @@
       {"l":  [-90.0, 90.0], "b": [-2.0, 2.0]}
     ],
     "comment": "Young Stars",
+    "questions": "None",
     "proper_motions": "True",
     "time_domain": "False",
+    "cadence": "3 visits minimum over 3 yrs",
     "ready_for_use": "True"
   },
   "Kruszynska": {
@@ -32,6 +35,7 @@
     "comment": "Galactic Plane science, Rubin synergies",
     "proper_motions": "True",
     "time_domain": "False",
+    "questions": "None",
     "ready_for_use": "True"
   },
   "Benecchi": {
@@ -39,9 +43,10 @@
       {"pointing": [17.43229895, -14.63082839, 0.52]}
     ],
     "comment": "Solar System, RA=289.4, DEC=-20.2, 3xWFI FOV",
+    "questions": "None",
     "proper_motions": "False",
     "time_domain": "True",
-    "cadence": "3 visits per season over 2 seasons",
+    "cadence": "3 visits per season over 2 seasons (years)",
     "ready_for_use": "True"
   },
   "Kupfer": {
@@ -49,7 +54,7 @@
     "F087": [{"survey_footprint": "stellar_density"}],
     "region": "100sqdeg in Plane regions of high stellar density",
     "minimum_area": 100,
-    "comment": "High cadence; galactic binaries; contacted",
+    "comment": "High cadence; galactic binaries",
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "1min over 24hrs",
@@ -72,7 +77,7 @@
   "Lodieu": {
     "blue": "galactic_plane",
     "red": "galactic_plane",
-    "comment": "Ultra-low mass Brown Dwarfs; contacted",
+    "comment": "Ultra-low mass Brown Dwarfs",
     "questions": "Effectively an all-sky survey, all filters",
     "proper_motions": "True",
     "time_domain": "False",
@@ -143,7 +148,7 @@
   },
   "Soam": {
     "questions": "choice of target clouds, filters",
-    "comment": "High latitude clouds; contacted",
+    "comment": "High latitude clouds",
     "proper_motions": "False",
     "time_domain": "False",
     "ready_for_use": "False"
@@ -166,6 +171,7 @@
       {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]}
     ],
     "comment": "Star Forming Regions; inc Orion SFR, Rho Ophiuchi SFR, Taurus SFR",
+    "questions": "None",
     "proper_motions": "False",
     "time_domain": "False",
     "minimum_area": 100,
@@ -182,7 +188,7 @@
     "filter": [{"pointing": [287.60158, -0.64452, 4.0]}],
     "minimum_area": 4.0,
     "comment": "Stellar-mass Black Holes in Carina nebula",
-    "questions": "filter choice; contacted",
+    "questions": "filter choice",
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "10 visits over 5yrs",
@@ -191,14 +197,14 @@
   "Anderson": {
     "F184": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
     "G150": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
-    "comment": "Ionized Hydrogen in ISM; contacted",
+    "comment": "Ionized Hydrogen in ISM",
     "proper_motions": "False",
     "time_domain": "False",
     "ready_for_use": "True"
   },
   "Lim1": {
     "G150": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
-    "comment": "Young Stellar Object spectroscopy; contacted",
+    "comment": "Young Stellar Object spectroscopy",
     "questions": "Author suggests alternative regions if this is too large",
     "proper_motions": "False",
     "time_domain": "False",
@@ -208,7 +214,7 @@
   "D'Ammando": {
     "F184": [{"catalog": "table-4LAC-DR3-l.fits"}],
     "questions": "filter choice, galactic plane area",
-    "comment": "Jetted AGN; contacted",
+    "comment": "Jetted AGN",
     "proper_motions": "False",
     "time_domain": "True",
     "ready_for_use": "True"
@@ -227,7 +233,8 @@
       {"l": [269.0,271.0], "b": [-3.0,3.0]}
     ],
     "comment": "RR Lyrae; well-separated survey regions",
-    "minimum_area": 48
+    "questions": "None",
+    "minimum_area": 48,
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "30 visits over 1 year",
@@ -238,7 +245,7 @@
     "F213": [{"region": "galactic plane"}],
     "F158": [{"region": "galactic plane"}],
     "comment": "Microlensing",
-    "questions": "define survey area; contacted",
+    "questions": "define survey area",
     "proper_motions": "True",
     "time_domain": "False",
     "ready_for_use": "False"
@@ -247,7 +254,7 @@
     "F062": [{"region": "star clusters"}],
     "F129":  [{"region": "star clusters"}],
     "F213": [{"region": "star clusters"}],
-    "comment": "Young massive stars; contacted",
+    "comment": "Young massive stars",
     "questions": "Goal is ~20 clusters, as for regions and preference",
     "proper_motions": "True",
     "time_domain": "False",
@@ -280,7 +287,7 @@
     "F129": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
     "F158": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0]}],
     "questions": "Follow stellar density, especially in given region, preferred filters Ks~F213, Z~F106, Y~F106, J~F129, and H~F158",
-    "comment": "Microlensing; contacted",
+    "comment": "Microlensing",
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "once every few months",
@@ -306,7 +313,7 @@
             {"pointing": [297.1559, -15.6172, 1.5]},
             {"catalog": "SFRs_for_Roman.csv"}],
     "comment": "Star forming regions; Taurus; Sco-Cen; Orion Nebula Cluster; Orion molecular Cloud (TEMPO region), Chamaeleon I",
-    "questions": "confirm catalog of SFRs, and cluster extents; contacted",
+    "questions": "confirm catalog of SFRs, and cluster extents",
     "proper_motions": "False",
     "time_domain": "False",
     "ready_for_use": "True"
@@ -343,7 +350,7 @@
           {"l": [0.0, 1.0], "b": [8.0, 11.0]}
         ],
     "questions": "define preferred filters and region",
-    "comment": "Galaxies and Quasars; contacted",
+    "comment": "Galaxies and Quasars",
     "regions": "Northern and Southern Galactic Disk, Galactic Bulge, Norma and Ophiuchus regions",
     "proper_motions": "False",
     "time_domain": "False",
@@ -387,7 +394,7 @@
       {"pointing": [287.4107, -0.5794, 0.3]}
     ],
     "questions": "define preferred filters and region",
-    "comment": "Galactic magnetic fields and cosmic rays; contacted",
+    "comment": "Galactic magnetic fields and cosmic rays",
     "regions": ["Galactic Plane, Sgr A*, Starburst galaxies, SNRs, Massive star clusters, "],
     "proper_motions": "False",
     "time_domain": "False",
@@ -433,7 +440,7 @@
     "F158": [{"pointing": [359.94423568, -0.04616002, 0.6]}],
     "F213": [{"pointing": [359.94423568, -0.04616002, 0.6]}],
     "comment": "Galactic Center; Sgr A*",
-    "questions": "Define extent of desired footprint; contacted",
+    "questions": "Define extent of desired footprint",
     "proper_motions": "False",
     "time_domain": "False",
     "ready_for_use": "True"
@@ -462,7 +469,7 @@
       {"pointing":  [28.75738558, 3.46541019, 1.0]},
       {"pointing": [265.13135863, 1.4629818, 1.0]}
     ],
-    "comment": "Triggered star formation; contacted",
+    "comment": "Triggered star formation",
     "targets": [{"region": "Orion Nebula (M42)"},
       {"region": "Eta Carinae Nebula (NGC 3372)"},
       {"region": "Perseus Molecular Cloud (including NGC 1333 and IC 348)"},
@@ -487,7 +494,7 @@
       {"pointing": [90.2998, 3.7617, 0.3]}
     ],
     "comment": "Free-floating planet microlensing",
-    "questions": "Confirm filter choice; contacted also need time cadence",
+    "questions": "Confirm filter choice; also need time cadence;",
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "sub-hour",
@@ -501,7 +508,7 @@
    "F213": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
    "F146": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0]}, {"l": [-115.0, 130.0], "b": [-3.0, 3.0]}],
    "comment": "X-ray binaries",
-   "questions": "preferred region; contacted. Also need minimum cadence",
+   "questions": "preferred region; Also need minimum cadence",
     "proper_motions": "False",
     "time_domain": "True",
    "cadence": "multi-epoch",
@@ -542,7 +549,7 @@
     "F129": [{"region": "all sky?"}],
     "F146": [{"region": "all sky?"}],
     "comment": "Accelerated stars",
-    "questions": "Define survey area; contacted",
+    "questions": "Define survey area",
     "proper_motions": "True",
     "time_domain": "False",
     "ready_for_use": "False"
@@ -575,12 +582,12 @@
     "ready_for_use": "True"
   },
   "Rich2": {
-    "F184": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
-    "F213": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
-    "G150": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
-    "P127": [{"pointing": [359.94423568 -00.04616002, 0.3]}],
+    "F184": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
+    "F213": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
+    "G150": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
+    "P127": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
     "comment": "Stellar populations; time domain survey of nuclear region",
-    "questions": "Cadence; contacted",
+    "questions": "Cadence",
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "multi-epoch",
@@ -593,7 +600,7 @@
     "proper_motions": "False",
     "time_domain": "False",
     "comment": "Star clusters",
-    "questions": "Define survey region; contacted",
+    "questions": "Define survey region",
     "ready_for_use": "False"
   },
   "Schlafly": {
@@ -602,6 +609,8 @@
     "F184":    [{ "l": [-57, 57], "b": [-2.5,2.5]}],
     "F213":    [{ "l": [-57, 57], "b": [-2.5,2.5]}],
     "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
     "comment": "Member"
   },
   "Drew": {
@@ -624,6 +633,8 @@
       { "l": [20.0, 35.0], "b": [-2.0, 4.0]}
     ],
     "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
     "comment": "Member"
   },
   "Zucker": {
@@ -632,6 +643,8 @@
     "F158":     [{ "l": [-60, 60], "b": [-2.5, 2.5]}],
     "F213":     [{ "l": [-60, 60], "b": [-2.5, 2.5]}],
     "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
     "comment": "Member"
   },
   "De_Furio2": {
@@ -645,6 +658,8 @@
                 { "l": [-10, 10], "b": [-7, 7]},
                 { "l": [10, 82], "b": [-2.5,2.5]}],
     "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
     "comment": "Member"
   },
   "De": {
@@ -656,6 +671,8 @@
       { "l": [60, 180], "b": [-2.0, 2.0]}
     ],
     "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
     "comment": "Member"
   },
   "Carey": {
@@ -684,6 +701,8 @@
                 {"l":[-5.0, 5.0], "b": [-5.0, 5.0]}
         ],
     "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
     "comment": "Member"
   }
 }

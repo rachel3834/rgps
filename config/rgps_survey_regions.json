@@ -43,7 +43,7 @@
       {"pointing": [17.43229895, -14.63082839, 0.52]}
     ],
     "comment": "Solar System, RA=289.4, DEC=-20.2, 3xWFI FOV",
-    "questions": "None",
+    "questions": "None.  Confirmed single-filter observations",
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "3 visits per season over 2 seasons (years)",
@@ -197,12 +197,15 @@
   "Anderson": {
     "F184": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
     "G150": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5]}],
-    "comment": "Ionized Hydrogen in ISM",
+    "comment": "Ionized Hydrogen in ISM.  F184 filter there could be other bright lines, so it may be difficult to isolate emission from Pa-alpha without G150 for at least a selected sub-region",
     "proper_motions": "False",
     "time_domain": "False",
     "ready_for_use": "True"
   },
   "Lim1": {
+    "F158": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
+    "F129": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
+    "F213": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
     "G150": [{"l": [55.0, 65.0], "b": [-1.0, 1.0]}],
     "comment": "Young Stellar Object spectroscopy",
     "questions": "Author suggests alternative regions if this is too large",
@@ -261,9 +264,9 @@
     "ready_for_use": "False"
   },
   "Minniti": {
-    "F106": [{"pointing": [298.5171, 5.4934, 8.0]}],
-    "F158": [{"pointing": [298.5171, 5.4934, 8.0]}],
-    "F213": [{"pointing": [298.5171, 5.4934, 8.0]}],
+    "F106": [{"l": [285.0,320.0], "b": [-5.0,5.0]}],
+    "F158": [{"l": [285.0,320.0], "b": [-5.0,5.0]}],
+    "F213": [{"l": [285.0,320.0], "b": [-5.0,5.0]}],
     "comment": "Free-floating planets in stellar associations; Lower Centaurus Crux (LCC)",
     "questions": "Preferred cluster region(s), or all 200deg in Centaurus?",
     "proper_motions": "True",
@@ -456,6 +459,32 @@
     "ready_for_use": "True"
   },
   "Lim2": {
+    "F129": [
+      {"pointing": [209.0666, -19.4873, 8.0]},
+      {"pointing": [287.60158, -0.64452, 4.0]},
+      {"pointing": [158.3430, -20.5052, 8.0]},
+      {"pointing": [160.4863, -17.8108, 8.0]},
+      {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
+      {"pointing": [166.4628, -23.6146, 1.2]},
+      {"pointing": [265.3458, -0.2328, 0.3]},
+      {"pointing": [115.0, 8.5, 1.0]},
+      {"pointing": [79.5043879158, 1.0005912558, 0.3]},
+      {"pointing":  [28.75738558, 3.46541019, 1.0]},
+      {"pointing": [265.13135863, 1.4629818, 1.0]}
+    ],
+    "F158": [
+      {"pointing": [209.0666, -19.4873, 8.0]},
+      {"pointing": [287.60158, -0.64452, 4.0]},
+      {"pointing": [158.3430, -20.5052, 8.0]},
+      {"pointing": [160.4863, -17.8108, 8.0]},
+      {"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523]},
+      {"pointing": [166.4628, -23.6146, 1.2]},
+      {"pointing": [265.3458, -0.2328, 0.3]},
+      {"pointing": [115.0, 8.5, 1.0]},
+      {"pointing": [79.5043879158, 1.0005912558, 0.3]},
+      {"pointing":  [28.75738558, 3.46541019, 1.0]},
+      {"pointing": [265.13135863, 1.4629818, 1.0]}
+    ],
     "F213": [
       {"pointing": [209.0666, -19.4873, 8.0]},
       {"pointing": [287.60158, -0.64452, 4.0]},
@@ -594,8 +623,16 @@
     "ready_for_use": "True"
   },
   "Ivanov": {
-    "F158": [{"region": "galactic plane"}],
-    "F213": [{"region": "galactic plane?"}],
+    "F158": [
+      { "l": [-30.0, 20.0], "b": [-5.0,5.0]},
+      { "l": [-10.0, 10.0], "b": [-15.0,10.0]},
+      { "l": [-65.0, 65.0], "b": [-1.0,1.0]}
+    ],
+    "F213": [
+      { "l": [-30.0, 20.0], "b": [-5.0,5.0]},
+      { "l": [-10.0, 10.0], "b": [-15.0,10.0]},
+      { "l": [-65.0, 65.0], "b": [-1.0,1.0]}
+    ],
     "minimum_area": 240,
     "proper_motions": "False",
     "time_domain": "False",

@@ -45,6 +45,8 @@ def build_stellar_density_map(args):
     # follow a systematic naming convention:
     # l<gal_longitude_degrees>_b<gal_latitude_degrees>.dat with n used to prefix negative values
     model_file_list = glob.glob(path.join(args.model_data_dir, 'l*_b*.dat'))
+    if len(model_file_list) == 0:
+        raise IOError('No input model data files found at ' + args.model_data_dir)
     model_data = [parse_trilegal_output(f) for f in model_file_list]
 
     # Mapping of the Roman optical elements to the column names used in Trilegal files
@@ -118,7 +120,7 @@ def calc_density_map(args, model_data, optic, column_name):
     cmap = plt.get_cmap('viridis')
     z = z / z.max()
     for i in range(0, len(l), 1):
-        sp.plot(lplot[i], b[i], c=cmap(float(z[i])), marker='s')
+        sp.plot(lplot[i], b[i], c=cmap(float(z[i])), marker='o')
     sp.draw_milky_way()
     plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_discrete_map.png'))
     plt.close()
@@ -132,8 +134,8 @@ def calc_density_map(args, model_data, optic, column_name):
     #x1 = np.linspace(0.0, l[idx1].max(), 50)
     #x2 = np.linspace(l[idx2].min(), 360.0, 50)
     #Xrange = np.concatenate((x2, x1))
-    Xrange = np.linspace(l.min(), l.max(), 100)
-    Yrange = np.linspace(b.min(), b.max(), 50)
+    Xrange = np.linspace(l.min(), l.max(), 101)
+    Yrange = np.linspace(b.min(), b.max(), 51)
     print('Xrange: ', Xrange.min(), Xrange.max(), l.min(), l.max())
     print('Yrange: ', Yrange.min(), Yrange.max(), b.min(), b.max())
 
@@ -158,7 +160,7 @@ def calc_density_map(args, model_data, optic, column_name):
             pixels = calc_healpixels_skycoord(sgal, ahp, coord='galactic')
 
             if not np.isnan(ZZ[iy,ix]):
-                map[pixels] = ZZ[iy,ix]
+                map[pixels] = [max(map[p], ZZ[iy,ix]) for p in pixels]
                 plotx.append(sgal.l.deg)
                 ploty.append(sgal.b.deg)
                 plotz.append(ZZ[iy,ix])
@@ -169,18 +171,34 @@ def calc_density_map(args, model_data, optic, column_name):
     print('Plotx range: l ', plotx.min(), plotx.max())
     print('Ploty range: b', ploty.min(), ploty.max())
 
+
     # Plot a map of the interpolated discrete set of model stellar densities
     fig, ax = plt.subplots(figsize=(8, 5))
     sp = skyproj.HammerSkyproj(ax=ax, galactic=True, longitude_ticks='symmetric', celestial=True)
     cmap = plt.get_cmap('viridis')
     plotz = plotz / plotz.max()
     for i in range(0, len(plotx), 1):
-        sp.plot(plotx[i], ploty[i], c=cmap(float(plotz[i])), marker='s')
+        sp.plot(plotx[i], ploty[i], c=cmap(float(plotz[i])), marker='.', markersize=1)
     sp.draw_milky_way()
     plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_map.png'))
     plt.close()
 
+    fig2, ax2 = plt.subplots(2, 1, figsize=(8, 5))
+    plt.subplots_adjust(top=0.98, bottom=0.4)
+
+    ax2[0].plot(plotx, plotz, 'r.')
+    ax2[0].set_xlabel('l [deg]')
+    ax2[0].set_ylabel('Log stellar density')
+
+
+    ax2[1].plot(ploty, plotz, 'r.')
+    ax2[1].set_xlabel('b [deg]')
+    ax2[1].set_ylabel('Log stellar density')
+    plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_xyplot.png'))
+    plt.close()
+
     print('Output interpolated density map for ' + optic)
+    exit()
 
     return map
 

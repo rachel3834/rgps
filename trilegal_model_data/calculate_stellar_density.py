@@ -178,7 +178,7 @@ def calc_density_map(args, model_data, optic, column_name):
     cmap = plt.get_cmap('viridis')
     plotz = plotz / plotz.max()
     for i in range(0, len(plotx), 1):
-        sp.plot(plotx[i], ploty[i], c=cmap(float(plotz[i])), marker='.', markersize=1)
+        sp.plot(plotx[i], ploty[i], c=cmap(float(plotz[i])), marker='.', markersize=5)
     sp.draw_milky_way()
     plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_map.png'))
     plt.close()
@@ -198,7 +198,6 @@ def calc_density_map(args, model_data, optic, column_name):
     plt.close()
 
     print('Output interpolated density map for ' + optic)
-    exit()
 
     return map
 

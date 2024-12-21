@@ -6,7 +6,7 @@
       {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
     ],
     "comment": "Galactic Plane Science.  Time domain study of small region in W40/Serpens South",
-    "question": "Area and minimum cadence needed for the time domain region",
+    "question": "Aiming for timescales between 0.15 to 40d; recommend 3.5d observing windows of 8 visits each, intervals 4, 6, 8, 10, 12, 14 and 16hrs",
     "proper_motions": "True",
     "time_domain": "True",
     "cadence": "multi-epoch",
@@ -611,15 +611,15 @@
     "ready_for_use": "True"
   },
   "Rich2": {
-    "F184": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
-    "F213": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
-    "G150": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
-    "P127": [{"pointing": [359.94423568, -0.04616002, 0.3]}],
+    "F184": [{"l": [359.544, 360.0], "b": [-0.3, 0.3]},{"l": [0.0, 0.344], "b": [-0.3, 0.3]}],
+    "F213": [{"l": [359.544, 360.0], "b": [-0.3, 0.3]},{"l": [0.0, 0.344], "b": [-0.3, 0.3]}],
+    "G150": [{"l": [359.544, 360.0], "b": [-0.3, 0.3]},{"l": [0.0, 0.344], "b": [-0.3, 0.3]}],
+    "P127": [{"l": [359.544, 360.0], "b": [-0.3, 0.3]},{"l": [0.0, 0.344], "b": [-0.3, 0.3]}],
     "comment": "Stellar populations; time domain survey of nuclear region",
     "questions": "Cadence",
     "proper_motions": "False",
     "time_domain": "True",
-    "cadence": "multi-epoch",
+    "cadence": "multi-epoch; high cadence",
     "ready_for_use": "True"
   },
   "Ivanov": {

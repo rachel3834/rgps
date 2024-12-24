@@ -10,6 +10,7 @@
     "proper_motions": "True",
     "time_domain": "True",
     "cadence": "multi-epoch",
+    "n_visits_per_field": 8,
     "ready_for_use": "True"
   },
   "Zari": {
@@ -47,6 +48,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "3 visits per season over 2 seasons (years)",
+    "n_visits_per_field": 6,
     "ready_for_use": "True"
   },
   "Kupfer": {
@@ -58,6 +60,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "1min over 24hrs",
+    "n_visits_per_field": 1440,
     "ready_for_use": "False"
   },
   "Elowitz": {
@@ -192,6 +195,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "10 visits over 5yrs",
+    "n_visits_per_field": 10,
     "ready_for_use": "False"
   },
   "Anderson": {
@@ -241,6 +245,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "30 visits over 1 year",
+    "n_visits_per_field": 30,
     "ready_for_use": "True"
   },
   "Bachelet": {
@@ -294,6 +299,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "once every few months",
+    "n_visits_per_field": 12,
     "ready_for_use": "True"
   },
   "De_Furio": {

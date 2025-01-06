@@ -5,12 +5,26 @@
       {"l": [-60.0, -10.0], "b": [-2.5, 2.5]},
       {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
     ],
-    "comment": "Galactic Plane Science.  Time domain study of small region in W40/Serpens South",
+    "comment": "Galactic Plane Wide Area Survey",
+    "question": "Aiming for timescales between 0.15 to 40d; recommend 3.5d observing windows of 8 visits each, intervals 4, 6, 8, 10, 12, 14 and 16hrs",
+    "proper_motions": "True",
+    "time_domain": "False",
+    "cadence": "multi-epoch",
+    "n_visits_per_field": 8,
+    "category": "wide-area",
+    "ready_for_use": "True"
+  },
+  "Paladini": {
+    "F213": [
+      {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
+    ],
+    "comment": "Time domain study of small region in W40/Serpens South",
     "question": "Aiming for timescales between 0.15 to 40d; recommend 3.5d observing windows of 8 visits each, intervals 4, 6, 8, 10, 12, 14 and 16hrs",
     "proper_motions": "True",
     "time_domain": "True",
     "cadence": "multi-epoch",
     "n_visits_per_field": 8,
+    "category": "sfr",
     "ready_for_use": "True"
   },
   "Zari": {
@@ -27,6 +41,7 @@
     "questions": "None",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "sfr",
     "cadence": "3 visits minimum over 3 yrs",
     "ready_for_use": "True"
   },
@@ -37,6 +52,7 @@
     "proper_motions": "True",
     "time_domain": "False",
     "questions": "None",
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "Benecchi": {
@@ -49,6 +65,7 @@
     "time_domain": "True",
     "cadence": "3 visits per season over 2 seasons (years)",
     "n_visits_per_field": 6,
+    "category": "solar-system",
     "ready_for_use": "True"
   },
   "Kupfer": {
@@ -61,6 +78,7 @@
     "time_domain": "True",
     "cadence": "1min over 24hrs",
     "n_visits_per_field": 1440,
+    "category": "high-cadence",
     "ready_for_use": "False"
   },
   "Elowitz": {
@@ -68,6 +86,7 @@
     "comment": "Interstellar Objects",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "solar-system",
     "ready_for_use": "False"
   },
   "Amrar": {
@@ -75,6 +94,7 @@
     "comment": "Variable stars",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "variable-stars",
     "ready_for_use": "False"
   },
   "Lodieu": {
@@ -84,6 +104,7 @@
     "questions": "Effectively an all-sky survey, all filters",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "brown-dwarfs",
     "ready_for_use": "False"
   },
   "Lodieu2": {
@@ -147,6 +168,7 @@
     "regions": ["M4 (NGC 6121)", "NGC 6397", "47 Tucanae (NGC 104)", "NGC 6752", "M15 (NGC 7078)"],
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "GC",
     "ready_for_use": "True"
   },
   "Soam": {
@@ -154,6 +176,7 @@
     "comment": "High latitude clouds",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "molecular-clouds",
     "ready_for_use": "False"
   },
   "Hunt": {
@@ -164,6 +187,7 @@
     "comment": "Contiguous area survey for Star clusters; filter choice determined for CMD",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "Werner": {
@@ -178,6 +202,7 @@
     "proper_motions": "False",
     "time_domain": "False",
     "minimum_area": 100,
+    "category": "SFR",
     "ready_for_use": "True"
   },
   "Bryant": {
@@ -185,6 +210,7 @@
     "comment": "Stellar associations in the Galactic Plane",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "star-clusters",
     "ready_for_use": "False"
   },
   "Lian": {
@@ -196,6 +222,7 @@
     "time_domain": "True",
     "cadence": "10 visits over 5yrs",
     "n_visits_per_field": 10,
+    "category": "SFR",
     "ready_for_use": "False"
   },
   "Anderson": {
@@ -204,6 +231,7 @@
     "comment": "Ionized Hydrogen in ISM.  F184 filter there could be other bright lines, so it may be difficult to isolate emission from Pa-alpha without G150 for at least a selected sub-region",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "molecular-clouds",
     "ready_for_use": "True"
   },
   "Lim1": {
@@ -216,6 +244,7 @@
     "proper_motions": "False",
     "time_domain": "False",
     "minimum_area": 100,
+    "category": "SFR",
     "ready_for_use": "True"
   },
   "D'Ammando": {
@@ -224,6 +253,7 @@
     "comment": "Jetted AGN",
     "proper_motions": "False",
     "time_domain": "True",
+    "category": "AGN",
     "ready_for_use": "True"
   },
   "Freeman": {
@@ -246,6 +276,7 @@
     "time_domain": "True",
     "cadence": "30 visits over 1 year",
     "n_visits_per_field": 30,
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "Bachelet": {
@@ -256,6 +287,7 @@
     "questions": "define survey area",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "False"
   },
   "Villasenor": {
@@ -266,6 +298,7 @@
     "questions": "Goal is ~20 clusters, as for regions and preference",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "star-clusters",
     "ready_for_use": "False"
   },
   "Minniti": {
@@ -277,6 +310,7 @@
     "proper_motions": "True",
     "time_domain": "False",
     "minimum_area": 200,
+    "category": "star-clusters",
     "ready_for_use": "True"
   },
   "Smith": {
@@ -287,6 +321,7 @@
     "comment": "Hypervelocity stars",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "Navarro": {
@@ -300,6 +335,7 @@
     "time_domain": "True",
     "cadence": "once every few months",
     "n_visits_per_field": 12,
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "De_Furio": {
@@ -325,6 +361,7 @@
     "questions": "confirm catalog of SFRs, and cluster extents",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "SFR",
     "ready_for_use": "True"
   },
   "Baravalle": {
@@ -363,6 +400,7 @@
     "regions": "Northern and Southern Galactic Disk, Galactic Bulge, Norma and Ophiuchus regions",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "AGN",
     "ready_for_use": "True"
   },
   "Meli": {
@@ -407,6 +445,7 @@
     "regions": ["Galactic Plane, Sgr A*, Starburst galaxies, SNRs, Massive star clusters, "],
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "False"
   },
   "Morihana2": {
@@ -423,6 +462,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "30min",
+    "category": "variable-stars",
     "ready_for_use": "False"
   },
   "Morihana1": {
@@ -442,6 +482,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "multi-epoch",
+    "category": "variable-stars",
     "ready_for_use": "True"
   },
   "Wang": {
@@ -452,6 +493,7 @@
     "questions": "Define extent of desired footprint",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "galactic-center",
     "ready_for_use": "True"
   },
   "Lucas": {
@@ -462,6 +504,7 @@
     "comment": "Clusters and YSOs; Three filters: either (F129, F158, F213) or (F129, F184, F213).  F213 only for second epoch",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "Lim2": {
@@ -518,6 +561,7 @@
     "questions": "Define specific desired regions",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "SFR",
     "ready_for_use": "True"
   },
   "Daylan": {
@@ -533,6 +577,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "sub-hour",
+    "category": "high-cadence",
     "ready_for_use": "False"
   },
  "Bahramian": {
@@ -547,6 +592,7 @@
     "proper_motions": "False",
     "time_domain": "True",
    "cadence": "multi-epoch",
+    "category": "wide-area",
     "ready_for_use": "True"
  },
   "Carey1": {
@@ -578,6 +624,7 @@
     "questions": "define survey regions and filters; refined to GRIPS footprint in all filters",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "Kuzuhara": {
@@ -587,6 +634,7 @@
     "questions": "Define survey area",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "False"
   },
   "Carey2": {
@@ -598,6 +646,7 @@
     "comment": "Synergies with NEOSurveyor",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "solar-system",
     "ready_for_use": "True"
   },
   "Rich": {
@@ -614,6 +663,7 @@
     "comment": "Stellar populations",
     "proper_motions": "True",
     "time_domain": "False",
+    "category": "wide-area",
     "ready_for_use": "True"
   },
   "Rich2": {
@@ -626,6 +676,7 @@
     "proper_motions": "False",
     "time_domain": "True",
     "cadence": "multi-epoch; high cadence",
+    "category": "galactic-center",
     "ready_for_use": "True"
   },
   "Ivanov": {
@@ -644,6 +695,7 @@
     "time_domain": "False",
     "comment": "Star clusters",
     "questions": "Define survey region",
+    "category": "star-clusters",
     "ready_for_use": "False"
   },
   "Schlafly": {
@@ -654,6 +706,7 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "comment": "Member"
   },
   "Drew": {
@@ -678,6 +731,7 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "comment": "Member"
   },
   "Zucker": {
@@ -688,6 +742,7 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "comment": "Member"
   },
   "De_Furio2": {
@@ -703,6 +758,7 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "comment": "Member"
   },
   "De": {
@@ -716,6 +772,7 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "comment": "Member"
   },
   "Carey": {
@@ -746,6 +803,7 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
+    "category": "wide-area",
     "comment": "Member"
   }
 }

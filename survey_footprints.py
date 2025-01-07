@@ -77,7 +77,7 @@ def load_catalog(root_dir, catalog_name):
                     # Skip malformed catalog entries
                     except ValueError:
                         pass
-                    
+
     return pointing_set
 
 def load_rubin_galplane_footprint(root_dir):

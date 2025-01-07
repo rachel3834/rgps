@@ -1,12 +1,14 @@
 import healpy as hp
 from os import getcwd, path
 import survey_footprints
+import regions
 from mw_plot import MWSkyMap, MWSkyMapBokeh
 from astropy_healpix import HEALPix
 from astropy import units as u
 from astropy.coordinates import Galactic, TETE, SkyCoord
 import numpy as np
 import matplotlib.pyplot as plt
+import healpy as hp
 
 class CelestialRegion:
     """Class to describe a region on sky, including its position and
@@ -273,3 +275,96 @@ def combine_regions(region_list):
     r_merge.pixels = uniq_pixels
 
     return r_merge
+
+def extract_requested_regions(science_cases):
+    """
+    Function to extract the on-sky regions requested for a selected set of science cases,
+    organized according to filter.
+
+    Parameters:
+        science_cases: dict     A subset of the science cases from the rgps_survey_regions.json file
+
+    Returns:
+        requested_regions dict
+    """
+
+    # Extracting the set of regions from the set of science cases
+    optical_components = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
+    requested_regions = {optic: [] for optic in optical_components}
+
+    for author, info in science_cases.items():
+        if info['ready_for_use']:
+            for optic in optical_components:
+                if optic in info.keys():
+                    for region in info[optic]:
+                        region['label'] = author
+                        region['optic'] = optic
+                        requested_regions[optic].append(region)
+
+    return requested_regions
+
+def calc_healpixel_regions(requested_regions):
+    """
+    Function to generate the CelestialRegion objects for a set of science cases, and
+    calculate the HEALpixel maps.
+
+    Parameters:
+        requested_regions   dict    A subset of science cases, organized by filter
+
+    Returns:
+        desired_regions     dict of CelestialRegions, organized by filter
+    """
+
+    # Repackaging the full set of regions according to the regions requested for each filter,
+    # and computing the HEALpixels included in each requested region
+    desired_regions = {}
+
+    for optic, region_list in requested_regions.items():
+        regions_for_optic = []
+        for box in region_list:
+            if 'catalog' in box.keys():
+                region_set = regions.create_region_set(box)
+            else:
+                region_set = [regions.create_region(box)]
+
+            for r in region_set:
+                # If the region is valid, the list of included pixels will be non-zero.
+                # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
+                # for each science case.
+                if len(r.pixels) > 0:
+                    r.pixel_priority = np.zeros(r.NPIX)
+                    r.pixel_priority[r.pixels] = 1.0
+                    r.predefined_pixels = True
+                    r.make_map()
+
+                    regions_for_optic.append(r)
+
+        desired_regions[optic] = regions_for_optic
+
+    return desired_regions
+
+def combine_regions_per_filter(desired_regions):
+    """
+    Convenience function to combine the HEALpixel regions for a set of science cases organized
+    per filter.
+
+    Parameters:
+        science_cases: dict     A subset of the science cases from the rgps_survey_regions.json file
+
+    Returns:
+        combined_regions dict
+    """
+
+    # Building combined maps of all HEALpixels requested by all science cases in each filter
+    combined_regions = {}
+
+    # In order to use the plotting method of the CelestialRegion object, we can create separate regions for the combined maps
+    for optic, region_list in desired_regions.items():
+        if len(region_list) > 0:
+            r_merge = regions.combine_regions(region_list)
+            r_merge.optic = optic
+            r_merge.label = 'Combined survey footprint'
+
+            combined_regions[optic] = r_merge
+
+    return combined_regions

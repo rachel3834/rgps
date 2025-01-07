@@ -1,8 +1,11 @@
 import json
 from os import path
 import numpy as np
+import healpy as hp
 import csv
 from astropy.io import fits
+
+NSIDE = 64
 
 def load_survey_footprints(root_dir):
     """
@@ -37,6 +40,7 @@ def load_catalog(root_dir, catalog_name):
         raise IOError('Cannot find requested catalog ' + catalog_file)
 
     pointing_set = []
+    pixscale = hp.max_pixrad(NSIDE,degrees=True)
 
     if catalog_name == 'SFRs_for_Roman.csv':
 
@@ -53,6 +57,27 @@ def load_catalog(root_dir, catalog_name):
             for row in data:
                 pointing_set.append({"pointing": [float(row[4]), float(row[5]), 0.3]})
 
+    elif catalog_name == 'baumgardt_harris_GCs.csv':
+
+        with open(catalog_file, newline='') as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=' ', quotechar='|')
+            for i,row in enumerate(csv_reader):
+                if i >= 1:
+                    entries = row[0].split(',')
+
+                    # The cluster radius is set to 1.5*half-light radius
+                    # The half-light radius is r_hl(pc) / R_sun(kpc) converted to deg
+                    # However, the radius needs to have a minimum of at least one HEALpixel to register
+                    # on the map
+                    try:
+                        radius = max((1.5 * (0.001 * float(entries[16]) / float(entries[5])) * 2.0 * (180.0 / np.pi)),
+                                 pixscale)
+                        pointing_set.append({"pointing": [float(entries[3]), float(entries[4]), radius]})
+
+                    # Skip malformed catalog entries
+                    except ValueError:
+                        pass
+                    
     return pointing_set
 
 def load_rubin_galplane_footprint(root_dir):

@@ -168,7 +168,7 @@
     "regions": ["M4 (NGC 6121)", "NGC 6397", "47 Tucanae (NGC 104)", "NGC 6752", "M15 (NGC 7078)"],
     "proper_motions": "True",
     "time_domain": "False",
-    "category": "GC",
+    "category": "star-clusters",
     "ready_for_use": "True"
   },
   "Soam": {
@@ -695,8 +695,8 @@
     "time_domain": "False",
     "comment": "Star clusters",
     "questions": "Define survey region",
-    "category": "star-clusters",
-    "ready_for_use": "False"
+    "category": "wide-area",
+    "ready_for_use": "True"
   },
   "Schlafly": {
     "F129":    [{ "l": [-57, 57], "b": [-2.5,2.5]}],
@@ -805,5 +805,79 @@
     "time_domain": "False",
     "category": "wide-area",
     "comment": "Member"
+  },
+  "Minniti2": {
+    "F213": [
+      {"pointing": [5.2, 0.8, 0.3]},
+      {"pointing": [1.1, -4.0, 0.3]}
+    ],
+    "comment": "Globular cluster pairs: UKS1 + VVVCL01 and NGC6522 + NGC6528 (Baade's Window)",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "star-clusters"
+  },
+  "Globular_Clusters": {
+    "F213": [
+      {"catalog": "baumgardt_harris_GCs.csv"}
+    ],
+    "comment": "All known Globular Clusters",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "star-clusters"
+  },
+  "VVV_keyholes_1st_priority": {
+    "F213": [
+      {"pointing": [355.0, -0.3, 0.3], "name": "Oscar's Window"},
+      {"pointing": [347.5, -0.4, 0.3], "name": "Dante's Window"},
+      {"pointing": [338.5, 0.4, 0.3], "name": "Tangent near 3kpc arm"},
+      {"pointing": [332.1, -0.8, 0.3], "name": "Tangent Norma arm"},
+      {"pointing": [330.0, -0.5, 0.3], "name": "Tangent Norma arm"},
+      {"pointing": [325.7, -0.2, 0.3]},
+      {"pointing": [319.5, -0.2, 0.3]},
+      {"pointing": [307.0, -0.75, 0.3], "name": "Tangent Sct-Cen arm"},
+      {"pointing": [287.5, -1.2, 0.3], "name": "Tangent Carina arm"},
+      {"pointing": [279.5, 0.0, 0.3]},
+      {"pointing": [267.6, -2.1, 0.3]}
+    ],
+    "comment": "First priority keyholes through the Milky Way from VVV/VVVx.  Included in the second set to ensure weighting",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "keyholes"
+  },
+  "VVV_keyholes_2nd_priority": {
+    "F213": [
+      {"pointing": [355.0, -0.3, 0.3], "name": "Oscar's Window"},
+      {"pointing": [347.5, -0.4, 0.3], "name": "Dante's Window"},
+      {"pointing": [338.5, 0.4, 0.3], "name": "Tangent near 3kpc arm"},
+      {"pointing": [332.1, -0.8, 0.3], "name": "Tangent Norma arm"},
+      {"pointing": [330.0, -0.5, 0.3], "name": "Tangent Norma arm"},
+      {"pointing": [325.7, -0.2, 0.3]},
+      {"pointing": [319.5, -0.2, 0.3]},
+      {"pointing": [307.0, -0.75, 0.3], "name": "Tangent Sct-Cen arm"},
+      {"pointing": [287.5, -1.2, 0.3], "name": "Tangent Carina arm"},
+      {"pointing": [279.5, 0.0, 0.3]},
+      {"pointing": [267.6, -2.1, 0.3]},
+      {"pointing": [19.4, -0.3, 0.3], "name": "Jura's Window"},
+      {"pointing": [14.85, 0.2, 0.3], "name": "Laura's Window"},
+      {"pointing": [6.2, 0.3, 0.3], "name": "Rodrigo's Window"},
+      {"pointing": [3.9, 0.1, 0.3], "name": "Nick's Window"},
+      {"pointing": [1.0, -0.9, 0.3], "name": "Gabriela's 1st Window"},
+      {"pointing": [1.1, -0.7, 0.3], "name": "Gabriela's 2nd Window"},
+      {"pointing": [0.2, -1.15, 0.3], "name": "Rudy's Window"},
+      {"pointing": [359.8, -1.15, 0.3], "name": "Nicola's Window"},
+      {"pointing": [358.6, 0.3, 0.3], "name": "Leigh's 1st Window"},
+      {"pointing": [358.4, 0.35, 0.3], "name": "Leigh's 2nd Window"},
+      {"pointing": [297.0, 0.0, 0.3], "name": "Bob's Window"},
+      {"pointing": [350.0, -0.1, 0.3], "name": "Valentin's Window"},
+      {"pointing": [348.7, 0.0, 0.3], "name": "Andre's Window"}
+    ],
+    "comment": "Second priority keyholes through the Milky Way from VVV/VVVx.  Includes the first set as well to ensure weighting",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "keyholes"
   }
 }

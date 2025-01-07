@@ -78,6 +78,24 @@ def load_catalog(root_dir, catalog_name):
                     except ValueError:
                         pass
 
+    elif catalog_name == 'hunt_openclusters.fits':
+
+        with fits.open(catalog_file) as hdul:
+            data = hdul[1].data
+            for row in data:
+                pointing_set.append({"pointing": [float(row[8]), float(row[9]), row[11]]})
+
+    elif catalog_name == 'villasenor_combined_pointings_table.csv':
+
+        with open(catalog_file, newline='') as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=' ', quotechar='|')
+            for i, row in enumerate(csv_reader):
+                if i >= 1:
+                    entries = ''.join(row).split(',')
+                    radius = np.arctan((float(entries[3]) / 2.0) / (float(entries[2]) * 1000.0)) * 180.0 / np.pi
+                    pointing_set.append({"pointing": [float(entries[4]), float(entries[5]), radius],
+                                         "priority": float(entries[6])})
+
     return pointing_set
 
 def load_rubin_galplane_footprint(root_dir):

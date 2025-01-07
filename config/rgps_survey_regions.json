@@ -168,7 +168,7 @@
     "regions": ["M4 (NGC 6121)", "NGC 6397", "47 Tucanae (NGC 104)", "NGC 6752", "M15 (NGC 7078)"],
     "proper_motions": "True",
     "time_domain": "False",
-    "category": "star-clusters",
+    "category": "globular-clusters",
     "ready_for_use": "True"
   },
   "Soam": {
@@ -291,15 +291,15 @@
     "ready_for_use": "False"
   },
   "Villasenor": {
-    "F062": [{"region": "star clusters"}],
-    "F129":  [{"region": "star clusters"}],
-    "F213": [{"region": "star clusters"}],
-    "comment": "Young massive stars",
+    "F062": [{"catalog": "villasenor_combined_pointings_table.csv"}],
+    "F129":  [{"catalog": "villasenor_combined_pointings_table.csv"}],
+    "F213": [{"catalog": "villasenor_combined_pointings_table.csv"}],
+    "comment": "Young massive stars in HII regions",
     "questions": "Goal is ~20 clusters, as for regions and preference",
     "proper_motions": "True",
     "time_domain": "False",
-    "category": "star-clusters",
-    "ready_for_use": "False"
+    "category": "molecular-clouds",
+    "ready_for_use": "True"
   },
   "Minniti": {
     "F106": [{"l": [285.0,320.0], "b": [-5.0,5.0]}],
@@ -310,7 +310,7 @@
     "proper_motions": "True",
     "time_domain": "False",
     "minimum_area": 200,
-    "category": "star-clusters",
+    "category": "open-clusters",
     "ready_for_use": "True"
   },
   "Smith": {
@@ -815,7 +815,7 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "star-clusters"
+    "category": "globular-clusters"
   },
   "Globular_Clusters": {
     "F213": [
@@ -825,7 +825,17 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "star-clusters"
+    "category": "globular-clusters"
+  },
+  "Open_Clusters": {
+    "F213": [
+      {"catalog": "hunt_openclusters.fits"}
+    ],
+    "comment": "All known Open Clusters.  Switched off for the time being since it covers almost all sky.",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "open-clusters"
   },
   "VVV_keyholes_1st_priority": {
     "F213": [

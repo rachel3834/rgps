@@ -252,6 +252,68 @@ def M5_proper_motions(survey_config, science_cases, req_interval=730.0):
 
     return results
 
+def M6_sky_area_optical_elements(survey_config):
+    """
+    Metric to evaluate the total area of sky to receive observations in each optical element,
+    and combinations of the filters, as a proxy for color measurements.
+    Note that this does NOT required contemporaneous observations in different filters to derive
+    color measurements and is therefore unsuitable to evaluate color measurements of variable objects.
+
+    Parameters:
+        survey_config   dict   Description of the proposed survey configuration
+
+    Returns:
+        results        dict   Metric values calculated for all survey designs
+
+        Output format:
+            results = {
+                'survey_concept': {
+                    'optical_components': list of the optical elements available,
+                    'sky_area_single_filter': array of metric values per optical element,
+                    'filter_pairs': list of pairs of filters for color measurements,
+                    'sky_area_filter_pairs': array of sky area covered in filter pairs
+                    'sky_area_nfilters': array of sky area covered in nfilters={1...max_filters}
+                }
+            }
+    """
+    # Particular pairs of filters most desirable for color measurements
+    filter_pairs = [
+        ('F129', 'F184'),
+        ('F158', 'F213'),
+        ('F106', 'F213')
+    ]
+
+    results = {}
+
+    for survey_name, region_set in survey_config.items():
+
+        # Calculate the sky area covered in each optical element
+        m1 = [len(region_set[f].pixels) * PIXAREA for f in OPTICAL_COMPONENTS]
+
+        # For each pair of filters, calculate the sky area covered in both filters
+        m2 = [ len(list(set(region_set[f1].pixels).intersection(set(region_set[f2].pixels))))*PIXAREA
+                        for f1,f2 in filter_pairs ]
+
+        # Calculate the sky area covered in one - max_filters
+        filter_list = np.array(OPTICAL_COMPONENTS)
+        m3 = np.zeros(len(OPTICAL_COMPONENTS))
+        for i in range(1, len(OPTICAL_COMPONENTS)+1, 1):
+            filter_pixels = np.array([region_set[f].pixels for f in filter_list[0:i]])
+            common_pixels = set(filter_pixels[0])
+            for pix in filter_pixels[1:]:
+                common_pixels = common_pixels.intersection(set(pix))
+            m3[i] = len(list(common_pixels)) * PIXAREA
+
+        results[survey_name] = {
+            'optical_components': OPTICAL_COMPONENTS,
+            'sky_area_single_filter': m1,
+            'filter_pairs': filter_pairs,
+            'sky_area_filter_pairs': m2,
+            'sky_area_nfilters': m3
+        }
+
+    return results
+
 def M7_sky_area_nvisits(survey_config, science_cases):
     """
     Metric to calculate the percentage of the desired survey region to receive the desired number

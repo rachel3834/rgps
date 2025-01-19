@@ -1,4 +1,5 @@
 
+NSIDE = 64
 OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
 
 def M1_survey_footprint(science_cases, survey_config):
@@ -64,6 +65,48 @@ def M1_survey_footprint(science_cases, survey_config):
                 'percent_priority': np.array(m2),
                 'science_cases': cases
             }
+
+    return results
+
+def M2_star_counts(survey_config, galactic_model):
+    """
+    Metric calculates the number of stars are included in the survey.
+
+    This metric uses star count data derived from the Trilegal model to estimate the
+    total number of stars included within each survey footprint for each optical element.
+
+    The metric value return is the total number of stars included.
+
+    Parameters:
+        survey_config   dict   Description of the proposed survey configuration
+        galactic_model  dict   HEALpixel maps of the Trilegal stellar density data per filter
+
+    Returns:
+        metric        dict   Metric value calculated for all science cases
+
+        Output format:
+            results = {
+                'survey_concept': {
+                    'star_count': array of metric_values per optical element
+                    }
+                }
+            }
+    """
+
+    results = {}
+
+    PIXAREA = hp.nside2pixarea(NSIDE, degrees=True)
+
+    for survey_name, region_set in survey_config.items():
+        metric = np.array(len(OPTICAL_COMPONENTS))
+
+        # Loop over all optical components since the requested footprints can be different
+        for k,f in enumerate(OPTICAL_COMPONENTS):
+            rsurvey = region_set[f]
+
+            metric[k] = galactic_model[rsurvey.pixels] * PIXAREA
+
+        results[survey_name] = {'star_counts': metric}
 
     return results
 

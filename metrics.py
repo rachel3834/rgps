@@ -176,3 +176,79 @@ def M3_extended_region_count(survey_config, science_cases):
 
     return results
 
+def M5_proper_motions(survey_config, science_cases, req_interval=730.0):
+    """
+    Metric to evaluate the sky area that receives at least 2 observations
+    separated by AT LEAST the required interval, as a percentage of the desired sky region
+    from different science cases in different filters.  This metric is designed to evaluate
+    how well the survey performs for the measurement of proper motions.
+
+    Parameters:
+        survey_config   dict   Description of the proposed survey configuration
+        science_cases  dict   Catalog of science cases that require multiple epochs
+                                of visits per field
+        req_interval    float   Desired number of days between sequential observations
+                                of the same field
+    Returns:
+        results        dict   Metric value calculated for all science cases
+
+        Output format:
+            results = {
+                'survey_concept': {
+                    'optical_element': {
+                        'percent_area_at_interval': array of metric_values for each science case,
+                        'science_case': list of names of the science cases
+                    }
+                }
+            }
+    """
+
+    results = {}
+
+    for survey_name, region_set in survey_config.items():
+
+        # Loop over all optical components since the requested footprints can be different
+        for k, f in enumerate(OPTICAL_COMPONENTS):
+            rsurvey = region_set[f]
+
+            # Create a pixel map of the survey footprint, filling the pixel values with
+            # the interval between sequential visits.
+            # XXX FOR THIS TO WORK CELESTIALREGIONS need the cadence info
+            if rsurvey.n_visits_per_field >= 2:
+                idx = np.where(rsurvey.region_map > 0.0)[0]
+                cadence_footprint = np.zeros(rsurvey.NPIX)
+                cadence_footprint[idx].fill(rsurvey.visit_interval)
+            else:
+                cadence_footprint = np.zeros(rsurvey.NPIX)
+
+            cases = []
+            metric = []
+
+            # This assumes one region per science case per filter
+            for name, info in science_cases.items():
+                if 'multi-epoch' in info['cadence']:
+                    cases.append(name)
+
+                    # Similarly for the science cases, create a desired cadence_footprint
+                    if rsurvey.n_visits_per_field >= 2:
+                        idx = np.where(info[f].region_map > 0.0)[0]
+                        science_cadence_footprint = np.zeros(info[f].NPIX)
+                        science_cadence_footprint[idx].fill(info[f].visit_interval)
+                    else:
+                        science_cadence_footprint = np.zeros(info[f].NPIX)
+
+                    # Calculate the percentage of pixels that receive observations
+                    # at at least the required interval
+                    jdx1 = np.where(science_cadence_footprint >= req_interval)[0]
+                    jdx2 = np.where(cadence_footprint >= req_interval)[0]
+                    common_pixels = list(set(jdx1).intersection(set(jdx2)))
+
+                    metric.append((len(common_pixels)/len(jdx1))*100.0)
+
+            results[survey_name][f] = {
+                'percent_area_at_interval': np.array(metric),
+                'science_cases': cases
+            }
+
+    return results
+

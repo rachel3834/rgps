@@ -8,8 +8,9 @@
     "comment": "Galactic Plane Wide Area Survey",
     "proper_motions": "True",
     "time_domain": "False",
-    "cadence": "multi-epoch",
-    "n_visits_per_field": 8
+    "cadence": "single-epoch",
+    "n_visits_per_field": 1,
+    "visit_interval": None
   },
   "Concept 2": {
     "F106": [
@@ -31,6 +32,7 @@
     "proper_motions": "True",
     "time_domain": "False",
     "cadence": "multi-epoch",
-    "n_visits_per_field": 8
+    "n_visits_per_field": 2,
+    "visit_interval": 730
   }
 }

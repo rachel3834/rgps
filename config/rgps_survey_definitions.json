@@ -1,0 +1,36 @@
+{
+  "Concept 1": {
+    "F213": [
+      {"l": [10.0, 60.0], "b": [-2.5, 2.5]},
+      {"l": [-60.0, -10.0], "b": [-2.5, 2.5]},
+      {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
+    ],
+    "comment": "Galactic Plane Wide Area Survey",
+    "proper_motions": "True",
+    "time_domain": "False",
+    "cadence": "multi-epoch",
+    "n_visits_per_field": 8
+  },
+  "Concept 2": {
+    "F106": [
+      {"l": [10.0, 60.0], "b": [-2.5, 2.5]},
+      {"l": [-60.0, -10.0], "b": [-2.5, 2.5]},
+      {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
+    ],
+    "F158": [
+      {"l": [10.0, 60.0], "b": [-2.5, 2.5]},
+      {"l": [-60.0, -10.0], "b": [-2.5, 2.5]},
+      {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
+    ],
+    "F213": [
+      {"l": [10.0, 60.0], "b": [-2.5, 2.5]},
+      {"l": [-60.0, -10.0], "b": [-2.5, 2.5]},
+      {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
+    ],
+    "comment": "Galactic Plane Wide Area Survey",
+    "proper_motions": "True",
+    "time_domain": "False",
+    "cadence": "multi-epoch",
+    "n_visits_per_field": 8
+  }
+}

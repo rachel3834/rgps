@@ -10,6 +10,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import healpy as hp
 
+OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
+
 class CelestialRegion:
     """Class to describe a region on sky, including its position and
     extend in an on-sky visualization
@@ -130,6 +132,23 @@ class CelestialRegion:
         mw1.scatter(s.ra.deg * u.deg, s.dec.deg * u.deg, c="r", s=5, alpha=0.4)
         plt.rcParams.update({'font.size': 22})
 
+    def to_json(self):
+        region = {
+            "label": self.label,
+            "optic": self.optic,
+            "l_center": self.l_center,
+            "b_center": self.b_center,
+            "l_width": self.l_width,
+            "b_height": self.b_height,
+            "radius": self.radius,
+            "predefined_pixels": self.predefined_pixels
+            "pixel_priority": self.pixel_priority.tolist(),
+            "NSIDE": self.NSIDE,
+            "NPIX": self.NPIX,
+            "pixels": self.pixels.tolist()
+        }
+        return region
+
 def create_region(params):
     """
     Function to generate a CelestialRegion object from a dictionary describing the boundaries of the region.
@@ -210,6 +229,15 @@ def create_region(params):
 
     return r
 
+def create_region_from_json(params):
+
+    r = CelestialRegion(params)
+    r.pixels = np.array(r.pixels)
+    r.region_map = np.array(r.region_map)
+    r.predefined_pixels = np.array(r.predefined_pixels)
+
+    return r
+
 def create_region_set(params):
     """
     Function to create a set of regions from a list of region dictionaries.
@@ -275,6 +303,24 @@ def combine_regions(region_list):
     r_merge.pixels = uniq_pixels
 
     return r_merge
+
+def load_regions_from_file(file_path):
+    """
+    Function to load a set of Celestial Regions from file, where the region maps have been
+    pre-computed for efficient handling.
+    """
+
+    regions = {}
+
+    content = json.loads(file_path)
+
+    for name, region_set in content.items():
+        regions[name] = {f: [] for f in OPTICAL_COMPONENTS}
+        for optic, params, in region_set.items():
+            r = create_region_from_json(params)
+            regions[name][optic].append(r)
+
+    return regions
 
 def extract_requested_regions(science_cases):
     """
@@ -368,3 +414,40 @@ def combine_regions_per_filter(desired_regions):
             combined_regions[optic] = r_merge
 
     return combined_regions
+
+def build_region_maps(requested_regions):
+    """
+    Function to calculate the region maps for a dictionary of CelestialRegions
+    index by author or name.
+    """
+
+    requested_regions = {}
+
+    for name, info in config.items():
+        requested_regions[name] = {f: [] for f in OPTICAL_COMPONENTS}
+
+        if info['ready_for_use']:
+            for optic in OPTICAL_COMPONENTS:
+                if optic in info.keys():
+                    for region in info[optic]:
+                        region['label'] = author
+                        region['optic'] = optic
+
+                        if 'catalog' in region.keys():
+                            region_set = create_region_set(region)
+                        else:
+                            region_set = [create_region(region)]
+
+                        for r in region_set:
+                            # If the region is valid, the list of included pixels will be non-zero.
+                            # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
+                            # for each science case.
+                            if len(r.pixels) > 0:
+                                r.pixel_priority = np.zeros(r.NPIX)
+                                r.pixel_priority[r.pixels] = 1.0
+                                r.predefined_pixels = True
+                                r.make_map()
+
+                                requested_regions[name][optic].append(r)
+
+    return requested_regions

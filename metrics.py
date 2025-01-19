@@ -21,7 +21,7 @@ def M1_survey_footprint(science_cases, survey_config):
         survey_config dict   Description of the proposed survey configuration
 
     Returns:
-        metric        dict   Metric value calculated for all science cases
+        results        dict   Metric value calculated for all science cases
 
         Output format:
             results = {
@@ -82,7 +82,7 @@ def M2_star_counts(survey_config, galactic_model):
         galactic_model  dict   HEALpixel maps of the Trilegal stellar density data per filter
 
     Returns:
-        metric        dict   Metric value calculated for all science cases
+        results        dict   Metric value calculated for all science cases
 
         Output format:
             results = {
@@ -107,6 +107,72 @@ def M2_star_counts(survey_config, galactic_model):
             metric[k] = galactic_model[rsurvey.pixels] * PIXAREA
 
         results[survey_name] = {'star_counts': metric}
+
+    return results
+
+def M3_extended_region_count(survey_config, science_cases):
+    """
+    Metric to evaluate the number from a set of extended-region targets that lie fully
+    within the survey footprint.
+
+    This metric is intended for targets that span an extended area on sky, such as star
+    clusters and Star Forming Regions, as opposed to point sources.  The desired set of
+    targets are parsed into a set of CelestialRegions with HEALpixel maps
+    giving the HEALpixels included in the target region.
+
+    The metric values calculated are:
+        ntarget: number of targets fully included within the survey footprint
+
+    Parameters:
+        survey_config   dict   Description of the proposed survey configuration
+        science_cases  dict   Catalog of target regions represented as science cases indexed
+                                by catalog name, including (l,b) coordinates and
+                                radial extent
+
+    Returns:
+        results        dict   Metric value calculated for all science cases
+
+        Output format:
+            results = {
+                'survey_concept': {
+                    'extended_region_count': array of metric_values per optical element
+                    }
+                }
+            }
+    """
+
+    # Build region dictionaries for all targets from a catalog for the science cases given
+    requested_regions = regions.extract_requested_regions(science_cases)
+
+    # Generate CelestialRegions for each target and calculate the HEALpixel regions within them,
+    # now indexed by optical element
+    desired_regions = regions.calc_healpixel_regions(requested_regions)
+
+    results = {}
+
+    for survey_name, region_set in survey_config.items():
+        metric = np.array(len(OPTICAL_COMPONENTS))
+
+        # Loop over all optical components since the requested footprints can be different
+        for k, f in enumerate(OPTICAL_COMPONENTS):
+            rsurvey = region_set[f]
+
+            # Calculate the number of HEALpixels that are both within the target region and
+            # the survey footprint for each target region
+            in_pixels = np.array(
+                [ len(list(set(r.pixels).intersection(set(rsurvey.pixels)))) for r in desired_regions[f] ]
+            )
+
+            # Calculate the expected number of pixels for each target region
+            r_pixels = np.array(
+                [len(list(r.pixels)) for r in desired_regions[f]]
+            )
+
+            # Metric value is the number of regions where in_pixel >= r_pixels
+            # (due to the HEALpixels providing irregular coverage of the regions)
+            metric[k] = len(np.where(in_pixels >= r_pixels)[0])
+
+        results[survey_name] = {'extended_region_count': metric}
 
     return results
 

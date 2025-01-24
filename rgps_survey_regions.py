@@ -8,13 +8,6 @@ import argparse
 # Configure path to local repository
 root_dir = '/Users/rstreet/software/rgps'
 
-# HEALpixel grid resolution
-NSIDE = 64
-NPIX = hp.nside2npix(NSIDE)
-PIXAREA = hp.nside2pixarea(NSIDE, degrees=True)
-
-OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
-
 def build_regions(args):
     """
     Function to load the Roman Galactic Plane survey configuration
@@ -42,7 +35,7 @@ def output_regions(args, survey_regions):
 
     regions = {}
     for name, region_set in survey_regions.items():
-        regions[name] = {f: [] for f in OPTICAL_COMPONENTS}
+        regions[name] = {f: [] for f in SIM_CONFIG['OPTICAL_COMPONENTS']}
         for optic, r, in region_set.items():
             r.to_json()
             regions[name][optic].append(r)

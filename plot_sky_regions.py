@@ -17,7 +17,7 @@ def plot_all_regions(args):
     """
 
     # Load the config file containing the definitions of the requested survey regions
-    config = config_utils.read_config(path.join('./config', 'rgps_survey_regions.json'))
+    config = config_utils.read_config(path.join('./config', 'rgps_science_cases.json'))
 
     # Full list of optical elements (filters, prism and grism) available for Roman WFI
     optical_components = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']

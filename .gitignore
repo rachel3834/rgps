@@ -3,3 +3,6 @@ venv
 .idea
 .ipynb_checkpoints/
 __pycache__
+
+# Survey definition documents, included as a tarball
+Roman_bounds/

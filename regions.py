@@ -328,7 +328,7 @@ def extract_requested_regions(science_cases):
     organized according to filter.
 
     Parameters:
-        science_cases: dict     A subset of the science cases from the rgps_survey_regions.json file
+        science_cases: dict     A subset of the science cases from the rgps_science_cases.json file
 
     Returns:
         requested_regions dict
@@ -395,7 +395,7 @@ def combine_regions_per_filter(desired_regions):
     per filter.
 
     Parameters:
-        science_cases: dict     A subset of the science cases from the rgps_survey_regions.json file
+        science_cases: dict     A subset of the science cases from the rgps_science_cases.json file
 
     Returns:
         combined_regions dict

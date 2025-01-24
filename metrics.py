@@ -1,6 +1,5 @@
-
-NSIDE = 64
-OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
+# Load simulation-wide parameters
+SIM_CONFIG = config_utils.read_config(path.join(root_dir, 'config', 'sim_config.json'))
 
 def M1_survey_footprint(science_cases, survey_config):
     """
@@ -42,7 +41,7 @@ def M1_survey_footprint(science_cases, survey_config):
     for survey_name, region_set in survey_config.items():
 
         # Loop over all optical components since the requested footprints can be different
-        for f in OPTICAL_COMPONENTS:
+        for f in SIM_CONFIG['OPTICAL_COMPONENTS']:
             rsurvey = region_set[f]
 
             # Compare the survey definition with each science case
@@ -95,10 +94,10 @@ def M2_star_counts(survey_config, galactic_model):
 
     results = {}
 
-    PIXAREA = hp.nside2pixarea(NSIDE, degrees=True)
+    PIXAREA = hp.nside2pixarea(SIM_CONFIG['NSIDE'], degrees=True)
 
     for survey_name, region_set in survey_config.items():
-        metric = np.array(len(OPTICAL_COMPONENTS))
+        metric = np.array(len(SIM_CONFIG['OPTICAL_COMPONENTS']))
 
         # Loop over all optical components since the requested footprints can be different
         for k,f in enumerate(OPTICAL_COMPONENTS):
@@ -151,10 +150,10 @@ def M3_extended_region_count(survey_config, science_cases):
     results = {}
 
     for survey_name, region_set in survey_config.items():
-        metric = np.array(len(OPTICAL_COMPONENTS))
+        metric = np.array(len(SIM_CONFIG['OPTICAL_COMPONENTS']))
 
         # Loop over all optical components since the requested footprints can be different
-        for k, f in enumerate(OPTICAL_COMPONENTS):
+        for k, f in enumerate(SIM_CONFIG['OPTICAL_COMPONENTS']):
             rsurvey = region_set[f]
 
             # Calculate the number of HEALpixels that are both within the target region and
@@ -208,7 +207,7 @@ def M5_proper_motions(survey_config, science_cases, req_interval=730.0):
     for survey_name, region_set in survey_config.items():
 
         # Loop over all optical components since the requested footprints can be different
-        for k, f in enumerate(OPTICAL_COMPONENTS):
+        for k, f in enumerate(SIM_CONFIG['OPTICAL_COMPONENTS']):
             rsurvey = region_set[f]
 
             # Create a pixel map of the survey footprint, filling the pixel values with
@@ -288,16 +287,16 @@ def M6_sky_area_optical_elements(survey_config):
     for survey_name, region_set in survey_config.items():
 
         # Calculate the sky area covered in each optical element
-        m1 = [len(region_set[f].pixels) * PIXAREA for f in OPTICAL_COMPONENTS]
+        m1 = [len(region_set[f].pixels) * PIXAREA for f in SIM_CONFIG['OPTICAL_COMPONENTS']]
 
         # For each pair of filters, calculate the sky area covered in both filters
         m2 = [ len(list(set(region_set[f1].pixels).intersection(set(region_set[f2].pixels))))*PIXAREA
                         for f1,f2 in filter_pairs ]
 
         # Calculate the sky area covered in one - max_filters
-        filter_list = np.array(OPTICAL_COMPONENTS)
-        m3 = np.zeros(len(OPTICAL_COMPONENTS))
-        for i in range(1, len(OPTICAL_COMPONENTS)+1, 1):
+        filter_list = np.array(SIM_CONFIG['OPTICAL_COMPONENTS'])
+        m3 = np.zeros(len(SIM_CONFIG['OPTICAL_COMPONENTS']))
+        for i in range(1, len(SIM_CONFIG['OPTICAL_COMPONENTS'])+1, 1):
             filter_pixels = np.array([region_set[f].pixels for f in filter_list[0:i]])
             common_pixels = set(filter_pixels[0])
             for pix in filter_pixels[1:]:
@@ -305,7 +304,7 @@ def M6_sky_area_optical_elements(survey_config):
             m3[i] = len(list(common_pixels)) * PIXAREA
 
         results[survey_name] = {
-            'optical_components': OPTICAL_COMPONENTS,
+            'optical_components': SIM_CONFIG['OPTICAL_COMPONENTS'],
             'sky_area_single_filter': m1,
             'filter_pairs': filter_pairs,
             'sky_area_filter_pairs': m2,
@@ -350,7 +349,7 @@ def M7_sky_area_nvisits(survey_config, science_cases):
     for survey_name, region_set in survey_config.items():
 
         # Loop over all optical components since the requested footprints can be different
-        for k, f in enumerate(OPTICAL_COMPONENTS):
+        for k, f in enumerate(SIM_CONFIG['OPTICAL_COMPONENTS']):
             rsurvey = region_set[f]
 
             # Create a pixel map of the survey footprint, filling the pixel values with

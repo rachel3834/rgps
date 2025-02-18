@@ -24,22 +24,24 @@ def build_regions(args):
     survey_regions = regions.build_region_maps(sim_config, survey_config)
 
     # Output survey regions in JSON format
-    output_regions(args, survey_regions)
+    output_regions(args, sim_config, survey_regions)
 
-def output_regions(args, survey_regions):
+def output_regions(args, sim_config, survey_regions):
     """
     Function to output a set of Celestial Regions index by survey name and optical elements
     to a JSON file.
     """
 
     regions = {}
-    for name, region_set in survey_regions.items():
-        regions[name] = {f: [] for f in SIM_CONFIG['OPTICAL_COMPONENTS']}
-        for optic, r, in region_set.items():
-            r.to_json()
-            regions[name][optic].append(r)
+    namelist = list(survey_regions.keys())
+    for name in namelist[0:1]:
+        optic_regions = survey_regions[name]
+        regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
+        for optic, region_set, in optic_regions.items():
+            for r in region_set:
+                regions[name][optic].append(r.to_json())
 
-    jstr = json.dumps(regions)
+    jstr = json.dumps(regions, indent=4)
 
     with open(args.output_file, 'w') as f:
         f.write(jstr)

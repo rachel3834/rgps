@@ -135,17 +135,24 @@ class CelestialRegion:
         region = {
             "label": self.label,
             "optic": self.optic,
-            "l_center": self.l_center,
-            "b_center": self.b_center,
+            "l_center": self.l_center.value,
+            "b_center": self.b_center.value,
             "l_width": self.l_width,
             "b_height": self.b_height,
             "radius": self.radius,
             "predefined_pixels": self.predefined_pixels,
-            "pixel_priority": self.pixel_priority.tolist(),
             "NSIDE": self.NSIDE,
-            "NPIX": self.NPIX,
-            "pixels": self.pixels.tolist()
+            "NPIX": self.NPIX
         }
+        try:
+            region['pixels'] = self.pixels.tolist()
+        except AttributeError:
+            region['pixels'] = self.pixels
+        try:
+            region['pixel_priority'] = self.pixel_priority.tolist()
+        except:
+            region['pixel_priority'] = self.pixel_priority
+
         return region
 
 def create_region(params):
@@ -414,7 +421,7 @@ def combine_regions_per_filter(desired_regions):
 
     return combined_regions
 
-def build_region_maps(sim_config, requested_regions):
+def build_region_maps(sim_config, survey_definitions):
     """
     Function to calculate the region maps for a dictionary of CelestialRegions
     index by author or name.
@@ -422,31 +429,30 @@ def build_region_maps(sim_config, requested_regions):
 
     requested_regions = {}
 
-    for name, info in requested_regions.items():
+    for name, info in survey_definitions.items():
         requested_regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
 
-        if info['ready_for_use']:
-            for optic in sim_config['OPTICAL_COMPONENTS']:
-                if optic in info.keys():
-                    for region in info[optic]:
-                        region['label'] = author
-                        region['optic'] = optic
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if optic in info.keys():
+                for region in info[optic]:
+                    region['label'] = name
+                    region['optic'] = optic
 
-                        if 'catalog' in region.keys():
-                            region_set = create_region_set(region)
-                        else:
-                            region_set = [create_region(region)]
+                    if 'catalog' in region.keys():
+                        region_set = create_region_set(region)
+                    else:
+                        region_set = [create_region(region)]
 
-                        for r in region_set:
-                            # If the region is valid, the list of included pixels will be non-zero.
-                            # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
-                            # for each science case.
-                            if len(r.pixels) > 0:
-                                r.pixel_priority = np.zeros(r.NPIX)
-                                r.pixel_priority[r.pixels] = 1.0
-                                r.predefined_pixels = True
-                                r.make_map()
+                    for r in region_set:
+                        # If the region is valid, the list of included pixels will be non-zero.
+                        # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
+                        # for each science case.
+                        if len(r.pixels) > 0:
+                            r.pixel_priority = np.zeros(r.NPIX)
+                            r.pixel_priority[r.pixels] = 1.0
+                            r.predefined_pixels = True
+                            r.make_map()
 
-                                requested_regions[name][optic].append(r)
+                            requested_regions[name][optic].append(r)
 
     return requested_regions

@@ -1,11 +1,8 @@
-from os import path
+from os import path, getcwd
 import json
 import config_utils
 import regions
 import argparse
-
-# Configure path to local repository
-root_dir = '/'
 
 def build_regions(args):
     """
@@ -18,10 +15,13 @@ def build_regions(args):
     """
 
     # Load the RGPS survey configurations.  These are listed according to
-    survey_config = config_utils.read_config(path.join(root_dir, 'config', args.spec_file))
+    survey_config = config_utils.read_config(args.spec_file)
+
+    # Load the broader configuration parameters of the whole simulation
+    sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
 
     # Extract the set of regions from the set of science cases
-    survey_regions = regions.build_region_maps(survey_config)
+    survey_regions = regions.build_region_maps(sim_config, survey_config)
 
     # Output survey regions in JSON format
     output_regions(args, survey_regions)
@@ -39,13 +39,16 @@ def output_regions(args, survey_regions):
             r.to_json()
             regions[name][optic].append(r)
 
-    json.dumps(args.output_file, regions)
+    jstr = json.dumps(regions)
+
+    with open(args.output_file, 'w') as f:
+        f.write(jstr)
 
 def get_args():
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('spec_file', help='Path to JSON file containing the region definitions')
-    parser.add_argument('output_file', help='Path to JSON output file')
+    parser.add_argument('spec_file', help='Path to the JSON file containing the region definitions')
+    parser.add_argument('output_file', help='Path to the JSON output file')
     args = parser.parse_args()
 
     return args

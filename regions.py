@@ -414,7 +414,7 @@ def combine_regions_per_filter(desired_regions):
 
     return combined_regions
 
-def build_region_maps(requested_regions):
+def build_region_maps(sim_config, requested_regions):
     """
     Function to calculate the region maps for a dictionary of CelestialRegions
     index by author or name.
@@ -422,11 +422,11 @@ def build_region_maps(requested_regions):
 
     requested_regions = {}
 
-    for name, info in config.items():
-        requested_regions[name] = {f: [] for f in OPTICAL_COMPONENTS}
+    for name, info in requested_regions.items():
+        requested_regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
 
         if info['ready_for_use']:
-            for optic in OPTICAL_COMPONENTS:
+            for optic in sim_config['OPTICAL_COMPONENTS']:
                 if optic in info.keys():
                     for region in info[optic]:
                         region['label'] = author

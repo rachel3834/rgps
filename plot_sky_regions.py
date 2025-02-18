@@ -1,13 +1,7 @@
 from os import path
 import config_utils
 import regions
-from regions import CelestialRegion
-from astropy import units as u
-from mw_plot import MWSkyMap
 import matplotlib.pyplot as plt
-import numpy as np
-from astropy_healpix import HEALPix
-from astropy.coordinates import SkyCoord
 import argparse
 
 def plot_all_regions(args):
@@ -17,7 +11,7 @@ def plot_all_regions(args):
     """
 
     # Load the config file containing the definitions of the requested survey regions
-    config = config_utils.read_config(path.join('./config', 'rgps_science_cases.json'))
+    config = config_utils.read_config(path.join('config', 'rgps_science_cases.json'))
 
     # Full list of optical elements (filters, prism and grism) available for Roman WFI
     optical_components = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
@@ -64,7 +58,7 @@ def plot_all_regions(args):
                     # and save it to file
                     r_merge.sky_plot()
                     plt.tight_layout()
-                    plt.savefig(path.join('./survey_maps', r_merge.label + '_' + r_merge.optic + '.png'))
+                    plt.savefig(path.join('survey_maps', r_merge.label + '_' + r_merge.optic + '.png'))
                     plt.close()
 
                     print('--> Plotted region map for ' + r_merge.summary())

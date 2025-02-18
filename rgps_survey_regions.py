@@ -2,11 +2,10 @@ from os import path
 import json
 import config_utils
 import regions
-import healpy as hp
 import argparse
 
 # Configure path to local repository
-root_dir = '/Users/rstreet/software/rgps'
+root_dir = '/'
 
 def build_regions(args):
     """

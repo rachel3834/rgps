@@ -1,11 +1,10 @@
-import healpy as hp
 from os import getcwd, path
 import survey_footprints
 import regions
-from mw_plot import MWSkyMap, MWSkyMapBokeh
+from mw_plot import MWSkyMap
 from astropy_healpix import HEALPix
 from astropy import units as u
-from astropy.coordinates import Galactic, TETE, SkyCoord
+from astropy.coordinates import Galactic, SkyCoord
 import numpy as np
 import matplotlib.pyplot as plt
 import healpy as hp
@@ -141,7 +140,7 @@ class CelestialRegion:
             "l_width": self.l_width,
             "b_height": self.b_height,
             "radius": self.radius,
-            "predefined_pixels": self.predefined_pixels
+            "predefined_pixels": self.predefined_pixels,
             "pixel_priority": self.pixel_priority.tolist(),
             "NSIDE": self.NSIDE,
             "NPIX": self.NPIX,

@@ -112,6 +112,6 @@ def load_rubin_galplane_footprint(root_dir):
 
 
 if __name__ == '__main__':
-    root_dir = '/Users/rstreet/software/rgps'
+    root_dir = '/'
     survey_footprints = load_survey_footprints(root_dir)
     print(survey_footprints)

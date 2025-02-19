@@ -6,3 +6,6 @@ __pycache__
 
 # Survey definition documents, included as a tarball
 Roman_bounds/
+
+# Ignore selected files which are too large for Github
+config/rgps_survey_definition_regions.json

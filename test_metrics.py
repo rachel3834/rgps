@@ -6,8 +6,7 @@ import regions
 
 # Load simulation-wide parameters
 root_dir = getcwd()
-SIM_CONFIG = config_utils.read_config(path.join(root_dir, 'config', 'sim_config'
-                                                                    '.json'))
+SIM_CONFIG = config_utils.read_config(path.join(root_dir, 'config', 'sim_config.json'))
 # Establish 
 desired_regions = {
   "survey1": {

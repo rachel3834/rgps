@@ -32,10 +32,13 @@ class CelestialRegion:
         self.NPIX = hp.nside2npix(self.NSIDE)
         self.pixels = np.array([])
         self.pixel_priority = np.zeros(self.NPIX)
+        self.array_keys = ['pixels', 'pixel_priority']
 
         for key, value in params.items():
-            if key in dir(self):
+            if key not in self.array_keys and key in dir(self):
                 setattr(self, key, value)
+            if key in self.array_keys:
+                setattr(self, key, np.array(value))
 
         if self.l_width:
             self.halfwidth = self.l_width * u.deg / 2.0

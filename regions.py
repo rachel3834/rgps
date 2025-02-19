@@ -145,8 +145,6 @@ class CelestialRegion:
         region = {
             "label": self.label,
             "optic": self.optic,
-            "l_center": self.l_center.value,
-            "b_center": self.b_center.value,
             "l_width": self.l_width,
             "b_height": self.b_height,
             "radius": self.radius,
@@ -154,6 +152,16 @@ class CelestialRegion:
             "NSIDE": self.NSIDE,
             "NPIX": self.NPIX
         }
+        for key in ['l_center', 'b_center']:
+            datum = getattr(self, key)
+            if datum is not None:
+                try:
+                    region[key] = datum.value
+                except AttributeError:
+                    region[key] = datum
+            else:
+                region[key] = None
+
         try:
             region['pixels'] = self.pixels.tolist()
         except AttributeError:
@@ -448,30 +456,32 @@ def build_region_maps(sim_config, survey_definitions):
     requested_regions = {}
 
     for name, info in survey_definitions.items():
-        requested_regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
+        if info['ready_for_use']:
+            requested_regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
 
-        for optic in sim_config['OPTICAL_COMPONENTS']:
-            if optic in info.keys():
-                for region in info[optic]:
-                    region['label'] = name
-                    region['optic'] = optic
+            for optic in sim_config['OPTICAL_COMPONENTS']:
+                if optic in info.keys():
+                    for region in info[optic]:
+                        region['label'] = name
+                        region['optic'] = optic
 
-                    if 'catalog' in region.keys():
-                        region_set = create_region_set(region)
-                    else:
-                        region_set = [create_region(region)]
+                        if 'catalog' in region.keys():
+                            region_set = create_region_set(region)
 
-                    for r in region_set:
-                        # If the region is valid, the list of included pixels will be non-zero.
-                        # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
-                        # for each science case.
-                        if len(r.pixels) > 0:
-                            r.pixel_priority = np.zeros(r.NPIX)
-                            r.pixel_priority[r.pixels] = 1.0
-                            r.predefined_pixels = True
-                            r.make_map()
+                        else:
+                            region_set = [create_region(region)]
 
-                            requested_regions[name][optic].append(r)
+                        for r in region_set:
+                            # If the region is valid, the list of included pixels will be non-zero.
+                            # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
+                            # for each science case.
+                            if len(r.pixels) > 0:
+                                r.pixel_priority = np.zeros(r.NPIX)
+                                r.pixel_priority[r.pixels] = 1.0
+                                r.predefined_pixels = True
+                                r.make_map()
+
+                                requested_regions[name][optic].append(r)
 
     return requested_regions
 

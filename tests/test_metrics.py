@@ -1,38 +1,41 @@
-import sys
-from os import getcwd, path
-pypath = sys.path.append(path.join(getcwd(),'..'))
+import pytest
+from os import path, getcwd
+from sys import path as pythonpath
+pythonpath.append(path.join(getcwd(), '..'))
 import config_utils
 import regions
+from astropy.table import Table
 
-# Load simulation-wide parameters
-root_dir = getcwd()
-SIM_CONFIG = config_utils.read_config(path.join(root_dir, 'config', 'sim_config.json'))
-# Establish 
-desired_regions = {
-  "survey1": {
-    "F213": [
-      {"l": [10.0, 60.0], "b": [-2.5, 2.5]},
-      {"l": [-60.0, -10.0], "b": [-2.5, 2.5]},
-      {"l": [-10.0, 30.0], "b": [-8.0,8.0]}
-    ],
-    "comment": "Galactic Plane Wide Area Survey",
-    "proper_motions": "True",
-    "time_domain": "False",
-    "cadence": "multi-epoch",
-    "n_visits_per_field": 8,
-    "category": "wide-area",
-    "ready_for_use": "True"
-  }
-}
+@pytest.mark.parametrize(
+    "test_survey_regions, test_cases, expected_results",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
+                path.join(getcwd(), 'data', 'test_science_regions.json'),
+                None
+        )
+    ])
+def test_M1_survey_footprint(test_survey_regions, test_cases, expected_results):
 
-requested_regions = regions.extract_requested_regions(desired_regions)
-test_cases = regions.calc_healpixel_regions(requested_regions)
+    from metrics import M1_survey_footprint
 
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
 
-#@pytest.mark.parametrize(
-#    "test_cases, test_config, expected_results",
-#    [
-#        ()
-#    ])
-#def test_M1_survey_footprint(test_cases, test_config, expected_results):
-#    M1_survey_footprint(science_cases, survey_config)
+    # Load the defined survey strategy options from file
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+
+    # Load the science cases from file
+    science_regions = regions.load_regions_from_file(sim_config, test_cases)
+
+    results = M1_survey_footprint(sim_config, science_regions, survey_regions)
+    print(results)
+
+    # Test that the metric returns a table of five columns and non-zero rows
+    assert (type(results) == type(Table([])))
+    assert (len(results) > 0)
+    assert (len(results.colnames) == 5)
+
+    # Test metric values returned are valid percentages
+    assert (results['M1_%pix'].data >= 0.0).all() & (results['M1_%pix'].data <= 100.0).all()
+    assert (results['M1_%priority'].data >= 0.0).all() & (results['M1_%priority'].data <= 100.0).all()

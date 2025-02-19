@@ -49,7 +49,7 @@ def test_create_region_from_json(test_input, expected):
     "test_input, expected",
     [
         (
-            path.join(getcwd(), 'data', 'test_survey_definition.json'),
+            path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
             {
                 'test_survey_1': {
                     'F213': [

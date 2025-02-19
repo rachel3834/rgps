@@ -1,7 +1,7 @@
-# Load simulation-wide parameters
-SIM_CONFIG = config_utils.read_config(path.join(root_dir, 'config', 'sim_config.json'))
+from astropy.table import Table, Column
+import numpy as np
 
-def M1_survey_footprint(science_cases, survey_config):
+def M1_survey_footprint(sim_config, science_cases, survey_config):
     """
     Metric to calculate how well the survey fields defined cover the survey footprint recommended in White
     Papers/Science Pitches.
@@ -34,36 +34,67 @@ def M1_survey_footprint(science_cases, survey_config):
             }
     """
 
-    results = {}
+    data = []
 
-    # For each survey description, loop over all optical components and compare the HEALpixel
-    # maps of the survey footprint with the region map for each science case
-    for survey_name, region_set in survey_config.items():
+    # For each science case, loop over all optical components choices requested
+    # and compare the HEALpixel maps of the survey footprint with the region map
+    # for each science case
+    for author, science_strategy in science_cases.items():
 
         # Loop over all optical components since the requested footprints can be different
-        for f in SIM_CONFIG['OPTICAL_COMPONENTS']:
-            rsurvey = region_set[f]
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            science_regions = science_strategy[optic]
 
-            # Compare the survey definition with each science case
-            m1 = []
-            m2 = []
-            cases = []
+            if len(science_regions) > 0:
+                # Loop over all survey strategies calculating the overlap if any in this optic
+                for survey_name, survey_definition in survey_config.items():
 
-            # This assumes one region per science case per filter
-            for name, info in science_cases.items():
-                cases.append(name)
+                    if optic in survey_definition.keys():
 
-                # Calculate the number of overlapping pixels, and metric values
-                common_pixels = list(set(info[f].pixels).intersection(set(rsurvey.pixels)))
+                        # Surveys have multiple regions, so we have to calculate the area
+                        # summed over all of them
+                        survey_regions = survey_definition[optic]
+                        print('M1 ', survey_name, optic, survey_regions, science_regions)
 
-                m1.append((len(common_pixels) / len(info[f].pixels)) * 100.0)
-                m2.append((info[f][common_pixels].sum() / info[f].sum()) * 100.0)
+                        # Calculate the number of overlapping pixels between all science regions
+                        # and all survey regions for this strategy and optic
+                        common_pixels = []
+                        total_science_pixels = []
+                        pixel_priorities = 0.0
+                        total_pixel_priorities = 0.0
+                        for rsurvey in survey_regions:
+                            for rscience in science_regions:
 
-            results[survey_name][f] = {
-                'percent_map': np.array(m1),
-                'percent_priority': np.array(m2),
-                'science_cases': cases
-            }
+                                # Calculate the number of overlapping pixels
+                                pix_list = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
+                                common_pixels += pix_list
+                                total_science_pixels += list(rscience.pixels)
+
+                                # Sum the priority of the overlapping pixels
+                                pixel_priorities += rscience.pixel_priority[pix_list].sum()
+                                total_pixel_priorities += rscience.pixel_priority.sum()
+
+                        # Calculate metric values
+                        m1 = (len(common_pixels) / len(total_science_pixels) * 100.0)
+                        m2 = (pixel_priorities / total_pixel_priorities) * 100.0
+
+                        data.append([survey_name, optic, author, m1, m2])
+
+                    # Otherwise this survey strategy doesn't provide any coverage in this
+                    # optic, so return a metric value of zero
+                    else:
+                        data.append([survey_name, optic, author, 0.0, 0.0])
+
+    data = np.array(data)
+
+    # Return a table of the metric results
+    results = Table([
+        Column(name='Survey strategy', data=data[:,0], dtype='S20'),
+        Column(name='Optic', data=data[:,1], dtype='S5'),
+        Column(name='Science case', data=data[:,2], dtype='S20'),
+        Column(name='M1_%pix', data=data[:,3], dtype='f8'),
+        Column(name='M1_%priority', data=data[:,4], dtype='f8')
+    ])
 
     return results
 

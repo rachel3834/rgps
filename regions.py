@@ -8,6 +8,7 @@ from astropy.coordinates import Galactic, SkyCoord
 import numpy as np
 import matplotlib.pyplot as plt
 import healpy as hp
+import json
 
 OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
 
@@ -27,14 +28,17 @@ class CelestialRegion:
         self.b_height = None
         self.radius = None
         self.predefined_pixels = False
-        self.pixel_priority = None
         self.NSIDE = 64
         self.NPIX = hp.nside2npix(self.NSIDE)
-        self.pixels = None
+        self.pixels = np.array([])
+        self.pixel_priority = np.zeros(self.NPIX)
+        self.array_keys = ['pixels', 'pixel_priority']
 
         for key, value in params.items():
-            if key in dir(self):
+            if key not in self.array_keys and key in dir(self):
                 setattr(self, key, value)
+            if key in self.array_keys:
+                setattr(self, key, np.array(value))
 
         if self.l_width:
             self.halfwidth = self.l_width * u.deg / 2.0
@@ -118,7 +122,10 @@ class CelestialRegion:
         """
 
         self.region_map = np.zeros(self.NPIX)
-        self.region_map += self.pixel_priority
+        if len(self.pixel_priority) == self.NPIX:
+            self.region_map += self.pixel_priority
+        else:
+            raise Warning('make_map: pixel_priority array has inconsistent number of pixels')
 
     def summary(self):
         return self.label + ': l_center=' + str(self.l_center) + ', b_center=' \
@@ -135,17 +142,24 @@ class CelestialRegion:
         region = {
             "label": self.label,
             "optic": self.optic,
-            "l_center": self.l_center,
-            "b_center": self.b_center,
+            "l_center": self.l_center.value,
+            "b_center": self.b_center.value,
             "l_width": self.l_width,
             "b_height": self.b_height,
             "radius": self.radius,
             "predefined_pixels": self.predefined_pixels,
-            "pixel_priority": self.pixel_priority.tolist(),
             "NSIDE": self.NSIDE,
-            "NPIX": self.NPIX,
-            "pixels": self.pixels.tolist()
+            "NPIX": self.NPIX
         }
+        try:
+            region['pixels'] = self.pixels.tolist()
+        except AttributeError:
+            region['pixels'] = self.pixels
+        try:
+            region['pixel_priority'] = self.pixel_priority.tolist()
+        except:
+            region['pixel_priority'] = self.pixel_priority
+
         return region
 
 def create_region(params):
@@ -231,8 +245,9 @@ def create_region(params):
 def create_region_from_json(params):
 
     r = CelestialRegion(params)
-    r.pixels = np.array(r.pixels)
-    r.region_map = np.array(r.region_map)
+    r.pixels = np.array(r.pixels, dtype='float')
+    r.pixel_priority = np.array(r.pixel_priority, dtype='float')
+    r.make_map()
     r.predefined_pixels = np.array(r.predefined_pixels)
 
     return r
@@ -303,23 +318,31 @@ def combine_regions(region_list):
 
     return r_merge
 
-def load_regions_from_file(file_path):
+def load_regions_from_file(sim_config, file_path):
     """
     Function to load a set of Celestial Regions from file, where the region maps have been
     pre-computed for efficient handling.
     """
 
-    regions = {}
+    region_set = {}
 
-    content = json.loads(file_path)
+    with open(file_path, 'r') as f:
+        content = json.load(f)
 
-    for name, region_set in content.items():
-        regions[name] = {f: [] for f in OPTICAL_COMPONENTS}
-        for optic, params, in region_set.items():
-            r = create_region_from_json(params)
-            regions[name][optic].append(r)
+    survey_regions = {name: {} for name in content.keys()}
 
-    return regions
+    for name, survey_params in content.items():
+
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if optic in survey_params.keys():
+                survey_regions[name][optic] = []
+
+                for params in survey_params[optic]:
+                    r = create_region_from_json(params)
+                    survey_regions[name][optic].append(r)
+
+    print(survey_regions)
+    return survey_regions
 
 def extract_requested_regions(science_cases):
     """
@@ -414,7 +437,7 @@ def combine_regions_per_filter(desired_regions):
 
     return combined_regions
 
-def build_region_maps(sim_config, requested_regions):
+def build_region_maps(sim_config, survey_definitions):
     """
     Function to calculate the region maps for a dictionary of CelestialRegions
     index by author or name.
@@ -422,31 +445,31 @@ def build_region_maps(sim_config, requested_regions):
 
     requested_regions = {}
 
-    for name, info in requested_regions.items():
+    for name, info in survey_definitions.items():
         requested_regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
 
-        if info['ready_for_use']:
-            for optic in sim_config['OPTICAL_COMPONENTS']:
-                if optic in info.keys():
-                    for region in info[optic]:
-                        region['label'] = author
-                        region['optic'] = optic
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if optic in info.keys():
+                for region in info[optic]:
+                    region['label'] = name
+                    region['optic'] = optic
 
-                        if 'catalog' in region.keys():
-                            region_set = create_region_set(region)
-                        else:
-                            region_set = [create_region(region)]
+                    if 'catalog' in region.keys():
+                        region_set = create_region_set(region)
+                    else:
+                        region_set = [create_region(region)]
 
-                        for r in region_set:
-                            # If the region is valid, the list of included pixels will be non-zero.
-                            # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
-                            # for each science case.
-                            if len(r.pixels) > 0:
-                                r.pixel_priority = np.zeros(r.NPIX)
-                                r.pixel_priority[r.pixels] = 1.0
-                                r.predefined_pixels = True
-                                r.make_map()
+                    for r in region_set:
+                        # If the region is valid, the list of included pixels will be non-zero.
+                        # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
+                        # for each science case.
+                        if len(r.pixels) > 0:
+                            r.pixel_priority = np.zeros(r.NPIX)
+                            r.pixel_priority[r.pixels] = 1.0
+                            r.predefined_pixels = True
+                            r.make_map()
 
-                                requested_regions[name][optic].append(r)
+                            requested_regions[name][optic].append(r)
 
     return requested_regions
+

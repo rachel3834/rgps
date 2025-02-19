@@ -30,15 +30,18 @@ class CelestialRegion:
         self.predefined_pixels = False
         self.NSIDE = 64
         self.NPIX = hp.nside2npix(self.NSIDE)
-        self.pixels = np.array([])
+        self.pixels = np.array([], dtype='int')
         self.pixel_priority = np.zeros(self.NPIX)
         self.array_keys = ['pixels', 'pixel_priority']
 
         for key, value in params.items():
             if key not in self.array_keys and key in dir(self):
                 setattr(self, key, value)
-            if key in self.array_keys:
-                setattr(self, key, np.array(value))
+
+        if 'pixels' in params.keys():
+            self.pixels = np.array(params['pixels'], dtype='int')
+        if 'pixel_priority' in params.keys():
+            self.pixel_priority = np.array(params['pixel_priority'], dtype='float')
 
         if self.l_width:
             self.halfwidth = self.l_width * u.deg / 2.0
@@ -245,7 +248,7 @@ def create_region(params):
 def create_region_from_json(params):
 
     r = CelestialRegion(params)
-    r.pixels = np.array(r.pixels, dtype='float')
+    r.pixels = np.array(r.pixels, dtype='int')
     r.pixel_priority = np.array(r.pixel_priority, dtype='float')
     r.make_map()
     r.predefined_pixels = np.array(r.predefined_pixels)
@@ -341,7 +344,6 @@ def load_regions_from_file(sim_config, file_path):
                     r = create_region_from_json(params)
                     survey_regions[name][optic].append(r)
 
-    print(survey_regions)
     return survey_regions
 
 def extract_requested_regions(science_cases):

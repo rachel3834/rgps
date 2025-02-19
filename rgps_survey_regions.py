@@ -34,7 +34,7 @@ def output_regions(args, sim_config, survey_regions):
 
     regions = {}
     namelist = list(survey_regions.keys())
-    for name in namelist[0:1]:
+    for name in namelist:
         optic_regions = survey_regions[name]
         regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
         for optic, region_set, in optic_regions.items():

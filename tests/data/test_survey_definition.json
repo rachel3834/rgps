@@ -1,0 +1,19 @@
+{
+    "test_survey_1": {
+      "F213": [
+        {
+          "label": "Option 1a (Wide field=65%)",
+          "optic": "F213",
+          "l_center": 18.65,
+          "b_center": 0.0,
+          "l_width": 17.3,
+          "b_height": 4.0,
+          "radius": null,
+          "predefined_pixels": true,
+          "NSIDE": 64,
+          "NPIX": 49152,
+          "pixels": []
+        }
+      ]
+    }
+}

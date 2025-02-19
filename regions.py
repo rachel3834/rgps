@@ -8,6 +8,7 @@ from astropy.coordinates import Galactic, SkyCoord
 import numpy as np
 import matplotlib.pyplot as plt
 import healpy as hp
+import json
 
 OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
 
@@ -27,10 +28,10 @@ class CelestialRegion:
         self.b_height = None
         self.radius = None
         self.predefined_pixels = False
-        self.pixel_priority = None
         self.NSIDE = 64
         self.NPIX = hp.nside2npix(self.NSIDE)
-        self.pixels = None
+        self.pixels = np.array([])
+        self.pixel_priority = np.zeros(self.NPIX)
 
         for key, value in params.items():
             if key in dir(self):
@@ -118,7 +119,10 @@ class CelestialRegion:
         """
 
         self.region_map = np.zeros(self.NPIX)
-        self.region_map += self.pixel_priority
+        if len(self.pixel_priority) == self.NPIX:
+            self.region_map += self.pixel_priority
+        else:
+            raise Warning('make_map: pixel_priority array has inconsistent number of pixels')
 
     def summary(self):
         return self.label + ': l_center=' + str(self.l_center) + ', b_center=' \
@@ -238,8 +242,9 @@ def create_region(params):
 def create_region_from_json(params):
 
     r = CelestialRegion(params)
-    r.pixels = np.array(r.pixels)
-    r.region_map = np.array(r.region_map)
+    r.pixels = np.array(r.pixels, dtype='float')
+    r.pixel_priority = np.array(r.pixel_priority, dtype='float')
+    r.make_map()
     r.predefined_pixels = np.array(r.predefined_pixels)
 
     return r
@@ -310,23 +315,31 @@ def combine_regions(region_list):
 
     return r_merge
 
-def load_regions_from_file(file_path):
+def load_regions_from_file(sim_config, file_path):
     """
     Function to load a set of Celestial Regions from file, where the region maps have been
     pre-computed for efficient handling.
     """
 
-    regions = {}
+    region_set = {}
 
-    content = json.loads(file_path)
+    with open(file_path, 'r') as f:
+        content = json.load(f)
 
-    for name, region_set in content.items():
-        regions[name] = {f: [] for f in OPTICAL_COMPONENTS}
-        for optic, params, in region_set.items():
-            r = create_region_from_json(params)
-            regions[name][optic].append(r)
+    survey_regions = {name: {} for name in content.keys()}
 
-    return regions
+    for name, survey_params in content.items():
+
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if optic in survey_params.keys():
+                survey_regions[name][optic] = []
+
+                for params in survey_params[optic]:
+                    r = create_region_from_json(params)
+                    survey_regions[name][optic].append(r)
+
+    print(survey_regions)
+    return survey_regions
 
 def extract_requested_regions(science_cases):
     """
@@ -456,3 +469,4 @@ def build_region_maps(sim_config, survey_definitions):
                             requested_regions[name][optic].append(r)
 
     return requested_regions
+

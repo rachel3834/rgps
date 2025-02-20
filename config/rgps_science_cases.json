@@ -247,7 +247,7 @@
     "category": "SFR",
     "ready_for_use": "True"
   },
-  "D'Ammando": {
+  "DAmmando": {
     "F184": [{"catalog": "table-4LAC-DR3-l.fits"}],
     "questions": "filter choice, galactic plane area",
     "comment": "Jetted AGN",

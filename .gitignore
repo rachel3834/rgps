@@ -8,5 +8,4 @@ __pycache__
 Roman_bounds/
 
 # Ignore selected files which are too large for Github
-config/rgps_survey_definition_regions.json
-config/rgps_science_regions.json
+config/*_regions.json

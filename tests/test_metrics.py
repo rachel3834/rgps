@@ -79,3 +79,20 @@ def test_M2_star_counts(test_survey_regions, galactic_model_file):
 
     # Test metric values returned are credible star counts
     assert ((results['M2_nstars'].data >= 1e7).all())
+
+
+@pytest.mark.parametrize(
+    "test_survey_regions, test_cases",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
+                path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
+        )
+    ])
+def test_M3_extended_regions(test_survey_regions, test_cases):
+    """
+    Unittest calculates the metric to evaluate how many entries from a catalog of extended regions
+    are included within the survey footprints
+    """
+
+    

@@ -131,7 +131,7 @@ def M2_star_counts(sim_config, survey_config, stellar_density_data):
         Column(name='Optic', data=data[:, 1], dtype='S5'),
         Column(name='M2_nstars', data=data[:, 2], dtype='f8'),
     ])
-    print(results)
+
     return results
 
 def M3_extended_region_count(survey_config, science_cases):

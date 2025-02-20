@@ -118,7 +118,7 @@ def calc_density_map(args, model_data, optic, column_name):
     fig, ax = plt.subplots(figsize=(8, 5))
     sp = skyproj.HammerSkyproj(ax=ax, galactic=True, longitude_ticks='symmetric', celestial=True)
     cmap = plt.get_cmap('viridis')
-    z = z / z.max()
+    #z = z / z.max()
     for i in range(0, len(l), 1):
         sp.plot(lplot[i], b[i], c=cmap(float(z[i])), marker='o')
     sp.draw_milky_way()

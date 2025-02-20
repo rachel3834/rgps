@@ -5,17 +5,21 @@ pythonpath.append(path.join(getcwd(), '..'))
 import config_utils
 import regions
 from astropy.table import Table
+import numpy as np
 
 @pytest.mark.parametrize(
-    "test_survey_regions, test_cases, expected_results",
+    "test_survey_regions, test_cases",
     [
         (
                 path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
-                path.join(getcwd(), 'data', 'test_science_regions.json'),
-                None
+                path.join(getcwd(), 'data', 'test_science_regions.json')
         )
     ])
-def test_M1_survey_footprint(test_survey_regions, test_cases, expected_results):
+def test_M1_survey_footprint(test_survey_regions, test_cases):
+    """
+    Unittest calculates the percentage of HEALpixels included in the survey
+    footprints and their priorities for each science case
+    """
 
     from metrics import M1_survey_footprint
 
@@ -29,7 +33,6 @@ def test_M1_survey_footprint(test_survey_regions, test_cases, expected_results):
     science_regions = regions.load_regions_from_file(sim_config, test_cases)
 
     results = M1_survey_footprint(sim_config, science_regions, survey_regions)
-    print(results)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -39,3 +42,40 @@ def test_M1_survey_footprint(test_survey_regions, test_cases, expected_results):
     # Test metric values returned are valid percentages
     assert (results['M1_%pix'].data >= 0.0).all() & (results['M1_%pix'].data <= 100.0).all()
     assert (results['M1_%priority'].data >= 0.0).all() & (results['M1_%priority'].data <= 100.0).all()
+
+
+@pytest.mark.parametrize(
+    "test_survey_regions, galactic_model_file",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
+                path.join(getcwd(), '..', 'trilegal_model_data', 'trilegal_nir_stellar_density.json'),
+        )
+    ])
+def test_M2_star_counts(test_survey_regions, galactic_model_file):
+    """
+    Unittest calculates the metric to evaluate the total star counts within each survey footprint
+    """
+
+    from metrics import M2_star_counts
+
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
+    # Load the defined survey strategy options from file
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+
+    # Load the galatic model stellar density data
+    galactic_model_data = config_utils.read_config(galactic_model_file)
+    stellar_density_data = {optic: np.array(galactic_model_data['healpix_map_'+optic])
+                                    for optic in sim_config['OPTICAL_COMPONENTS']}
+    # Calculate metrics
+    results = M2_star_counts(sim_config, survey_regions, stellar_density_data)
+
+    # Test that the metric returns a table of five columns and non-zero rows
+    assert (type(results) == type(Table([])))
+    assert (len(results) > 0)
+    assert (len(results.colnames) == 3)
+
+    # Test metric values returned are credible star counts
+    assert ((results['M2_nstars'].data >= 1e7).all())

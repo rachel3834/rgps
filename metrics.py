@@ -1,5 +1,6 @@
 from astropy.table import Table, Column
 import numpy as np
+import healpy as hp
 
 def M1_survey_footprint(sim_config, science_cases, survey_config):
     """
@@ -20,18 +21,7 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
         survey_config dict   Description of the proposed survey configuration
 
     Returns:
-        results        dict   Metric value calculated for all science cases
-
-        Output format:
-            results = {
-                'survey_concept': {
-                    'optical_element': {
-                        'percent_map': array of metric_values for each science case,
-                        'percent_priority': array of metric_values for each science case,
-                        'science_case': list of names of the science cases
-                    }
-                }
-            }
+        results        astropy.table   Metric value calculated for all science cases
     """
 
     data = []
@@ -54,7 +44,6 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
                         # Surveys have multiple regions, so we have to calculate the area
                         # summed over all of them
                         survey_regions = survey_definition[optic]
-                        print('M1 ', survey_name, optic, survey_regions, science_regions)
 
                         # Calculate the number of overlapping pixels between all science regions
                         # and all survey regions for this strategy and optic
@@ -98,7 +87,7 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
 
     return results
 
-def M2_star_counts(survey_config, galactic_model):
+def M2_star_counts(sim_config, survey_config, stellar_density_data):
     """
     Metric calculates the number of stars are included in the survey.
 
@@ -109,35 +98,40 @@ def M2_star_counts(survey_config, galactic_model):
 
     Parameters:
         survey_config   dict   Description of the proposed survey configuration
-        galactic_model  dict   HEALpixel maps of the Trilegal stellar density data per filter
+        stellar_density_data  dict   HEALpixel arrays of the Trilegal stellar density data per filter
 
     Returns:
-        results        dict   Metric value calculated for all science cases
-
-        Output format:
-            results = {
-                'survey_concept': {
-                    'star_count': array of metric_values per optical element
-                    }
-                }
-            }
+        results        astropy.table   Metric value calculated for all science cases
     """
 
-    results = {}
+    data = []
 
-    PIXAREA = hp.nside2pixarea(SIM_CONFIG['NSIDE'], degrees=True)
+    PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
 
-    for survey_name, region_set in survey_config.items():
-        metric = np.array(len(SIM_CONFIG['OPTICAL_COMPONENTS']))
+    for survey_name, survey_definition in survey_config.items():
 
-        # Loop over all optical components since the requested footprints can be different
-        for k,f in enumerate(OPTICAL_COMPONENTS):
-            rsurvey = region_set[f]
+        for optic in sim_config['OPTICAL_COMPONENTS']:
 
-            metric[k] = galactic_model[rsurvey.pixels] * PIXAREA
+            # Surveys have multiple regions, so we have to calculate the area
+            # summed over all of them
+            if optic in survey_definition.keys():
+                survey_regions = survey_definition[optic]
 
-        results[survey_name] = {'star_counts': metric}
+                # Sum star counts over all survey regions in the strategy for this optic
+                metric = 0.0
+                for r in survey_regions:
+                    metric += (10**(stellar_density_data[optic][r.pixels]) * PIXAREA).sum()
 
+                data.append([survey_name, optic, metric])
+    data = np.array(data)
+
+    # Return a table of the metric results
+    results = Table([
+        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
+        Column(name='Optic', data=data[:, 1], dtype='S5'),
+        Column(name='M2_nstars', data=data[:, 2], dtype='f8'),
+    ])
+    print(results)
     return results
 
 def M3_extended_region_count(survey_config, science_cases):

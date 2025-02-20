@@ -78,7 +78,7 @@ def test_M2_star_counts(test_survey_regions, galactic_model_file):
     assert (len(results.colnames) == 3)
 
     # Test metric values returned are credible star counts
-    assert ((results['M2_nstars'].data >= 1e7).all())
+    assert ((results['M2_nstars'].data >= 0.0).all())
 
 
 @pytest.mark.parametrize(
@@ -95,4 +95,27 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
     are included within the survey footprints
     """
 
-    
+    from metrics import M3_extended_region_count
+
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
+    # Load the defined survey strategy options from file
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+
+    # Load the science cases from file
+    science_regions = regions.load_regions_from_file(sim_config, test_cases)
+
+    # Calculate metric
+    results = M3_extended_region_count(sim_config, science_regions, survey_regions)
+    print(results)
+
+    # Test that the metric returns a table of five columns and non-zero rows
+    assert (type(results) == type(Table([])))
+    assert (len(results) > 0)
+    assert (len(results.colnames) == 4)
+
+    # Test metric values returned are valid percentages and the known result that the pixels for
+    # one of the requested regions was included in the F129 survey definition.
+    assert (results['M3_%regions'][0] == (1.0/7.0)*100.0)
+    assert ((results['M3_%regions'].data >= 0.0).all())

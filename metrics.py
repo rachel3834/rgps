@@ -134,7 +134,7 @@ def M2_star_counts(sim_config, survey_config, stellar_density_data):
 
     return results
 
-def M3_extended_region_count(survey_config, science_cases):
+def M3_extended_region_count(sim_config, science_cases, survey_config):
     """
     Metric to evaluate the number from a set of extended-region targets that lie fully
     within the survey footprint.
@@ -154,49 +154,52 @@ def M3_extended_region_count(survey_config, science_cases):
                                 radial extent
 
     Returns:
-        results        dict   Metric value calculated for all science cases
-
-        Output format:
-            results = {
-                'survey_concept': {
-                    'extended_region_count': array of metric_values per optical element
-                    }
-                }
-            }
+        results        astropy.table   Metric value calculated for all science cases
     """
 
-    # Build region dictionaries for all targets from a catalog for the science cases given
-    requested_regions = regions.extract_requested_regions(science_cases)
+    data = []
 
-    # Generate CelestialRegions for each target and calculate the HEALpixel regions within them,
-    # now indexed by optical element
-    desired_regions = regions.calc_healpixel_regions(requested_regions)
+    # Both the survey definition and the science case can include multiple regions for each
+    # optical component.  So we need to check for intersections of the HEALpixels for all cases
+    for author, science_strategy in science_cases.items():
 
-    results = {}
+        for optic in sim_config['OPTICAL_COMPONENTS']:
 
-    for survey_name, region_set in survey_config.items():
-        metric = np.array(len(SIM_CONFIG['OPTICAL_COMPONENTS']))
+            if optic in science_strategy.keys() and len(science_strategy[optic]) > 0:
 
-        # Loop over all optical components since the requested footprints can be different
-        for k, f in enumerate(SIM_CONFIG['OPTICAL_COMPONENTS']):
-            rsurvey = region_set[f]
+                for survey_name, survey_definition in survey_config.items():
 
-            # Calculate the number of HEALpixels that are both within the target region and
-            # the survey footprint for each target region
-            in_pixels = np.array(
-                [ len(list(set(r.pixels).intersection(set(rsurvey.pixels)))) for r in desired_regions[f] ]
-            )
+                    if optic in survey_definition.keys():
 
-            # Calculate the expected number of pixels for each target region
-            r_pixels = np.array(
-                [len(list(r.pixels)) for r in desired_regions[f]]
-            )
+                        # Calculate the number of HEALpixels that are both within the target region and
+                        # the survey footprint for each target region
+                        nregions = 0.0
+                        for rscience in science_strategy[optic]:
+                            in_pixels = []
+                            for rsurvey in survey_definition[optic]:
+                                in_pixels += list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
+                            in_pixels = list(set(in_pixels))
 
-            # Metric value is the number of regions where in_pixel >= r_pixels
-            # (due to the HEALpixels providing irregular coverage of the regions)
-            metric[k] = len(np.where(in_pixels >= r_pixels)[0])
+                            if len(in_pixels) >= len(set(rscience.pixels)):
+                                nregions += 1.0
 
-        results[survey_name] = {'extended_region_count': metric}
+                        # Metric value is the percentage of regions where in_pixel >= r_pixels
+                        # (due to the HEALpixels providing irregular coverage of the regions)
+                        metric = (nregions / float(len(science_strategy[optic])))*100.0
+                        data.append([survey_name, optic, author, metric])
+
+                    else:
+                        data.append([survey_name, optic, author, 0.0])
+
+    data = np.array(data)
+
+    # Return a table of the metric results
+    results = Table([
+        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
+        Column(name='Optic', data=data[:, 1], dtype='S5'),
+        Column(name='Science case', data=data[:, 2], dtype='S20'),
+        Column(name='M3_%regions', data=data[:, 3], dtype='f8'),
+    ])
 
     return results
 

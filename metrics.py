@@ -279,7 +279,18 @@ def M5_proper_motions(survey_config, science_cases, req_interval=730.0):
 
     return results
 
-def M6_sky_area_optical_elements(survey_config):
+def list_pixels_all_regions(region_set):
+    """
+    Function to return a list of the total unique pixels in a list of regions
+    """
+    in_pixels = []
+    for r in region_set:
+        in_pixels += list(set(r.pixels))
+    in_pixels = list(set(in_pixels))
+
+    return in_pixels
+
+def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
     """
     Metric to evaluate the total area of sky to receive observations in each optical element,
     and combinations of the filters, as a proxy for color measurements.
@@ -288,56 +299,55 @@ def M6_sky_area_optical_elements(survey_config):
 
     Parameters:
         survey_config   dict   Description of the proposed survey configuration
+        filtersets      list of tuples  Combinations of filters
 
     Returns:
-        results        dict   Metric values calculated for all survey designs
-
-        Output format:
-            results = {
-                'survey_concept': {
-                    'optical_components': list of the optical elements available,
-                    'sky_area_single_filter': array of metric values per optical element,
-                    'filter_pairs': list of pairs of filters for color measurements,
-                    'sky_area_filter_pairs': array of sky area covered in filter pairs
-                    'sky_area_nfilters': array of sky area covered in nfilters={1...max_filters}
-                }
-            }
+        results        astropy.table   Metric values calculated for all survey designs
     """
-    # Particular pairs of filters most desirable for color measurements
-    filter_pairs = [
-        ('F129', 'F184'),
-        ('F158', 'F213'),
-        ('F106', 'F213')
-    ]
 
-    results = {}
+    PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
 
-    for survey_name, region_set in survey_config.items():
+    data = []
+
+    for survey_name, survey_definition in survey_config.items():
 
         # Calculate the sky area covered in each optical element
-        m1 = [len(region_set[f].pixels) * PIXAREA for f in SIM_CONFIG['OPTICAL_COMPONENTS']]
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if optic in survey_definition.keys():
+                in_pixels = list_pixels_all_regions(survey_definition[optic])
+                m1 = len(in_pixels) * PIXAREA
+            else:
+                m1 = 0.0
+            data.append([survey_name, optic, m1, None])
 
-        # For each pair of filters, calculate the sky area covered in both filters
-        m2 = [ len(list(set(region_set[f1].pixels).intersection(set(region_set[f2].pixels))))*PIXAREA
-                        for f1,f2 in filter_pairs ]
+        # For each combination of filters, calculate the sky area covered in both filters
+        for filter_combo in filtersets:
 
-        # Calculate the sky area covered in one - max_filters
-        filter_list = np.array(SIM_CONFIG['OPTICAL_COMPONENTS'])
-        m3 = np.zeros(len(SIM_CONFIG['OPTICAL_COMPONENTS']))
-        for i in range(1, len(SIM_CONFIG['OPTICAL_COMPONENTS'])+1, 1):
-            filter_pixels = np.array([region_set[f].pixels for f in filter_list[0:i]])
-            common_pixels = set(filter_pixels[0])
-            for pix in filter_pixels[1:]:
-                common_pixels = common_pixels.intersection(set(pix))
-            m3[i] = len(list(common_pixels)) * PIXAREA
+            # First check whether all filters in the combination are present in the survey
+            # design.  If not, then this metric returns zero
+            check = np.array([True if f in survey_definition.keys() else False for f in filter_combo]).all()
 
-        results[survey_name] = {
-            'optical_components': SIM_CONFIG['OPTICAL_COMPONENTS'],
-            'sky_area_single_filter': m1,
-            'filter_pairs': filter_pairs,
-            'sky_area_filter_pairs': m2,
-            'sky_area_nfilters': m3
-        }
+            # If all filters in the set are available, calculate the area of
+            # HEALpixels where observations in all filters are present
+            if check:
+                in_pixels = set(survey_definition[filter_combo[0]][0].pixels)
+                in_pixels = [in_pixels.intersection(set(list_pixels_all_regions(survey_definition[f])))
+                             for f in filter_combo[1:]]
+                m2 = len(in_pixels) * PIXAREA
+            else:
+                m2 = 0.0
+
+            data.append([survey_name, ','.join(filter_combo), None, m2])
+
+    data = np.array(data)
+
+    # Return a table of the metric results
+    results = Table([
+        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
+        Column(name='Optics', data=data[:, 1], dtype='S100'),
+        Column(name='M6_%sky_area_single_filter', data=data[:, 2], dtype='f8'),
+        Column(name='M6_%sky_area_filter_combo', data=data[:, 3], dtype='f8'),
+    ])
 
     return results
 

@@ -108,7 +108,6 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
 
     # Calculate metric
     results = M3_extended_region_count(sim_config, science_regions, survey_regions)
-    print(results)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -119,3 +118,43 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
     # one of the requested regions was included in the F129 survey definition.
     assert (results['M3_%regions'][0] == (1.0/7.0)*100.0)
     assert ((results['M3_%regions'].data >= 0.0).all())
+
+@pytest.mark.parametrize(
+    "test_survey_regions, filtersets",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
+                [
+                    ('F129', 'F184'),
+                    ('F184', 'F213'),
+                    ('F129', 'F158', 'F213')
+                ]
+        )
+    ])
+def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
+    """
+    Unittest for metric to evaluate the area of sky to receive observations in one or more filters,
+    with the filtersets parameter providing the tuples of filters combinations to check for.
+    """
+
+    from metrics import M6_sky_area_optical_elements
+
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
+    # Load the defined survey strategy options from file
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+
+    # Calculate metrics
+    results = M6_sky_area_optical_elements(sim_config, survey_regions, filtersets)
+    results.pprint_all()
+
+    # Test that the metric returns a table of five columns and non-zero rows
+    assert (type(results) == type(Table([])))
+    assert (len(results) > 0)
+    assert (len(results.colnames) == 4)
+
+    # Test metric values returned are valid percentages and the known result that the pixels for
+    # one of the requested regions was included in the F129 survey definition.
+    assert (len(np.where(results['M6_%sky_area_single_filter'].data >= 0.0)[0]) > 0)
+    assert (len(np.where(results['M6_%sky_area_filter_combo'].data >= 0.0)[0]) > 0)

@@ -158,3 +158,41 @@ def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
     # one of the requested regions was included in the F129 survey definition.
     assert (len(np.where(results['M6_%sky_area_single_filter'].data >= 0.0)[0]) > 0)
     assert (len(np.where(results['M6_%sky_area_filter_combo'].data >= 0.0)[0]) > 0)
+
+@pytest.mark.parametrize(
+    "test_survey_regions, test_cases",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
+                path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
+        )
+    ])
+def test_M7_sky_area_nvisits(test_survey_regions, test_cases):
+    """
+    Unittest for metric to evaluate the percentage of the desired survey region for each science
+    case to receive the desired number of visits in each filter.
+    """
+
+    from metrics import M7_sky_area_nvisits
+
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
+    # Load the defined survey strategy options from file
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+
+    # Load the science cases from file
+    science_regions = regions.load_regions_from_file(sim_config, test_cases)
+
+    # Compute metric
+    results = M7_sky_area_nvisits(sim_config, survey_regions, science_regions)
+
+
+    # Test that the metric returns a table of five columns and non-zero rows
+    assert (type(results) == type(Table([])))
+    assert (len(results) > 0)
+    assert (len(results.colnames) == 6)
+
+    # Test metric value
+    assert(len(np.where(results['M7_%sky_area_nvisits'].data > 0.0)[0] > 0))
+

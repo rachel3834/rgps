@@ -17,6 +17,7 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
                         in survey design’s footprint per filter
 
     Parameters:
+        sim_config    dict   General configuration parameters common to the whole simulation
         science_cases dict   CelestialRegions representing the community-proposed science cases
         survey_config dict   Description of the proposed survey configuration
 
@@ -97,6 +98,7 @@ def M2_star_counts(sim_config, survey_config, stellar_density_data):
     The metric value return is the total number of stars included.
 
     Parameters:
+        sim_config    dict   General configuration parameters common to the whole simulation
         survey_config   dict   Description of the proposed survey configuration
         stellar_density_data  dict   HEALpixel arrays of the Trilegal stellar density data per filter
 
@@ -148,6 +150,7 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
         ntarget: number of targets fully included within the survey footprint
 
     Parameters:
+        sim_config    dict   General configuration parameters common to the whole simulation
         survey_config   dict   Description of the proposed survey configuration
         science_cases  dict   Catalog of target regions represented as science cases indexed
                                 by catalog name, including (l,b) coordinates and
@@ -299,6 +302,7 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
     color measurements and is therefore unsuitable to evaluate color measurements of variable objects.
 
     Parameters:
+        sim_config    dict   General configuration parameters common to the whole simulation
         survey_config   dict   Description of the proposed survey configuration
         filtersets      list of tuples  Combinations of filters
 
@@ -352,7 +356,7 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
 
     return results
 
-def M7_sky_area_nvisits(survey_config, science_cases):
+def M7_sky_area_nvisits(sim_config, survey_config, science_cases):
     """
     Metric to calculate the percentage of the desired survey region to receive the desired number
     of visits in each filter.
@@ -365,73 +369,84 @@ def M7_sky_area_nvisits(survey_config, science_cases):
                 give a more direct measure of cadence
 
     Parameters:
+        sim_config    dict   General configuration parameters common to the whole simulation
         survey_config   dict   Description of the proposed survey configuration
         science_cases  dict   Catalog of science cases that require multiple epochs
                                 of visits per field
 
     Returns:
-        results        dict   Metric value calculated for all science cases
-
-        Output format:
-            results = {
-                'survey_concept': {
-                    'optical_element': {
-                        'percent_area_at_cadence': array of metric_values for each science case,
-                        'science_case': list of names of the science cases
-                    }
-                }
-            }
+        results        astropy.table   Metric value calculated for all science cases
     """
 
-    results = {}
+    data = []
 
-    for survey_name, region_set in survey_config.items():
+    PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
+
+    # Each science case requests a distinct set of regions for each filter
+    for author, science_strategy in science_cases.items():
 
         # Loop over all optical components since the requested footprints can be different
-        for k, f in enumerate(SIM_CONFIG['OPTICAL_COMPONENTS']):
-            rsurvey = region_set[f]
+        optics_requested = [
+            optic for optic in sim_config['OPTICAL_COMPONENTS'] if optic in science_strategy.keys()
+        ]
+        for optic in optics_requested:
 
-            # Create a pixel map of the survey footprint, filling the pixel values with
-            # the number of visits per field
-            # XXX FOR THIS TO WORK CELESTIALREGIONS need the cadence info; wide-area surveys
-            # should have n_visits_per_field = 1
-            nvisits_footprint = np.zeros(rsurvey.NPIX)
-            idx = np.where(rsurvey.region_map > 0.0)[0]
-            if rsurvey.n_visits_per_field >= 2:
-                nvisits_footprint[idx].fill(rsurvey.n_visits_per_field)
-            else:
-                nvisits_footprint[idx].fill(1.0)
+            # Note that since a different cadence can be requested for each region and filter,
+            # these have to be compared on a region-by-region basis.
+            for i, rscience in enumerate(science_strategy[optic]):
 
-            cases = []
-            metric = []
+                # For all regions in each survey design option, calculate the metric for the
+                # current optical component
+                for survey_name, survey_definition in survey_config.items():
 
-            # This assumes one region per science case per filter
-            for name, info in science_cases.items():
-                if 'multi-epoch' in info['cadence']:
-                    cases.append(name)
+                    if optic in survey_definition.keys():
 
-                    # Similarly for the science cases, create a desired cadence_footprint
-                    idx = np.where(info[f].region_map > 0.0)[0]
-                    science_nvisits_footprint = np.zeros(info[f].NPIX)
-                    if rsurvey.n_visits_per_field >= 2:
-                        science_nvisits_footprint[idx].fill(info[f].n_visits_per_field)
+                        for j,rsurvey in enumerate(survey_definition[optic]):
+                            # Create a pixel map of the overlap between each region requested for the
+                            # science and those from the survey footprint.
+                            # If the list of common HEALpixels is non-zero,
+                            # fill the pixel values with the number of visits per field
+                            survey_visits = np.zeros(rsurvey.NPIX)
+                            common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
+
+                            if len(common_pixels) > 0:
+                                if rsurvey.nvisits >= 2:
+                                    survey_visits[common_pixels].fill(rsurvey.nvisits)
+                                else:
+                                    survey_visits[common_pixels].fill(1.0)
+
+                                # Create a similar pixels map of the requested number of visits
+                                # over the whole pixel area
+                                science_visits = np.zeros(rscience.NPIX)
+                                science_visits[rscience.pixels].fill(rscience.nvisits)
+
+                                # Calculate the percentage of pixels that receive observations
+                                # at at least the required interval.  Here zero or negative values
+                                # of the difference map within the desired survey region indicate
+                                # that the required number of visits have been achieved
+                                diff_map = science_visits - survey_visits
+                                obs_pixels = np.where(diff_map[common_pixels] <= 0.0)[0]
+
+                                metric = (len(obs_pixels) * PIXAREA / len(rscience.pixels) * PIXAREA) * 100.0
+
+                                data.append([survey_name, rsurvey.label, author, rscience.label, optic, metric])
+
+                            # Handle case of no overlap between the science and survey region
+                            else:
+                                data.append([survey_name, rsurvey.label, author, rscience.label, optic, 0.0])
                     else:
-                        science_nvisits_footprint[idx].fill(1.0)
+                        data.append([survey_name, rsurvey.label, author, rscience.label, optic, 0.0])
+    data = np.array(data)
 
-                    # Calculate the percentage of pixels that receive observations
-                    # at at least the required interval.  Here zero or negative values
-                    # of the difference map within the desired survey region indicate
-                    # that the required number of visits have been achieved
-                    diff_map = science_nvisits_footprint - nvisits
-                    jdx1 = np.where(diff_map <= 0.0)[0]
-                    jdx2 = np.where(science_nvisits_footprint > 0.0)[0]
-                    common_pixels = list(set(jdx1).intersection(set(jdx2)))
-
-                    metric.append((len(common_pixels)*PIXAREA/len(jdx2)*PIXAREA)*100.0)
-
-            results[survey_name][f] = {
-                'percent_area_at_interval': np.array(metric),
-                'science_cases': cases
-            }
+    # Return a table of the metric results
+    results = Table([
+        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
+        Column(name='Survey region', data=data[:, 1], dtype='S10'),
+        Column(name='Science case', data=data[:, 2], dtype='S10'),
+        Column(name='Science region', data=data[:, 3], dtype='S10'),
+        Column(name='Optic', data=data[:, 4], dtype='S5'),
+        Column(name='M7_%sky_area_nvisits', data=data[:, 5], dtype='f8'),
+    ])
+    results.pprint_all()
 
     return results

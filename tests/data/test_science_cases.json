@@ -12,7 +12,8 @@
         ],
         "nvisits": 8,
         "duration": 730.0,
-        "visit_interval": [91.25]
+        "visit_interval": [91.25],
+        "name": 'Paladini1_1'
       },
       {
         "l": [
@@ -25,7 +26,8 @@
         ],
         "nvisits": 8,
         "duration": 730.0,
-        "visit_interval": [91.25]
+        "visit_interval": [91.25],
+        "name": 'Paladini1_2'
       },
       {
         "l": [
@@ -38,7 +40,8 @@
         ],
         "nvisits": 8,
         "duration": 730.0,
-        "visit_interval": [91.25]
+        "visit_interval": [91.25],
+        "name": 'Paladini1_3'
       }
     ],
     "comment": "Galactic Plane Wide Area Survey",
@@ -50,7 +53,7 @@
     "category": "wide-area",
     "ready_for_use": "True"
   },
-  "Paladini": {
+  "Paladini2": {
     "F213": [
       {
         "l": [
@@ -63,7 +66,8 @@
         ],
         "nvisits": 8,
         "duration": 730.0,
-        "visit_interval": [91.25]
+        "visit_interval": [91.25],
+        "name": "Paladine2_1"
       }
     ],
     "comment": "Time domain study of small region in W40/Serpens South",

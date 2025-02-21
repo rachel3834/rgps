@@ -14,7 +14,7 @@ OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G
 
 class CelestialRegion:
     """Class to describe a region on sky, including its position and
-    extend in an on-sky visualization
+    extent for on-sky visualization, and cadence parameters for repeated visits
 
     Note: NSIDE = 64
     """
@@ -33,6 +33,10 @@ class CelestialRegion:
         self.pixels = np.array([], dtype='int')
         self.pixel_priority = np.zeros(self.NPIX)
         self.array_keys = ['pixels', 'pixel_priority']
+        self.nvisits = None         # Total number of visits per pointing within this region
+        self.duration = None        # Survey duration in days over which this region is observed
+        self.visit_interval = np.array([], dtype='float')   # In hours
+
 
         for key, value in params.items():
             if key not in self.array_keys and key in dir(self):
@@ -150,7 +154,9 @@ class CelestialRegion:
             "radius": self.radius,
             "predefined_pixels": self.predefined_pixels,
             "NSIDE": self.NSIDE,
-            "NPIX": self.NPIX
+            "NPIX": self.NPIX,
+            "nvisits": self.nvisits,
+            "duration": self.duration
         }
         for key in ['l_center', 'b_center']:
             datum = getattr(self, key)
@@ -170,6 +176,10 @@ class CelestialRegion:
             region['pixel_priority'] = self.pixel_priority.tolist()
         except:
             region['pixel_priority'] = self.pixel_priority
+        try:
+            region['visit_interval'] =  self.visit_interval.tolist()
+        except:
+            region['visit_interval'] = self.visit_interval
 
         return region
 

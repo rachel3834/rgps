@@ -185,6 +185,7 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
 
                         # Metric value is the percentage of regions where in_pixel >= r_pixels
                         # (due to the HEALpixels providing irregular coverage of the regions)
+                        print(nregions, len(science_strategy[optic]))
                         metric = (nregions / float(len(science_strategy[optic])))*100.0
                         data.append([survey_name, optic, author, metric])
 

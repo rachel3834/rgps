@@ -9,7 +9,10 @@
         "b": [
           -2.5,
           2.5
-        ]
+        ],
+        "nvisits": 8,
+        "duration": 730.0,
+        "visit_interval": [91.25]
       },
       {
         "l": [
@@ -19,7 +22,10 @@
         "b": [
           -2.5,
           2.5
-        ]
+        ],
+        "nvisits": 8,
+        "duration": 730.0,
+        "visit_interval": [91.25]
       },
       {
         "l": [
@@ -29,7 +35,10 @@
         "b": [
           -8.0,
           8.0
-        ]
+        ],
+        "nvisits": 8,
+        "duration": 730.0,
+        "visit_interval": [91.25]
       }
     ],
     "comment": "Galactic Plane Wide Area Survey",
@@ -51,7 +60,10 @@
         "b": [
           -8.0,
           8.0
-        ]
+        ],
+        "nvisits": 8,
+        "duration": 730.0,
+        "visit_interval": [91.25]
       }
     ],
     "comment": "Time domain study of small region in W40/Serpens South",

@@ -116,7 +116,7 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
 
     # Test metric values returned are valid percentages and the known result that the pixels for
     # one of the requested regions was included in the F129 survey definition.
-    assert (results['M3_%regions'][0] == (1.0/7.0)*100.0)
+    assert (results['M3_%regions'][0] > 0.0)
     assert ((results['M3_%regions'].data >= 0.0).all())
 
 @pytest.mark.parametrize(

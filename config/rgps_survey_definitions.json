@@ -9,7 +9,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -19,7 +22,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -29,7 +35,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -41,7 +50,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -51,7 +63,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -61,7 +76,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -73,7 +91,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -83,7 +104,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -93,7 +117,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -105,7 +132,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -115,7 +145,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -125,10 +158,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 1b (Wide field=85%)": {
     "F213": [
@@ -140,7 +177,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -150,7 +190,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -160,7 +203,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -172,7 +218,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -182,7 +231,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -192,7 +244,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -204,7 +259,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -214,7 +272,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -224,7 +285,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -236,7 +300,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -246,7 +313,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -256,10 +326,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 2a (Wide field=65%)": {
     "F213": [
@@ -271,7 +345,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -281,7 +358,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -291,7 +371,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -303,7 +386,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -313,7 +399,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -323,7 +412,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -335,7 +427,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -345,7 +440,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -355,7 +453,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -367,7 +468,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -377,7 +481,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -387,10 +494,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 2b (Wide field=85%)": {
     "F213": [
@@ -402,7 +513,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -412,7 +526,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -422,7 +539,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -434,7 +554,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -444,7 +567,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -454,7 +580,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -466,7 +595,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -476,7 +608,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -486,7 +621,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -498,7 +636,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -508,7 +649,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -518,10 +662,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 3a (Wide field=65%)": {
     "F213": [
@@ -533,7 +681,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -543,7 +694,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -553,7 +707,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -565,7 +722,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -575,7 +735,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -585,7 +748,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -597,7 +763,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -607,7 +776,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -617,7 +789,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -629,7 +804,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -639,7 +817,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -649,7 +830,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F184": [
@@ -661,7 +845,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -671,7 +858,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -681,7 +871,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F087": [
@@ -693,7 +886,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -703,7 +899,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -713,10 +912,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 3b (Wide field=85%)": {
     "F213": [
@@ -728,7 +931,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -738,7 +944,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -748,7 +957,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -760,7 +972,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -770,7 +985,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -780,7 +998,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -792,7 +1013,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -802,7 +1026,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -812,7 +1039,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -824,7 +1054,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -834,7 +1067,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -844,7 +1080,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F184": [
@@ -856,7 +1095,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -866,7 +1108,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -876,7 +1121,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F087": [
@@ -888,7 +1136,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -898,7 +1149,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -908,10 +1162,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 4a (Wide field=65%)": {
     "F213": [
@@ -923,7 +1181,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -933,7 +1194,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -943,7 +1207,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -955,7 +1222,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -965,7 +1235,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -975,7 +1248,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -987,7 +1263,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -997,7 +1276,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1007,7 +1289,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -1019,7 +1304,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1029,7 +1317,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1039,7 +1330,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F184": [
@@ -1051,7 +1345,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1061,7 +1358,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1071,7 +1371,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F087": [
@@ -1083,7 +1386,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1093,7 +1399,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1103,10 +1412,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 4b (Wide field=85%)": {
     "F213": [
@@ -1118,7 +1431,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1128,7 +1444,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1138,7 +1457,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -1150,7 +1472,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1160,7 +1485,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1170,7 +1498,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -1182,7 +1513,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1192,7 +1526,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1202,7 +1539,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -1214,7 +1554,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1224,7 +1567,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1234,7 +1580,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F184": [
@@ -1246,7 +1595,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1256,7 +1608,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1266,7 +1621,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F087": [
@@ -1278,7 +1636,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1288,7 +1649,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1298,10 +1662,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 5a (Wide field=65%)": {
     "F213": [
@@ -1313,7 +1681,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1323,7 +1694,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1333,7 +1707,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -1345,7 +1722,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1355,7 +1735,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1365,7 +1748,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -1377,7 +1763,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1387,7 +1776,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1397,10 +1789,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 5b (Wide field=85%)": {
     "F213": [
@@ -1412,7 +1808,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1422,7 +1821,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1432,7 +1834,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -1444,7 +1849,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1454,7 +1862,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1464,7 +1875,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -1476,7 +1890,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1486,7 +1903,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1496,10 +1916,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 6a (Wide field=65%)": {
     "F213": [
@@ -1511,7 +1935,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1521,7 +1948,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1531,7 +1961,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -1543,7 +1976,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1553,7 +1989,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1563,7 +2002,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -1575,7 +2017,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1585,7 +2030,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1595,10 +2043,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 6b (Wide field=85%)": {
     "F213": [
@@ -1610,7 +2062,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1620,7 +2075,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1630,7 +2088,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -1642,7 +2103,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1652,7 +2116,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1662,7 +2129,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -1674,7 +2144,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1684,7 +2157,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1694,10 +2170,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 7a (Wide field=65%)": {
     "F213": [
@@ -1709,7 +2189,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1719,7 +2202,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1729,7 +2215,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -1741,7 +2230,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1751,7 +2243,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1761,7 +2256,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -1773,7 +2271,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1783,7 +2284,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1793,7 +2297,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -1805,7 +2312,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1815,7 +2325,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1825,10 +2338,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 7b (Wide field=85%)": {
     "F213": [
@@ -1840,7 +2357,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1850,7 +2370,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1860,7 +2383,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -1872,7 +2398,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1882,7 +2411,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1892,7 +2424,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -1904,7 +2439,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1914,7 +2452,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1924,7 +2465,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -1936,7 +2480,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1946,7 +2493,10 @@
         "b": [
           -10.0,
           10.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1956,10 +2506,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 8a (Wide field=65%)": {
     "F213": [
@@ -1971,7 +2525,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1981,7 +2538,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -1991,7 +2551,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -2003,7 +2566,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2013,7 +2579,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2023,7 +2592,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -2035,7 +2607,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2045,7 +2620,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2055,7 +2633,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -2067,7 +2648,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2077,7 +2661,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2087,10 +2674,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   },
   "Option 8b (Wide field=85%)": {
     "F213": [
@@ -2102,7 +2693,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2112,7 +2706,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2122,7 +2719,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F129": [
@@ -2134,7 +2734,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2144,7 +2747,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2154,7 +2760,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F158": [
@@ -2166,7 +2775,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2176,7 +2788,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2186,7 +2801,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
     "F106": [
@@ -2198,7 +2816,10 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2208,7 +2829,10 @@
         "b": [
           -6.0,
           6.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       },
       {
         "l": [
@@ -2218,10 +2842,14 @@
         "b": [
           -2.0,
           2.0
-        ]
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null]
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane"
+    "comment": "Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
   }
 }
 

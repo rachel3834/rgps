@@ -135,8 +135,11 @@ class CelestialRegion:
             raise Warning('make_map: pixel_priority array has inconsistent number of pixels')
 
     def summary(self):
-        return self.label + ': l_center=' + str(self.l_center) + ', b_center=' \
-            + str(self.b_center) + ' n_pixels=' + str(len(self.pixels)) + ' ' + str(self.optic)
+        return (repr(self.label) + ': l_center=' + str(self.l_center) + ', b_center='
+            + str(self.b_center) + ': l_width=' + str(self.l_width) + ', b_height='
+            + str(self.b_height) +
+                ' n_pixels=' + str(len(self.pixels)) + ' ' + str(self.optic)
+                + ' ' + str(self.l) + ' ' + str(self.b))
 
     def sky_plot(self):
         mw1 = MWSkyMap(projection='aitoff', grayscale=False, grid='galactic', background='infrared', figsize=(16, 10))
@@ -161,7 +164,7 @@ class CelestialRegion:
                 "duration": self.duration
             }
         except:
-            raise IOError('Config missing necessary parameters ' + repr(dir(self)))
+            raise IOError('Config missing necessary parameters ' + repr(self.__dict__))
 
         for key in ['l_center', 'b_center']:
             datum = getattr(self, key)

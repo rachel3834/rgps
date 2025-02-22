@@ -146,18 +146,23 @@ class CelestialRegion:
         plt.rcParams.update({'font.size': 22})
 
     def to_json(self):
-        region = {
-            "label": self.label,
-            "optic": self.optic,
-            "l_width": self.l_width,
-            "b_height": self.b_height,
-            "radius": self.radius,
-            "predefined_pixels": self.predefined_pixels,
-            "NSIDE": self.NSIDE,
-            "NPIX": self.NPIX,
-            "nvisits": self.nvisits,
-            "duration": self.duration
-        }
+        try:
+            region = {
+                "name": self.name,
+                "label": self.label,
+                "optic": self.optic,
+                "l_width": self.l_width,
+                "b_height": self.b_height,
+                "radius": self.radius,
+                "predefined_pixels": self.predefined_pixels,
+                "NSIDE": self.NSIDE,
+                "NPIX": self.NPIX,
+                "nvisits": self.nvisits,
+                "duration": self.duration
+            }
+        except:
+            raise IOError('Config missing necessary parameters ' + repr(dir(self)))
+
         for key in ['l_center', 'b_center']:
             datum = getattr(self, key)
             if datum is not None:
@@ -214,7 +219,7 @@ def create_region(params):
             'b_center': (params['b'][0] + bspan / 2.0) * u.deg,
             'l_width': lspan,
             'b_height': bspan,
-            'label': params['label'],
+            'name': params['name'],
             'optic': params['optic']
         }
         r = CelestialRegion(rparams)
@@ -228,7 +233,8 @@ def create_region(params):
     elif 'survey_footprint' in params.keys():
         survey_regions = survey_footprints.load_survey_footprints(getcwd())
         r = CelestialRegion()
-        r.label = params['label']
+        r.label = params['name']
+        r.name = params['name']
         r.optic = params['optic']
         r.region_map = survey_regions[params['survey_footprint']]
         r.pixels = (np.where(r.region_map > 0.0)[0]).tolist()
@@ -236,14 +242,17 @@ def create_region(params):
     # Circular regions defined by a central galactic longitude, latitude and radial extent,
     # all in units of degrees.
     elif 'pointing' in params.keys():
-        rparams = {
-            'l_center': (params['pointing'][0]),
-            'b_center': (params['pointing'][1]),
-            'radius': params['pointing'][2],
-            'label': params['label'],
-            'optic': params['optic']
-        }
-        r = CelestialRegion(rparams)
+        try:
+            rparams = {
+                'l_center': (params['pointing'][0]),
+                'b_center': (params['pointing'][1]),
+                'radius': params['pointing'][2],
+                'name': params['name'],
+                'optic': params['optic']
+            }
+            r = CelestialRegion(rparams)
+        except KeyError:
+            raise KeyError('Input region configuration missing necessary entries: ' + repr(params))
 
         # Calculate which HEALpixels belong to this region.
         r.calc_hp_healpixels_for_circular_region()
@@ -285,8 +294,9 @@ def create_region_set(params):
 
     cat_dir = path.join(getcwd(), 'config')
     pointing_set = survey_footprints.load_catalog(cat_dir, params['catalog'])
-    for pointing in pointing_set:
+    for i,pointing in enumerate(pointing_set):
         pointing['label'] = params['label']
+        pointing['name'] = params['name'] + '_' + str(i)
         pointing['optic'] = params['optic']
         r = create_region(pointing)
         region_list.append(r)

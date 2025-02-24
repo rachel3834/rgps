@@ -21,6 +21,7 @@ class CelestialRegion:
 
     def __init__(self, params={}):
         self.label = None
+        self.name = None
         self.optic = None
         self.l_center = None
         self.b_center = None
@@ -212,6 +213,10 @@ def create_region(params):
         r: CelestialRegion object
     """
 
+    # Sanity check for required parameters
+    if 'name' not in params.keys():
+        raise IOError('Region configuration missing name parameter: ' + repr(params))
+
     # Box regions defined as min, max ranges in (l,b):
     if 'l' in params.keys() and 'b' in params.keys():
 
@@ -223,6 +228,7 @@ def create_region(params):
             'l_width': lspan,
             'b_height': bspan,
             'name': params['name'],
+            'label': params['label'],
             'optic': params['optic']
         }
         r = CelestialRegion(rparams)
@@ -236,7 +242,7 @@ def create_region(params):
     elif 'survey_footprint' in params.keys():
         survey_regions = survey_footprints.load_survey_footprints(getcwd())
         r = CelestialRegion()
-        r.label = params['name']
+        r.label = params['label']
         r.name = params['name']
         r.optic = params['optic']
         r.region_map = survey_regions[params['survey_footprint']]
@@ -251,6 +257,7 @@ def create_region(params):
                 'b_center': (params['pointing'][1]),
                 'radius': params['pointing'][2],
                 'name': params['name'],
+                'label': params['label'],
                 'optic': params['optic']
             }
             r = CelestialRegion(rparams)
@@ -485,7 +492,7 @@ def build_region_maps(sim_config, survey_definitions):
             for optic in sim_config['OPTICAL_COMPONENTS']:
                 if optic in info.keys():
                     for region in info[optic]:
-                        region['label'] = name
+                        region['label'] = name + '_' + region['name']
                         region['optic'] = optic
 
                         if 'catalog' in region.keys():
@@ -495,6 +502,7 @@ def build_region_maps(sim_config, survey_definitions):
                             region_set = [create_region(region)]
 
                         for r in region_set:
+
                             # If the region is valid, the list of included pixels will be non-zero.
                             # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
                             # for each science case.

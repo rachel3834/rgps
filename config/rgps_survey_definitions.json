@@ -1,5 +1,5 @@
 {
-  "Option 1a (Wide field=65%)": {
+  "Option 1a": {
     "F213": [
       {
         "l": [
@@ -12,7 +12,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -25,7 +26,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -38,7 +40,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -53,7 +56,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -66,7 +70,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -79,7 +84,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -94,7 +100,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -107,7 +114,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -120,7 +128,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -135,7 +144,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -148,7 +158,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -161,13 +172,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 1b (Wide field=85%)": {
+  "Option 1b": {
     "F213": [
       {
         "l": [
@@ -180,7 +192,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -193,7 +206,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -206,7 +220,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -221,7 +236,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -234,7 +250,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -247,7 +264,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -262,7 +280,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -275,7 +294,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -288,7 +308,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -303,7 +324,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -316,7 +338,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -329,13 +352,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 2a (Wide field=65%)": {
+  "Option 2a": {
     "F213": [
       {
         "l": [
@@ -348,7 +372,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -361,7 +386,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -374,7 +400,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -389,7 +416,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -402,7 +430,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -415,7 +444,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -430,7 +460,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -443,7 +474,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -456,7 +488,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -471,7 +504,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -484,7 +518,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -497,13 +532,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%. Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 2b (Wide field=85%)": {
+  "Option 2b": {
     "F213": [
       {
         "l": [
@@ -516,7 +552,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -529,7 +566,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -542,7 +580,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -557,7 +596,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -570,7 +610,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -583,7 +624,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -598,7 +640,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -611,7 +654,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -624,7 +668,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -639,7 +684,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -652,7 +698,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -665,13 +712,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%. Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 3a (Wide field=65%)": {
+  "Option 3a": {
     "F213": [
       {
         "l": [
@@ -684,7 +732,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -697,7 +746,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -710,7 +760,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -725,7 +776,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -738,7 +790,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -751,7 +804,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -766,7 +820,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -779,7 +834,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -792,7 +848,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -807,7 +864,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -820,7 +878,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -833,7 +892,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F184": [
@@ -848,7 +908,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -861,7 +922,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -874,7 +936,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F087": [
@@ -889,7 +952,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -902,7 +966,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -915,13 +980,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 3b (Wide field=85%)": {
+  "Option 3b": {
     "F213": [
       {
         "l": [
@@ -934,7 +1000,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -947,7 +1014,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -960,7 +1028,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -975,7 +1044,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -988,7 +1058,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1001,7 +1072,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -1016,7 +1088,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1029,7 +1102,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1042,7 +1116,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -1057,7 +1132,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1070,7 +1146,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1083,7 +1160,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F184": [
@@ -1098,7 +1176,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1111,7 +1190,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1124,7 +1204,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F087": [
@@ -1139,7 +1220,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1152,7 +1234,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1165,13 +1248,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%. Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 4a (Wide field=65%)": {
+  "Option 4a": {
     "F213": [
       {
         "l": [
@@ -1184,7 +1268,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1197,7 +1282,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1210,7 +1296,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -1225,7 +1312,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1238,7 +1326,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1251,7 +1340,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -1266,7 +1356,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1279,7 +1370,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1292,7 +1384,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -1307,7 +1400,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1320,7 +1414,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1333,7 +1428,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F184": [
@@ -1348,7 +1444,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1361,7 +1458,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1374,7 +1472,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F087": [
@@ -1389,7 +1488,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1402,7 +1502,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1415,13 +1516,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%. Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 4b (Wide field=85%)": {
+  "Option 4b": {
     "F213": [
       {
         "l": [
@@ -1434,7 +1536,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1447,7 +1550,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1460,7 +1564,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -1475,7 +1580,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1488,7 +1594,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1501,7 +1608,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -1516,7 +1624,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1529,7 +1638,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1542,7 +1652,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -1557,7 +1668,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1570,7 +1682,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1583,7 +1696,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F184": [
@@ -1598,7 +1712,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1611,7 +1726,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1624,7 +1740,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F087": [
@@ -1639,7 +1756,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1652,7 +1770,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1665,13 +1784,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%. Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 5a (Wide field=65%)": {
+  "Option 5a": {
     "F213": [
       {
         "l": [
@@ -1684,7 +1804,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1697,7 +1818,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1710,7 +1832,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -1725,7 +1848,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1738,7 +1862,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1751,7 +1876,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -1766,7 +1892,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1779,7 +1906,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1792,13 +1920,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%. Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 5b (Wide field=85%)": {
+  "Option 5b": {
     "F213": [
       {
         "l": [
@@ -1811,7 +1940,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1824,7 +1954,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1837,7 +1968,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -1852,7 +1984,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1865,7 +1998,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1878,7 +2012,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -1893,7 +2028,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1906,7 +2042,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -1919,13 +2056,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%. Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 6a (Wide field=65%)": {
+  "Option 6a": {
     "F213": [
       {
         "l": [
@@ -1938,7 +2076,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1951,7 +2090,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -1964,7 +2104,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -1979,7 +2120,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -1992,7 +2134,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2005,7 +2148,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -2020,7 +2164,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2033,7 +2178,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2046,13 +2192,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 6b (Wide field=85%)": {
+  "Option 6b": {
     "F213": [
       {
         "l": [
@@ -2065,7 +2212,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2078,7 +2226,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2091,7 +2240,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -2106,7 +2256,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2119,7 +2270,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2132,7 +2284,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -2147,7 +2300,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2160,7 +2314,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2173,13 +2328,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 7a (Wide field=65%)": {
+  "Option 7a": {
     "F213": [
       {
         "l": [
@@ -2192,7 +2348,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2205,7 +2362,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2218,7 +2376,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -2233,7 +2392,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2246,7 +2406,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2259,7 +2420,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -2274,7 +2436,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2287,7 +2450,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2300,7 +2464,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -2315,7 +2480,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2328,7 +2494,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2341,13 +2508,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 7b (Wide field=85%)": {
+  "Option 7b": {
     "F213": [
       {
         "l": [
@@ -2360,7 +2528,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2373,7 +2542,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2386,7 +2556,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -2401,7 +2572,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2414,7 +2586,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2427,7 +2600,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -2442,7 +2616,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2455,7 +2630,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2468,7 +2644,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -2483,7 +2660,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2496,7 +2674,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Wide_Bulge"
       },
       {
         "l": [
@@ -2509,13 +2688,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 8a (Wide field=65%)": {
+  "Option 8a": {
     "F213": [
       {
         "l": [
@@ -2528,7 +2708,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2541,7 +2722,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2554,7 +2736,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -2569,7 +2752,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2582,7 +2766,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2595,7 +2780,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -2610,7 +2796,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2623,7 +2810,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2636,7 +2824,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -2651,7 +2840,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2664,7 +2854,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2677,13 +2868,14 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=65%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   },
-  "Option 8b (Wide field=85%)": {
+  "Option 8b": {
     "F213": [
       {
         "l": [
@@ -2696,7 +2888,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2709,7 +2902,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2722,7 +2916,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F129": [
@@ -2737,7 +2932,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2750,7 +2946,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2763,7 +2960,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F158": [
@@ -2778,7 +2976,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2791,7 +2990,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2804,7 +3004,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
     "F106": [
@@ -2819,7 +3020,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Eastern_Plane"
       },
       {
         "l": [
@@ -2832,7 +3034,8 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Medium_Bulge"
       },
       {
         "l": [
@@ -2845,10 +3048,11 @@
         ],
         "nvisits": 1,
         "duration": 730.0,
-        "visit_interval": [null]
+        "visit_interval": [null],
+        "name": "Western_Plane"
       }
     ],
-    "comment": "Includes northern plane, bulge and southern plane",
+    "comment": "Wide field=85%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True"
   }
 }

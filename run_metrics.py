@@ -16,6 +16,7 @@ def calculate_metrics(args):
 
     # Load simulation parameters
     sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
+    print('Loaded simulation configuration')
 
     # Define the desired filters and combinations of filters needed for colors:
     filter_sets = [
@@ -27,10 +28,12 @@ def calculate_metrics(args):
     # Load the defined survey strategy options from file
     all_survey_regions = regions.load_regions_from_file(sim_config,
                                                         path.join(getcwd(), 'config', 'rgps_survey_regions.json'))
+    print('Loaded survey design information')
 
     # Load the science cases from file
     all_science_regions = regions.load_regions_from_file(sim_config,
                                                          path.join(getcwd(), 'config', 'rgps_science_regions.json'))
+    print('Loaded science use cases information')
 
     # If the user requested a subset of metrics or survey designs, apply the selection,
     # otherwise calculate for all available options
@@ -51,6 +54,8 @@ def calculate_metrics(args):
             survey_regions[args.survey] = all_survey_regions[args.survey]
         else:
             raise IOError('Requested survey design (' + args.survey + ') not recognized')
+    print('Selected ' + str(len(science_regions)) + ' science cases and '
+             + str(len(survey_regions)) + ' survey designs to analyse')
 
     # Identify which metrics the user requested to run:
     all_metrics = {
@@ -69,26 +74,35 @@ def calculate_metrics(args):
         else:
             raise IOError('Metric ' + args.metric + ' not recognised.  Available metrics are '
                           + ', '.join(all_metrics.keys()))
+    print('Evaluating metrics: ' + ', '.join(list(metric_set)))
 
     # Calculate metrics
     for metric_name, metric_func in metric_set.items():
+        print('Calculating metric ' + metric_name + ' for all selected science cases...')
+
         if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M7_sky_area_nvisits']:
             results = metric_func(sim_config, science_regions, survey_regions)
 
         if metric_name == 'M2_star_counts':
             # Load the galatic model stellar density data
+            galactic_model_file = path.join(getcwd(), 'trilegal_model_data', 'trilegal_nir_stellar_density.json')
             galactic_model_data = config_utils.read_config(galactic_model_file)
             stellar_density_data = {optic: np.array(galactic_model_data['healpix_map_' + optic])
                                     for optic in sim_config['OPTICAL_COMPONENTS']}
 
-            results = M2_star_counts(sim_config, survey_regions, stellar_density_data)
+            results = metrics.M2_star_counts(sim_config, survey_regions, stellar_density_data)
 
         if metric_name == 'M6_sky_area_optical_elements':
-            results = M6_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
+            results = metrics.M6_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
 
-    # Gather and store results
-        print(metric_name)
-        print(results)
+        # Store results
+        output_file = path.join(args.data_dir, metric_name + '_results.txt')
+        with open(output_file, 'w') as f:
+            f.write('# ' + '  '.join(results.colnames) + '\n')
+            for row in results:
+                f.write(' '.join([str(row[col]) for col in results.colnames]) + '\n')
+
+    print('Completed metric analysis')
 
 def get_args():
     """Function to gather commandline arguments"""
@@ -97,6 +111,7 @@ def get_args():
     parser.add_argument('science_case', help='Name of science case to evaluate metrics for or ALL')
     parser.add_argument('survey', help='Name of survey design to evaluate or ALL')
     parser.add_argument('metric', help='Name of metric to evaluate or ALL')
+    parser.add_argument('data_dir', help='Path to output directory')
     args = parser.parse_args()
 
     return args

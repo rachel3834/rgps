@@ -65,9 +65,12 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
                                 total_pixel_priorities += rscience.pixel_priority.sum()
 
                         # Calculate metric values
-                        m1 = (len(common_pixels) / len(total_science_pixels) * 100.0)
-                        m2 = (pixel_priorities / total_pixel_priorities) * 100.0
-
+                        if len(common_pixels) > 0.0:
+                            m1 = (len(common_pixels) / len(total_science_pixels) * 100.0)
+                            m2 = (pixel_priorities / total_pixel_priorities) * 100.0
+                        else:
+                            m1 = 0.0
+                            m2 = 0.0
                         data.append([survey_name, optic, author, m1, m2])
 
                     # Otherwise this survey strategy doesn't provide any coverage in this
@@ -79,9 +82,9 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
 
     # Return a table of the metric results
     results = Table([
-        Column(name='Survey strategy', data=data[:,0], dtype='S20'),
+        Column(name='Survey_strategy', data=data[:,0], dtype='S30'),
         Column(name='Optic', data=data[:,1], dtype='S5'),
-        Column(name='Science case', data=data[:,2], dtype='S20'),
+        Column(name='Science_case', data=data[:,2], dtype='S30'),
         Column(name='M1_%pix', data=data[:,3], dtype='f8'),
         Column(name='M1_%priority', data=data[:,4], dtype='f8')
     ])
@@ -129,7 +132,7 @@ def M2_star_counts(sim_config, survey_config, stellar_density_data):
 
     # Return a table of the metric results
     results = Table([
-        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
+        Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
         Column(name='Optic', data=data[:, 1], dtype='S5'),
         Column(name='M2_nstars', data=data[:, 2], dtype='f8'),
     ])
@@ -188,7 +191,6 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
 
                         # Metric value is the percentage of regions where in_pixel >= r_pixels
                         # (due to the HEALpixels providing irregular coverage of the regions)
-                        print(nregions, len(science_strategy[optic]))
                         metric = (nregions / float(len(science_strategy[optic])))*100.0
                         data.append([survey_name, optic, author, metric])
 
@@ -199,9 +201,9 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
 
     # Return a table of the metric results
     results = Table([
-        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
+        Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
         Column(name='Optic', data=data[:, 1], dtype='S5'),
-        Column(name='Science case', data=data[:, 2], dtype='S20'),
+        Column(name='Science_case', data=data[:, 2], dtype='S30'),
         Column(name='M3_%regions', data=data[:, 3], dtype='f8'),
     ])
 
@@ -330,7 +332,7 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
 
             # First check whether all filters in the combination are present in the survey
             # design.  If not, then this metric returns zero
-            check = np.array([True if f in survey_definition.keys() else False for f in filter_combo]).all()
+            check = np.array([True if f in survey_definition.keys() and len(survey_definition[f]) > 0 else False for f in filter_combo]).all()
 
             # If all filters in the set are available, calculate the area of
             # HEALpixels where observations in all filters are present
@@ -348,8 +350,8 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
 
     # Return a table of the metric results
     results = Table([
-        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
-        Column(name='Optics', data=data[:, 1], dtype='S100'),
+        Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
+        Column(name='Optics', data=data[:, 1], dtype='S5'),
         Column(name='M6_%sky_area_single_filter', data=data[:, 2], dtype='f8'),
         Column(name='M6_%sky_area_filter_combo', data=data[:, 3], dtype='f8'),
     ])
@@ -410,7 +412,7 @@ def M7_sky_area_nvisits(sim_config, science_cases, survey_config):
                             common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
 
                             if len(common_pixels) > 0:
-                                if rsurvey.nvisits >= 2:
+                                if rsurvey.nvisits is not None and rsurvey.nvisits >= 2:
                                     survey_visits[common_pixels].fill(rsurvey.nvisits)
                                 else:
                                     survey_visits[common_pixels].fill(1.0)
@@ -440,13 +442,12 @@ def M7_sky_area_nvisits(sim_config, science_cases, survey_config):
 
     # Return a table of the metric results
     results = Table([
-        Column(name='Survey strategy', data=data[:, 0], dtype='S20'),
-        Column(name='Survey region', data=data[:, 1], dtype='S10'),
-        Column(name='Science case', data=data[:, 2], dtype='S10'),
-        Column(name='Science region', data=data[:, 3], dtype='S10'),
+        Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
+        Column(name='Survey_region', data=data[:, 1], dtype='S30'),
+        Column(name='Science_case', data=data[:, 2], dtype='S30'),
+        Column(name='Science_region', data=data[:, 3], dtype='S30'),
         Column(name='Optic', data=data[:, 4], dtype='S5'),
         Column(name='M7_%sky_area_nvisits', data=data[:, 5], dtype='f8'),
     ])
-    results.pprint_all()
 
     return results

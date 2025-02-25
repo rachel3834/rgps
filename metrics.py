@@ -356,7 +356,7 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
 
     return results
 
-def M7_sky_area_nvisits(sim_config, survey_config, science_cases):
+def M7_sky_area_nvisits(sim_config, science_cases, survey_config):
     """
     Metric to calculate the percentage of the desired survey region to receive the desired number
     of visits in each filter.

@@ -147,7 +147,6 @@ def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
 
     # Calculate metrics
     results = M6_sky_area_optical_elements(sim_config, survey_regions, filtersets)
-    results.pprint_all()
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -185,8 +184,7 @@ def test_M7_sky_area_nvisits(test_survey_regions, test_cases):
     science_regions = regions.load_regions_from_file(sim_config, test_cases)
 
     # Compute metric
-    results = M7_sky_area_nvisits(sim_config, survey_regions, science_regions)
-
+    results = M7_sky_area_nvisits(sim_config, science_regions, survey_regions)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))

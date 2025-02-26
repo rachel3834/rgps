@@ -351,7 +351,7 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
     # Return a table of the metric results
     results = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
-        Column(name='Optic', data=data[:, 1], dtype='S5'),
+        Column(name='Optic', data=data[:, 1], dtype='S20'),
         Column(name='M6_sky_area_single_filter', data=data[:, 2], dtype='f8'),
         Column(name='M6_sky_area_filter_combo', data=data[:, 3], dtype='f8'),
     ])
@@ -444,8 +444,8 @@ def M7_sky_area_nvisits(sim_config, science_cases, survey_config):
     results = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
         Column(name='Survey_region', data=data[:, 1], dtype='S30'),
-        Column(name='Science_case', data=data[:, 2], dtype='S30'),
-        Column(name='Science_region', data=data[:, 3], dtype='S30'),
+        Column(name='Science_case', data=data[:, 2], dtype='S40'),
+        Column(name='Science_region', data=data[:, 3], dtype='S40'),
         Column(name='Optic', data=data[:, 4], dtype='S5'),
         Column(name='M7_%sky_area_nvisits', data=data[:, 5], dtype='f8'),
     ])

@@ -1,4 +1,4 @@
-# Survey_strategy  Optics  M6_%sky_area_single_filter  M6_%sky_area_filter_combo
+Survey_strategy Optic M6_sky_area_single_filter M6_sky_area_filter_combo
 Option_1a F087 0.0 nan
 Option_1a F106 607.6485991328848 nan
 Option_1a F129 753.6856933996278 nan

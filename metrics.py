@@ -351,9 +351,9 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
     # Return a table of the metric results
     results = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
-        Column(name='Optics', data=data[:, 1], dtype='S5'),
-        Column(name='M6_%sky_area_single_filter', data=data[:, 2], dtype='f8'),
-        Column(name='M6_%sky_area_filter_combo', data=data[:, 3], dtype='f8'),
+        Column(name='Optic', data=data[:, 1], dtype='S5'),
+        Column(name='M6_sky_area_single_filter', data=data[:, 2], dtype='f8'),
+        Column(name='M6_sky_area_filter_combo', data=data[:, 3], dtype='f8'),
     ])
 
     return results

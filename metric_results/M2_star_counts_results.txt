@@ -1,4 +1,4 @@
-# Survey_strategy  Optic  M2_nstars
+Survey_strategy Optic M2_nstars
 Option_1a F087 0.0
 Option_1a F106 235192119529.81073
 Option_1a F129 276180518898.83875

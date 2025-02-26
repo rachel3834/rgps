@@ -1,4 +1,4 @@
-# Survey_strategy  Optic  Science_case  M1_%pix  M1_%priority
+Survey_strategy Optic Science_case M1_%pix M1_%priority
 Option_1a F213 Paladini 7.371121996734313 20.47958522359041
 Option_1b F213 Paladini 8.941761915869684 24.843378699503134
 Option_2a F213 Paladini 7.526630899619004 20.91164398358177

@@ -97,10 +97,11 @@ def calculate_metrics(args):
 
         # Store results
         output_file = path.join(args.data_dir, metric_name + '_results.txt')
-        with open(output_file, 'w') as f:
-            f.write('# ' + '  '.join(results.colnames) + '\n')
-            for row in results:
-                f.write(' '.join([str(row[col]) for col in results.colnames]) + '\n')
+        #with open(output_file, 'w') as f:
+        #    f.write('# ' + '  '.join(results.colnames) + '\n')
+        #    for row in results:
+        #        f.write(' '.join([str(row[col]) for col in results.colnames]) + '\n')
+        results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
     print('Completed metric analysis')
 

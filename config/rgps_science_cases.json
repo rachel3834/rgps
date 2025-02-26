@@ -2110,8 +2110,8 @@
         "visit_interval": [null],
         "name": "OCs_catalog"}
     ],
-    "comment": "All known Open Clusters.  Switched off for the time being since it covers almost all sky.",
-    "ready_for_use": "False",
+    "comment": "All known Open Clusters. ",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "open-clusters"

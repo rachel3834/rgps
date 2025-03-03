@@ -14,8 +14,10 @@ import numpy as np
                 path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
                 path.join(getcwd(), 'data', 'test_science_regions.json')
         ),
-        (XXX Add tests case here where survey with multiple regions for the same filter
-        overlaps 100% with the science region in that filter)
+        (
+                path.join(getcwd(), 'data', 'test_survey_regions1.json'),
+                path.join(getcwd(), 'data', 'test_science_regions1.json')
+        )
     ])
 def test_M1_survey_footprint(test_survey_regions, test_cases):
     """
@@ -45,6 +47,10 @@ def test_M1_survey_footprint(test_survey_regions, test_cases):
     assert (results['M1_%pix'].data >= 0.0).all() & (results['M1_%pix'].data <= 100.0).all()
     assert (results['M1_%priority'].data >= 0.0).all() & (results['M1_%priority'].data <= 100.0).all()
 
+    # Second test case is designed to verify output in the case of 100% overlap
+    if 'test_survey_regions1.json' in path.basename(test_survey_regions):
+        assert (results['M1_%pix'][0] == 100.0)
+        assert (results['M1_%priority'][0] == 100.0)
 
 @pytest.mark.parametrize(
     "test_survey_regions, galactic_model_file",

@@ -1,0 +1,56 @@
+{
+  "Option_1a": {
+    "F213": [
+      {
+        "l": [
+          10.0,
+          42.4
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Eastern_Plane"
+      },
+      {
+        "l": [
+          -10.0,
+          10.0
+        ],
+        "b": [
+          -10.0,
+          10.0
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Wide_Bulge"
+      },
+      {
+        "l": [
+          317.6,
+          350.0
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Western_Plane"
+      }
+    ],
+    "comment": "Wide field=65%.  Includes northern plane, bulge and southern plane",
+    "ready_for_use": "True"
+  }
+}

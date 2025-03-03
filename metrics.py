@@ -48,25 +48,22 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
 
                         # Calculate the number of overlapping pixels between all science regions
                         # and all survey regions for this strategy and optic
-                        common_pixels = []
-                        total_science_pixels = []
+                        survey_pixels = list_pixels_all_regions(survey_regions)
+                        science_pixels = list_pixels_all_regions(science_regions)
+
+                        # Calculate the number of overlapping pixels
+                        common_pixels = list(set(science_pixels).intersection(set(survey_pixels)))
+
+                        # Sum the priority of the overlapping pixels
                         pixel_priorities = 0.0
                         total_pixel_priorities = 0.0
-                        for rsurvey in survey_regions:
-                            for rscience in science_regions:
-
-                                # Calculate the number of overlapping pixels
-                                pix_list = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
-                                common_pixels += pix_list
-                                total_science_pixels += list(rscience.pixels)
-
-                                # Sum the priority of the overlapping pixels
-                                pixel_priorities += rscience.pixel_priority[pix_list].sum()
-                                total_pixel_priorities += rscience.pixel_priority.sum()
+                        for rscience in science_regions:
+                            pixel_priorities += rscience.pixel_priority[common_pixels].sum()
+                            total_pixel_priorities += rscience.pixel_priority.sum()
 
                         # Calculate metric values
                         if len(common_pixels) > 0.0:
-                            m1 = (len(common_pixels) / len(total_science_pixels) * 100.0)
+                            m1 = (len(common_pixels) / len(science_pixels) * 100.0)
                             m2 = (pixel_priorities / total_pixel_priorities) * 100.0
                         else:
                             m1 = 0.0

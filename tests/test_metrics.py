@@ -13,7 +13,9 @@ import numpy as np
         (
                 path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
                 path.join(getcwd(), 'data', 'test_science_regions.json')
-        )
+        ),
+        (XXX Add tests case here where survey with multiple regions for the same filter
+        overlaps 100% with the science region in that filter)
     ])
 def test_M1_survey_footprint(test_survey_regions, test_cases):
     """

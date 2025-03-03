@@ -155,8 +155,8 @@ def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
 
     # Test metric values returned are valid percentages and the known result that the pixels for
     # one of the requested regions was included in the F129 survey definition.
-    assert (len(np.where(results['M6_%sky_area_single_filter'].data >= 0.0)[0]) > 0)
-    assert (len(np.where(results['M6_%sky_area_filter_combo'].data >= 0.0)[0]) > 0)
+    assert (len(np.where(results['M6_sky_area_single_filter'].data >= 0.0)[0]) > 0)
+    assert (len(np.where(results['M6_sky_area_filter_combo'].data >= 0.0)[0]) > 0)
 
 @pytest.mark.parametrize(
     "test_survey_regions, test_cases",
@@ -194,3 +194,69 @@ def test_M7_sky_area_nvisits(test_survey_regions, test_cases):
     # Test metric value
     assert(len(np.where(results['M7_%sky_area_nvisits'].data > 0.0)[0] > 0))
 
+@pytest.mark.parametrize(
+    "test_cases",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
+        )
+    ])
+def test_extract_multiband_science(test_cases):
+    """
+    Test for the function to identify multi-filter testcases
+    """
+
+    from metrics import extract_multiband_science
+
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
+    # Load the science cases from file
+    science_regions = regions.load_regions_from_file(sim_config, test_cases)
+
+    # Extract the set of multi-band science cases
+    multiband_cases = extract_multiband_science(sim_config, science_regions)
+
+    # Check the results are consistent with the input test data
+    input_fset = []
+    for f in sim_config['OPTICAL_COMPONENTS']:
+        if len(science_regions['De_Furio'][f]) > 0:
+            input_fset.append(f)
+    input_fset.sort()
+
+    assert(multiband_cases['De_Furio']['filterset'] == input_fset)
+
+@pytest.mark.parametrize(
+    "test_survey_regions, test_cases",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
+                path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
+        )
+    ])
+def test_M8_multiband_sky_area(test_survey_regions, test_cases):
+    """
+    Test for the function to identify multi-filter testcases
+    """
+
+    from metrics import M8_multiband_sky_area
+
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
+    # Load the defined survey strategy options from file
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+
+    # Load the science cases from file
+    science_regions = regions.load_regions_from_file(sim_config, test_cases)
+
+    # Calculate metric
+    results = M8_multiband_sky_area(sim_config, science_regions, survey_regions)
+
+    # Test that the metric returns a table of four columns and non-zero rows
+    assert (type(results) == type(Table([])))
+    assert (len(results) > 0)
+    assert (len(results.colnames) == 4)
+
+    # Test metric value
+    assert(len(np.where(results['M8_multiband_sky_area'].data > 0.0)[0] > 0))

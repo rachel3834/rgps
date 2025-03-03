@@ -10,7 +10,9 @@ import argparse
 import glob
 import json
 import skyproj
+import matplotlib as mpl
 import matplotlib.pyplot as plt
+from matplotlib.cm import ScalarMappable
 
 NSIDE = 64
 NPIX = hp.nside2npix(NSIDE)
@@ -68,12 +70,13 @@ def build_stellar_density_map(args):
     # These were estimated from https://roman.gsfc.nasa.gov/science/anticipated_performance_tables.html
     density_maps = {}
     for optic, column_name in optical_components.items():
-        density_maps[optic] = calc_density_map(args, model_data, optic, column_name)
+        l, b, lplot, z = calc_stellar_density(args, model_data, column_name)
+        density_maps[optic] = interpolate_density_map(args, l, b, lplot, z, optic)
 
     # Output stellar density as log10 HEALpix map to JSON file
     output_density_map(args, density_maps)
 
-def calc_density_map(args, model_data, optic, column_name):
+def calc_stellar_density(args, model_data, column_name):
     """
     Function calculates the stellar density for a grid of points on the sky
 
@@ -83,10 +86,8 @@ def calc_density_map(args, model_data, optic, column_name):
 
     :param args: commandline arguments object
     :param model_data: Model data table for the given optic
-    :param optic: string indicating the filter/prism/grism currently under consideration
-    :return: HEALpix array of the density map for this optic
+    :return: Arrays of galactic coordinates and stellar density for each optic
     """
-    ahp = HEALPix(nside=NSIDE, order='ring', frame=TETE())
 
     # Calculate the stellar density for all regions of the sky included in the grid
     # Find the minimum stellar density of the available grid - this will be
@@ -97,6 +98,8 @@ def calc_density_map(args, model_data, optic, column_name):
     b = []
     lplot = []
     min_density = 1e32
+    # sgal: SkyCoord of field center
+    # data: tabular data from Trilegal
     for sgal, data in model_data:
         # Offset to avoid interpolating over wrap over zero deg
         if sgal.l.deg > 180.0:
@@ -108,20 +111,50 @@ def calc_density_map(args, model_data, optic, column_name):
         result = np.logical_and(data[column_name] >= 16.0, data[column_name] <= 25.0)
         sidx = (np.where(result)[0]).astype(int)
         nstars = len(sidx) * factor
-        z.append(np.log10(nstars))
+        #z.append(np.log10(nstars))
+        z.append(nstars)
         min_density = min(min_density, np.log10(nstars))
     z = np.array(z)
     l = np.array(l)
     b = np.array(b)
 
+    return l, b, lplot, z
+
+def interpolate_density_map(args, l, b, lplot, z, optic):
+    """
+    Function calculates the stellar density for a grid of points on the sky
+
+    The number of stars is factored because the models could only be generated for a very
+    small stamp, just 0.001sq.deg due to the excessive number of stars.  This factor scales the
+    star count to estimate that for a 1sq.deg. stamp.
+
+    :param args: commandline arguments object
+    :param array: l galactic longitude (offset to avoid zero-wrap)
+    :param array: b galactic latitude
+    :param array: lplot (not offset for plotting)
+    :param array: z star count data
+    :param model_data: Model data table for the given optic
+    :param optic: string indicating the filter/prism/grism currently under consideration
+    :return: HEALpix array of the density map for this optic
+    """
+
     # Plot a map of the original discrete set of model stellar densities
-    fig, ax = plt.subplots(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(10, 5))
     sp = skyproj.HammerSkyproj(ax=ax, galactic=True, longitude_ticks='symmetric', celestial=True)
     cmap = plt.get_cmap('viridis')
-    #z = z / z.max()
+    norm = mpl.colors.Normalize(z.min(), z.max())
+    #z = z / z.max()    # Removed normalization to maintain total star counts
+    zmax = z.max()      # Cmap requires normalization to 0-1 range
     for i in range(0, len(l), 1):
-        sp.plot(lplot[i], b[i], c=cmap(float(z[i])), marker='o')
+        sp.plot(lplot[i], b[i], c=cmap(float(z[i]/zmax)), marker='o')
     sp.draw_milky_way()
+
+    cb = fig.colorbar(
+        ScalarMappable(norm=norm, cmap="magma"),
+        ax=ax,  # Pass the new axis
+        orientation="vertical")
+    cb.set_label('Nstars/sq.deg.', fontsize=18)
+
     plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_discrete_map.png'))
     plt.close()
 
@@ -150,6 +183,7 @@ def calc_density_map(args, model_data, optic, column_name):
     # Now we place the interpolated function onto the HEALpixel sky map
     # Note these coordinates are input in galactic coordinates,
     # but s converts to RA, Dec for plotting
+    ahp = HEALPix(nside=NSIDE, order='ring', frame=TETE())
     map = np.zeros(NPIX)
     plotx = []
     ploty = []
@@ -176,24 +210,33 @@ def calc_density_map(args, model_data, optic, column_name):
     fig, ax = plt.subplots(figsize=(8, 5))
     sp = skyproj.HammerSkyproj(ax=ax, galactic=True, longitude_ticks='symmetric', celestial=True)
     cmap = plt.get_cmap('viridis')
-    plotz = plotz / plotz.max()
+    #plotz = plotz / plotz.max()    # Removed normalization to maintain star counts
+    norm = mpl.colors.Normalize(plotz.min(), plotz.max())
+    zmax = plotz.max()
     for i in range(0, len(plotx), 1):
-        sp.plot(plotx[i], ploty[i], c=cmap(float(plotz[i])), marker='.', markersize=5)
+        sp.plot(plotx[i], ploty[i], c=cmap(float(plotz[i]/zmax)), marker='.', markersize=5)
     sp.draw_milky_way()
+
+    cb = fig.colorbar(
+        ScalarMappable(norm=norm, cmap="magma"),
+        ax=ax,  # Pass the new axis
+        orientation="vertical")
+    cb.set_label('Nstars/sq.deg.', fontsize=18)
+
     plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_map.png'))
     plt.close()
 
     fig2, ax2 = plt.subplots(2, 1, figsize=(8, 5))
-    plt.subplots_adjust(top=0.98, bottom=0.4)
+    plt.subplots_adjust(top=0.95, bottom=0.1)
 
     ax2[0].plot(plotx, plotz, 'r.')
     ax2[0].set_xlabel('l [deg]')
-    ax2[0].set_ylabel('Log stellar density')
+    ax2[0].set_ylabel('Log stellar density [n/sq.deg.]')
 
 
     ax2[1].plot(ploty, plotz, 'r.')
     ax2[1].set_xlabel('b [deg]')
-    ax2[1].set_ylabel('Log stellar density')
+    ax2[1].set_ylabel('Log stellar density [n/sq.deg.]')
     plt.savefig(path.join(args.output_dir, 'trilegal_' + optic + '_xyplot.png'))
     plt.close()
 

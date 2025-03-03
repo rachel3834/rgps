@@ -125,7 +125,7 @@ def M2_star_counts(sim_config, survey_config, stellar_density_data):
                 # Sum star counts over all survey regions in the strategy for this optic
                 metric = 0.0
                 for r in survey_regions:
-                    metric += (10**(stellar_density_data[optic][r.pixels]) * PIXAREA).sum()
+                    metric += (stellar_density_data[optic][r.pixels] * PIXAREA).sum()
 
                 data.append([survey_name, optic, metric])
     data = np.array(data)
@@ -296,6 +296,28 @@ def list_pixels_all_regions(region_set):
 
     return in_pixels
 
+def extract_multiband_science(sim_config, science_cases):
+    """
+    Function to review the science cases given and identify those cases which request
+    multi-filter observations for the same region, and which combinations
+    of filters they request.
+    """
+
+    multiband_cases = {}
+    for author, science_strategy in science_cases.items():
+        fset = []
+        for f in sim_config['OPTICAL_COMPONENTS']:
+            if f in science_strategy.keys() and len(science_strategy[f]) > 0:
+                fset.append(f)
+        fset = list(set(fset))
+        fset.sort()
+
+        if len(fset) > 1:
+            multiband_cases[author] = science_strategy
+            multiband_cases[author]['filterset'] = fset
+
+    return multiband_cases
+
 def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
     """
     Metric to evaluate the total area of sky to receive observations in each optical element,
@@ -306,6 +328,7 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
     Parameters:
         sim_config    dict   General configuration parameters common to the whole simulation
         survey_config   dict   Description of the proposed survey configuration
+        science_cases dict      Description of the requested science regions
         filtersets      list of tuples  Combinations of filters
 
     Returns:
@@ -448,6 +471,74 @@ def M7_sky_area_nvisits(sim_config, science_cases, survey_config):
         Column(name='Science_region', data=data[:, 3], dtype='S40'),
         Column(name='Optic', data=data[:, 4], dtype='S5'),
         Column(name='M7_%sky_area_nvisits', data=data[:, 5], dtype='f8'),
+    ])
+
+    return results
+
+def M8_multiband_sky_area(sim_config, science_cases, survey_config):
+    """
+    Metric to evaluate the science regions for which multi-filter observations are requested.
+    The sky regions requested are compared with those survey regions covered in multiple filters.
+
+    Parameters:
+        sim_config    dict   General configuration parameters common to the whole simulation
+        survey_config   dict   Description of the proposed survey configuration
+        science_cases dict      Description of the requested science regions
+        filtersets      list of tuples  Combinations of filters
+
+    Returns:
+        results        astropy.table   Metric values calculated for all survey designs
+    """
+
+    PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
+
+    # Extract from the science cases provided the subset which request observations
+    # in multiple passbands.
+    # Note that not all of these regions need to overlap.
+    multiband_cases = extract_multiband_science(sim_config, science_cases)
+
+    # For each science case which requests more than one filter to observe a given region,
+    # calculate the overlap between the requested science region and the area covered by
+    # the combined filter coverage.
+    data = []
+    for author, science_strategy in science_cases.items():
+
+        # Loop over all optical components since the requested footprints can be different
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            science_regions = science_strategy[optic]
+
+            if len(science_regions) > 0:
+                # Loop over all survey strategies calculating the overlap if any in this optic
+                for survey_name, survey_definition in survey_config.items():
+
+                    # For the requested combination of filters, calculate the sky area covered in all filters
+
+                    # First check whether all filters in the combination are present in the survey
+                    # design.  If not, then this metric returns zero
+                    check = np.array(
+                        [True if f in survey_definition.keys() and len(survey_definition[f]) > 0 else False for
+                         f in science_strategy['filterset']]).all()
+
+                    # If all filters in the set are available, calculate the area of
+                    # HEALpixels where observations in all filters are present
+                    if check:
+                        in_pixels = set(survey_definition[science_strategy['filterset'][0]][0].pixels)
+                        in_pixels = [in_pixels.intersection(set(list_pixels_all_regions(survey_definition[f])))
+                                     for f in science_strategy['filterset'][1:]]
+                        metric = len(in_pixels) * PIXAREA
+                    else:
+                        metric = 0.0
+
+                    data.append([survey_name, author, ','.join(science_strategy['filterset']), metric])
+
+    data = np.array(data)
+
+    # Return a table of the metric results
+    results = Table([
+        Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
+        Column(name='Science_case', data=data[:, 1], dtype='S40'),
+        Column(name='Filterset', data=data[:, 2], dtype='S15'),
+        Column(name='M8_multiband_sky_area', data=data[:, 3], dtype='f8'),
     ])
 
     return results

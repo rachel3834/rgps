@@ -128,13 +128,14 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
     assert ((results['M3_%regions'].data >= 0.0).all())
 
 @pytest.mark.parametrize(
-    "test_survey_regions",
+    "test_survey_regions, expected",
     [
         (
-                path.join(getcwd(), 'data', 'test_survey_regions1.json')
+                path.join(getcwd(), 'data', 'test_survey_regions2.json'),
+                [100.0, 0.0, 0.0]
         )
     ])
-def test_M5_proper_motion_precision(test_survey_regions):
+def test_M5_proper_motion_precision(test_survey_regions, expected):
     """
     Unittest for metric to evaluate the area of sky to receive observations to measure proper motions
     to the required precision.
@@ -150,14 +151,15 @@ def test_M5_proper_motion_precision(test_survey_regions):
 
     # Compute metric
     results = M5_proper_motion_precision(sim_config, survey_regions)
-    print(results)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
     assert (len(results) > 0)
-    assert (len(results.colnames) == 2)
+    assert (len(results.colnames) == 4)
 
-    assert(True==False)
+    # Test for expected metric results
+    for i, expected_value in enumerate(expected):
+        assert(expected_value == results['M5_proper_motion_precision'][i])
 
 @pytest.mark.parametrize(
     "test_survey_regions, filtersets",

@@ -236,18 +236,17 @@ def M5_proper_motion_precision(sim_config, survey_config):
     NPIX = hp.nside2npix(sim_config['NSIDE'])
 
     for survey_name, survey_definition in survey_config.items():
-        nvisits_map = np.zeros(NPIX)
-        interval_map = np.zeros(NPIX)
-        interval_map.fill(730.0)    # Start with the maximum possible interval
-        region_list = []
         for optic in sim_config['OPTICAL_COMPONENTS']:
 
             # Surveys have multiple regions, so we have to calculate the area
             # summed over all of them
             if optic in survey_definition.keys():
                 for rsurvey in survey_definition[optic]:
+                    nvisits_map = np.zeros(NPIX)
+                    interval_map = np.zeros(NPIX)
+                    interval_map.fill(730.0)    # Start with the maximum possible interval
+
                     nvisits_map[rsurvey.pixels] += np.array([rsurvey.nvisits] * len(rsurvey.pixels))
-                    region_list.append(rsurvey)
 
                     # Option 1: A single numerical interval of days between observations is
                     # given in the survey definition.
@@ -272,31 +271,25 @@ def M5_proper_motion_precision(sim_config, survey_config):
                             np.array([730.0] * len(rsurvey.pixels))
                         )
 
-        # Substitute NaN for pixels which have the maximal (730.0) day interval between observations
-        jdx = np.where(interval_map >= 730.0)[0]
-        interval_map[jdx] = np.nan
-        jdx = np.where(~np.isnan(interval_map))[0]
-        print('NVISITS: ', nvisits_map[jdx[0]])
-        print('INTERVALS: ',interval_map[jdx[0]])
+                    # Substitute NaN for pixels which have the maximal (730.0) day interval between observations
+                    jdx = np.where(interval_map >= 730.0)[0]
+                    interval_map[jdx] = np.nan
 
-        # Total number of pixels in all survey regions
-        all_pixels = list_pixels_all_regions(region_list)
+                    # Compute metric as a HEALpixel map, then calculate the percentage of pixels
+                    # that meet the 1 mas critiera
+                    metric_map = 1.0 / (interval_map / 365.24) / np.sqrt(nvisits_map)   # in mas
+                    idx = np.where(metric_map[rsurvey.pixels] <= 1.0)[0]
+                    m1 = (len(idx)/len(rsurvey.pixels))*100.0
 
-        # Compute metric as a HEALpixel map, then calculate the percentage of pixels
-        # that meet the 1 mas critiera
-        #metric_map = 1.0 / (interval_map / 365.24) / np.sqrt(nvisits_map)   # in mas
-        metric_map = 1.0 / (interval_map / 365.24)   # in mas
-        print('METRICS: ', metric_map[jdx[0]])
-        idx = np.where(metric_map[all_pixels] <= 1.0)[0]
-        m1 = (len(idx)/len(all_pixels))*100.0
-
-        data.append([survey_name, m1])
+                    data.append([survey_name, rsurvey.name, optic, m1])
     data = np.array(data)
 
     # Return a table of the metric results
     results = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
-        Column(name='M5_proper_motion_precision', data=data[:, 1], dtype='f8'),
+        Column(name='Survey_region', data=data[:, 1], dtype='S30'),
+        Column(name='Optic', data=data[:, 2], dtype='S20'),
+        Column(name='M5_proper_motion_precision', data=data[:, 3], dtype='f8'),
     ])
 
     return results

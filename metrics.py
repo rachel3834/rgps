@@ -206,79 +206,98 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
 
     return results
 
-def M5_proper_motions(survey_config, science_cases, req_interval=730.0):
+def M5_proper_motion_precision(sim_config, survey_config):
     """
-    Metric to evaluate the sky area that receives at least 2 observations
-    separated by AT LEAST the required interval, as a percentage of the desired sky region
-    from different science cases in different filters.  This metric is designed to evaluate
-    how well the survey performs for the measurement of proper motions.
+    Proper motions working group proposed the following metric based on the
+    measurement uncertainty, sigma, calculated from:
+    sigma = 1 mas / T [years] / sqrt(N exposures per epoch)
+
+    The recommended threshold for "detection" is  ~1 mas / yr, since this precision
+    makes it possible to measure quantities like Galactic rotation and bulge dynamics.
+
+    This is calculated for all HEALpixels within all region for a given survey design,
+    summing visits over all filters chosen. The metrics calculated represent:
+    M1: the percentage of the survey region that meets the precision threshold
+
+    Possible extension:
+    This might be combined with the star counts metric for a figure of merit, e.g.
+    N_{bright stars} * (1 / sigma^2)
 
     Parameters:
         survey_config   dict   Description of the proposed survey configuration
-        science_cases  dict   Catalog of science cases that require multiple epochs
-                                of visits per field
-        req_interval    float   Desired number of days between sequential observations
-                                of the same field
-    Returns:
-        results        dict   Metric value calculated for all science cases
+        survey_config   dict   Definition of survey designs
 
-        Output format:
-            results = {
-                'survey_concept': {
-                    'optical_element': {
-                        'percent_area_at_interval': array of metric_values for each science case,
-                        'science_case': list of names of the science cases
-                    }
-                }
-            }
+    Returns:
+        results     astropy.table   Summary of metric results
     """
 
-    results = {}
+    data = []
 
-    for survey_name, region_set in survey_config.items():
+    NPIX = hp.nside2npix(sim_config['NSIDE'])
 
-        # Loop over all optical components since the requested footprints can be different
-        for k, f in enumerate(SIM_CONFIG['OPTICAL_COMPONENTS']):
-            rsurvey = region_set[f]
+    for survey_name, survey_definition in survey_config.items():
+        nvisits_map = np.zeros(NPIX)
+        interval_map = np.zeros(NPIX)
+        interval_map.fill(730.0)    # Start with the maximum possible interval
+        region_list = []
+        for optic in sim_config['OPTICAL_COMPONENTS']:
 
-            # Create a pixel map of the survey footprint, filling the pixel values with
-            # the interval between sequential visits.
-            # XXX FOR THIS TO WORK CELESTIALREGIONS need the cadence info
-            if rsurvey.n_visits_per_field >= 2:
-                idx = np.where(rsurvey.region_map > 0.0)[0]
-                cadence_footprint = np.zeros(rsurvey.NPIX)
-                cadence_footprint[idx].fill(rsurvey.visit_interval)
-            else:
-                cadence_footprint = np.zeros(rsurvey.NPIX)
+            # Surveys have multiple regions, so we have to calculate the area
+            # summed over all of them
+            if optic in survey_definition.keys():
+                for rsurvey in survey_definition[optic]:
+                    nvisits_map[rsurvey.pixels] += np.array([rsurvey.nvisits] * len(rsurvey.pixels))
+                    region_list.append(rsurvey)
 
-            cases = []
-            metric = []
+                    # Option 1: A single numerical interval of days between observations is
+                    # given in the survey definition.
+                    if not np.isnan(rsurvey.visit_interval[0]) and len(rsurvey.visit_interval) == 1:
+                        interval_map[rsurvey.pixels] = np.minimum(
+                            interval_map[rsurvey.pixels],
+                            np.array([rsurvey.visit_interval[0]]*len(rsurvey.pixels))
+                        )
 
-            # This assumes one region per science case per filter
-            for name, info in science_cases.items():
-                if 'multi-epoch' in info['cadence']:
-                    cases.append(name)
+                    # Option 2: A series of numerical intervals are given
+                    elif len(rsurvey.visit_interval) > 1:
+                        interval_map[rsurvey.pixels] = np.minimum(
+                            interval_map[rsurvey.pixels],
+                            np.array([np.median(rsurvey.visit_interval)] * len(rsurvey.pixels))
+                        )
 
-                    # Similarly for the science cases, create a desired cadence_footprint
-                    if rsurvey.n_visits_per_field >= 2:
-                        idx = np.where(info[f].region_map > 0.0)[0]
-                        science_cadence_footprint = np.zeros(info[f].NPIX)
-                        science_cadence_footprint[idx].fill(info[f].visit_interval)
-                    else:
-                        science_cadence_footprint = np.zeros(info[f].NPIX)
+                    # Option 3: A list containing a single None value is given,
+                    # meaning that there is only a single visit to each field.
+                    elif np.isnan(rsurvey.visit_interval[0]) and len(rsurvey.visit_interval) == 1:
+                        interval_map[rsurvey.pixels] = np.minimum(
+                            interval_map[rsurvey.pixels],
+                            np.array([730.0] * len(rsurvey.pixels))
+                        )
 
-                    # Calculate the percentage of pixels that receive observations
-                    # at at least the required interval
-                    jdx1 = np.where(science_cadence_footprint >= req_interval)[0]
-                    jdx2 = np.where(cadence_footprint >= req_interval)[0]
-                    common_pixels = list(set(jdx1).intersection(set(jdx2)))
+        # Substitute NaN for pixels which have the maximal (730.0) day interval between observations
+        jdx = np.where(interval_map >= 730.0)[0]
+        interval_map[jdx] = np.nan
+        jdx = np.where(~np.isnan(interval_map))[0]
+        print('NVISITS: ', nvisits_map[jdx[0]])
+        print('INTERVALS: ',interval_map[jdx[0]])
 
-                    metric.append((len(common_pixels)/len(jdx1))*100.0)
+        # Total number of pixels in all survey regions
+        all_pixels = list_pixels_all_regions(region_list)
 
-            results[survey_name][f] = {
-                'percent_area_at_interval': np.array(metric),
-                'science_cases': cases
-            }
+        # Compute metric as a HEALpixel map, then calculate the percentage of pixels
+        # that meet the 1 mas critiera
+        #metric_map = 1.0 / (interval_map / 365.24) / np.sqrt(nvisits_map)   # in mas
+        metric_map = 1.0 / (interval_map / 365.24)   # in mas
+        print('METRICS: ', metric_map[jdx[0]])
+        idx = np.where(metric_map[all_pixels] <= 1.0)[0]
+        m1 = (len(idx)/len(all_pixels))*100.0
+
+        data.append([survey_name, m1])
+    data = np.array(data)
+
+    # Return a table of the metric results
+    results = Table([
+        Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
+        Column(name='M5_proper_motion_precision', data=data[:, 1], dtype='f8'),
+    ])
 
     return results
 

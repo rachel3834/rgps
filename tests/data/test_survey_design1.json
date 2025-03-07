@@ -10,10 +10,10 @@
           -2.0,
           2.0
         ],
-        "nvisits": 1,
+        "nvisits": 4,
         "duration": 730.0,
         "visit_interval": [
-          null
+          100.0
         ],
         "name": "Eastern_Plane"
       },
@@ -29,7 +29,7 @@
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [
-          null
+          1.0, 3.0
         ],
         "name": "Wide_Bulge"
       },

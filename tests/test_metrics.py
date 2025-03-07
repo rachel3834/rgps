@@ -128,6 +128,38 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
     assert ((results['M3_%regions'].data >= 0.0).all())
 
 @pytest.mark.parametrize(
+    "test_survey_regions",
+    [
+        (
+                path.join(getcwd(), 'data', 'test_survey_regions1.json')
+        )
+    ])
+def test_M5_proper_motion_precision(test_survey_regions):
+    """
+    Unittest for metric to evaluate the area of sky to receive observations to measure proper motions
+    to the required precision.
+    """
+
+    from metrics import M5_proper_motion_precision
+
+    # Load simulation parameters
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
+    # Load the defined survey strategy options from file
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+
+    # Compute metric
+    results = M5_proper_motion_precision(sim_config, survey_regions)
+    print(results)
+
+    # Test that the metric returns a table of five columns and non-zero rows
+    assert (type(results) == type(Table([])))
+    assert (len(results) > 0)
+    assert (len(results.colnames) == 2)
+
+    assert(True==False)
+
+@pytest.mark.parametrize(
     "test_survey_regions, filtersets",
     [
         (

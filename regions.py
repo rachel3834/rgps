@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import healpy as hp
 import json
+import copy
 
 OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
 
@@ -47,6 +48,8 @@ class CelestialRegion:
             self.pixels = np.array(params['pixels'], dtype='int')
         if 'pixel_priority' in params.keys():
             self.pixel_priority = np.array(params['pixel_priority'], dtype='float')
+        if 'visit_interval' in params.keys():
+            self.visit_interval = np.array(params['visit_interval'], dtype='float')
 
         if self.l_width:
             self.halfwidth = self.l_width * u.deg / 2.0
@@ -229,7 +232,10 @@ def create_region(params):
             'b_height': bspan,
             'name': params['name'],
             'label': params['label'],
-            'optic': params['optic']
+            'optic': params['optic'],
+            'nvisits': params['nvisits'],
+            'duration': params['duration'],
+            'visit_interval': params['visit_interval']
         }
         r = CelestialRegion(rparams)
 
@@ -244,7 +250,10 @@ def create_region(params):
         r = CelestialRegion()
         r.label = params['label']
         r.name = params['name']
-        r.optic = params['optic']
+        r.optic = params['optic'],
+        r.nvisits = params['nvisits']
+        r.duration = params['duration']
+        r.visit_interval = params['visit_interval']
         r.region_map = survey_regions[params['survey_footprint']]
         r.pixels = (np.where(r.region_map > 0.0)[0]).tolist()
 
@@ -258,7 +267,10 @@ def create_region(params):
                 'radius': params['pointing'][2],
                 'name': params['name'],
                 'label': params['label'],
-                'optic': params['optic']
+                'optic': params['optic'],
+                'nvisits': params['nvisits'],
+                'duration': params['duration'],
+                'visit_interval': params['visit_interval']
             }
             r = CelestialRegion(rparams)
         except KeyError:

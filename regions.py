@@ -29,6 +29,7 @@ class CelestialRegion:
         self.l_width = None
         self.b_height = None
         self.radius = None
+        self.category = None
         self.predefined_pixels = False
         self.NSIDE = 64
         self.NPIX = hp.nside2npix(self.NSIDE)
@@ -38,7 +39,6 @@ class CelestialRegion:
         self.nvisits = None         # Total number of visits per pointing within this region
         self.duration = None        # Survey duration in days over which this region is observed
         self.visit_interval = np.array([], dtype='float')   # In hours
-
 
         for key, value in params.items():
             if key not in self.array_keys and key in dir(self):
@@ -157,6 +157,7 @@ class CelestialRegion:
             region = {
                 "name": self.name,
                 "label": self.label,
+                "category": self.category,
                 "optic": self.optic,
                 "l_width": self.l_width,
                 "b_height": self.b_height,
@@ -237,6 +238,8 @@ def create_region(params):
             'duration': params['duration'],
             'visit_interval': params['visit_interval']
         }
+        if 'category' in params.keys():
+            rparams['category'] = params['category']
         r = CelestialRegion(rparams)
 
         # Calculate which HEALpixels belong to this region.
@@ -254,6 +257,8 @@ def create_region(params):
         r.nvisits = params['nvisits']
         r.duration = params['duration']
         r.visit_interval = params['visit_interval']
+        if 'category' in params.keys():
+            r.category = params['category']
         r.region_map = survey_regions[params['survey_footprint']]
         r.pixels = (np.where(r.region_map > 0.0)[0]).tolist()
 
@@ -272,6 +277,8 @@ def create_region(params):
                 'duration': params['duration'],
                 'visit_interval': params['visit_interval']
             }
+            if 'category' in params.keys():
+                rparams['category'] = params['category']
             r = CelestialRegion(rparams)
         except KeyError:
             raise KeyError('Input region configuration missing necessary entries: ' + repr(params))
@@ -320,6 +327,11 @@ def create_region_set(params):
         pointing['label'] = params['label']
         pointing['name'] = params['name'] + '_' + str(i)
         pointing['optic'] = params['optic']
+        pointing['nvisits'] = params['nvisits']
+        pointing['duration'] = params['duration']
+        pointing['visit_interval'] = params['visit_interval']
+        if 'category' in params.keys():
+            pointing['category'] = params['category']
         r = create_region(pointing)
         region_list.append(r)
 
@@ -506,6 +518,8 @@ def build_region_maps(sim_config, survey_definitions):
                     for region in info[optic]:
                         region['label'] = name + '_' + region['name']
                         region['optic'] = optic
+                        if 'category' in info.keys():
+                            region['category'] = info['category']
 
                         if 'catalog' in region.keys():
                             region_set = create_region_set(region)

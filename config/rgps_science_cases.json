@@ -40,7 +40,7 @@
     "time_domain": "True",
     "cadence": "multi-epoch",
     "n_visits_per_field": 8,
-    "category": "sfr",
+    "category": "SFR",
     "ready_for_use": "True"
   },
   "Zari": {
@@ -69,7 +69,7 @@
     "questions": "None",
     "proper_motions": "True",
     "time_domain": "False",
-    "category": "sfr",
+    "category": "SFR",
     "cadence": "3 visits minimum over 3 yrs",
     "ready_for_use": "True"
   },

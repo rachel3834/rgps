@@ -145,12 +145,23 @@ class CelestialRegion:
                 ' n_pixels=' + str(len(self.pixels)) + ' ' + str(self.optic)
                 + ' ' + str(self.l) + ' ' + str(self.b))
 
-    def sky_plot(self):
-        mw1 = MWSkyMap(projection='aitoff', grayscale=False, grid='galactic', background='infrared', figsize=(16, 10))
-        mw1.title = self.label + ' ' + self.optic
+    def sky_plot(self, title=None, figsize=(16,10), plot_color='r', plot_alpha=0.4):
+        mw1 = MWSkyMap(
+            projection='aitoff',
+            grayscale=False,
+            grid='galactic',
+            background='infrared',
+            figsize=figsize
+        )
+        if title:
+            mw1.title = title
+        else:
+            mw1.title = self.label + ' ' + self.optic
         s = self.pixels_to_skycoords()
-        mw1.scatter(s.ra.deg * u.deg, s.dec.deg * u.deg, c="r", s=5, alpha=0.4)
+        mw1.scatter(s.ra.deg * u.deg, s.dec.deg * u.deg, c=plot_color, s=5, alpha=plot_alpha)
         plt.rcParams.update({'font.size': 22})
+
+        return mw1
 
     def to_json(self):
         try:
@@ -196,7 +207,7 @@ class CelestialRegion:
 
         return region
 
-def create_region(params):
+def create_region(sim_config, params):
     """
     Function to generate a CelestialRegion object from a dictionary describing the boundaries of the region.
 
@@ -311,7 +322,7 @@ def create_region_from_json(params):
 
     return r
 
-def create_region_set(params):
+def create_region_set(sim_config, params):
     """
     Function to create a set of regions from a list of region dictionaries.
 
@@ -321,7 +332,7 @@ def create_region_set(params):
 
     region_list = []
 
-    cat_dir = path.join(getcwd(), 'config')
+    cat_dir = path.join(sim_config['root_dir'], 'config')
     pointing_set = survey_footprints.load_catalog(cat_dir, params['catalog'])
     for i,pointing in enumerate(pointing_set):
         pointing['label'] = params['label']
@@ -332,7 +343,7 @@ def create_region_set(params):
         pointing['visit_interval'] = params['visit_interval']
         if 'category' in params.keys():
             pointing['category'] = params['category']
-        r = create_region(pointing)
+        r = create_region(sim_config, pointing)
         region_list.append(r)
 
     return region_list
@@ -435,7 +446,7 @@ def extract_requested_regions(science_cases):
 
     return requested_regions
 
-def calc_healpixel_regions(requested_regions):
+def calc_healpixel_regions(sim_config, requested_regions):
     """
     Function to generate the CelestialRegion objects for a set of science cases, and
     calculate the HEALpixel maps.
@@ -455,9 +466,9 @@ def calc_healpixel_regions(requested_regions):
         regions_for_optic = []
         for box in region_list:
             if 'catalog' in box.keys():
-                region_set = regions.create_region_set(box)
+                region_set = regions.create_region_set(sim_config, box)
             else:
-                region_set = [regions.create_region(box)]
+                region_set = [regions.create_region(sim_config, box)]
 
             for r in region_set:
                 # If the region is valid, the list of included pixels will be non-zero.
@@ -522,10 +533,10 @@ def build_region_maps(sim_config, survey_definitions):
                             region['category'] = info['category']
 
                         if 'catalog' in region.keys():
-                            region_set = create_region_set(region)
+                            region_set = create_region_set(sim_config, region)
 
                         else:
-                            region_set = [create_region(region)]
+                            region_set = [create_region(sim_config, region)]
 
                         for r in region_set:
 

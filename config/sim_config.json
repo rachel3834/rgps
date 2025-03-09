@@ -1,4 +1,5 @@
 {
+  "root_dir": "/Users/rstreet/software/rgps",
   "NSIDE": 64,
   "OPTICAL_COMPONENTS": ["F087", "F106", "F129", "F158", "F184", "F213", "F146", "G150", "P127"],
   "PLOT_COLORS": {

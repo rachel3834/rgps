@@ -2281,5 +2281,483 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "keyholes"
+  },
+  "Lim3_grism_targets": {
+    "G150": [
+      {"l": [15.1037669, 15.67765023], "b": [-0.7320322, -0.046171922],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "RGPS_M17"},
+      {"l": [16.9923279, 17.492729567], "b": [0.8276176, 1.2762662111],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "RGPS_M16"},
+      {"l": [48.009259289, 49.1319679], "b": [-0.4528851, 0.2947182333],
+        "nvisits": 60,
+        "duration": 0.042,
+        "visit_interval": [null],
+        "name": "RGPS_W51"}
+    ],
+    "comment": "W51, M17 and/or M16, in priority order, from Wanggi Lim",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "category": "SFR"
+  },
+  "Sankrit": {
+    "F062": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Low_extinction_survey"}
+    ],
+    "comment": "Wide area survey for windows of low extinction",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "category": "wide-area"
+  },
+  "Gallart": {
+    "F106": [
+      {"l": [-10.0, 180.0], "b": [-3.0, 3.0],
+        "nvisits": 2,
+        "duration": 465.0,
+        "visit_interval": [null],
+        "name": "Stellar_ages_survey"}
+    ],
+    "F129": [
+      {"l": [-10.0, 180.0], "b": [-3.0, 3.0],
+        "nvisits": 2,
+        "duration": 465.0,
+        "visit_interval": [null],
+        "name": "Stellar_ages_survey"}
+    ],
+    "F213": [
+      {"l": [-10.0, 180.0], "b": [-3.0, 3.0],
+        "nvisits": 2,
+        "duration": 465.0,
+        "visit_interval": [null],
+        "name": "Stellar_ages_survey"}
+    ],
+    "comment": "Wide area survey to trace stellar ages for star formation histories",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "wide-area"
+  },
+  "Pascucci": {
+    "G150": [
+      {"pointing": [-99.9, -99.9, -99.9],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Taurus_SFR"},
+      {"pointing": [-99.9, -99.9, -99.9],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Lupus_SFR"},
+      {"pointing": [-99.9, -99.9, -99.9],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Chamaeleon_SFR"},
+      {"pointing": [-99.9, -99.9, -99.9],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Ophiucus_SFR"}
+    ],
+    "comment": "Grism spectroscopy of SFRs",
+    "question": "Need coordinates for regions",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "category": "SFR"
+  },
+  "Ivanov1": {
+    "G150": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Spectra_library"}
+    ],
+    "comment": "Library of stellar spectra",
+    "questions": "Need specific target or field pointings",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "spectroscopy"
+  },
+  "Ivanov2": {
+    "F106": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "extinction1"}
+    ],
+    "F129": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "extinction1"}
+    ],
+    "F158": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "extinction1"}
+    ],
+    "F213": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "extinction1"}
+    ],
+    "comment": "Spectroscopic extinction mapping",
+    "questions": "Need specific target or field pointings",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "extinction"
+  },
+  "Craig1": {
+    "F213": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Low_extinction_survey"}
+    ],
+    "comment": "None",
+    "questions": "What region of the Plane to survey and cadence",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "wide-area"
+  },
+  "Craig2": {
+    "F184": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Nova_shells1"}
+    ],
+    "F213": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Nova_shells1"}
+    ],
+    "comment": "Detecting shells from galactic novae",
+    "questions": "Target catalog of novae from last 100yrs",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "novae"
+  },
+  "Kuhn": {
+    "F158": [
+      {"l": [76.0, 82.0], "b": [-2.0, 4.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Cygnus-X"},
+      {"l": [287.0, 288.5], "b": [-1.25, 0.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Carina"}
+    ],
+    "F184": [
+      {"l": [76.0, 82.0], "b": [-2.0, 4.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Cygnus-X"},
+      {"l": [287.0, 288.5], "b": [-1.25, 0.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Carina"}
+    ],
+    "F213": [
+      {"l": [76.0, 82.0], "b": [-2.0, 4.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Cygnus-X"},
+      {"l": [287.0, 288.5], "b": [-1.25, 0.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Carina"}
+    ],
+    "comment": "OB star formation regions",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "SFR",
+    "min_area": 26.0
+  },
+  "Saydjari": {
+    "F106": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "DIBs"}
+    ],
+    "F129": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "DIBs"}
+    ],
+    "F158": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "DIBs"}
+    ],
+    "F184": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "DIBs"}
+    ],
+    "F214": [
+      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
+        "nvisits": 30,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "DIBs"}
+    ],
+    "comment": "Survey of Diffuse Interstellar Bands and ISM.  At least four ideally five filters needed.  Image tiling should include offsets/roll angles for calibration",
+    "questions": "Requested survey regions based on APOGEE DIBs catalog",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "ISM"
+  },
+  "Hillenbrand": {
+    "G150": [
+      {"pointing": [-60.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field1"},
+      {"pointing": [-50.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field2"},
+      {"pointing": [-40.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field3"},
+      {"pointing": [-30.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field4"},
+      {"pointing": [-20.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field5"},
+      {"pointing": [20.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field6"},
+      {"pointing": [30.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field7"},
+      {"pointing": [40.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field8"},
+      {"pointing": [50.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field9"},
+      {"pointing": [60.0, 0.0, 0.3],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "grism_field10"}
+    ],
+    "comment": "Spectroscopic observations of non-crowded star fields for stellar characterization and extinction",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "spectroscopy"
+  },
+  "Gramze": {
+    "F184": [
+      {"l": [-10.0, 10.0], "b": [-1.0, 1.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Gal_Bar1"}
+    ],
+    "comment": "Survey for star formation in the central Galactic Bar regions.",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "SFR",
+    "min_area": 40.0
+  },
+  "Sabin": {
+    "F062": [
+      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars"},
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars_Bulge"}
+    ],
+    "F129": [
+      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars"},
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars_Bulge"}
+    ],
+    "F158": [
+      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars"},
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars_Bulge"}
+    ],
+    "F213": [
+      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars"},
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Evolved_stars_Bulge"}
+    ],
+    "comment": "Survey for evolved intermediate-mass stars, AGB, planetary nebulae, novae, cataclysmic variables and symbiotic stars",
+    "ready_for_use": "True",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "wide-area"
+  },
+  "Bonito": {
+    "F062": [
+      {"l": [-99.9, -99.9], "b": [-3.0, 3.0],
+        "nvisits": 96,
+        "duration": 1.0,
+        "visit_interval": [null],
+        "name": "Carina"},
+      {"l": [-99.9, -99.9], "b": [-3.0, 3.0],
+        "nvisits": 96,
+        "duration": 1.0,
+        "visit_interval": [null],
+        "name": "NGC6611"}
+    ],
+    "comment": "YSO variability",
+    "questions": "Specific region definitions for the targets",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "True",
+    "category": "YSOs"
+  },
+  "Minniti_GCs": {
+    "F129": [
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 3,
+        "duration": 730.0,
+        "visit_interval": [243.0],
+        "name": "Galactic_clusters"}
+    ],
+    "F158": [
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 3,
+        "duration": 730.0,
+        "visit_interval": [243.0],
+        "name": "Galactic_clusters"}
+    ],
+    "F213": [
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 3,
+        "duration": 730.0,
+        "visit_interval": [243.0],
+        "name": "Galactic_clusters"}
+    ],
+    "comment": "Multi-epoch, multi-wavelength imaging of Globular Clusters in the central Bulge",
+    "ready_for_use": "True",
+    "proper_motions": "True",
+    "time_domain": "False",
+    "category": "wide-area",
+    "min_area": 400.0
+  },
+  "Pal": {
+    "G150": [
+      {"l": [358.0, 359.9], "b": [-2.0, 2.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "GalCenter1"}
+    ],
+    "comment": "Stellar spectral template library",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "spectroscopy"
+  },
+  "Saito": {
+    "F213": [
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 1,
+        "duration": 0.021,
+        "visit_interval": [null],
+        "name": "Bulge_survey"}
+    ],
+    "comment": "Range of science from extended Bulge region, including Solar System, stellar populations, galactic structure",
+    "questions": "Which 3 filters?  Is this a time-domain survey?",
+    "ready_for_use": "False",
+    "proper_motions": "False",
+    "time_domain": "False",
+    "category": "wide-area"
   }
 }

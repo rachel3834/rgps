@@ -522,11 +522,11 @@
   },
   "DAmmando": {
     "F184": [{"catalog": "table-4LAC-DR3-l.fits",
-        "nvisits": 1,
-        "duration": 730.0,
-        "visit_interval": [null],
+        "nvisits": 40,
+        "duration": 120.0,
+        "visit_interval": [3.0],
         "name": "DAmmando_catalog"}],
-    "questions": "filter choice, galactic plane area",
+    "questions": "2-3 sequences per day, every 3-4d, upto 40 visits",
     "comment": "Jetted AGN",
     "proper_motions": "False",
     "time_domain": "True",
@@ -2308,13 +2308,34 @@
   },
   "Sankrit": {
     "F062": [
-      {"l": [15.1037669, 15.67765023], "b": [-3.0, 3.0],
-        "nvisits": 30,
-        "duration": 0.021,
+      {"l": [-60.0, 60.0], "b": [-3.0, 3.0],
+        "nvisits": 1,
+        "duration": 730.0,
         "visit_interval": [null],
         "name": "Low_extinction_survey"}
     ],
-    "comment": "Wide area survey for windows of low extinction",
+    "F129": [
+      {"l": [-60.0, 60.0], "b": [-3.0, 3.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Low_extinction_survey"}
+    ],
+    "F184": [
+      {"l": [-60.0, 60.0], "b": [-3.0, 3.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Low_extinction_survey"}
+    ],
+    "F213": [
+      {"l": [-60.0, 60.0], "b": [-3.0, 3.0],
+        "nvisits": 1,
+        "duration": 730.0,
+        "visit_interval": [null],
+        "name": "Low_extinction_survey"}
+    ],
+    "comment": "Wide area survey for windows of low extinction.  Needs 4 filters: F067 essential, F184, F213 recommended, plus any one other",
     "ready_for_use": "False",
     "proper_motions": "False",
     "time_domain": "True",
@@ -2322,21 +2343,21 @@
   },
   "Gallart": {
     "F106": [
-      {"l": [-10.0, 180.0], "b": [-3.0, 3.0],
+      {"l": [-40.0, 180.0], "b": [-3.0, 3.0],
         "nvisits": 2,
         "duration": 465.0,
         "visit_interval": [null],
         "name": "Stellar_ages_survey"}
     ],
     "F129": [
-      {"l": [-10.0, 180.0], "b": [-3.0, 3.0],
+      {"l": [-40.0, 180.0], "b": [-3.0, 3.0],
         "nvisits": 2,
         "duration": 465.0,
         "visit_interval": [null],
         "name": "Stellar_ages_survey"}
     ],
     "F213": [
-      {"l": [-10.0, 180.0], "b": [-3.0, 3.0],
+      {"l": [-40.0, 180.0], "b": [-3.0, 3.0],
         "nvisits": 2,
         "duration": 465.0,
         "visit_interval": [null],
@@ -2629,7 +2650,7 @@
   },
   "Sabin": {
     "F062": [
-      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+      {"l": [-63.0, 63.0], "b": [-5.0, 5.0],
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [null],
@@ -2641,7 +2662,7 @@
         "name": "Evolved_stars_Bulge"}
     ],
     "F129": [
-      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+      {"l": [-63.0, 63.0], "b": [-5.0, 5.0],
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [null],
@@ -2653,7 +2674,7 @@
         "name": "Evolved_stars_Bulge"}
     ],
     "F158": [
-      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+      {"l": [-63.0, 63.0], "b": [-5.0, 5.0],
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [null],
@@ -2665,7 +2686,7 @@
         "name": "Evolved_stars_Bulge"}
     ],
     "F213": [
-      {"l": [29.0, 215.0], "b": [-5.0, 5.0],
+      {"l": [-63.0, 63.0], "b": [-5.0, 5.0],
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [null],
@@ -2676,7 +2697,7 @@
         "visit_interval": [null],
         "name": "Evolved_stars_Bulge"}
     ],
-    "comment": "Survey for evolved intermediate-mass stars, AGB, planetary nebulae, novae, cataclysmic variables and symbiotic stars",
+    "comment": "Survey for evolved intermediate-mass stars, AGB, planetary nebulae, novae, cataclysmic variables and symbiotic stars. Project can work with l=+/-41deg if reduced area",
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
@@ -2746,17 +2767,31 @@
     "category": "spectroscopy"
   },
   "Saito": {
+    "F129": [
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 2,
+        "duration": 730,
+        "visit_interval": [700],
+        "name": "Bulge_survey"}
+    ],
+    "F158": [
+      {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
+        "nvisits": 2,
+        "duration": 730,
+        "visit_interval": [700],
+        "name": "Bulge_survey"}
+    ],
     "F213": [
       {"l": [-10.0, 10.0], "b": [-10.0, 10.0],
-        "nvisits": 1,
-        "duration": 0.021,
-        "visit_interval": [null],
+        "nvisits": 2,
+        "duration": 730,
+        "visit_interval": [700],
         "name": "Bulge_survey"}
     ],
     "comment": "Range of science from extended Bulge region, including Solar System, stellar populations, galactic structure",
-    "questions": "Which 3 filters?  Is this a time-domain survey?",
-    "ready_for_use": "False",
-    "proper_motions": "False",
+    "questions": "",
+    "ready_for_use": "True",
+    "proper_motions": "True",
     "time_domain": "False",
     "category": "wide-area"
   }

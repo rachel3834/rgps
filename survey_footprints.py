@@ -1,13 +1,15 @@
 import json
-from os import path
+from os import path, getcwd
 import numpy as np
 import healpy as hp
 import csv
 from astropy.io import fits
+import config_utils
+import regions
 
 NSIDE = 64
 
-def load_survey_footprints(root_dir):
+def load_survey_footprints(sim_config, root_dir):
     """
     Function to load a set of pre-defined survey footprints in the form of HEALpixel maps
 
@@ -19,6 +21,9 @@ def load_survey_footprints(root_dir):
 
     # Load Rubin Galactic Plane survey footprint
     survey_footprints['rubin_galactic_plane'] = load_rubin_galplane_footprint(root_dir)
+
+    # Load the DECaPS2 survey footprint
+    survey_footprints['DECaPS2'] = load_DECaPS2_footprint(sim_config)
 
     return survey_footprints
 
@@ -96,6 +101,15 @@ def load_catalog(root_dir, catalog_name):
                     pointing_set.append({"pointing": [float(entries[4]), float(entries[5]), radius],
                                          "priority": float(entries[6])})
 
+    elif catalog_name == 'blackcat_catalog.csv':
+
+        with open(catalog_file, newline='') as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=' ', quotechar='|')
+            for i, row in enumerate(csv_reader):
+                if i >= 1:
+                    entries = ''.join(row).split(',')
+                    pointing_set.append({"pointing": [float(entries[3]), float(entries[4]), 0.1]})
+
     return pointing_set
 
 def load_rubin_galplane_footprint(root_dir):
@@ -110,8 +124,48 @@ def load_rubin_galplane_footprint(root_dir):
 
     return np.array(spec['healpix_map'])
 
+def load_DECaPS2_footprint(sim_config):
+    """
+    Function to load the survey footprint for the DECaPS2 survey of the Galactic Plane by DECam.
+    The footprint data was taken from Saydjari et al.(2023), ApJSS, 264, 28, figure 1.
+
+    Returns HEALpixel map for consistency with other survey regions
+    """
+
+    # Since no exact table of pointings was included, the survey boundaries have been estimated
+    # based on Figure 1.
+    survey_config = {
+        "DECaPS2": {
+            "F213":[{   # Nominal filter used to fit required structure
+                "l": [
+                    -120.0,
+                    5.0
+                ],
+                "b": [
+                    -10.0,
+                    10.0
+                ],
+                "nvisits": 1,
+                "duration": 730.0,
+                "visit_interval": [None],
+                "name": "DECaPS2"
+                }],
+        "comment": "None",
+        "ready_for_use": "True"
+        }
+    }
+
+    survey_regions = regions.build_region_maps(sim_config, survey_config)
+
+    return survey_regions['DECaPS2']['F213'][0].region_map
 
 if __name__ == '__main__':
     root_dir = '/'
-    survey_footprints = load_survey_footprints(root_dir)
-    print(survey_footprints)
+    #survey_footprints = load_survey_footprints(root_dir)
+    #print(survey_footprints)
+
+    sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
+
+    survey_regions = load_DECaPS2_footprint(sim_config)
+
+    print(survey_regions)

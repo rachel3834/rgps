@@ -25,6 +25,9 @@ def load_survey_footprints(sim_config, root_dir):
     # Load the DECaPS2 survey footprint
     survey_footprints['DECaPS2'] = load_DECaPS2_footprint(sim_config)
 
+    # Load the BDBS survey footprint
+    survey_footprints['BDBS'] = load_BDBS_footprint(root_dir)
+
     return survey_footprints
 
 def load_catalog(root_dir, catalog_name):
@@ -110,6 +113,16 @@ def load_catalog(root_dir, catalog_name):
                     entries = ''.join(row).split(',')
                     pointing_set.append({"pointing": [float(entries[3]), float(entries[4]), 0.1]})
 
+
+    elif catalog_name == 'BDBS_survey_pointings.csv':
+
+        with open(catalog_file, newline='') as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=' ', quotechar='|')
+            for i, row in enumerate(csv_reader):
+                if i >= 1:
+                    entries = ''.join(row).split(',')
+                    pointing_set.append({"pointing": [float(entries[3]), float(entries[4]), 0.1]})
+
     return pointing_set
 
 def load_rubin_galplane_footprint(root_dir):
@@ -159,13 +172,27 @@ def load_DECaPS2_footprint(sim_config):
 
     return survey_regions['DECaPS2']['F213'][0].region_map
 
+def load_BDBS_footprint(root_dir):
+    """
+        Function to load the survey footprint for the Blanco DECam Bulge Survey.
+        The footprint data was taken from Rich et al (2008), MNRAS, 499, 2340, Table 1.
+
+        Returns HEALpixel map for consistency with other survey regions
+        """
+
+    file_path = path.join(root_dir, 'config', 'BDBS_survey_footprint.json')
+    with open(file_path, 'r') as f:
+        spec = json.load(f)
+
+    return np.array(spec['healpix_map'])
+
 if __name__ == '__main__':
-    root_dir = '/'
+    root_dir = './'
     #survey_footprints = load_survey_footprints(root_dir)
     #print(survey_footprints)
 
     sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
 
-    survey_regions = load_DECaPS2_footprint(sim_config)
+    survey_regions = load_BDBS_footprint(root_dir)
 
     print(survey_regions)

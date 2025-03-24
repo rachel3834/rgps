@@ -134,13 +134,13 @@ def load_catalog(root_dir, catalog_name):
 
     return pointing_set
 
-def load_rubin_galplane_footprint(root_dir):
+def load_rubin_galplane_footprint(root_dir, cat_file='rubin_galplane_survey_footprint.json'):
     """
     Function to load the survey footprint map for Rubin in the Galactic Plane
     :return: HEALpixel array
     """
 
-    file_path = path.join(root_dir, 'config', 'rubin_galplane_survey_footprint.json')
+    file_path = path.join(root_dir, 'config', cat_file)
     with open(file_path, 'r') as f:
         spec = json.load(f)
 

@@ -2718,7 +2718,7 @@
     ],
     "comment": "YSO variability",
     "questions": "Specific region definitions for the targets",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "True",
     "category": "YSOs"

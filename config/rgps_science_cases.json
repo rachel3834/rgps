@@ -2705,12 +2705,12 @@
   },
   "Bonito": {
     "F062": [
-      {"l": [-99.9, -99.9], "b": [-3.0, 3.0],
+      {"pointing": [287.60158,-0.64452,4.0],
         "nvisits": 96,
         "duration": 1.0,
         "visit_interval": [null],
         "name": "Carina"},
-      {"l": [-99.9, -99.9], "b": [-3.0, 3.0],
+      {"pointing": [16.9615, 0.8106, 1.4],
         "nvisits": 96,
         "duration": 1.0,
         "visit_interval": [null],

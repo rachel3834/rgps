@@ -121,7 +121,16 @@ def load_catalog(root_dir, catalog_name):
             for i, row in enumerate(csv_reader):
                 if i >= 1:
                     entries = ''.join(row).split(',')
-                    pointing_set.append({"pointing": [float(entries[3]), float(entries[4]), 0.1]})
+                    pointing_set.append({"pointing": [float(entries[0]), float(entries[1]), 0.1]})
+
+    elif catalog_name == 'bonito_sfrs.csv':
+
+        with open(catalog_file, newline='') as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=' ', quotechar='|')
+            for i, row in enumerate(csv_reader):
+                if i >= 1:
+                    entries = ''.join(row).split(',')
+                    pointing_set.append({"pointing": [float(entries[1]), float(entries[2]), float(entries[3])]})
 
     return pointing_set
 

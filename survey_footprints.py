@@ -28,6 +28,9 @@ def load_survey_footprints(sim_config, root_dir):
     # Load the BDBS survey footprint
     survey_footprints['BDBS'] = load_BDBS_footprint(root_dir)
 
+    # Load the Baade's Window survey footprint
+    survey_footprints['Baade'] = load_Baade_footprint(sim_config)
+
     return survey_footprints
 
 def load_catalog(root_dir, catalog_name):
@@ -194,6 +197,71 @@ def load_BDBS_footprint(root_dir):
         spec = json.load(f)
 
     return np.array(spec['healpix_map'])
+
+def load_Baade_footprint(sim_config):
+    """
+    Function to load the survey footprint for the DECam survey of Baade's Window.
+    The footprint data was taken from Saha, A. et al. (2019), ApJ, 874, 30, table 1.
+
+    Returns HEALpixel map for consistency with other survey regions
+    """
+
+    # Since no exact table of pointings was included, the survey boundaries have been estimated
+    # based on Figure 1.
+    survey_config = {
+        "Baade": {
+            "F213":[ # Nominal filter used to fit required structure
+                {
+                "pointing": [1.02, -3.92, 3.0],
+                "nvisits": 1,
+                "duration": 730.0,
+                "visit_interval": [None],
+                "name": "B1"
+                },
+                {
+                "pointing": [0.4, -5.70, 3.0],
+                "nvisits": 1,
+                "duration": 730.0,
+                "visit_interval": [None],
+                "name": "B2"
+                },
+                {
+                "pointing": [10.0, -5.0, 3.0],
+                "nvisits": 1,
+                "duration": 730.0,
+                "visit_interval": [None],
+                "name": "B3"
+                },
+                {
+                "pointing": [4.0, -5.0, 3.0],
+                "nvisits": 1,
+                "duration": 730.0,
+                "visit_interval": [None],
+                "name": "B4"
+                },
+                {
+                "pointing": [0.0, -10.0, 3.0],
+                "nvisits": 1,
+                "duration": 730.0,
+                "visit_interval": [None],
+                "name": "B5"
+                },
+                {
+                "pointing": [353.25, -4.70, 3.0],
+                "nvisits": 1,
+                "duration": 730.0,
+                "visit_interval": [None],
+                "name": "B6"
+                }
+            ],
+        "comment": "None",
+        "ready_for_use": "True"
+        }
+    }
+
+    survey_regions = regions.build_region_maps(sim_config, survey_config)
+
+    return survey_regions['Baade']['F213'][0].region_map
 
 if __name__ == '__main__':
     root_dir = './'

@@ -145,6 +145,12 @@ class CelestialRegion:
                 ' n_pixels=' + str(len(self.pixels)) + ' ' + str(self.optic)
                 + ' ' + str(self.l) + ' ' + str(self.b))
 
+    def tds_summary(self):
+        return (repr(self.label) + ': l_center=' + str(self.l_center) + ', b_center='
+            + str(self.b_center) + ': l_width=' + str(self.l_width) + ', b_height='
+            + str(self.b_height) +
+                ' visit_intervals=' + repr(self.visit_interval) + ' ' + str(self.optic))
+
     def sky_plot(self, title=None, figsize=(16,10), plot_color='r', plot_alpha=0.4):
         mw1 = MWSkyMap(
             projection='aitoff',
@@ -260,7 +266,7 @@ def create_region(sim_config, params):
     # Irregular regions defined as arrays of HEALpixels which are loaded from
     # a pre-existing configuration file.
     elif 'survey_footprint' in params.keys():
-        survey_regions = survey_footprints.load_survey_footprints(getcwd())
+        survey_regions = survey_footprints.load_survey_footprints(sim_config, getcwd())
         r = CelestialRegion()
         r.label = params['label']
         r.name = params['name']

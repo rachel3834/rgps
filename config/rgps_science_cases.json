@@ -2338,7 +2338,7 @@
     "comment": "Wide area survey for windows of low extinction.  Needs 4 filters: F067 essential, F184, F213 recommended, plus any one other",
     "ready_for_use": "False",
     "proper_motions": "False",
-    "time_domain": "True",
+    "time_domain": "False",
     "category": "wide-area"
   },
   "Gallart": {

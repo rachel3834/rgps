@@ -6,6 +6,7 @@ __pycache__
 
 # Survey definition documents, included as a tarball
 Roman_bounds/
+followup/
 
 # Ignore selected files which are too large for Github
 config/*_regions*.json

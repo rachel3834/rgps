@@ -558,4 +558,3 @@ def build_region_maps(sim_config, survey_definitions):
                                 requested_regions[name][optic].append(r)
 
     return requested_regions
-

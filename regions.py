@@ -248,6 +248,8 @@ def create_region(sim_config, params):
             'b_center': (params['b'][0] + bspan / 2.0) * u.deg,
             'l_width': lspan,
             'b_height': bspan,
+            'halfwidth': lspan/2.0,
+            'halfheight': bspan/2.0,
             'name': params['name'],
             'label': params['label'],
             'optic': params['optic'],

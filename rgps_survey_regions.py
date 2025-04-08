@@ -17,14 +17,22 @@ def build_regions(args):
     # Load the RGPS survey configurations.  These are listed according to
     all_survey_configs = config_utils.read_config(args.spec_file)
 
+    # Make a list of all categories of proposals
+    category_list = [par['category'] for name,par in all_survey_configs.items()]
+
     # Load the broader configuration parameters of the whole simulation
     sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
 
     # Select regions for a specific survey strategy or all depending on user input
     if 'all' in str(args.use_case).lower():
         survey_config = all_survey_configs
+    elif 'time_domain' in str(args.use_case).lower():
+        survey_config = {name: par for name,par in all_survey_configs.items() if par['time_domain']}
+    elif str(args.use_case).lower() in category_list:
+        survey_config = {name: par for name,par in all_survey_configs.items() if args.use_case in par['category']}
     else:
         survey_config = {args.use_case: all_survey_configs[args.use_case]}
+    print('Selected ' + str(len(survey_config)) + ' science cases out of ' + str(len(all_survey_configs)))
 
     # Extract the set of regions from the set of science cases
     survey_regions = regions.build_region_maps(sim_config, survey_config)
@@ -56,7 +64,7 @@ def get_args():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('spec_file', help='Path to the JSON file containing the region definitions')
-    parser.add_argument('use_case', help='Select specific strategy or science case or ALL')
+    parser.add_argument('use_case', help='Select specific author, category or ALL')
     parser.add_argument('output_file', help='Path to the JSON output file')
     args = parser.parse_args()
 

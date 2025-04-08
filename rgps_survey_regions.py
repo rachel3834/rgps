@@ -28,6 +28,11 @@ def build_regions(args):
         survey_config = all_survey_configs
     elif 'time_domain' in str(args.use_case).lower():
         survey_config = {name: par for name,par in all_survey_configs.items() if par['time_domain']}
+    elif 'spectroscopy' in str(args.use_case).lower():
+        survey_config = {}
+        for name, par in all_survey_configs.items():
+            if 'P127' in par.keys() or 'G150' in par.keys():
+                survey_config[name] = par
     elif str(args.use_case).lower() in category_list:
         survey_config = {name: par for name,par in all_survey_configs.items() if args.use_case in par['category']}
     else:

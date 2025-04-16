@@ -2347,7 +2347,7 @@
     "comment": "W51, M17 and/or M16, in priority order, from Wanggi Lim",
     "ready_for_use": "True",
     "proper_motions": "False",
-    "time_domain": "True",
+    "time_domain": "False",
     "category": "SFR"
   },
   "Sankrit": {

@@ -272,7 +272,7 @@ def create_region(sim_config, params):
         r = CelestialRegion()
         r.label = params['label']
         r.name = params['name']
-        r.optic = params['optic'],
+        r.optic = params['optic']
         r.nvisits = params['nvisits']
         r.duration = params['duration']
         r.visit_interval = params['visit_interval']

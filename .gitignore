@@ -11,3 +11,5 @@ followup/
 # Ignore selected files which are too large for Github
 config/*_regions*.json
 tests/data/*regions*json
+region_data/
+region_data/*regions*json

@@ -5,6 +5,8 @@ from mw_plot import MWSkyMap
 from astropy_healpix import HEALPix
 from astropy import units as u
 from astropy.coordinates import Galactic, SkyCoord
+from astropy.io import fits
+from astropy.table import Table, Column
 import numpy as np
 import matplotlib.pyplot as plt
 import healpy as hp
@@ -109,6 +111,17 @@ class CelestialRegion:
 
             self.pixels = pixels
 
+    def pixellist_to_skycoords(self, pixel_list):
+        """
+        Method to convert the given list of pixels to SkyCoords, as opposed to the
+        set of pixels for the present object
+        """
+
+        hp = HEALPix(nside=self.NSIDE, order='ring', frame='icrs')
+        s = hp.healpix_to_skycoord(pixel_list)
+
+        return s
+
     def pixels_to_skycoords(self):
         """
         Method to convert pixels in a CelestialRegion back to a set of SkyCoords for the center of
@@ -118,11 +131,10 @@ class CelestialRegion:
             SkyCoord object with multiple pointings in ICRS coordinates
         """
 
-        hp = HEALPix(nside=self.NSIDE, order='ring', frame='icrs')
         pixels = self.pixels
         if type(pixels) == type(np.array([])):
             pixels = self.pixels.tolist()
-        s = hp.healpix_to_skycoord(pixels)
+        s = self.pixellist_to_skycoords(pixels)
 
         return s
 
@@ -212,6 +224,29 @@ class CelestialRegion:
             region['visit_interval'] = self.visit_interval
 
         return region
+
+    def output_pixel_fits_table(self, file_path):
+        """
+        Method to output the region as a FITS binary table
+        """
+
+        # Convert pixels to SkyCoords in galactic coordinates
+        pixels = np.arange(0, self.NPIX, 1, dtype='int')
+        coords = self.pixellist_to_skycoords(pixels)
+        coords = coords.transform_to('galactic')
+
+        # Built the table
+        t = Table([
+            Column(name='HEALpixel', data=pixels),
+            Column(name='l', unit='deg', data=coords.l.deg),
+            Column(name='b', unit='deg', data=coords.b.deg),
+            Column(name='Nscience_case', data=self.region_map),
+            Column(name='priority', data=self.pixel_priority),
+        ])
+
+        t.write(file_path, overwrite=True)
+
+        return t
 
 def create_region(sim_config, params):
     """

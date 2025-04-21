@@ -206,7 +206,7 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
 
     return results
 
-def M5_proper_motion_precision(sim_config, survey_config):
+def M4_proper_motion_precision(sim_config, survey_config):
     """
     Proper motions working group proposed the following metric based on the
     measurement uncertainty, sigma, calculated from:
@@ -216,8 +216,8 @@ def M5_proper_motion_precision(sim_config, survey_config):
     makes it possible to measure quantities like Galactic rotation and bulge dynamics.
 
     This is calculated for all HEALpixels within all region for a given survey design,
-    summing visits over all filters chosen. The metrics calculated represent:
-    M1: the percentage of the survey region that meets the precision threshold
+    summing visits over all filters chosen. The metrics calculated represent
+    the percentage of the survey region that meets the precision threshold
 
     Possible extension:
     This might be combined with the star counts metric for a figure of merit, e.g.
@@ -289,7 +289,7 @@ def M5_proper_motion_precision(sim_config, survey_config):
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
         Column(name='Survey_region', data=data[:, 1], dtype='S30'),
         Column(name='Optic', data=data[:, 2], dtype='S20'),
-        Column(name='M5_proper_motion_precision', data=data[:, 3], dtype='f8'),
+        Column(name='M4_proper_motion_precision', data=data[:, 3], dtype='f8'),
     ])
 
     return results
@@ -327,7 +327,7 @@ def extract_multiband_science(sim_config, science_cases):
 
     return multiband_cases
 
-def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
+def M5_sky_area_optical_elements(sim_config, survey_config, filtersets):
     """
     Metric to evaluate the total area of sky to receive observations in each optical element,
     and combinations of the filters, as a proxy for color measurements.
@@ -384,13 +384,13 @@ def M6_sky_area_optical_elements(sim_config, survey_config, filtersets):
     results = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
         Column(name='Optic', data=data[:, 1], dtype='S20'),
-        Column(name='M6_sky_area_single_filter', data=data[:, 2], dtype='f8'),
-        Column(name='M6_sky_area_filter_combo', data=data[:, 3], dtype='f8'),
+        Column(name='M5_sky_area_single_filter', data=data[:, 2], dtype='f8'),
+        Column(name='M5_sky_area_filter_combo', data=data[:, 3], dtype='f8'),
     ])
 
     return results
 
-def M7_sky_area_nvisits(sim_config, science_cases, survey_config):
+def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
     """
     Metric to calculate the percentage of the desired survey region to receive the desired number
     of visits in each filter.

@@ -62,9 +62,9 @@ def calculate_metrics(args):
         'M1_survey_footprint': metrics.M1_survey_footprint,
         'M2_star_counts': metrics.M2_star_counts,
         'M3_extended_region_count': metrics.M3_extended_region_count,
-        'M5_proper_motion_precision': metrics.M5_proper_motion_precision,
-        'M6_sky_area_optical_elements': metrics.M6_sky_area_optical_elements,
-        'M7_sky_area_nvisits': metrics.M7_sky_area_nvisits
+        'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
+        'M5_sky_area_optical_elements': metrics.M5_sky_area_optical_elements,
+        'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits
     }
     if 'all' in str(args.metric).lower():
         metric_set = all_metrics
@@ -81,7 +81,7 @@ def calculate_metrics(args):
     for metric_name, metric_func in metric_set.items():
         print('Calculating metric ' + metric_name + ' for all selected science cases...')
 
-        if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M7_sky_area_nvisits']:
+        if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M6_sky_area_nvisits']:
             results = metric_func(sim_config, science_regions, survey_regions)
 
         if metric_name == 'M2_star_counts':
@@ -93,11 +93,11 @@ def calculate_metrics(args):
 
             results = metrics.M2_star_counts(sim_config, survey_regions, stellar_density_data)
 
-        if metric_name == 'M5_proper_motion_precision':
-            results = metrics.M5_proper_motion_precision(sim_config, survey_regions)
+        if metric_name == 'M4_proper_motion_precision':
+            results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
 
-        if metric_name == 'M6_sky_area_optical_elements':
-            results = metrics.M6_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
+        if metric_name == 'M5_sky_area_optical_elements':
+            results = metrics.M5_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
 
         # Store results
         output_file = path.join(args.data_dir, metric_name + '_results.txt')

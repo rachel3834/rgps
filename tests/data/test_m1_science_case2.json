@@ -1,0 +1,19 @@
+{
+  "Paladini": {
+    "F213": [
+      {"l": [-10.0, 30.0], "b": [-8.0,8.0],
+        "nvisits": 8,
+        "duration": 730.0,
+        "visit_interval": [91.25],
+        "name": "Bulge"}
+    ],
+    "comment": "Galactic Plane Wide Area Survey",
+    "question": "Aiming for timescales between 0.15 to 40d; recommend 3.5d observing windows of 8 visits each, intervals 4, 6, 8, 10, 12, 14 and 16hrs",
+    "proper_motions": "True",
+    "time_domain": "False",
+    "cadence": "multi-epoch",
+    "n_visits_per_field": 8,
+    "category": "wide_area",
+    "ready_for_use": "True"
+  }
+}

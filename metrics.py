@@ -31,10 +31,12 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
     # and compare the HEALpixel maps of the survey footprint with the region map
     # for each science case
     for author, science_strategy in science_cases.items():
+        print(author, science_strategy)
 
         # Loop over all optical components since the requested footprints can be different
         for optic in sim_config['OPTICAL_COMPONENTS']:
             science_regions = science_strategy[optic]
+            print(science_regions)
 
             if len(science_regions) > 0:
                 # Loop over all survey strategies calculating the overlap if any in this optic
@@ -395,7 +397,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
     Metric to calculate the percentage of the desired survey region to receive the desired number
     of visits in each filter.
 
-    This metric is similar to the M5_proper_motion metric, but it examines the number of visits
+    This metric is similar to the M4_proper_motion metric, but it examines the number of visits
     to ensure at least the minimum number of visits are accomplished rather than at minimum intervals.
     This is a proxy for the cadence.
 
@@ -484,7 +486,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
 
     return results
 
-def M8_multiband_sky_area(sim_config, science_cases, survey_config):
+def M7_multiband_sky_area(sim_config, science_cases, survey_config):
     """
     Metric to evaluate the science regions for which multi-filter observations are requested.
     The sky regions requested are compared with those survey regions covered in multiple filters.
@@ -547,7 +549,7 @@ def M8_multiband_sky_area(sim_config, science_cases, survey_config):
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
         Column(name='Science_case', data=data[:, 1], dtype='S40'),
         Column(name='Filterset', data=data[:, 2], dtype='S15'),
-        Column(name='M8_multiband_sky_area', data=data[:, 3], dtype='f8'),
+        Column(name='M7_multiband_sky_area', data=data[:, 3], dtype='f8'),
     ])
 
     return results

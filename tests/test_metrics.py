@@ -8,18 +8,18 @@ from astropy.table import Table
 import numpy as np
 
 @pytest.mark.parametrize(
-    "test_survey_regions, test_cases",
+    "test_survey_regions_file, test_science_regions_file",
     [
         (
-                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
-                path.join(getcwd(), 'data', 'test_science_regions.json')
+                path.join(getcwd(), 'data', 'test_m1_survey_regions1.json'),
+                path.join(getcwd(), 'data', 'test_m1_science_regions1.json')
         ),
         (
-                path.join(getcwd(), 'data', 'test_survey_regions1.json'),
-                path.join(getcwd(), 'data', 'test_science_regions1.json')
+                path.join(getcwd(), 'data', 'test_m1_survey_regions2.json'),
+                path.join(getcwd(), 'data', 'test_m1_science_regions2.json')
         )
     ])
-def test_M1_survey_footprint(test_survey_regions, test_cases):
+def test_M1_survey_footprint(test_survey_regions_file, test_science_regions_file):
     """
     Unittest calculates the percentage of HEALpixels included in the survey
     footprints and their priorities for each science case
@@ -31,10 +31,10 @@ def test_M1_survey_footprint(test_survey_regions, test_cases):
     sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
 
     # Load the defined survey strategy options from file
-    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
+    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions_file)
 
     # Load the science cases from file
-    science_regions = regions.load_regions_from_file(sim_config, test_cases)
+    science_regions = regions.load_regions_from_file(sim_config, test_science_regions_file)
 
     results = M1_survey_footprint(sim_config, science_regions, survey_regions)
 
@@ -48,7 +48,7 @@ def test_M1_survey_footprint(test_survey_regions, test_cases):
     assert (results['M1_%priority'].data >= 0.0).all() & (results['M1_%priority'].data <= 100.0).all()
 
     # Second test case is designed to verify output in the case of 100% overlap
-    if 'test_survey_regions1.json' in path.basename(test_survey_regions):
+    if 'test_m1_survey_regions2.json' in path.basename(test_survey_regions_file):
         assert (results['M1_%pix'][0] == 100.0)
         assert (results['M1_%priority'][0] == 100.0)
 
@@ -135,13 +135,13 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
                 [100.0, 0.0, 0.0]
         )
     ])
-def test_M5_proper_motion_precision(test_survey_regions, expected):
+def test_M4_proper_motion_precision(test_survey_regions, expected):
     """
     Unittest for metric to evaluate the area of sky to receive observations to measure proper motions
     to the required precision.
     """
 
-    from metrics import M5_proper_motion_precision
+    from metrics import M4_proper_motion_precision
 
     # Load simulation parameters
     sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
@@ -150,7 +150,7 @@ def test_M5_proper_motion_precision(test_survey_regions, expected):
     survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
 
     # Compute metric
-    results = M5_proper_motion_precision(sim_config, survey_regions)
+    results = M4_proper_motion_precision(sim_config, survey_regions)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -159,7 +159,7 @@ def test_M5_proper_motion_precision(test_survey_regions, expected):
 
     # Test for expected metric results
     for i, expected_value in enumerate(expected):
-        assert(expected_value == results['M5_proper_motion_precision'][i])
+        assert(expected_value == results['M4_proper_motion_precision'][i])
 
 @pytest.mark.parametrize(
     "test_survey_regions, filtersets",
@@ -173,13 +173,13 @@ def test_M5_proper_motion_precision(test_survey_regions, expected):
                 ]
         )
     ])
-def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
+def test_M5_sky_area_optical_elements(test_survey_regions, filtersets):
     """
     Unittest for metric to evaluate the area of sky to receive observations in one or more filters,
     with the filtersets parameter providing the tuples of filters combinations to check for.
     """
 
-    from metrics import M6_sky_area_optical_elements
+    from metrics import M5_sky_area_optical_elements
 
     # Load simulation parameters
     sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
@@ -188,7 +188,7 @@ def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
     survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
 
     # Calculate metrics
-    results = M6_sky_area_optical_elements(sim_config, survey_regions, filtersets)
+    results = M5_sky_area_optical_elements(sim_config, survey_regions, filtersets)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -197,8 +197,8 @@ def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
 
     # Test metric values returned are valid percentages and the known result that the pixels for
     # one of the requested regions was included in the F129 survey definition.
-    assert (len(np.where(results['M6_sky_area_single_filter'].data >= 0.0)[0]) > 0)
-    assert (len(np.where(results['M6_sky_area_filter_combo'].data >= 0.0)[0]) > 0)
+    assert (len(np.where(results['M5_sky_area_single_filter'].data >= 0.0)[0]) > 0)
+    assert (len(np.where(results['M5_sky_area_filter_combo'].data >= 0.0)[0]) > 0)
 
 @pytest.mark.parametrize(
     "test_survey_regions, test_cases",
@@ -208,13 +208,13 @@ def test_M6_sky_area_optical_elements(test_survey_regions, filtersets):
                 path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
         )
     ])
-def test_M7_sky_area_nvisits(test_survey_regions, test_cases):
+def test_M6_sky_area_nvisits(test_survey_regions, test_cases):
     """
     Unittest for metric to evaluate the percentage of the desired survey region for each science
     case to receive the desired number of visits in each filter.
     """
 
-    from metrics import M7_sky_area_nvisits
+    from metrics import M6_sky_area_nvisits
 
     # Load simulation parameters
     sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
@@ -226,7 +226,7 @@ def test_M7_sky_area_nvisits(test_survey_regions, test_cases):
     science_regions = regions.load_regions_from_file(sim_config, test_cases)
 
     # Compute metric
-    results = M7_sky_area_nvisits(sim_config, science_regions, survey_regions)
+    results = M6_sky_area_nvisits(sim_config, science_regions, survey_regions)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -276,12 +276,12 @@ def test_extract_multiband_science(test_cases):
                 path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
         )
     ])
-def test_M8_multiband_sky_area(test_survey_regions, test_cases):
+def test_M7_multiband_sky_area(test_survey_regions, test_cases):
     """
     Test for the function to identify multi-filter testcases
     """
 
-    from metrics import M8_multiband_sky_area
+    from metrics import M7_multiband_sky_area
 
     # Load simulation parameters
     sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
@@ -293,7 +293,7 @@ def test_M8_multiband_sky_area(test_survey_regions, test_cases):
     science_regions = regions.load_regions_from_file(sim_config, test_cases)
 
     # Calculate metric
-    results = M8_multiband_sky_area(sim_config, science_regions, survey_regions)
+    results = M7_multiband_sky_area(sim_config, science_regions, survey_regions)
 
     # Test that the metric returns a table of four columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -301,4 +301,4 @@ def test_M8_multiband_sky_area(test_survey_regions, test_cases):
     assert (len(results.colnames) == 4)
 
     # Test metric value
-    assert(len(np.where(results['M8_multiband_sky_area'].data > 0.0)[0] > 0))
+    assert(len(np.where(results['M7_multiband_sky_area'].data > 0.0)[0] > 0))

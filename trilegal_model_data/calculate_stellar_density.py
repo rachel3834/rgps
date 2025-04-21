@@ -1,4 +1,7 @@
-from os import path
+from os import path, getcwd
+from sys import path as pythonpath
+pythonpath.append(path.join(getcwd(), '..'))
+import config_utils
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Galactic, TETE
 from astropy import units as u
@@ -41,6 +44,9 @@ def build_stellar_density_map(args):
     :return: output HEALpixel maps as FITS binary tables
     """
 
+    # Load the broader configuration parameters of the whole simulation
+    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
+
     # Load the grid of Trilegal model output files.
     # Since the header information provided in these files does not include
     # the details of the simulation used to create them, the files are expected to
@@ -51,25 +57,12 @@ def build_stellar_density_map(args):
         raise IOError('No input model data files found at ' + args.model_data_dir)
     model_data = [parse_trilegal_output(f) for f in model_file_list]
 
-    # Mapping of the Roman optical elements to the column names used in Trilegal files
-    optical_components = {
-        'F087': 'F087',
-        'F106': 'F106',
-        'F129': 'F129',
-        'F158': 'F158',
-        'F184': 'F184',
-        'F213': 'F213',
-        'F146': 'F146',
-        'G150': 'Grism_0thOrder',
-        'P127': 'SNprism'
-    }
-
     # Calculate the density of stars for each point in the grid, and store the results in
     # a HEALpixel map, for each filter.
     # Stars from the model output are selected based on Roman WFI's saturation and limiting magnitudes
     # These were estimated from https://roman.gsfc.nasa.gov/science/anticipated_performance_tables.html
     density_maps = {}
-    for optic, column_name in optical_components.items():
+    for optic, column_name in sim_config['TRILEGAL_FILTER_MAPPING'].items():
         l, b, lplot, z = calc_stellar_density(args, model_data, column_name)
         density_maps[optic] = interpolate_density_map(args, l, b, lplot, z, optic)
 

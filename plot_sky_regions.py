@@ -1,4 +1,4 @@
-from os import path
+from os import path, getcwd
 import config_utils
 import regions
 import matplotlib.pyplot as plt
@@ -14,57 +14,57 @@ def plot_all_regions(args):
     """
 
     # Load the config file containing the definitions of the requested survey regions
-    config = config_utils.read_config(path.join('config', 'rgps_science_cases.json'))
-
-    # Full list of optical elements (filters, prism and grism) available for Roman WFI
-    optical_components = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
+    sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
+    science_cases = config_utils.read_config(path.join('config', 'rgps_science_cases.json'))
 
     # Apply user selection of regions to plot, based on the author's name
     if str(args.region).lower() == 'all':
-        author_list = config.keys()
+        author_list = science_cases.keys()
     else:
-        if args.region in config.keys():
+        if args.region in science_cases.keys():
             author_list = [args.region]
         else:
             raise IOError('No configuration available for region ' + args.region)
 
-    # The configurations are grouped on a per-author basis, and may include a list of
-    # regions for each filter.
+    # The configurations are grouped on a science topic basis.
     # Working through each configuration, produce a sky plot for each combination of
     # author and optical element, since the regions may be different
     # but if an author requested multiple pointings/regions for a given optical element, these
     # should be combined on the same map.
-    for author in author_list:
-        info = config[author]
+    if str(args.region).lower() != 'all':
+        info = science_cases[author]
+
         if info['ready_for_use']:
+            # Load the regions for this author from the corresponding regions JSON file
+            science_regions = regions.load_regions_from_file(sim_config,
+                                                             path.join(getcwd(), 'region_data',
+                                                                       'rgps_science_regions_' + info['category'] + '.json'))
+
             print('Plotting regions for ' + author)
-            for optic in optical_components:
+            for optic in sim_config['OPTICAL_COMPONENTS']:
                 if optic in info.keys():
                     print(' -> optic ' + optic)
 
                     # Combine all regions this author has requested for the current optic
                     # into a single Celestial region
-                    region_list = []
-                    for params in info[optic]:
-                        params['label'] = author
-                        params['optic'] = optic
-                        if 'catalog' in params.keys():
-                            region_set = regions.create_region_set(params)
-                        else:
-                            region_set = [regions.create_region(params)]
+                    region_list = science_regions[optic]
 
-                        region_list += region_set
-
-                    r_merge = regions.combine_regions(region_list)
+                    if len(region_list) > 1:
+                        r_merge = regions.combine_regions(region_list)
+                    elif len(region_list) == 1:
+                        r_merge = region_list[0]
+                    else:
+                        r_merge = None
 
                     # Use the CelestialRegion's built-in methods to plot a sky map of the region
                     # and save it to file
-                    r_merge.sky_plot()
-                    plt.tight_layout()
-                    plt.savefig(path.join('survey_maps', r_merge.label + '_' + r_merge.optic + '.png'))
-                    plt.close()
+                    if r_merge:
+                        r_merge.sky_plot()
+                        plt.tight_layout()
+                        plt.savefig(path.join('survey_maps', r_merge.label + '_' + r_merge.optic + '.png'))
+                        plt.close()
 
-                    print('--> Plotted region map for ' + r_merge.summary())
+                        print('--> Plotted region map for ' + r_merge.summary())
 
 
 def plot_outline(skymapplot, survey_region, ssmall=5.0, outline_color='red'):

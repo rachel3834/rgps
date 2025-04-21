@@ -64,7 +64,8 @@ def calculate_metrics(args):
         'M3_extended_region_count': metrics.M3_extended_region_count,
         'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
         'M5_sky_area_optical_elements': metrics.M5_sky_area_optical_elements,
-        'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits
+        'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits,
+        'M7_multiband_sky_area': metrics.M7_multiband_sky_area
     }
     if 'all' in str(args.metric).lower():
         metric_set = all_metrics
@@ -81,7 +82,7 @@ def calculate_metrics(args):
     for metric_name, metric_func in metric_set.items():
         print('Calculating metric ' + metric_name + ' for all selected science cases...')
 
-        if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M6_sky_area_nvisits']:
+        if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M6_sky_area_nvisits', 'M7_multiband_sky_area']:
             results = metric_func(sim_config, science_regions, survey_regions)
 
         if metric_name == 'M2_star_counts':
@@ -101,10 +102,6 @@ def calculate_metrics(args):
 
         # Store results
         output_file = path.join(args.data_dir, metric_name + '_results.txt')
-        #with open(output_file, 'w') as f:
-        #    f.write('# ' + '  '.join(results.colnames) + '\n')
-        #    for row in results:
-        #        f.write(' '.join([str(row[col]) for col in results.colnames]) + '\n')
         results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
     print('Completed metric analysis')

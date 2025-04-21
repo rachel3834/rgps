@@ -31,12 +31,10 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
     # and compare the HEALpixel maps of the survey footprint with the region map
     # for each science case
     for author, science_strategy in science_cases.items():
-        print(author, science_strategy)
 
         # Loop over all optical components since the requested footprints can be different
         for optic in sim_config['OPTICAL_COMPONENTS']:
             science_regions = science_strategy[optic]
-            print(science_regions)
 
             if len(science_regions) > 0:
                 # Loop over all survey strategies calculating the overlap if any in this optic
@@ -481,7 +479,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
         Column(name='Science_case', data=data[:, 2], dtype='S40'),
         Column(name='Science_region', data=data[:, 3], dtype='S40'),
         Column(name='Optic', data=data[:, 4], dtype='S5'),
-        Column(name='M7_%sky_area_nvisits', data=data[:, 5], dtype='f8'),
+        Column(name='M6_%sky_area_nvisits', data=data[:, 5], dtype='f8'),
     ])
 
     return results

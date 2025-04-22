@@ -186,7 +186,7 @@
     "blue": "galactic_plane",
     "red": "galactic_plane",
     "comment": "Ultra-low mass Brown Dwarfs",
-    "questions": "Effectively an all-sky survey, all filters",
+    "questions": "Effectively an all-sky survey, all filters, so no practical constraints",
     "proper_motions": "True",
     "time_domain": "False",
     "category": "brown_dwarfs",
@@ -621,17 +621,17 @@
     "ready_for_use": "True"
   },
   "Bachelet": {
-    "F087": [{"region": "galactic plane",
+    "F087": [{"survey_footprint": "stellar_density",
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [null],
         "name": "Plane1"}],
-    "F213": [{"region": "galactic plane",
+    "F213": [{"survey_footprint": "stellar_density",
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [null],
         "name": "Plane1"}],
-    "F158": [{"region": "galactic plane",
+    "F158": [{"survey_footprint": "stellar_density",
         "nvisits": 1,
         "duration": 730.0,
         "visit_interval": [null],
@@ -641,7 +641,7 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Villasenor": {
     "F062": [{"catalog": "villasenor_combined_pointings_table.csv",
@@ -1139,7 +1139,7 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "False"
+    "ready_for_use": "True"
   },
   "Morihana2": {
     "F184": [
@@ -2380,7 +2380,7 @@
         "name": "Low_extinction_survey"}
     ],
     "comment": "Wide area survey for windows of low extinction.  Needs 4 filters: F067 essential, F184, F213 recommended, plus any one other",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area"
@@ -2453,7 +2453,7 @@
     ],
     "comment": "Library of stellar spectra",
     "questions": "Need specific target or field pointings",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "stellar_spectra"
@@ -2489,7 +2489,7 @@
     ],
     "comment": "Spectroscopic extinction mapping",
     "questions": "Need specific target or field pointings",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "extinction"
@@ -2504,7 +2504,7 @@
     ],
     "comment": "None",
     "questions": "What region of the Plane to survey and cadence",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area"
@@ -2526,7 +2526,7 @@
     ],
     "comment": "Detecting shells from galactic novae",
     "questions": "Target catalog of novae from last 100yrs",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "novae"
@@ -2613,7 +2613,7 @@
     ],
     "comment": "Survey of Diffuse Interstellar Bands and ISM.  At least four ideally five filters needed.  Image tiling should include offsets/roll angles for calibration",
     "questions": "Requested survey regions based on APOGEE DIBs catalog",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "ISM"

@@ -31,6 +31,11 @@ def load_survey_footprints(sim_config, root_dir):
     # Load the Baade's Window survey footprint
     survey_footprints['Baade'] = load_Baade_footprint(sim_config)
 
+    # Load stellar density map
+    survey_footprints['stellar_density'] = load_stellar_density_footprint(
+        root_dir, sim_config
+    )
+
     return survey_footprints
 
 def load_catalog(root_dir, catalog_name):
@@ -263,13 +268,21 @@ def load_Baade_footprint(sim_config):
 
     return survey_regions['Baade']['F213'][0].region_map
 
+def load_stellar_density_footprint(root_dir, sim_config, cat_file='stellar_density_footprint.json'):
+    """
+    Function to load the map of stellar density calculated from Trilegal galactic model data
+    :return: HEALpixel array
+    """
+
+    file_path = path.join(root_dir, 'config', cat_file)
+    with open(file_path, 'r') as f:
+        spec = json.load(f)
+
+    return np.array(spec['healpix_map'])
+
+
 if __name__ == '__main__':
     root_dir = './'
-    #survey_footprints = load_survey_footprints(root_dir)
-    #print(survey_footprints)
-
     sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
-
-    survey_regions = load_BDBS_footprint(root_dir)
-
-    print(survey_regions)
+    survey_footprints = load_survey_footprints(sim_config, root_dir)
+    print(survey_footprints)

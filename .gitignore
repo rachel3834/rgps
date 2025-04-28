@@ -15,4 +15,4 @@ region_data/
 region_data/*regions*json
 
 # Ignore temporary files
-notes
+config/notes

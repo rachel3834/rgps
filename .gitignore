@@ -13,3 +13,6 @@ config/*_regions*.json
 tests/data/*regions*json
 region_data/
 region_data/*regions*json
+
+# Ignore temporary files
+notes

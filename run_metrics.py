@@ -31,20 +31,13 @@ def calculate_metrics(args):
     print('Loaded survey design information')
 
     # Load the science cases from file
-    all_science_regions = regions.load_regions_from_file(sim_config,
-                                                         path.join(getcwd(), 'region_data', 'rgps_science_regions.json'))
+    science_regions = regions.load_regions_from_file(sim_config,
+                                                         path.join(
+                                                             getcwd(),
+                                                             'region_data',
+                                                             'rgps_science_regions_' + args.category + '.json'
+                                                         ))
     print('Loaded science use cases information')
-
-    # If the user requested a subset of metrics or survey designs, apply the selection,
-    # otherwise calculate for all available options
-    if 'all' in str(args.science_case).lower():
-        science_regions = all_science_regions
-    else:
-        if args.science_case in all_science_regions.keys():
-            science_regions = {}
-            science_regions[args.science_case] = all_science_regions[args.science_case]
-        else:
-            raise IOError('Requested science case (' + args.science_case + ') not recognized')
 
     if 'all' in str(args.survey).lower():
         survey_regions = all_survey_regions
@@ -110,7 +103,7 @@ def get_args():
     """Function to gather commandline arguments"""
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('science_case', help='Name of science case to evaluate metrics for or ALL')
+    parser.add_argument('category', help='Category of science case to evaluate for')
     parser.add_argument('survey', help='Name of survey design to evaluate or ALL')
     parser.add_argument('metric', help='Name of metric to evaluate or ALL')
     parser.add_argument('data_dir', help='Path to output directory')

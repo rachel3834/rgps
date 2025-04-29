@@ -27,12 +27,12 @@ def calculate_metrics(args):
 
     # Load the defined survey strategy options from file
     all_survey_regions = regions.load_regions_from_file(sim_config,
-                                                        path.join(getcwd(), 'config', 'rgps_survey_regions.json'))
+                                                        path.join(getcwd(), 'region_data', 'rgps_survey_regions.json'))
     print('Loaded survey design information')
 
     # Load the science cases from file
     all_science_regions = regions.load_regions_from_file(sim_config,
-                                                         path.join(getcwd(), 'config', 'rgps_science_regions.json'))
+                                                         path.join(getcwd(), 'region_data', 'rgps_science_regions.json'))
     print('Loaded science use cases information')
 
     # If the user requested a subset of metrics or survey designs, apply the selection,

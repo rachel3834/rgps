@@ -1,0 +1,5 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F106 Minniti 0.0 0.0
+wide_area F158 Minniti 44.25531914893617 44.25531914893617
+wide_area F213 Minniti 44.25531914893617 44.25531914893617
+wide_area F213 Open_Clusters 2.218264248704663 6.067256940355235

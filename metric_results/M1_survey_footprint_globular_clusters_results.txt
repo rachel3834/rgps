@@ -1,0 +1,11 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F062 Lodieu2 0.0 0.0
+wide_area F087 Lodieu2 0.0 0.0
+wide_area F106 Lodieu2 0.0 0.0
+wide_area F129 Lodieu2 0.0 0.0
+wide_area F158 Lodieu2 0.0 0.0
+wide_area F184 Lodieu2 0.0 0.0
+wide_area F213 Lodieu2 0.0 0.0
+wide_area F146 Lodieu2 0.0 0.0
+wide_area F213 Minniti2 100.0 100.0
+wide_area F213 Globular_Clusters 22.10953346855984 26.08695652173913

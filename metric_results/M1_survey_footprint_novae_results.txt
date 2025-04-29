@@ -1,0 +1,3 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F184 Craig2 76.92307692307693 76.92307692307693
+wide_area F213 Craig2 76.92307692307693 76.92307692307693

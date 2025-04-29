@@ -1,0 +1,3 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F213 VVV_keyholes_1st_priority 87.17948717948718 87.17948717948718
+wide_area F213 VVV_keyholes_2nd_priority 93.15068493150685 93.90243902439023

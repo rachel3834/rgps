@@ -30,72 +30,88 @@ def calculate_metrics(args):
                                                         path.join(getcwd(), 'region_data', 'rgps_survey_regions.json'))
     print('Loaded survey design information')
 
-    # Load the science cases from file
-    science_regions = regions.load_regions_from_file(sim_config,
-                                                         path.join(
-                                                             getcwd(),
-                                                             'region_data',
-                                                             'rgps_science_regions_' + args.category + '.json'
-                                                         ))
-    print('Loaded science use cases information')
+    # Load the science case definitions; this is used as a reference for their parameters
+    science_cases = config_utils.read_config(path.join(getcwd(), 'config', 'rgps_science_cases.json'))
 
-    if 'all' in str(args.survey).lower():
-        survey_regions = all_survey_regions
+    # Build a list of the topical categories
+    science_categories = []
+    for author, info in science_cases.items():
+        if info['ready_for_use'] and info['category'] not in science_categories:
+            science_categories.append(info['category'])
+
+    # Parse the category option
+    if str(args.category).lower() == 'all':
+        category_list = science_categories
     else:
-        if args.survey in all_survey_regions.keys():
-            survey_regions = {}
-            survey_regions[args.survey] = all_survey_regions[args.survey]
+        category_list = [args.category]
+
+    # Analysing each requested category in turn,
+    # load the science regions corresponding to each category from file
+    for category in category_list:
+        region_file = path.join(getcwd(),'region_data','rgps_science_regions_' + category + '.json')
+        if not path.isfile(region_file):
+            raise IOError('Missing science region file: ' + region_file)
+
+        science_regions = regions.load_regions_from_file(sim_config, region_file)
+        print('Loaded science use cases information for ' + category)
+
+        if 'all' in str(args.survey).lower():
+            survey_regions = all_survey_regions
         else:
-            raise IOError('Requested survey design (' + args.survey + ') not recognized')
-    print('Selected ' + str(len(science_regions)) + ' science cases and '
-             + str(len(survey_regions)) + ' survey designs to analyse')
+            if args.survey in all_survey_regions.keys():
+                survey_regions = {}
+                survey_regions[args.survey] = all_survey_regions[args.survey]
+            else:
+                raise IOError('Requested survey design (' + args.survey + ') not recognized')
+        print('Selected ' + str(len(science_regions)) + ' science cases and '
+                 + str(len(survey_regions)) + ' survey designs to analyse')
 
-    # Identify which metrics the user requested to run:
-    all_metrics = {
-        'M1_survey_footprint': metrics.M1_survey_footprint,
-        'M2_star_counts': metrics.M2_star_counts,
-        'M3_extended_region_count': metrics.M3_extended_region_count,
-        'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
-        'M5_sky_area_optical_elements': metrics.M5_sky_area_optical_elements,
-        'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits,
-        'M7_multiband_sky_area': metrics.M7_multiband_sky_area
-    }
-    if 'all' in str(args.metric).lower():
-        metric_set = all_metrics
-    else:
-        metric_set = {}
-        if args.metric in all_metrics.keys():
-            metric_set[args.metric] = all_metrics[args.metric]
+        # Identify which metrics the user requested to run:
+        all_metrics = {
+            'M1_survey_footprint': metrics.M1_survey_footprint,
+            'M2_star_counts': metrics.M2_star_counts,
+            'M3_extended_region_count': metrics.M3_extended_region_count,
+            'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
+            'M5_sky_area_optical_elements': metrics.M5_sky_area_optical_elements,
+            'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits,
+            'M7_multiband_sky_area': metrics.M7_multiband_sky_area
+        }
+        if 'all' in str(args.metric).lower():
+            metric_set = all_metrics
         else:
-            raise IOError('Metric ' + args.metric + ' not recognised.  Available metrics are '
-                          + ', '.join(all_metrics.keys()))
-    print('Evaluating metrics: ' + ', '.join(list(metric_set)))
+            metric_set = {}
+            if args.metric in all_metrics.keys():
+                metric_set[args.metric] = all_metrics[args.metric]
+            else:
+                raise IOError('Metric ' + args.metric + ' not recognised.  Available metrics are '
+                              + ', '.join(all_metrics.keys()))
+        print('Evaluating metrics: ' + ', '.join(list(metric_set)))
 
-    # Calculate metrics
-    for metric_name, metric_func in metric_set.items():
-        print('Calculating metric ' + metric_name + ' for all selected science cases...')
+        # Calculate metrics
+        for metric_name, metric_func in metric_set.items():
+            print('Calculating metric ' + metric_name + ' for all selected science cases...')
 
-        if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M6_sky_area_nvisits', 'M7_multiband_sky_area']:
-            results = metric_func(sim_config, science_regions, survey_regions)
+            if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M6_sky_area_nvisits', 'M7_multiband_sky_area']:
+                results = metric_func(sim_config, science_regions, survey_regions)
 
-        if metric_name == 'M2_star_counts':
-            # Load the galatic model stellar density data
-            galactic_model_file = path.join(getcwd(), 'trilegal_model_data', 'trilegal_nir_stellar_density.json')
-            galactic_model_data = config_utils.read_config(galactic_model_file)
-            stellar_density_data = {optic: np.array(galactic_model_data['healpix_map_' + optic])
-                                    for optic in sim_config['OPTICAL_COMPONENTS']}
+            if metric_name == 'M2_star_counts':
+                # Load the galatic model stellar density data
+                galactic_model_file = path.join(getcwd(), 'trilegal_model_data', 'trilegal_nir_stellar_density.json')
+                galactic_model_data = config_utils.read_config(galactic_model_file)
+                stellar_density_data = {optic: np.array(galactic_model_data['healpix_map_' + optic])
+                                        for optic in sim_config['OPTICAL_COMPONENTS']}
 
-            results = metrics.M2_star_counts(sim_config, survey_regions, stellar_density_data)
+                results = metrics.M2_star_counts(sim_config, survey_regions, stellar_density_data)
 
-        if metric_name == 'M4_proper_motion_precision':
-            results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
+            if metric_name == 'M4_proper_motion_precision':
+                results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
 
-        if metric_name == 'M5_sky_area_optical_elements':
-            results = metrics.M5_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
+            if metric_name == 'M5_sky_area_optical_elements':
+                results = metrics.M5_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
 
-        # Store results
-        output_file = path.join(args.data_dir, metric_name + '_results.txt')
-        results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
+            # Store results
+            output_file = path.join(args.data_dir, metric_name + '_' + category + '_results.txt')
+            results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
     print('Completed metric analysis')
 

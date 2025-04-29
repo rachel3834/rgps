@@ -1,0 +1,5 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F106 Saydjari 0.0 0.0
+wide_area F129 Saydjari 76.92307692307693 76.92307692307693
+wide_area F158 Saydjari 76.92307692307693 76.92307692307693
+wide_area F184 Saydjari 76.92307692307693 76.92307692307693

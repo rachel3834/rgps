@@ -1,0 +1,6 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F146 Benecchi 0.0 0.0
+wide_area F087 Carey2 0.0 0.0
+wide_area F106 Carey2 0.0 0.0
+wide_area F158 Carey2 100.0 100.0
+wide_area F213 Carey2 100.0 100.0

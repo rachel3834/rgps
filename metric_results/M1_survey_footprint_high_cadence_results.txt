@@ -1,0 +1,3 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F062 Kupfer 0.0 0.0
+wide_area F087 Kupfer 0.0 0.0

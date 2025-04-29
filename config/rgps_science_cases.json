@@ -32,7 +32,7 @@
         "nvisits": 8,
         "duration": 3.5,
         "visit_interval": [4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0],
-        "name": "Paladini_TDA"}
+        "name": "Paladini2"}
     ],
     "comment": "Time domain study of small region in W40/Serpens South",
     "question": "Aiming for timescales between 0.15 to 40d; recommend 3.5d observing windows of 8 visits each, intervals 4, 6, 8, 10, 12, 14 and 16hrs",
@@ -40,7 +40,7 @@
     "time_domain": "True",
     "cadence": "multi-epoch",
     "n_visits_per_field": 8,
-    "category": "SFR",
+    "category": "time_domain",
     "ready_for_use": "True"
   },
   "Zari": {

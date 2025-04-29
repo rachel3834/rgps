@@ -1,0 +1,8 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F106 Wang 0.0 0.0
+wide_area F158 Wang 100.0 100.0
+wide_area F213 Wang 100.0 100.0
+wide_area F184 Rich2 100.0 100.0
+wide_area F213 Rich2 100.0 100.0
+wide_area G150 Rich2 0.0 0.0
+wide_area P127 Rich2 0.0 0.0

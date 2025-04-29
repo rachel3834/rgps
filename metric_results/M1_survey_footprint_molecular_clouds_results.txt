@@ -1,0 +1,6 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F184 Anderson 58.98039215686275 58.98039215686275
+wide_area G150 Anderson 0.0 0.0
+wide_area F062 Villasenor 0.0 0.0
+wide_area F129 Villasenor 24.58628841607565 19.236209335219236
+wide_area F213 Villasenor 24.58628841607565 19.236209335219236

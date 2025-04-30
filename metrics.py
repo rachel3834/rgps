@@ -162,9 +162,22 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
 
     data = []
 
+    # Unlike other metrics, this metric only makes sense when calculated for the set catalogs
+    # of known objects.
+    case_list = [
+        'DAmmando', # Jetted AGN
+        'Villasenor', # Molecular Clouds
+        'De_Furio', # Star Forming Regions
+        'Globular_Clusters',
+        'Open_Clusters',
+        'Craig2', # Nova shells
+        'Saydjari' # DIBs catalog of diffuse interstellar bands, ISM
+    ]
+
     # Both the survey definition and the science case can include multiple regions for each
     # optical component.  So we need to check for intersections of the HEALpixels for all cases
-    for author, science_strategy in science_cases.items():
+    for author in case_list:
+        science_strategy = science_cases[author]
 
         for optic in sim_config['OPTICAL_COMPONENTS']:
 
@@ -183,7 +196,10 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
                                 in_pixels += list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
                             in_pixels = list(set(in_pixels))
 
-                            if len(in_pixels) >= len(set(rscience.pixels)):
+                            # Condition only requires some overlap to count the region
+                            # it doesn't have to be fully within the survey boundaries
+                            #if len(in_pixels) >= len(set(rscience.pixels)):
+                            if len(in_pixels) > 0:
                                 nregions += 1.0
 
                         # Metric value is the percentage of regions where in_pixel >= r_pixels

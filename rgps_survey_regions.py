@@ -45,6 +45,9 @@ def build_regions(args):
             if 'P127' in par.keys() or 'G150' in par.keys() and par['ready_for_use']:
                 survey_configs['spectroscopy'][name] = par
 
+    elif 'extended_object_catalog' in str(args.use_case).lower():
+        survey_configs['extended_object_catalog'] = {name: par for name,par in science_cases.items() if par['extended_object_catalog'] and par['ready_for_use']}
+
     elif str(args.use_case).lower() in science_categories:
         survey_configs[str(args.use_case)] = {name: par for name,par in science_cases.items() if args.use_case in par['category'] and par['ready_for_use']}
 

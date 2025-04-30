@@ -24,7 +24,8 @@
     "cadence": "multi-epoch",
     "n_visits_per_field": 8,
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Paladini2": {
     "F213": [
@@ -41,7 +42,8 @@
     "cadence": "multi-epoch",
     "n_visits_per_field": 8,
     "category": "time_domain",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Zari": {
     "F106": [
@@ -71,7 +73,8 @@
     "time_domain": "False",
     "category": "SFR",
     "cadence": "3 visits minimum over 3 yrs",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Kruszynska": {
     "F087": [{"survey_footprint": "rubin_galactic_plane",
@@ -92,7 +95,8 @@
     "time_domain": "False",
     "questions": "None",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Benecchi": {
     "F146": [
@@ -109,7 +113,8 @@
     "cadence": "3 visits per season over 2 seasons (years)",
     "n_visits_per_field": 6,
     "category": "solar_system",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Kupfer": {
     "F062": [
@@ -164,7 +169,8 @@
     "cadence": "1min over 8hrs",
     "n_visits_per_field": 60,
     "category": "high_cadence",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Elowitz": {
     "questions": "choice of filters, preference of area",
@@ -172,7 +178,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "solar_system",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "False"
   },
   "Amrar": {
     "questions": "choice of area, filters",
@@ -180,7 +187,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "variable_stars",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "False"
   },
   "Lodieu": {
     "blue": "galactic_plane",
@@ -190,7 +198,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "brown_dwarfs",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "False"
   },
   "Lodieu2": {
     "F062": [
@@ -414,7 +423,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "globular_clusters",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Soam": {
     "questions": "choice of target clouds, filters",
@@ -422,7 +432,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "molecular_clouds",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "False"
   },
   "Hunt": {
     "F106": [{"l": [-60, 60.0], "b": [-2.5, 2.5],
@@ -449,7 +460,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Werner": {
     "F213": [
@@ -480,7 +492,8 @@
     "time_domain": "False",
     "minimum_area": 100,
     "category": "SFR",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Bryant": {
     "questions": "regions (Galatic Plane?), filters",
@@ -488,7 +501,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "open_clusters",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "True"
   },
   "Lian": {
     "filter": [{"pointing": [287.60158, -0.64452, 4.0],
@@ -504,7 +518,8 @@
     "cadence": "10 visits over 5yrs",
     "n_visits_per_field": 10,
     "category": "SFR",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "False"
   },
   "Anderson": {
     "F184": [{"l": [-90.0, 90.0], "b": [-2.5, 2.5],
@@ -521,7 +536,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "molecular_clouds",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Lim1": {
     "F158": [{"l": [55.0, 65.0], "b": [-1.0, 1.0],
@@ -550,7 +566,8 @@
     "time_domain": "False",
     "minimum_area": 100,
     "category": "SFR",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "DAmmando": {
     "F184": [{"catalog": "table-4LAC-DR3-l.fits",
@@ -563,7 +580,8 @@
     "proper_motions": "False",
     "time_domain": "True",
     "category": "AGN",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "True"
   },
   "Freeman": {
     "F158": [
@@ -618,7 +636,8 @@
     "cadence": "30 visits over 1 year",
     "n_visits_per_field": 30,
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Bachelet": {
     "F087": [{"survey_footprint": "stellar_density",
@@ -641,7 +660,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Villasenor": {
     "F062": [{"catalog": "villasenor_combined_pointings_table.csv",
@@ -664,7 +684,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "molecular_clouds",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "True"
   },
   "Minniti": {
     "F106": [{"l": [285.0,320.0], "b": [-5.0,5.0],
@@ -688,7 +709,8 @@
     "time_domain": "False",
     "minimum_area": 200,
     "category": "open_clusters",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Smith": {
     "F129": [{"l": [-5.0, 5.0],  "b":[-3.0, 3.0],
@@ -711,7 +733,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Navarro": {
     "F213": [{"l": [-10.0, 10.0], "b": [-1.0, 1.0],
@@ -741,7 +764,8 @@
     "cadence": "once every few months",
     "n_visits_per_field": 12,
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "De_Furio": {
     "F129": [{"l": [170.3831, 177.8831], "b": [-15.9523, -10.9523],
@@ -839,7 +863,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "SFR",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "True"
   },
   "Baravalle": {
     "F129": [
@@ -974,7 +999,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "AGN",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Meli": {
     "F158": [
@@ -1139,43 +1165,44 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Morihana2": {
     "F184": [
       {"pointing": [28.5, 0.0, 0.3],
         "nvisits": 20,
-        "duration": 5.0,
-        "visit_interval": [null],
+        "duration": 0.21,
+        "visit_interval": [0.25],
         "name": "CVs1"},
-      {"l": [20.0, 50.0], "b":  [-3.0, 3.0],
+      {"l": [20.0, 50.0], "b":  [-1.0, 1.0],
         "nvisits": 20,
-        "duration": 5.0,
-        "visit_interval": [null],
+        "duration": 0.21,
+        "visit_interval": [0.25],
         "name": "CVs2"}
     ],
     "F213": [
       {"pointing": [28.5, 0.0, 0.3],
         "nvisits": 20,
-        "duration": 5.0,
-        "visit_interval": [null],
+        "duration": 0.21,
+        "visit_interval": [0.25],
         "name": "CVs1"},
-      {"l": [20.0, 50.0], "b":  [-3.0, 3.0],
+      {"l": [20.0, 50.0], "b":  [-1.0, 1.0],
         "nvisits": 20,
-        "duration": 5.0,
-        "visit_interval": [null],
+        "duration": 0.21,
+        "visit_interval": [0.25],
         "name": "CVs2"}
     ],
     "F129": [
       {"pointing": [28.5, 0.0, 0.3],
         "nvisits": 20,
         "duration": 0.21,
-        "visit_interval": [0.5],
+        "visit_interval": [0.25],
         "name": "CVs1"},
-      {"l": [20.0, 50.0], "b":  [-3.0, 3.0],
+      {"l": [20.0, 50.0], "b":  [-1.0, 1.0],
         "nvisits": 20,
-        "duration": 5.0,
-        "visit_interval": [0.5],
+        "duration": 0.21,
+        "visit_interval": [0.25],
         "name": "CVs2"}
     ],
     "comment": "Cataclysmic Variables in the Galactic Plane.  Minimum of 1 filter, ideally 2 in priority order.  Any region within footprint valuable",
@@ -1184,7 +1211,8 @@
     "time_domain": "True",
     "cadence": "15-30min",
     "category": "variable_stars",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Morihana1": {
     "F129": [
@@ -1193,10 +1221,10 @@
         "duration": 0.21,
         "visit_interval": [0.5],
         "name": "Subaru1"},
-      {"l": [20.0, 50.0], "b":  [-3.0, 3.0],
+      {"l": [20.0, 50.0], "b":  [-1.0, 1.0],
         "nvisits": 20,
         "duration": 0.21,
-        "visit_interval": [0.5],
+        "visit_interval": [0.25],
         "name": "Subaru2"}
     ],
     "F158": [
@@ -1205,9 +1233,9 @@
         "duration": 0.21,
         "visit_interval": [0.25],
         "name": "Subaru1"},
-      {"l": [20.0, 50.0], "b":  [-3.0, 3.0],
+      {"l": [20.0, 50.0], "b":  [-1.0, 1.0],
         "nvisits": 20,
-        "duration": 730.0,
+        "duration": 0.21,
         "visit_interval": [0.25],
         "name": "Subaru2"}
     ],
@@ -1217,7 +1245,7 @@
         "duration": 0.21,
         "visit_interval": [0.25],
         "name": "Subaru1"},
-      {"l": [20.0, 50.0], "b":  [-3.0, 3.0],
+      {"l": [20.0, 50.0], "b":  [-1.0, 1.0],
         "nvisits": 20,
         "duration": 0.21,
         "visit_interval": [0.25],
@@ -1228,7 +1256,8 @@
     "time_domain": "True",
     "cadence": "multi-epoch",
     "category": "variable_stars",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Wang": {
     "F106": [{"pointing": [359.94423568, -0.04616002, 0.6],
@@ -1251,7 +1280,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "galactic_center",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Lucas": {
     "F129": [{"l": [-120.0, 120.0], "b": [-1.0, 1.0],
@@ -1274,7 +1304,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Lim2": {
     "F129": [
@@ -1463,7 +1494,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "SFR",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "True"
   },
   "Daylan": {
     "filter": [
@@ -1499,7 +1531,8 @@
     "time_domain": "True",
     "cadence": "sub-hour",
     "category": "high_cadence",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "False"
   },
  "Bahramian": {
    "F087": [{"l": [-95.0, 103.0], "b": [-13.0, 9.0],
@@ -1568,7 +1601,8 @@
     "time_domain": "True",
    "cadence": "multi-epoch",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
  },
   "Carey1": {
       "F087": [
@@ -1648,7 +1682,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Kuzuhara": {
     "F129": [{"region": "all sky?"}],
@@ -1658,7 +1693,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "False"
+    "ready_for_use": "False",
+    "extended_object_catalog": "False"
   },
   "Carey2": {
     "F213": [{"l": [-5.0,5.0], "b":  [-5.0, 5.0],
@@ -1686,7 +1722,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "solar_system",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Rich": {
     "F184": [
@@ -1727,7 +1764,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Rich2": {
     "F184": [{"l": [359.544, 360.0], "b": [-0.3, 0.3],
@@ -1776,7 +1814,8 @@
     "time_domain": "True",
     "cadence": "multi-epoch; high cadence",
     "category": "galactic_center",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Ivanov": {
     "F158": [
@@ -1819,7 +1858,8 @@
     "comment": "Star clusters",
     "questions": "Define survey region",
     "category": "wide_area",
-    "ready_for_use": "True"
+    "ready_for_use": "True",
+    "extended_object_catalog": "False"
   },
   "Schlafly": {
     "F129":    [{ "l": [-57, 57], "b": [-2.5,2.5],
@@ -1846,7 +1886,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "comment": "Member"
+    "comment": "Member",
+    "extended_object_catalog": "False"
   },
   "Drew": {
     "F106":    [
@@ -1919,7 +1960,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "comment": "Member"
+    "comment": "Member",
+    "extended_object_catalog": "False"
   },
   "Zucker": {
     "F106":     [{ "l": [-60, 60], "b": [-2.5,2.5],
@@ -1946,7 +1988,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "comment": "Member"
+    "comment": "Member",
+    "extended_object_catalog": "False"
   },
   "De_Furio2": {
     "F129":    [{ "l": [-82, -10], "b": [-2.5,2.5],
@@ -1998,7 +2041,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "comment": "Member"
+    "comment": "Member",
+    "extended_object_catalog": "False"
   },
   "De": {
     "F087":    [{ "l": [-60, 60], "b": [-2.0, 2.0],
@@ -2032,7 +2076,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "comment": "Member"
+    "comment": "Member",
+    "extended_object_catalog": "False"
   },
   "Carey": {
         "F087": [
@@ -2111,7 +2156,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "wide_area",
-    "comment": "Member"
+    "comment": "Member",
+    "extended_object_catalog": "False"
   },
   "Minniti2": {
     "F213": [
@@ -2130,7 +2176,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "globular_clusters"
+    "category": "globular_clusters",
+    "extended_object_catalog": "True"
   },
   "Globular_Clusters": {
     "F213": [
@@ -2144,7 +2191,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "globular_clusters"
+    "category": "globular_clusters",
+    "extended_object_catalog": "True"
   },
   "Open_Clusters": {
     "F213": [
@@ -2158,7 +2206,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "open_clusters"
+    "category": "open_clusters",
+    "extended_object_catalog": "True"
   },
   "VVV_keyholes_1st_priority": {
     "F213": [
@@ -2215,7 +2264,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "keyholes"
+    "category": "keyholes",
+    "extended_object_catalog": "False"
   },
   "VVV_keyholes_2nd_priority": {
     "F213": [
@@ -2324,7 +2374,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "keyholes"
+    "category": "keyholes",
+    "extended_object_catalog": "False"
   },
   "Lim3_grism_targets": {
     "G150": [
@@ -2348,7 +2399,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "SFR"
+    "category": "SFR",
+    "extended_object_catalog": "False"
   },
   "Sankrit": {
     "F062": [
@@ -2383,7 +2435,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "wide_area"
+    "category": "wide_area",
+    "extended_object_catalog": "False"
   },
   "Gallart": {
     "F106": [
@@ -2411,7 +2464,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "wide_area"
+    "category": "wide_area",
+    "extended_object_catalog": "False"
   },
   "Pascucci": {
     "G150": [
@@ -2441,7 +2495,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "SFR"
+    "category": "SFR",
+    "extended_object_catalog": "False"
   },
   "Ivanov1": {
     "G150": [
@@ -2456,7 +2511,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "stellar_spectra"
+    "category": "stellar_spectra",
+    "extended_object_catalog": "False"
   },
   "Ivanov2": {
     "F106": [
@@ -2492,7 +2548,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "extinction"
+    "category": "extinction",
+    "extended_object_catalog": "False"
   },
   "Craig1": {
     "F213": [
@@ -2507,7 +2564,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "wide_area"
+    "category": "wide_area",
+    "extended_object_catalog": "False"
   },
   "Craig2": {
     "F184": [
@@ -2529,7 +2587,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "novae"
+    "category": "novae",
+    "extended_object_catalog": "True"
   },
   "Kuhn": {
     "F158": [
@@ -2573,7 +2632,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "SFR",
-    "min_area": 26.0
+    "min_area": 26.0,
+    "extended_object_catalog": "False"
   },
   "Saydjari": {
     "F106": [
@@ -2616,7 +2676,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "ISM"
+    "category": "ISM",
+    "extended_object_catalog": "False"
   },
   "Hillenbrand": {
     "G150": [
@@ -2675,7 +2736,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "stellar_spectra"
+    "category": "stellar_spectra",
+    "extended_object_catalog": "False"
   },
   "Gramze": {
     "F184": [
@@ -2690,7 +2752,8 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "SFR",
-    "min_area": 40.0
+    "min_area": 40.0,
+    "extended_object_catalog": "False"
   },
   "Sabin": {
     "F062": [
@@ -2745,7 +2808,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "wide_area"
+    "category": "wide_area",
+    "extended_object_catalog": "False"
   },
   "Bonito": {
     "F062": [
@@ -2780,7 +2844,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "True",
-    "category": "YSO"
+    "category": "YSO",
+    "extended_object_catalog": "False"
   },
   "Minniti_GCs": {
     "F129": [
@@ -2809,7 +2874,8 @@
     "proper_motions": "True",
     "time_domain": "False",
     "category": "wide_area",
-    "min_area": 400.0
+    "min_area": 400.0,
+    "extended_object_catalog": "False"
   },
   "Pal": {
     "G150": [
@@ -2838,7 +2904,8 @@
     "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
-    "category": "stellar_spectra"
+    "category": "stellar_spectra",
+    "extended_object_catalog": "False"
   },
   "Saito": {
     "F129": [
@@ -2867,7 +2934,8 @@
     "ready_for_use": "True",
     "proper_motions": "True",
     "time_domain": "False",
-    "category": "wide_area"
+    "category": "wide_area",
+    "extended_object_catalog": "False"
   },
   "Craig": {
     "F213": [
@@ -2882,7 +2950,8 @@
     "ready_for_use": "True",
     "proper_motions": "True",
     "time_domain": "False",
-    "category": "wide_area"
+    "category": "wide_area",
+    "extended_object_catalog": "False"
   },
   "Pardo": {
     "F213": [
@@ -2902,7 +2971,8 @@
     "ready_for_use": "True",
     "proper_motions": "True",
     "time_domain": "True",
-    "category": "GW"
+    "category": "GW",
+    "extended_object_catalog": "False"
   }
 }
 

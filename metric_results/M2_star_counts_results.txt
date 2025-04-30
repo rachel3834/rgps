@@ -1,0 +1,11 @@
+Survey_strategy Optic M2_nstars
+wide_area F062 0.0
+wide_area F087 0.0
+wide_area F106 0.0
+wide_area F129 323257751171.5662
+wide_area F158 345363903839.34216
+wide_area F184 253068770774.81293
+wide_area F213 362938998450.423
+wide_area F146 0.0
+wide_area G150 0.0
+wide_area P127 0.0

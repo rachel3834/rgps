@@ -96,7 +96,7 @@ def calculate_metrics(args):
 
             if metric_name == 'M2_star_counts':
                 # Load the galatic model stellar density data
-                galactic_model_file = path.join(getcwd(), 'trilegal_model_data', 'trilegal_nir_stellar_density.json')
+                galactic_model_file = path.join(getcwd(), 'trilegal_model_data', 'trilegal_nir_stellar_density_extinction.json')
                 galactic_model_data = config_utils.read_config(galactic_model_file)
                 stellar_density_data = {optic: np.array(galactic_model_data['healpix_map_' + optic])
                                         for optic in sim_config['OPTICAL_COMPONENTS']}
@@ -110,7 +110,10 @@ def calculate_metrics(args):
                 results = metrics.M5_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
 
             # Store results
-            output_file = path.join(args.data_dir, metric_name + '_' + category + '_results.txt')
+            if metric_name == 'M2_star_counts':
+                output_file = path.join(args.data_dir, metric_name + '_results.txt')
+            else:
+                output_file = path.join(args.data_dir, metric_name + '_' + category + '_results.txt')
             results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
     print('Completed metric analysis')

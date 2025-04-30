@@ -202,6 +202,7 @@
     ],
     "comment": "Wide field=65%.  Includes northern plane, bulge and southern plane",
     "ready_for_use": "True",
-    "category": "survey_design"
+    "category": "survey_design",
+    "extended_object_catalog": "False"
   }
 }

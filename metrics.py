@@ -163,16 +163,14 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
     data = []
 
     # Unlike other metrics, this metric only makes sense when calculated for the set catalogs
-    # of known objects.
-    case_list = [
-        'DAmmando', # Jetted AGN
-        'Villasenor', # Molecular Clouds
-        'De_Furio', # Star Forming Regions
-        'Globular_Clusters',
-        'Open_Clusters',
-        'Craig2', # Nova shells
-        'Saydjari' # DIBs catalog of diffuse interstellar bands, ISM
-    ]
+    # of known objects.  These are identified in the science_cases with a special flag
+    case_list = []
+    for author, params in science_cases.items():
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if optic in params.keys() and len(params[optic]) > 0:
+                for r in params[optic]:
+                    if r.extended_object_catalog and author not in case_list:
+                        case_list.append(author)
 
     # Both the survey definition and the science case can include multiple regions for each
     # optical component.  So we need to check for intersections of the HEALpixels for all cases
@@ -190,7 +188,9 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
                         # Calculate the number of HEALpixels that are both within the target region and
                         # the survey footprint for each target region
                         nregions = 0.0
+                        category = 'None'
                         for rscience in science_strategy[optic]:
+                            category = rscience.category
                             in_pixels = []
                             for rsurvey in survey_definition[optic]:
                                 in_pixels += list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
@@ -205,20 +205,29 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
                         # Metric value is the percentage of regions where in_pixel >= r_pixels
                         # (due to the HEALpixels providing irregular coverage of the regions)
                         metric = (nregions / float(len(science_strategy[optic])))*100.0
-                        data.append([survey_name, optic, author, metric])
-
+                        data.append([survey_name, optic, author, category, metric])
                     else:
-                        data.append([survey_name, optic, author, 0.0])
+                        data.append([survey_name, optic, author, category, 0.0])
 
     data = np.array(data)
 
     # Return a table of the metric results
-    results = Table([
-        Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
-        Column(name='Optic', data=data[:, 1], dtype='S5'),
-        Column(name='Science_case', data=data[:, 2], dtype='S30'),
-        Column(name='M3_%regions', data=data[:, 3], dtype='f8'),
-    ])
+    if len(data) > 0:
+        results = Table([
+            Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
+            Column(name='Optic', data=data[:, 1], dtype='S5'),
+            Column(name='Science_case', data=data[:, 2], dtype='S30'),
+            Column(name='Category', data=data[:, 3], dtype='S30'),
+            Column(name='M3_%regions', data=data[:, 4], dtype='f8'),
+        ])
+    else:
+        results = Table([
+            Column(name='Survey_strategy', data=np.array([]), dtype='S30'),
+            Column(name='Optic', data=np.array([]), dtype='S5'),
+            Column(name='Science_case', data=np.array([]), dtype='S30'),
+            Column(name='Category', data=np.array([]), dtype='S30'),
+            Column(name='M3_%regions', data=np.array([]), dtype='f8'),
+        ])
 
     return results
 

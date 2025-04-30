@@ -32,6 +32,7 @@ class CelestialRegion:
         self.b_height = None
         self.radius = None
         self.category = None
+        self.extended_object_catalog = None
         self.predefined_pixels = False
         self.NSIDE = 64
         self.NPIX = hp.nside2npix(self.NSIDE)
@@ -187,6 +188,7 @@ class CelestialRegion:
                 "name": self.name,
                 "label": self.label,
                 "category": self.category,
+                "extended_object_catalog": self.extended_object_catalog,
                 "optic": self.optic,
                 "l_width": self.l_width,
                 "b_height": self.b_height,
@@ -290,7 +292,8 @@ def create_region(sim_config, params):
             'optic': params['optic'],
             'nvisits': params['nvisits'],
             'duration': params['duration'],
-            'visit_interval': params['visit_interval']
+            'visit_interval': params['visit_interval'],
+            'extended_object_catalog': params['extended_object_catalog']
         }
         if 'category' in params.keys():
             rparams['category'] = params['category']
@@ -311,6 +314,7 @@ def create_region(sim_config, params):
         r.nvisits = params['nvisits']
         r.duration = params['duration']
         r.visit_interval = params['visit_interval']
+        r.extended_object_catalog = params['extended_object_catalog']
         if 'category' in params.keys():
             r.category = params['category']
         r.region_map = survey_regions[params['survey_footprint']]
@@ -329,7 +333,8 @@ def create_region(sim_config, params):
                 'optic': params['optic'],
                 'nvisits': params['nvisits'],
                 'duration': params['duration'],
-                'visit_interval': params['visit_interval']
+                'visit_interval': params['visit_interval'],
+                'extended_object_catalog': params['extended_object_catalog']
             }
             if 'category' in params.keys():
                 rparams['category'] = params['category']
@@ -384,6 +389,7 @@ def create_region_set(sim_config, params):
         pointing['nvisits'] = params['nvisits']
         pointing['duration'] = params['duration']
         pointing['visit_interval'] = params['visit_interval']
+        pointing['extended_object_catalog'] = params['extended_object_catalog']
         if 'category' in params.keys():
             pointing['category'] = params['category']
         r = create_region(sim_config, pointing)
@@ -572,6 +578,7 @@ def build_region_maps(sim_config, survey_definitions):
                     for region in info[optic]:
                         region['label'] = name + '_' + region['name']
                         region['optic'] = optic
+                        region['extended_object_catalog'] = info['extended_object_catalog']
                         if 'category' in info.keys():
                             region['category'] = info['category']
 

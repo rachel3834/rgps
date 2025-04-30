@@ -57,7 +57,7 @@ def test_M1_survey_footprint(test_survey_regions_file, test_science_regions_file
     [
         (
                 path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
-                path.join(getcwd(), '..', 'trilegal_model_data', 'trilegal_nir_stellar_density.json'),
+                path.join(getcwd(), '..', 'trilegal_model_data', 'trilegal_nir_stellar_density_extinction.json'),
         )
     ])
 def test_M2_star_counts(test_survey_regions, galactic_model_file):
@@ -93,8 +93,8 @@ def test_M2_star_counts(test_survey_regions, galactic_model_file):
     "test_survey_regions, test_cases",
     [
         (
-                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
-                path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
+                path.join(getcwd(), 'data', 'test_m3_survey_regions1.json'),
+                path.join(getcwd(), 'data', 'test_m3_science_regions1.json')
         )
     ])
 def test_M3_extended_regions(test_survey_regions, test_cases):
@@ -116,11 +116,12 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
 
     # Calculate metric
     results = M3_extended_region_count(sim_config, science_regions, survey_regions)
+    print(results)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
     assert (len(results) > 0)
-    assert (len(results.colnames) == 4)
+    assert (len(results.colnames) == 5)
 
     # Test metric values returned are valid percentages and the known result that the pixels for
     # one of the requested regions was included in the F129 survey definition.

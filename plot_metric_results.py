@@ -75,3 +75,60 @@ def plot_metric_optic_heatmap(sim_config, metric_results, strategy_name, categor
     plt.tight_layout()
     plt.savefig(file_path)
     plt.close(fig)
+
+
+def plot_metric_multifilter(results, metric_name, sim_config, metric_label, science_name='all'):
+    """
+    Function to plot metric values for a given science use case over multiple survey designs, for multiple filters.
+
+    Input
+        selected_results  Table   Metric results table selecting the output for a specific science case only.
+    """
+
+    # Select the results for the specified science case
+    if science_name != 'all':
+        idx = np.where(results['Science_case'] == science_name)
+        selected_results = results[idx]
+    else:
+        selected_results = results
+
+    # Identify which filters were requested for this science case
+    filter_set = list(set(selected_results['Optic'].data))
+    filter_set.sort()
+
+    # Make a list of the survey strategies included
+    surveys_options = list(set(selected_results['Survey_strategy'].data))
+    survey_options.sort()
+
+    # Plot the metric results
+    fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 10))
+
+    for optic in filter_set:
+
+        fdx = selected_results['Optic'] == optic
+        metric_filter = selected_results[fdx]
+
+        data = []
+        for survey_name in survey_options:
+            jdx = np.where(metric_filter['Survey_strategy'] == survey_name)[0]
+            data.append(metric_filter[jdx][metric_name][0])
+
+        ax.plot(range(0, len(survey_options), 1), data,
+                color=sim_config['PLOT_COLORS'][optic], marker=sim_config['PLOT_SYMBOLS'][optic],
+                label=optic)
+        ax.plot(range(0, len(survey_options), 1), data, color=sim_config['PLOT_COLORS'][optic], linestyle='-')
+
+    ax.set_xlabel('Survey strategy', fontsize=20)
+    ax.set_ylabel(metric_label, fontsize=20)
+    ax.set_title(metric_name + ' for ' + science_name + ' catalog', fontsize=20)
+    ax.set_xticks(range(0, len(survey_options), 1))
+    ax.set_xticklabels(survey_options, rotation=45.0, horizontalalignment='right', fontsize=20)
+    yticks = ax.get_yticks()
+    yticklabels = ax.get_yticklabels()
+    ax.set_yticks(yticks)
+    ax.set_yticklabels(yticklabels, fontsize=20, horizontalalignment='right')
+    ax.legend()
+    ax.grid()
+
+    plt.tight_layout()
+    plt.savefig(path.join(sim_config['root_dir'], 'metric_results', 'm3_results.png'))

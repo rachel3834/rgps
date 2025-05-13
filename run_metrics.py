@@ -110,7 +110,9 @@ def calculate_metrics(args):
                 results = metrics.M5_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
 
             # Store results
-            if metric_name == 'M2_star_counts' or metric_name == 'M3_extended_region_count':
+            if metric_name == 'M2_star_counts' \
+                    or metric_name == 'M3_extended_region_count' \
+                    or metric_name == 'M4_proper_motion_precision':
                 output_file = path.join(args.data_dir, metric_name + '_results.txt')
             else:
                 output_file = path.join(args.data_dir, metric_name + '_' + category + '_results.txt')

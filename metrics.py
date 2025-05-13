@@ -261,10 +261,18 @@ def M4_proper_motion_precision(sim_config, survey_config):
     NPIX = hp.nside2npix(sim_config['NSIDE'])
 
     for survey_name, survey_definition in survey_config.items():
+
+        # Some survey designs have return visits only in different filters.
+        # So in addition to calculating this metric per filter, we also
+        # sum the visits across all optics
+        all_visits_map = np.zeros(NPIX)
+        all_interval_map = np.zeros(NPIX)
+        all_interval_map.fill(730.0)
+        all_pixels = np.zeros(NPIX, dtype='int')
+        filter_list = []
+
         for optic in sim_config['OPTICAL_COMPONENTS']:
 
-            # Surveys have multiple regions, so we have to calculate the area
-            # summed over all of them
             if optic in survey_definition.keys():
                 for rsurvey in survey_definition[optic]:
                     nvisits_map = np.zeros(NPIX)
@@ -272,12 +280,19 @@ def M4_proper_motion_precision(sim_config, survey_config):
                     interval_map.fill(730.0)    # Start with the maximum possible interval
 
                     nvisits_map[rsurvey.pixels] += np.array([rsurvey.nvisits] * len(rsurvey.pixels))
+                    all_visits_map[rsurvey.pixels] += np.array([rsurvey.nvisits] * len(rsurvey.pixels))
+                    all_pixels[rsurvey.pixels] = 1
+                    filter_list.append(optic)
 
                     # Option 1: A single numerical interval of days between observations is
                     # given in the survey definition.
                     if not np.isnan(rsurvey.visit_interval[0]) and len(rsurvey.visit_interval) == 1:
                         interval_map[rsurvey.pixels] = np.minimum(
                             interval_map[rsurvey.pixels],
+                            np.array([rsurvey.visit_interval[0]]*len(rsurvey.pixels))
+                        )
+                        all_interval_map[rsurvey.pixels] = np.minimum(
+                            all_interval_map[rsurvey.pixels],
                             np.array([rsurvey.visit_interval[0]]*len(rsurvey.pixels))
                         )
 
@@ -287,12 +302,20 @@ def M4_proper_motion_precision(sim_config, survey_config):
                             interval_map[rsurvey.pixels],
                             np.array([np.median(rsurvey.visit_interval)] * len(rsurvey.pixels))
                         )
+                        all_interval_map[rsurvey.pixels] = np.minimum(
+                            all_interval_map[rsurvey.pixels],
+                            np.array([np.median(rsurvey.visit_interval)] * len(rsurvey.pixels))
+                        )
 
                     # Option 3: A list containing a single None value is given,
                     # meaning that there is only a single visit to each field.
                     elif np.isnan(rsurvey.visit_interval[0]) and len(rsurvey.visit_interval) == 1:
                         interval_map[rsurvey.pixels] = np.minimum(
                             interval_map[rsurvey.pixels],
+                            np.array([730.0] * len(rsurvey.pixels))
+                        )
+                        all_interval_map[rsurvey.pixels] = np.minimum(
+                            all_interval_map[rsurvey.pixels],
                             np.array([730.0] * len(rsurvey.pixels))
                         )
 
@@ -307,6 +330,26 @@ def M4_proper_motion_precision(sim_config, survey_config):
                     m1 = (len(idx)/len(rsurvey.pixels))*100.0
 
                     data.append([survey_name, rsurvey.name, optic, m1])
+
+        # Calculate the metric values for all visits summed over all optics and regions
+        # Normally if all HEALpixels have visit intervals >730 then effectively there are no revisits,
+        # but this is calculated per filter.  If there are multiple filters listed and some pixels
+        # have multiple visits but no visit intervals, then it should be assumed that the visits
+        # are distributed equally throughout the survey.
+        pixel_list = np.where(all_pixels == 1)[0]
+        kdx = np.where(all_visits_map > 1.0)[0]
+        jdx = np.where(all_interval_map >= 730.0)[0]
+        if len(filter_list) > 1 and len(kdx) > 0 and len(jdx) == len(all_interval_map):
+            all_interval_map[pixel_list] = 730.0 / all_visits_map[pixel_list]
+            jdx = np.where(all_interval_map >= 730.0)[0]
+            all_interval_map[jdx] = np.nan
+        else:
+            all_interval_map[jdx] = np.nan
+        all_optic_metric_map = 1.0 / (all_interval_map / 365.24) / np.sqrt(all_visits_map)  # in mas
+        idx = np.where(all_optic_metric_map[pixel_list] <= 1.0)[0]
+        m1 = (len(idx) / len(pixel_list)) * 100.0
+        data.append([survey_name, 'combined_regions', 'all_optics', m1])
+
     data = np.array(data)
 
     # Return a table of the metric results

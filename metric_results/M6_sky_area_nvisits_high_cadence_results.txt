@@ -1,9 +1,0 @@
-Survey_strategy Survey_region Science_case Science_region Optic M6_%sky_area_nvisits
-wide_area wide_area Kupfer Kupfer_NGC6528 F062 0.0
-wide_area wide_area Kupfer Kupfer_NGC6522 F062 0.0
-wide_area wide_area Kupfer Kupfer_VVV_CL001 F062 0.0
-wide_area wide_area Kupfer Kupfer_UKS1 F062 0.0
-wide_area wide_area Kupfer Kupfer_NGC6528 F087 0.0
-wide_area wide_area Kupfer Kupfer_NGC6522 F087 0.0
-wide_area wide_area Kupfer Kupfer_VVV_CL001 F087 0.0
-wide_area wide_area Kupfer Kupfer_UKS1 F087 0.0

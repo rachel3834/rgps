@@ -33,6 +33,7 @@ class CelestialRegion:
         self.radius = None
         self.category = None
         self.extended_object_catalog = None
+        self.time_domain = None
         self.predefined_pixels = False
         self.NSIDE = 64
         self.NPIX = hp.nside2npix(self.NSIDE)
@@ -189,6 +190,7 @@ class CelestialRegion:
                 "label": self.label,
                 "category": self.category,
                 "extended_object_catalog": self.extended_object_catalog,
+                "time_domain": self.time_domain,
                 "optic": self.optic,
                 "l_width": self.l_width,
                 "b_height": self.b_height,
@@ -297,6 +299,8 @@ def create_region(sim_config, params):
         }
         if 'category' in params.keys():
             rparams['category'] = params['category']
+        if 'time_domain' in params.keys():
+            rparams['time_domain'] = params['time_domain']
         r = CelestialRegion(rparams)
 
         # Calculate which HEALpixels belong to this region.
@@ -317,6 +321,8 @@ def create_region(sim_config, params):
         r.extended_object_catalog = params['extended_object_catalog']
         if 'category' in params.keys():
             r.category = params['category']
+        if 'time_domain' in params.keys():
+            r.time_domain = params['time_domain']
         r.region_map = survey_regions[params['survey_footprint']]
         r.pixels = (np.where(r.region_map > 0.0)[0]).tolist()
 
@@ -338,6 +344,8 @@ def create_region(sim_config, params):
             }
             if 'category' in params.keys():
                 rparams['category'] = params['category']
+            if 'time_domain' in params.keys():
+                rparams['time_domain'] = params['time_domain']
             r = CelestialRegion(rparams)
         except KeyError:
             raise KeyError('Input region configuration missing necessary entries: ' + repr(params))
@@ -392,6 +400,8 @@ def create_region_set(sim_config, params):
         pointing['extended_object_catalog'] = params['extended_object_catalog']
         if 'category' in params.keys():
             pointing['category'] = params['category']
+        if 'time_domain' in params.keys():
+            pointing['time_domain'] = params['time_domain']
         r = create_region(sim_config, pointing)
         region_list.append(r)
 
@@ -576,29 +586,33 @@ def build_region_maps(sim_config, survey_definitions):
             for optic in sim_config['OPTICAL_COMPONENTS']:
                 if optic in info.keys():
                     for region in info[optic]:
-                        region['label'] = name + '_' + region['name']
-                        region['optic'] = optic
-                        region['extended_object_catalog'] = info['extended_object_catalog']
-                        if 'category' in info.keys():
-                            region['category'] = info['category']
+                        try:
+                            region['label'] = name + '_' + region['name']
+                            region['optic'] = optic
+                            region['extended_object_catalog'] = info['extended_object_catalog']
+                            region['time_domain'] = info['time_domain']
+                            if 'category' in info.keys():
+                                region['category'] = info['category']
 
-                        if 'catalog' in region.keys():
-                            region_set = create_region_set(sim_config, region)
+                            if 'catalog' in region.keys():
+                                region_set = create_region_set(sim_config, region)
 
-                        else:
-                            region_set = [create_region(sim_config, region)]
+                            else:
+                                region_set = [create_region(sim_config, region)]
 
-                        for r in region_set:
+                            for r in region_set:
 
-                            # If the region is valid, the list of included pixels will be non-zero.
-                            # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
-                            # for each science case.
-                            if len(r.pixels) > 0:
-                                r.pixel_priority = np.zeros(r.NPIX)
-                                r.pixel_priority[r.pixels] = 1.0
-                                r.predefined_pixels = True
-                                r.make_map()
+                                # If the region is valid, the list of included pixels will be non-zero.
+                                # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
+                                # for each science case.
+                                if len(r.pixels) > 0:
+                                    r.pixel_priority = np.zeros(r.NPIX)
+                                    r.pixel_priority[r.pixels] = 1.0
+                                    r.predefined_pixels = True
+                                    r.make_map()
 
-                                requested_regions[name][optic].append(r)
-
+                                    requested_regions[name][optic].append(r)
+                        except:
+                            print('Problem with: ', name, info)
+                            exit()
     return requested_regions

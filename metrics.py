@@ -517,7 +517,10 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
 
                     if len(survey_definition[optic]) > 0:
 
-                        for j,rsurvey in enumerate(survey_definition[optic]):
+                        # Calculate for time domain regions only
+                        region_list = [rsurvey in enumerate(survey_definition[optic] if rsurvey.time_domain]
+
+                        for j,rsurvey in enumerate(region_list):
                             # Create a pixel map of the overlap between each region requested for the
                             # science and those from the survey footprint.
                             # If the list of common HEALpixels is non-zero,

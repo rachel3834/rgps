@@ -181,7 +181,9 @@ def load_DECaPS2_footprint(sim_config):
                 "name": "DECaPS2"
                 }],
         "comment": "None",
-        "ready_for_use": "True"
+        "ready_for_use": "True",
+        "time_domain": "False",
+        "extended_object_catalog": "False"
         }
     }
 
@@ -260,7 +262,9 @@ def load_Baade_footprint(sim_config):
                 }
             ],
         "comment": "None",
-        "ready_for_use": "True"
+        "ready_for_use": "True",
+        "time_domain": "False",
+        "extended_object_catalog": "False"
         }
     }
 

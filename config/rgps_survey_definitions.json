@@ -348,6 +348,7 @@
     "comment": "Wide area survey",
     "ready_for_use": "True",
     "category": "Survey",
+    "time_domain": "False",
     "extended_object_catalog": "False"
   },
   "pan-chromatic-fields": {
@@ -1506,6 +1507,7 @@
       "comment": "Panchromatic survey",
       "ready_for_use": "True",
       "category": "Survey",
+      "time_domain": "False",
     "extended_object_catalog": "False"
   },
   "W40": {
@@ -1556,6 +1558,7 @@
       "comment": "W40 Deep Field",
       "ready_for_use": "True",
       "category": "Survey",
+      "time_domain": "False",
     "extended_object_catalog": "False"
   },
   "TD_Serpens": {

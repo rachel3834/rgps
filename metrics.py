@@ -369,7 +369,7 @@ def list_pixels_all_regions(region_set):
     """
     in_pixels = []
     for r in region_set:
-        in_pixels += list(set(r.pixels))
+        in_pixels += list(r.pixels)
     in_pixels = list(set(in_pixels))
 
     return in_pixels
@@ -449,9 +449,11 @@ def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
             # If all filters in the set are available, calculate the area of
             # HEALpixels where observations in all filters are present
             if check:
-                in_pixels = set(survey_definition[filter_combo[0]][0].pixels)
-                in_pixels = [in_pixels.intersection(set(list_pixels_all_regions(survey_definition[f])))
-                             for f in filter_combo[1:]]
+                in_pixels = set(list_pixels_all_regions(survey_definition[filter_combo[0]]))
+                for f in filter_combo[1:]:
+                    in_pixels = in_pixels.intersection(set(list_pixels_all_regions(survey_definition[f])))
+                in_pixels = list(in_pixels)
+
                 m2 = len(in_pixels) * PIXAREA
             else:
                 m2 = 0.0

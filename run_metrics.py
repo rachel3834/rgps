@@ -84,7 +84,13 @@ def calculate_metrics(args):
         for metric_name, metric_func in metric_set.items():
             print('Calculating metric ' + metric_name + ' for all selected science cases...')
 
-            if metric_name in ['M1_survey_footprint', 'M3_extended_region_count', 'M6_sky_area_nvisits', 'M7_multiband_sky_area']:
+            if metric_name in [
+                'M1_survey_footprint',
+                'M3_extended_region_count',
+                'M6_sky_area_nvisits',
+                'M7_multiband_sky_area',
+                'M5_sky_area_optical_elements'
+            ]:
                 results = metric_func(sim_config, science_regions, survey_regions)
 
             if metric_name == 'M2_star_counts':
@@ -98,9 +104,6 @@ def calculate_metrics(args):
 
             if metric_name == 'M4_proper_motion_precision':
                 results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
-
-            if metric_name == 'M5_sky_area_optical_elements':
-                results = metrics.M5_sky_area_optical_elements(sim_config, science_regions, survey_regions)
 
             # Store results
             if metric_name == 'M2_star_counts' \

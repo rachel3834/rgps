@@ -335,12 +335,13 @@ def M4_proper_motion_precision(sim_config, survey_config):
         # Normally if all HEALpixels have visit intervals >730 then effectively there are no revisits,
         # but this is calculated per filter.  If there are multiple filters listed and some pixels
         # have multiple visits but no visit intervals, then it should be assumed that the visits
-        # are distributed equally throughout the survey.
+        # are executed as pairs of filters, one executed at the start of the survey and the other at the end
+        # after 2 years.  So we assume an average interval of 1 yr.
         pixel_list = np.where(all_pixels == 1)[0]
         kdx = np.where(all_visits_map > 1.0)[0]
         jdx = np.where(all_interval_map >= 730.0)[0]
         if len(filter_list) > 1 and len(kdx) > 0 and len(jdx) == len(all_interval_map):
-            all_interval_map[pixel_list] = 730.0 / all_visits_map[pixel_list]
+            all_interval_map[pixel_list] = 365.24
             jdx = np.where(all_interval_map >= 730.0)[0]
             all_interval_map[jdx] = np.nan
         else:
@@ -395,7 +396,7 @@ def extract_multiband_science(sim_config, science_cases):
 
     return multiband_cases
 
-def M5_sky_area_optical_elements(sim_config, survey_config, filtersets):
+def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
     """
     Metric to evaluate the total area of sky to receive observations in each optical element,
     and combinations of the filters, as a proxy for color measurements.
@@ -404,15 +405,26 @@ def M5_sky_area_optical_elements(sim_config, survey_config, filtersets):
 
     Parameters:
         sim_config    dict   General configuration parameters common to the whole simulation
-        survey_config   dict   Description of the proposed survey configuration
         science_cases dict      Description of the requested science regions
-        filtersets      list of tuples  Combinations of filters
+        survey_config   dict   Description of the proposed survey configuration
 
     Returns:
         results        astropy.table   Metric values calculated for all survey designs
     """
 
     PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
+
+    # First establish what combinations of filters were requested by both
+    # science cases and the survey design, based on the region data given
+    filter_sets = []
+    for survey_name, survey_regions in survey_config.items():
+        optic_list = [optic for optic in sim_config['OPTICAL_COMPONENTS'] if len(survey_regions[optic]) > 0]
+        if not optic_list in filter_sets and len(optic_list) > 1:
+            filter_sets.append(optic_list)
+    for author, params in science_cases.items():
+        optic_list = [optic for optic in sim_config['OPTICAL_COMPONENTS'] if len(params[optic]) > 0]
+        if not optic_list in filter_sets and len(optic_list) > 1:
+            filter_sets.append(optic_list)
 
     data = []
 
@@ -428,7 +440,7 @@ def M5_sky_area_optical_elements(sim_config, survey_config, filtersets):
             data.append([survey_name, optic, m1, None])
 
         # For each combination of filters, calculate the sky area covered in both filters
-        for filter_combo in filtersets:
+        for filter_combo in filter_sets:
 
             # First check whether all filters in the combination are present in the survey
             # design.  If not, then this metric returns zero

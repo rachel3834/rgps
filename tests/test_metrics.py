@@ -163,18 +163,14 @@ def test_M4_proper_motion_precision(test_survey_regions, expected):
         assert(expected_value == results['M4_proper_motion_precision'][i])
 
 @pytest.mark.parametrize(
-    "test_survey_regions, filtersets",
+    "test_survey_regions, test_science_cases",
     [
         (
-                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
-                [
-                    ('F129', 'F184'),
-                    ('F184', 'F213'),
-                    ('F129', 'F158', 'F213')
-                ]
+                path.join(getcwd(), 'data', 'test_m5_survey_regions1.json'),
+                path.join(getcwd(), 'data', 'test_m5_science_regions1.json')
         )
     ])
-def test_M5_sky_area_optical_elements(test_survey_regions, filtersets):
+def test_M5_sky_area_optical_elements(test_survey_regions, test_science_cases):
     """
     Unittest for metric to evaluate the area of sky to receive observations in one or more filters,
     with the filtersets parameter providing the tuples of filters combinations to check for.
@@ -185,11 +181,14 @@ def test_M5_sky_area_optical_elements(test_survey_regions, filtersets):
     # Load simulation parameters
     sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
 
+    # Load the science cases from file
+    science_regions = regions.load_regions_from_file(sim_config, test_science_cases)
+
     # Load the defined survey strategy options from file
     survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
 
     # Calculate metrics
-    results = M5_sky_area_optical_elements(sim_config, survey_regions, filtersets)
+    results = M5_sky_area_optical_elements(sim_config, science_regions, survey_regions)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
@@ -235,7 +234,7 @@ def test_M6_sky_area_nvisits(test_survey_regions, test_cases):
     assert (len(results.colnames) == 6)
 
     # Test metric value
-    assert(len(np.where(results['M7_%sky_area_nvisits'].data > 0.0)[0] > 0))
+    assert(len(np.where(results['M6_%sky_area_nvisits'].data > 0.0)[0] > 0))
 
 @pytest.mark.parametrize(
     "test_cases",

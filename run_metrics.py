@@ -18,13 +18,6 @@ def calculate_metrics(args):
     sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
     print('Loaded simulation configuration')
 
-    # Define the desired filters and combinations of filters needed for colors:
-    filter_sets = [
-        ('F129', 'F184'),
-        ('F184', 'F213'),
-        ('F129', 'F158', 'F213')
-    ]
-
     # Load the defined survey strategy options from file
     all_survey_regions = regions.load_regions_from_file(sim_config,
                                                         path.join(getcwd(), 'region_data', 'rgps_survey_regions.json'))
@@ -107,7 +100,7 @@ def calculate_metrics(args):
                 results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
 
             if metric_name == 'M5_sky_area_optical_elements':
-                results = metrics.M5_sky_area_optical_elements(sim_config, survey_regions, filter_sets)
+                results = metrics.M5_sky_area_optical_elements(sim_config, science_regions, survey_regions)
 
             # Store results
             if metric_name == 'M2_star_counts' \

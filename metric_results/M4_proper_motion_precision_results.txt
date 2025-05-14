@@ -17,4 +17,4 @@ wide_area Galactic_Plane2 F213 0.0
 wide_area Serpens F213 0.0
 wide_area Galactic_Bulge1 F213 0.0
 wide_area Galactic_Bulge2 F213 0.0
-wide_area combined_regions all_optics 20.654396728016362
+wide_area combined_regions all_optics 100.0

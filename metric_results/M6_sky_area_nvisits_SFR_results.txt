@@ -1,0 +1,990 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%sky_area_nvisits
+wide_area wide_area Zari Zari_Zari_SFR1 F106 0.0
+wide_area wide_area_Galactic_Plane1 Zari Zari_Zari_SFR2 F158 1.6678684670765171
+wide_area wide_area_Galactic_Plane2 Zari Zari_Zari_SFR2 F158 17.903525576274493
+wide_area wide_area_Serpens Zari Zari_Zari_SFR2 F158 0.10424177919228232
+wide_area wide_area_Galactic_Bulge1 Zari Zari_Zari_SFR2 F158 0.5733297855575528
+wide_area wide_area_Galactic_Bulge2 Zari Zari_Zari_SFR2 F158 0.5472693407594823
+wide_area wide_area_Galactic_Plane1 Zari Zari_Zari_SFR3 F213 1.6678684670765171
+wide_area wide_area_Galactic_Plane2 Zari Zari_Zari_SFR3 F213 17.903525576274493
+wide_area wide_area_Serpens Zari Zari_Zari_SFR3 F213 0.10424177919228232
+wide_area wide_area_Galactic_Bulge1 Zari Zari_Zari_SFR3 F213 0.5733297855575528
+wide_area wide_area_Galactic_Bulge2 Zari Zari_Zari_SFR3 F213 0.5472693407594823
+wide_area wide_area_Galactic_Plane1 Werner Werner_Werner_SFR1 F213 1.2889867184470016
+wide_area wide_area_Galactic_Plane2 Werner Werner_Werner_SFR1 F213 11.966673994230948
+wide_area wide_area_Serpens Werner Werner_Werner_SFR1 F213 0.17418739438472994
+wide_area wide_area_Galactic_Bulge1 Werner Werner_Werner_SFR1 F213 0.8186807536082308
+wide_area wide_area_Galactic_Bulge2 Werner Werner_Werner_SFR1 F213 0.8186807536082308
+wide_area wide_area_Galactic_Plane1 Werner Werner_Werner_SFR2 F213 0.0
+wide_area wide_area_Galactic_Plane2 Werner Werner_Werner_SFR2 F213 0.0
+wide_area wide_area_Serpens Werner Werner_Werner_SFR2 F213 0.0
+wide_area wide_area_Galactic_Bulge1 Werner Werner_Werner_SFR2 F213 0.0
+wide_area wide_area_Galactic_Bulge2 Werner Werner_Werner_SFR2 F213 0.0
+wide_area wide_area_Galactic_Plane1 Werner Werner_Werner_SFR3 F213 0.0
+wide_area wide_area_Galactic_Plane2 Werner Werner_Werner_SFR3 F213 0.0
+wide_area wide_area_Serpens Werner Werner_Werner_SFR3 F213 0.0
+wide_area wide_area_Galactic_Bulge1 Werner Werner_Werner_SFR3 F213 0.0
+wide_area wide_area_Galactic_Bulge2 Werner Werner_Werner_SFR3 F213 0.0
+wide_area wide_area_Galactic_Plane1 Werner Werner_Werner_SFR4 F213 0.0
+wide_area wide_area_Galactic_Plane2 Werner Werner_Werner_SFR4 F213 0.0
+wide_area wide_area_Serpens Werner Werner_Werner_SFR4 F213 0.0
+wide_area wide_area_Galactic_Bulge1 Werner Werner_Werner_SFR4 F213 0.0
+wide_area wide_area_Galactic_Bulge2 Werner Werner_Werner_SFR4 F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim1 Lim1_YSO_spec1 F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim1 Lim1_YSO_spec1 F129 0.0
+wide_area wide_area_Serpens Lim1 Lim1_YSO_spec1 F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim1 Lim1_YSO_spec1 F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim1 Lim1_YSO_spec1 F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim1 Lim1_YSO_spec1 F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim1 Lim1_YSO_spec1 F158 0.0
+wide_area wide_area_Serpens Lim1 Lim1_YSO_spec1 F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim1 Lim1_YSO_spec1 F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim1 Lim1_YSO_spec1 F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim1 Lim1_YSO_spec1 F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim1 Lim1_YSO_spec1 F213 0.0
+wide_area wide_area_Serpens Lim1 Lim1_YSO_spec1 F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim1 Lim1_YSO_spec1 F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim1 Lim1_YSO_spec1 F213 0.0
+wide_area wide_area Lim1 Lim1_YSO_spec1 G150 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_Taurus F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_Taurus F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_Taurus F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_Taurus F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_Taurus F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_Sco-Cen F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_Sco-Cen F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_Sco-Cen F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_Sco-Cen F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_Sco-Cen F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio "De_Furio_Orion Nebula Cluster" F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio "De_Furio_Orion Nebula Cluster" F129 0.0
+wide_area wide_area_Serpens De_Furio "De_Furio_Orion Nebula Cluster" F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio "De_Furio_Orion Nebula Cluster" F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio "De_Furio_Orion Nebula Cluster" F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F129 0.0
+wide_area wide_area_Serpens De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_De_Furio_SFR F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_De_Furio_SFR F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_De_Furio_SFR F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_De_Furio_SFR F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_De_Furio_SFR F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 70.4413822891848
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 42.26482937351087
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 58.701151907653994
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 43.72223728294228
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 56.35310583134784
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 20.545403167678895
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 32.28563354920969
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 35.716757217051445
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 14.881982173771432
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F129 8.367232653425694
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F129 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F129 1.2365368453338466
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F129 0.04121789484446155
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_Taurus F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_Taurus F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_Taurus F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_Sco-Cen F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_Sco-Cen F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_Sco-Cen F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio "De_Furio_Orion Nebula Cluster" F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio "De_Furio_Orion Nebula Cluster" F184 0.0
+wide_area wide_area_Serpens De_Furio "De_Furio_Orion Nebula Cluster" F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F184 0.0
+wide_area wide_area_Serpens De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_De_Furio_SFR F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_De_Furio_SFR F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_De_Furio_SFR F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 70.4413822891848
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 42.26482937351087
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 58.701151907653994
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 43.72223728294228
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 56.35310583134784
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 20.545403167678895
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 32.28563354920969
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 35.716757217051445
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F184 8.367232653425694
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F184 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_Taurus F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_Taurus F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_Taurus F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_Taurus F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_Taurus F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_Sco-Cen F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_Sco-Cen F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_Sco-Cen F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_Sco-Cen F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_Sco-Cen F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio "De_Furio_Orion Nebula Cluster" F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio "De_Furio_Orion Nebula Cluster" F213 0.0
+wide_area wide_area_Serpens De_Furio "De_Furio_Orion Nebula Cluster" F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio "De_Furio_Orion Nebula Cluster" F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio "De_Furio_Orion Nebula Cluster" F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F213 0.0
+wide_area wide_area_Serpens De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio "De_Furio_Orion molecular Cloud (TEMPO re" F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_De_Furio_SFR F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_De_Furio_SFR F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_De_Furio_SFR F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_De_Furio_SFR F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_De_Furio_SFR F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 70.4413822891848
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 42.26482937351087
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 58.701151907653994
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 43.72223728294228
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 56.35310583134784
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 20.545403167678895
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 32.28563354920969
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 35.716757217051445
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 14.881982173771432
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane1 De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Plane2 De_Furio De_Furio_SFRs_catalog F213 8.367232653425694
+wide_area wide_area_Serpens De_Furio De_Furio_SFRs_catalog F213 0.0
+wide_area wide_area_Galactic_Bulge1 De_Furio De_Furio_SFRs_catalog F213 1.2365368453338466
+wide_area wide_area_Galactic_Bulge2 De_Furio De_Furio_SFRs_catalog F213 0.04121789484446155
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Orion Nebula (M42)" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Orion Nebula (M42)" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Orion Nebula (M42)" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Orion Nebula (M42)" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Orion Nebula (M42)" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F129 49.65540063008108
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_NGC 1333" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_NGC 1333" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_NGC 1333" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_NGC 1333" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_NGC 1333" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_IC 348" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_IC 348" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_IC 348" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_IC 348" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_IC 348" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Taurus Molecular Cloud" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Taurus Molecular Cloud" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Taurus Molecular Cloud" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Taurus Molecular Cloud" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Taurus Molecular Cloud" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Pleiades (M45)" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Pleiades (M45)" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Pleiades (M45)" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Pleiades (M45)" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Pleiades (M45)" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Vela Molecular Ridge" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Vela Molecular Ridge" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Vela Molecular Ridge" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Vela Molecular Ridge" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Vela Molecular Ridge" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Cepheus OB3" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Cepheus OB3" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Cepheus OB3" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Cepheus OB3" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Cepheus OB3" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Cygnus X complex" F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Cygnus X complex" F129 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Cygnus X complex" F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Cygnus X complex" F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Cygnus X complex" F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 Lim2_W40 F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 Lim2_W40 F129 0.0
+wide_area wide_area_Serpens Lim2 Lim2_W40 F129 70.4413822891848
+wide_area wide_area_Galactic_Bulge1 Lim2 Lim2_W40 F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 Lim2_W40 F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 Lim2_RCW36 F129 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 Lim2_RCW36 F129 0.0
+wide_area wide_area_Serpens Lim2 Lim2_RCW36 F129 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 Lim2_RCW36 F129 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 Lim2_RCW36 F129 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Orion Nebula (M42)" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Orion Nebula (M42)" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Orion Nebula (M42)" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Orion Nebula (M42)" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Orion Nebula (M42)" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F158 49.65540063008108
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_NGC 1333" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_NGC 1333" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_NGC 1333" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_NGC 1333" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_NGC 1333" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_IC 348" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_IC 348" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_IC 348" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_IC 348" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_IC 348" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Taurus Molecular Cloud" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Taurus Molecular Cloud" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Taurus Molecular Cloud" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Taurus Molecular Cloud" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Taurus Molecular Cloud" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Pleiades (M45)" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Pleiades (M45)" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Pleiades (M45)" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Pleiades (M45)" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Pleiades (M45)" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Vela Molecular Ridge" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Vela Molecular Ridge" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Vela Molecular Ridge" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Vela Molecular Ridge" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Vela Molecular Ridge" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Cepheus OB3" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Cepheus OB3" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Cepheus OB3" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Cepheus OB3" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Cepheus OB3" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Cygnus X complex" F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Cygnus X complex" F158 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Cygnus X complex" F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Cygnus X complex" F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Cygnus X complex" F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 Lim2_W40 F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 Lim2_W40 F158 0.0
+wide_area wide_area_Serpens Lim2 Lim2_W40 F158 70.4413822891848
+wide_area wide_area_Galactic_Bulge1 Lim2 Lim2_W40 F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 Lim2_W40 F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 Lim2_RCW36 F158 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 Lim2_RCW36 F158 0.0
+wide_area wide_area_Serpens Lim2 Lim2_RCW36 F158 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 Lim2_RCW36 F158 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 Lim2_RCW36 F158 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Orion Nebula (M42)" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Orion Nebula (M42)" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Orion Nebula (M42)" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Orion Nebula (M42)" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Orion Nebula (M42)" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F213 49.65540063008108
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Eta Carinae Nebula (NGC 3372)" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_NGC 1333" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_NGC 1333" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_NGC 1333" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_NGC 1333" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_NGC 1333" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_IC 348" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_IC 348" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_IC 348" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_IC 348" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_IC 348" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Taurus Molecular Cloud" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Taurus Molecular Cloud" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Taurus Molecular Cloud" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Taurus Molecular Cloud" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Taurus Molecular Cloud" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Pleiades (M45)" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Pleiades (M45)" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Pleiades (M45)" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Pleiades (M45)" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Pleiades (M45)" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Vela Molecular Ridge" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Vela Molecular Ridge" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Vela Molecular Ridge" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Vela Molecular Ridge" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Vela Molecular Ridge" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Cepheus OB3" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Cepheus OB3" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Cepheus OB3" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Cepheus OB3" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Cepheus OB3" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 "Lim2_Cygnus X complex" F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 "Lim2_Cygnus X complex" F213 0.0
+wide_area wide_area_Serpens Lim2 "Lim2_Cygnus X complex" F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 "Lim2_Cygnus X complex" F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 "Lim2_Cygnus X complex" F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 Lim2_W40 F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 Lim2_W40 F213 0.0
+wide_area wide_area_Serpens Lim2 Lim2_W40 F213 70.4413822891848
+wide_area wide_area_Galactic_Bulge1 Lim2 Lim2_W40 F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 Lim2_W40 F213 0.0
+wide_area wide_area_Galactic_Plane1 Lim2 Lim2_RCW36 F213 0.0
+wide_area wide_area_Galactic_Plane2 Lim2 Lim2_RCW36 F213 0.0
+wide_area wide_area_Serpens Lim2 Lim2_RCW36 F213 0.0
+wide_area wide_area_Galactic_Bulge1 Lim2 Lim2_RCW36 F213 0.0
+wide_area wide_area_Galactic_Bulge2 Lim2 Lim2_RCW36 F213 0.0
+wide_area wide_area Lim3_grism_targets Lim3_grism_targets_RGPS_M17 G150 0.0
+wide_area wide_area Lim3_grism_targets Lim3_grism_targets_RGPS_M16 G150 0.0
+wide_area wide_area Lim3_grism_targets Lim3_grism_targets_RGPS_W51 G150 0.0
+wide_area wide_area Pascucci Pascucci_Chamaeleon_SFR G150 0.0
+wide_area wide_area Pascucci Pascucci_Taurus_SFR G150 0.0
+wide_area wide_area Pascucci Pascucci_Lupus_SFR G150 0.0
+wide_area wide_area Pascucci Pascucci_Ophiucus_SFR G150 0.0
+wide_area wide_area_Galactic_Plane1 Kuhn Kuhn_Cygnus-X F158 0.0
+wide_area wide_area_Galactic_Plane2 Kuhn Kuhn_Cygnus-X F158 0.0
+wide_area wide_area_Serpens Kuhn Kuhn_Cygnus-X F158 0.0
+wide_area wide_area_Galactic_Bulge1 Kuhn Kuhn_Cygnus-X F158 0.0
+wide_area wide_area_Galactic_Bulge2 Kuhn Kuhn_Cygnus-X F158 0.0
+wide_area wide_area_Galactic_Plane1 Kuhn Kuhn_Carina F158 43.047511398946256
+wide_area wide_area_Galactic_Plane2 Kuhn Kuhn_Carina F158 0.0
+wide_area wide_area_Serpens Kuhn Kuhn_Carina F158 0.0
+wide_area wide_area_Galactic_Bulge1 Kuhn Kuhn_Carina F158 0.0
+wide_area wide_area_Galactic_Bulge2 Kuhn Kuhn_Carina F158 0.0
+wide_area wide_area_Galactic_Plane1 Kuhn Kuhn_Cygnus-X F184 0.0
+wide_area wide_area_Galactic_Plane2 Kuhn Kuhn_Cygnus-X F184 0.0
+wide_area wide_area_Serpens Kuhn Kuhn_Cygnus-X F184 0.0
+wide_area wide_area_Galactic_Plane1 Kuhn Kuhn_Carina F184 43.047511398946256
+wide_area wide_area_Galactic_Plane2 Kuhn Kuhn_Carina F184 0.0
+wide_area wide_area_Serpens Kuhn Kuhn_Carina F184 0.0
+wide_area wide_area_Galactic_Plane1 Kuhn Kuhn_Cygnus-X F213 0.0
+wide_area wide_area_Galactic_Plane2 Kuhn Kuhn_Cygnus-X F213 0.0
+wide_area wide_area_Serpens Kuhn Kuhn_Cygnus-X F213 0.0
+wide_area wide_area_Galactic_Bulge1 Kuhn Kuhn_Cygnus-X F213 0.0
+wide_area wide_area_Galactic_Bulge2 Kuhn Kuhn_Cygnus-X F213 0.0
+wide_area wide_area_Galactic_Plane1 Kuhn Kuhn_Carina F213 43.047511398946256
+wide_area wide_area_Galactic_Plane2 Kuhn Kuhn_Carina F213 0.0
+wide_area wide_area_Serpens Kuhn Kuhn_Carina F213 0.0
+wide_area wide_area_Galactic_Bulge1 Kuhn Kuhn_Carina F213 0.0
+wide_area wide_area_Galactic_Bulge2 Kuhn Kuhn_Carina F213 0.0
+wide_area wide_area_Galactic_Plane1 Gramze Gramze_Gal_Bar1 F184 0.0
+wide_area wide_area_Galactic_Plane2 Gramze Gramze_Gal_Bar1 F184 32.476221704754025
+wide_area wide_area_Serpens Gramze Gramze_Gal_Bar1 F184 0.0

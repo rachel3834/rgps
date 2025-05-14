@@ -1,0 +1,6 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%sky_area_nvisits
+wide_area wide_area_Galactic_Plane1 Pardo Pardo_NGC6528 F213 0.0
+wide_area wide_area_Galactic_Plane2 Pardo Pardo_NGC6528 F213 0.0
+wide_area wide_area_Serpens Pardo Pardo_NGC6528 F213 0.0
+wide_area wide_area_Galactic_Bulge1 Pardo Pardo_NGC6528 F213 0.0
+wide_area wide_area_Galactic_Bulge2 Pardo Pardo_NGC6528 F213 0.0

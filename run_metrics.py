@@ -87,9 +87,9 @@ def calculate_metrics(args):
             if metric_name in [
                 'M1_survey_footprint',
                 'M3_extended_region_count',
+                'M5_sky_area_optical_elements',
                 'M6_sky_area_nvisits',
-                'M7_multiband_sky_area',
-                'M5_sky_area_optical_elements'
+                'M7_multiband_sky_area'
             ]:
                 results = metric_func(sim_config, science_regions, survey_regions)
 

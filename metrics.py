@@ -515,7 +515,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                 # current optical component
                 for survey_name, survey_definition in survey_config.items():
 
-                    if optic in survey_definition.keys():
+                    if len(survey_definition[optic]) > 0:
 
                         for j,rsurvey in enumerate(survey_definition[optic]):
                             # Create a pixel map of the overlap between each region requested for the
@@ -551,7 +551,8 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                             else:
                                 data.append([survey_name, rsurvey.label, author, rscience.label, optic, 0.0])
                     else:
-                        data.append([survey_name, rsurvey.label, author, rscience.label, optic, 0.0])
+                        data.append([survey_name, survey_name, author, rscience.label, optic, 0.0])
+
     data = np.array(data)
 
     # Return a table of the metric results

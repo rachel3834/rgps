@@ -1,0 +1,6 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%sky_area_nvisits
+wide_area wide_area Bonito Bonito_Carina F062 0.0
+wide_area wide_area Bonito "Bonito_NGC 6611" F062 0.0
+wide_area wide_area Bonito "Bonito_NGC 6530" F062 0.0
+wide_area wide_area Bonito "Bonito_Orion Nebula Cluster" F062 0.0
+wide_area wide_area Bonito "Bonito_NGC 2264" F062 0.0

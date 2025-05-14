@@ -1,0 +1,15 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%sky_area_nvisits
+wide_area wide_area Saydjari Saydjari_DIBs F106 0.0
+wide_area wide_area_Galactic_Plane1 Saydjari Saydjari_DIBs F129 0.0
+wide_area wide_area_Galactic_Plane2 Saydjari Saydjari_DIBs F129 33.54351537580228
+wide_area wide_area_Serpens Saydjari Saydjari_DIBs F129 0.0
+wide_area wide_area_Galactic_Bulge1 Saydjari Saydjari_DIBs F129 0.0
+wide_area wide_area_Galactic_Bulge2 Saydjari Saydjari_DIBs F129 0.0
+wide_area wide_area_Galactic_Plane1 Saydjari Saydjari_DIBs F158 0.0
+wide_area wide_area_Galactic_Plane2 Saydjari Saydjari_DIBs F158 33.54351537580228
+wide_area wide_area_Serpens Saydjari Saydjari_DIBs F158 0.0
+wide_area wide_area_Galactic_Bulge1 Saydjari Saydjari_DIBs F158 0.0
+wide_area wide_area_Galactic_Bulge2 Saydjari Saydjari_DIBs F158 0.0
+wide_area wide_area_Galactic_Plane1 Saydjari Saydjari_DIBs F184 0.0
+wide_area wide_area_Galactic_Plane2 Saydjari Saydjari_DIBs F184 33.54351537580228
+wide_area wide_area_Serpens Saydjari Saydjari_DIBs F184 0.0

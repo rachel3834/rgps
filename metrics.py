@@ -515,53 +515,57 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                 # current optical component
                 for survey_name, survey_definition in survey_config.items():
 
-                    if len(survey_definition[optic]) > 0:
+                    # Calculate for time domain regions only
+                    region_list = []
+                    for rsurvey in survey_definition[optic]:
+                        if rsurvey.time_domain:
+                            region_list.append(rsurvey)
 
-                        # Calculate for time domain regions only
-                        region_list = [rsurvey in enumerate(survey_definition[optic] if rsurvey.time_domain]
+                    if len(region_list) > 0:
+                        if len(survey_definition[optic]) > 0 and len(region_list) > 0:
 
-                        for j,rsurvey in enumerate(region_list):
-                            # Create a pixel map of the overlap between each region requested for the
-                            # science and those from the survey footprint.
-                            # If the list of common HEALpixels is non-zero,
-                            # fill the pixel values with the number of visits per field
-                            survey_visits = np.zeros(rsurvey.NPIX)
-                            common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
+                            for j,rsurvey in enumerate(region_list):
+                                # Create a pixel map of the overlap between each region requested for the
+                                # science and those from the survey footprint.
+                                # If the list of common HEALpixels is non-zero,
+                                # fill the pixel values with the number of visits per field
+                                survey_visits = np.zeros(rsurvey.NPIX)
+                                common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
 
-                            if len(common_pixels) > 0:
-                                if rsurvey.nvisits is not None and rsurvey.nvisits >= 2:
-                                    survey_visits[common_pixels].fill(rsurvey.nvisits)
+                                if len(common_pixels) > 0:
+                                    if rsurvey.nvisits is not None and rsurvey.nvisits >= 2:
+                                        survey_visits[common_pixels].fill(rsurvey.nvisits)
+                                    else:
+                                        survey_visits[common_pixels].fill(1.0)
+
+                                    # Create a similar pixels map of the requested number of visits
+                                    # over the whole pixel area
+                                    science_visits = np.zeros(rscience.NPIX)
+                                    science_visits[rscience.pixels].fill(rscience.nvisits)
+
+                                    # Calculate the percentage of pixels that receive observations
+                                    # at at least the required interval.  Here zero or negative values
+                                    # of the difference map within the desired survey region indicate
+                                    # that the required number of visits have been achieved
+                                    diff_map = science_visits - survey_visits
+                                    obs_pixels = np.where(diff_map[common_pixels] <= 0.0)[0]
+
+                                    metric = (len(obs_pixels) * PIXAREA / len(rscience.pixels) * PIXAREA) * 100.0
+
+                                    data.append([survey_name, rsurvey.label, author, rscience.label, optic, metric])
+
+                                # Handle case of no overlap between the science and survey region
                                 else:
-                                    survey_visits[common_pixels].fill(1.0)
-
-                                # Create a similar pixels map of the requested number of visits
-                                # over the whole pixel area
-                                science_visits = np.zeros(rscience.NPIX)
-                                science_visits[rscience.pixels].fill(rscience.nvisits)
-
-                                # Calculate the percentage of pixels that receive observations
-                                # at at least the required interval.  Here zero or negative values
-                                # of the difference map within the desired survey region indicate
-                                # that the required number of visits have been achieved
-                                diff_map = science_visits - survey_visits
-                                obs_pixels = np.where(diff_map[common_pixels] <= 0.0)[0]
-
-                                metric = (len(obs_pixels) * PIXAREA / len(rscience.pixels) * PIXAREA) * 100.0
-
-                                data.append([survey_name, rsurvey.label, author, rscience.label, optic, metric])
-
-                            # Handle case of no overlap between the science and survey region
-                            else:
-                                data.append([survey_name, rsurvey.label, author, rscience.label, optic, 0.0])
-                    else:
-                        data.append([survey_name, survey_name, author, rscience.label, optic, 0.0])
+                                    data.append([survey_name, rsurvey.label, author, rscience.label, optic, 0.0])
+                        else:
+                            data.append([survey_name, survey_name, author, rscience.label, optic, 0.0])
 
     data = np.array(data)
 
     # Return a table of the metric results
     results = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
-        Column(name='Survey_region', data=data[:, 1], dtype='S30'),
+        Column(name='Survey_region', data=data[:, 1], dtype='S50'),
         Column(name='Science_case', data=data[:, 2], dtype='S40'),
         Column(name='Science_region', data=data[:, 3], dtype='S40'),
         Column(name='Optic', data=data[:, 4], dtype='S5'),

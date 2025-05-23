@@ -67,7 +67,6 @@ def calculate_metrics(args):
             'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
             'M5_sky_area_optical_elements': metrics.M5_sky_area_optical_elements,
             'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits,
-            'M7_multiband_sky_area': metrics.M7_multiband_sky_area
         }
         if 'all' in str(args.metric).lower():
             metric_set = all_metrics
@@ -89,7 +88,6 @@ def calculate_metrics(args):
                 'M3_extended_region_count',
                 'M5_sky_area_optical_elements',
                 'M6_sky_area_nvisits',
-                'M7_multiband_sky_area'
             ]:
                 results = metric_func(sim_config, science_regions, survey_regions)
 

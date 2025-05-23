@@ -1,0 +1,1692 @@
+{
+  "wide_area": {
+    "F129": [
+      {
+        "l": [
+          -79.0,
+          -67.0
+        ],
+        "b": [
+          -2.7,
+          1.3
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane1"
+      },
+      {
+        "l": [
+          -67.0,
+          50.5
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane2"
+      },
+      {
+        "l": [
+          26.5,
+          30.0
+        ],
+        "b": [
+          2.0,
+          4.5
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Serpens"
+      },
+      {
+        "l": [
+          -10.0,
+          10.0
+        ],
+        "b": [
+          2.0,
+          6.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Bulge1"
+      },
+      {
+        "l": [
+          -10.0,
+          10.0
+        ],
+        "b": [
+          -6.0,
+          -2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Bulge2"
+      }
+    ],
+    "F213": [
+      {
+        "l": [
+          -79.0,
+          -67.0
+        ],
+        "b": [
+          -2.7,
+          1.3
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane1"
+      },
+      {
+        "l": [
+          -67.0,
+          50.5
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane2"
+      },
+      {
+        "l": [
+          26.5,
+          30.0
+        ],
+        "b": [
+          2.0,
+          4.5
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Serpens"
+      },
+      {
+        "l": [
+          -10.0,
+          10.0
+        ],
+        "b": [
+          2.0,
+          6.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Bulge1"
+      },
+      {
+        "l": [
+          -10.0,
+          10.0
+        ],
+        "b": [
+          -6.0,
+          -2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Bulge2"
+      }
+    ],
+    "F158": [
+      {
+        "l": [
+          -79.0,
+          -67.0
+        ],
+        "b": [
+          -2.7,
+          1.3
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane1"
+      },
+      {
+        "l": [
+          -67.0,
+          50.5
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane2"
+      },
+      {
+        "l": [
+          26.5,
+          30.0
+        ],
+        "b": [
+          2.0,
+          4.5
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Serpens"
+      },
+      {
+        "l": [
+          -10.0,
+          10.0
+        ],
+        "b": [
+          2.0,
+          6.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Bulge1"
+      },
+      {
+        "l": [
+          -10.0,
+          10.0
+        ],
+        "b": [
+          -6.0,
+          -2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Bulge2"
+      }
+    ],
+    "F184": [
+      {
+        "l": [
+          -79.0,
+          -67.0
+        ],
+        "b": [
+          -2.7,
+          1.3
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane1"
+      },
+      {
+        "l": [
+          -67.0,
+          50.5
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane2"
+      },
+      {
+        "l": [
+          26.5,
+          30.0
+        ],
+        "b": [
+          2.0,
+          4.5
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Serpens"
+      }
+    ],"F184": [
+      {
+        "l": [
+          -79.0,
+          -67.0
+        ],
+        "b": [
+          -2.7,
+          1.3
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane1"
+      },
+      {
+        "l": [
+          -67.0,
+          50.5
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Galactic_Plane2"
+      },
+      {
+        "l": [
+          26.5,
+          30.0
+        ],
+        "b": [
+          2.0,
+          4.5
+        ],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Serpens"
+      }
+    ],
+    "comment": "Wide area survey",
+    "ready_for_use": "True",
+    "category": "Survey",
+    "time_domain": "False",
+    "extended_object_catalog": "False"
+  },
+  "pan-chromatic-fields": {
+    "F062": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "F087": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "F106": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "F129": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "F158": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "F184": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "F213": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "P127": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+    "G150": [
+      {
+        "pointing": [-73.80, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Carina_JWST"
+      },
+      {
+        "pointing": [-59.75, -0.29, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Acrux"
+      },
+      {
+        "pointing": [-50.86, -0.55, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_5269_5281"
+      },
+      {
+        "pointing": [-40.5, -0.21, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_319.5-0.2"
+      },
+      {
+        "pointing": [-27.00, -0.48, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "G333"
+      },
+      {
+        "pointing": [-20.17, -0.32, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "ASSC_85"
+      },
+      {
+        "pointing": [-15.56, -0.46, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Teutsch_84"
+      },
+      {
+        "pointing": [-6.86, 0.85, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "NGC_6357_Lobster"
+      },
+      {
+        "pointing": [-5.00, -0.30, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Window_355.0-0.3"
+      },
+      {
+        "pointing": [7.0, -0.27, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M20_Lagoon"
+      },
+      {
+        "pointing": [15.04, -0.73, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "M17_Omega"
+      },
+      {
+        "pointing": [28.21, -0.06, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "Trumpler_35"
+      },
+      {
+        "pointing": [34.70, -0.40, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W44"
+      },
+      {
+        "pointing": [49.40, -0.20, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W51"
+      }
+    ],
+      "comment": "Panchromatic survey",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "False",
+    "extended_object_catalog": "False"
+  },
+  "W40": {
+    "P127": [
+      {
+        "pointing": [28.8012, 3.4978, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W40_Deep_Field"
+      }
+      ],
+    "F129": [
+      {
+        "pointing": [28.8012, 3.4978, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W40_Deep_Field"
+      }
+      ],
+    "F158": [
+      {
+        "pointing": [28.8012, 3.4978, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W40_Deep_Field"
+      }
+      ],
+    "F213": [
+      {
+        "pointing": [28.8012, 3.4978, 0.3],
+        "nvisits": 1,
+        "duration": 720.0,
+        "visit_interval": [
+          null
+        ],
+        "name": "W40_Deep_Field"
+      }
+      ],
+      "comment": "W40 Deep Field",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "False",
+    "extended_object_catalog": "False"
+  },
+  "TD_Serpens": {
+    "F129": [
+          {"l": [26.5, 30.0], "b": [2.0, 4.5],
+              "nvisits": 8,
+              "duration": 3.5,
+              "visit_interval": [0.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0],
+              "name": "Serpens/W40"
+          }
+          ],
+    "F213": [
+          {"l": [26.5, 30.0], "b": [2.0, 4.5],
+              "nvisits": 8,
+              "duration": 3.5,
+              "visit_interval": [0.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0],
+              "name": "Serpens/W40"
+          }
+          ],
+    "F158": [
+          {"l": [26.5, 30.0], "b": [2.0, 4.5],
+              "nvisits": 8,
+              "duration": 3.5,
+              "visit_interval": [0.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0],
+              "name": "Serpens/W40"
+          }
+          ],
+    "F184": [
+          {"l": [26.5, 30.0], "b": [2.0, 4.5],
+              "nvisits": 8,
+              "duration": 3.5,
+              "visit_interval": [0.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0],
+              "name": "Serpens/W40"
+          }
+          ],
+    "F106": [
+          {"l": [26.5, 30.0], "b": [2.0, 4.5],
+              "nvisits": 8,
+              "duration": 3.5,
+              "visit_interval": [0.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0],
+              "name": "Serpens/W40"
+          }
+          ],
+      "comment": "Serpens/W40 Time Domain Field",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "True",
+    "extended_object_catalog": "False"
+  },
+  "TD_NSD_CMZ": {
+    "F213": [
+          {"l": [359.544, 360.0], "b": [-0.3, 0.3],
+              "nvisits": 43,
+              "duration": 0.3,
+              "visit_interval": [0.18],
+              "name": "NSD_CMZ_high_cadence"
+          },
+          {"l": [359.544, 360.0], "b": [-0.3, 0.3],
+              "nvisits": 12,
+              "duration": 360,
+              "visit_interval": [720.0],
+              "name": "NSD_CMZ_intermediate_cadence"
+          }
+          ],
+      "comment": "Nuclear Stellar Disk and Central Molecular Zone Time Domain Field",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "True",
+    "extended_object_catalog": "False"
+  },
+  "TD_Baade": {
+    "F213": [
+          {"pointing": [1.1, -4.0, 0.3],
+              "nvisits": 43,
+              "duration": 0.3,
+              "visit_interval": [0.18],
+              "name": "Baades_window_high_cadence"
+          }
+          ],
+      "comment": "Baade's Window Time Domain Field",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "True",
+    "extended_object_catalog": "False"
+  },
+  "TD_NGC6334_NGC6357": {
+    "F213": [
+          {"pointing": [1.1, -4.0, 0.3],
+              "nvisits": 43,
+              "duration": 0.3,
+              "visit_interval": [0.18],
+              "name": "NGC6334_NGC6357_high_cadence"
+          }
+          ],
+      "comment": "NGC6334/NGC6357 Time Domain Field",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "True",
+    "extended_object_catalog": "False"
+  },
+  "TD_Carina": {
+    "F213": [
+          {"l": [287.0, 288.5], "b": [-1.25, 0.0],
+              "nvisits": 43,
+              "duration": 0.3,
+              "visit_interval": [0.18],
+              "name": "Carina_high_cadence"
+          }
+          ],
+      "comment": "Carina Time Domain Field",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "True",
+    "extended_object_catalog": "False"
+  },
+  "TD_Scutum_W43": {
+    "F213": [
+          {"pointing": [30.7593, -0.0186, 0.3],
+              "nvisits": 43,
+              "duration": 0.3,
+              "visit_interval": [0.18],
+              "name": "Scutum_W43_high_cadence"
+          }
+          ],
+      "comment": "Scutum/W43 Time Domain Field",
+      "ready_for_use": "True",
+      "category": "Survey",
+      "time_domain": "True",
+    "extended_object_catalog": "False"
+  }
+}

@@ -1,4 +1,4 @@
-from os import path
+from os import path, getcwd
 import argparse
 from astropy.table import Table, Column
 import json
@@ -58,10 +58,38 @@ def parse_csv_targetlist(args):
     # The survey regions are grouped according to the filters required for observation
     # for most metric analysis.  So the next stage is to reorganize the dictionary on a
     # per-optic basis for each survey element
-
+    survey_design = {}
+    for survey_name, region_list in regions.items():
+        survey = {}
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            regions_optic = []
+            for rname,r in region_list.items():
+                if optic in r['Filters_first_epoch'] \
+                    or optic in r['Filters_second_epoch'] \
+                    or optic in r['Filters_any_epoch'] \
+                    or optic in r['Filters_TDS']:
+                    sr = {
+                        'l': r['l'],
+                        'b': r['b'],
+                        'nvisits': 1,
+                        'duration': 720.0,
+                        'visit_interval': [720.0],
+                        'name': r['name']
+                    }
+                    regions_optic.append(sr)
+            survey[optic] = regions_optic
+        survey['comment'] = ''
+        survey['ready_for_use'] = 'True'
+        survey['category'] = 'Survey'
+        if survey_name == 'time_domain':
+            survey['time_domain'] = 'True'
+        else:
+            survey['time_domain'] = 'False'
+        survey['extended_object_catalog'] = 'False'
+        survey_design[survey_name] = survey
 
     # Output new regions
-    json_string = json.dumps(regions, indent=4)
+    json_string = json.dumps(survey_design, indent=4)
     with open(args.out_path, 'w') as f:
         f.write(json_string)
 

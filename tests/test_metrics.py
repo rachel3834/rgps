@@ -204,8 +204,8 @@ def test_M5_sky_area_optical_elements(test_survey_regions, test_science_cases):
     "test_survey_regions, test_cases",
     [
         (
-                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
-                path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
+                path.join(getcwd(), 'data', 'test_m6_survey_regions1.json'),
+                path.join(getcwd(), 'data', 'test_m6_science_regions1.json')
         )
     ])
 def test_M6_sky_area_nvisits(test_survey_regions, test_cases):
@@ -227,14 +227,15 @@ def test_M6_sky_area_nvisits(test_survey_regions, test_cases):
 
     # Compute metric
     results = M6_sky_area_nvisits(sim_config, science_regions, survey_regions)
+    print(results)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
     assert (len(results) > 0)
-    assert (len(results.colnames) == 6)
+    assert (len(results.colnames) == 7)
 
-    # Test metric value
-    assert(len(np.where(results['M6_%sky_area_nvisits'].data > 0.0)[0] > 0))
+    # Test metric value equals 100% for one of the tests
+    assert(len(np.where(results['M6_%sky_area_nvisits'].data == 100.0)[0] > 0))
 
 @pytest.mark.parametrize(
     "test_cases",
@@ -267,38 +268,3 @@ def test_extract_multiband_science(test_cases):
     input_fset.sort()
 
     assert(multiband_cases['De_Furio']['filterset'] == input_fset)
-
-@pytest.mark.parametrize(
-    "test_survey_regions, test_cases",
-    [
-        (
-                path.join(getcwd(), 'data', 'test_survey_definition_regions.json'),
-                path.join(getcwd(), 'data', 'test_science_regions_defurio.json')
-        )
-    ])
-def test_M7_multiband_sky_area(test_survey_regions, test_cases):
-    """
-    Test for the function to identify multi-filter testcases
-    """
-
-    from metrics import M7_multiband_sky_area
-
-    # Load simulation parameters
-    sim_config = config_utils.read_config(path.join(getcwd(), '..', 'config', 'sim_config.json'))
-
-    # Load the defined survey strategy options from file
-    survey_regions = regions.load_regions_from_file(sim_config, test_survey_regions)
-
-    # Load the science cases from file
-    science_regions = regions.load_regions_from_file(sim_config, test_cases)
-
-    # Calculate metric
-    results = M7_multiband_sky_area(sim_config, science_regions, survey_regions)
-
-    # Test that the metric returns a table of four columns and non-zero rows
-    assert (type(results) == type(Table([])))
-    assert (len(results) > 0)
-    assert (len(results.colnames) == 4)
-
-    # Test metric value
-    assert(len(np.where(results['M7_multiband_sky_area'].data > 0.0)[0] > 0))

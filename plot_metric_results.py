@@ -59,18 +59,18 @@ def plot_metric_optic_heatmap(sim_config, metric_results, strategy_name, categor
 
     ax.set_xticks(xgrid[0:-1] + 0.5)
     ax.set_yticks(ygrid[0:-1] + 0.5)
-    ax.set_ylabel('Science case', fontsize=20)
-    ax.set_xlabel('Optic', fontsize=20)
-    ax.set_title(strategy_name + ' survey strategy and science category ' + category, fontsize=20)
-    ax.set_xticklabels(sim_config['OPTICAL_COMPONENTS'], rotation=45.0, horizontalalignment='right', fontsize=20)
-    ax.set_yticklabels(science_cases, fontsize=20, horizontalalignment='right')
+    ax.set_ylabel('Science case', fontsize=30)
+    ax.set_xlabel('Optic', fontsize=30)
+    ax.set_title('Science category ' + category, fontsize=50)
+    ax.set_xticklabels(sim_config['OPTICAL_COMPONENTS'], rotation=45.0, horizontalalignment='right', fontsize=30)
+    ax.set_yticklabels(science_cases, fontsize=30, horizontalalignment='right')
 
     cb = fig.colorbar(
         ScalarMappable(norm=norm, cmap="magma"),
         ax=ax,  # Pass the new axis
         orientation="vertical")
-    cb.set_label(metric_label, fontsize=20)
-    cb.ax.tick_params(labelsize=18)
+    cb.set_label(metric_label, fontsize=30)
+    cb.ax.tick_params(labelsize=20)
 
     plt.tight_layout()
     plt.savefig(file_path)
@@ -132,3 +132,20 @@ def plot_metric_multifilter(results, metric_name, sim_config, metric_label, scie
 
     plt.tight_layout()
     plt.savefig(path.join(sim_config['root_dir'], 'metric_results', 'm3_results.png'))
+
+
+def select_results(metric_results, author_list, optic_list, survey_list):
+    """
+    Function to down-select the table of metric results by the name of the author of a science case, optic and survey design.
+    """
+
+    rows = []
+    for entry in metric_results:
+        if entry['Science_case'] in author_list \
+                and entry['Optic'] in optic_list \
+                and entry['Survey_strategy'] in survey_list:
+            rows.append(entry)
+
+    sub_results = Table(rows=rows, names=metric_results.colnames)
+
+    return sub_results

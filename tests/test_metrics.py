@@ -116,12 +116,11 @@ def test_M3_extended_regions(test_survey_regions, test_cases):
 
     # Calculate metric
     results = M3_extended_region_count(sim_config, science_regions, survey_regions)
-    print(results)
 
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
     assert (len(results) > 0)
-    assert (len(results.colnames) == 5)
+    assert (len(results.colnames) == 6)
 
     # Test metric values returned are valid percentages and the known result that the pixels for
     # one of the requested regions was included in the F129 survey definition.

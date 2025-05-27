@@ -204,10 +204,11 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
 
                         # Metric value is the percentage of regions where in_pixel >= r_pixels
                         # (due to the HEALpixels providing irregular coverage of the regions)
-                        metric = (nregions / float(len(science_strategy[optic])))*100.0
-                        data.append([survey_name, optic, author, category, metric])
+                        m1 = (nregions / float(len(science_strategy[optic])))*100.0
+                        m2 = int(nregions)
+                        data.append([survey_name, optic, author, category, m1, m2])
                     else:
-                        data.append([survey_name, optic, author, category, 0.0])
+                        data.append([survey_name, optic, author, category, 0.0, 0.0])
 
     data = np.array(data)
 
@@ -219,6 +220,7 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
             Column(name='Science_case', data=data[:, 2], dtype='S30'),
             Column(name='Category', data=data[:, 3], dtype='S30'),
             Column(name='M3_%regions', data=data[:, 4], dtype='f8'),
+            Column(name='M3_count', data=data[:, 5].astype('int'), dtype='int'),
         ])
     else:
         results = Table([
@@ -227,6 +229,7 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
             Column(name='Science_case', data=np.array([]), dtype='S30'),
             Column(name='Category', data=np.array([]), dtype='S30'),
             Column(name='M3_%regions', data=np.array([]), dtype='f8'),
+            Column(name='M3_count', data=np.array([]), dtype='int'),
         ])
 
     return results

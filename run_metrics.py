@@ -105,7 +105,6 @@ def calculate_metrics(args):
 
             # Store results
             if metric_name == 'M2_star_counts' \
-                    or metric_name == 'M3_extended_region_count' \
                     or metric_name == 'M4_proper_motion_precision':
                 output_file = path.join(args.data_dir, metric_name + '_results.txt')
             else:

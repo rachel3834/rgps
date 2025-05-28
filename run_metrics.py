@@ -85,7 +85,6 @@ def calculate_metrics(args):
 
             if metric_name in [
                 'M1_survey_footprint',
-                'M3_extended_region_count',
                 'M5_sky_area_optical_elements',
                 'M6_sky_area_nvisits',
             ]:
@@ -99,6 +98,11 @@ def calculate_metrics(args):
                                         for optic in sim_config['OPTICAL_COMPONENTS']}
 
                 results = metrics.M2_star_counts(sim_config, survey_regions, stellar_density_data)
+
+            if metric_name == 'M3_extended_region_count' and category == 'extended_object_catalog':
+                results = metric_func(sim_config, science_regions, survey_regions)
+            else:
+                results = metric_func(sim_config, science_regions, survey_regions, set_catalogs=False)
 
             if metric_name == 'M4_proper_motion_precision':
                 results = metrics.M4_proper_motion_precision(sim_config, survey_regions)

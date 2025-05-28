@@ -136,7 +136,7 @@ def M2_star_counts(sim_config, survey_config, stellar_density_data):
 
     return results
 
-def M3_extended_region_count(sim_config, science_cases, survey_config):
+def M3_extended_region_count(sim_config, science_cases, survey_config, set_catalogs=True):
     """
     Metric to evaluate the number from a set of extended-region targets that lie fully
     within the survey footprint.
@@ -169,8 +169,12 @@ def M3_extended_region_count(sim_config, science_cases, survey_config):
         for optic in sim_config['OPTICAL_COMPONENTS']:
             if optic in params.keys() and len(params[optic]) > 0:
                 for r in params[optic]:
-                    if r.extended_object_catalog and author not in case_list:
-                        case_list.append(author)
+                    if set_catalogs:
+                        if r.extended_object_catalog and author not in case_list:
+                            case_list.append(author)
+                    else:
+                        if author not in case_list:
+                            case_list.append(author)
 
     # Both the survey definition and the science case can include multiple regions for each
     # optical component.  So we need to check for intersections of the HEALpixels for all cases

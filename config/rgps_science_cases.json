@@ -2588,7 +2588,7 @@
     "proper_motions": "False",
     "time_domain": "False",
     "category": "novae",
-    "extended_object_catalog": "True"
+    "extended_object_catalog": "False"
   },
   "Kuhn": {
     "F158": [

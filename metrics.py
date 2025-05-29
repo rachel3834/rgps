@@ -320,8 +320,6 @@ def M4_proper_motion_precision(sim_config, survey_config):
                         interval_map[rsurvey.pixels],
                         np.array([730.0] * len(rsurvey.pixels))
                     )
-                    print('Got here')
-                    print(rsurvey.name, interval_map[rsurvey.pixels])
 
                 # Option 4: Multiple nvisits are recorded
                 elif rsurvey.visit_interval[0] >= 720.0 and rsurvey.nvisits > 0:

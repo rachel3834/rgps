@@ -29,9 +29,9 @@ panchromatic Deep_W44 "F062 F087 F106 F129 F158 F184 F213" 0.0 1.0
 panchromatic Deep_W51 "F062 F087 F106 F129 F158 F184 F213" 0.0 1.0
 panchromatic Deep_VVV-CL001_UKS_1 "F062 F087 F106 F129 F158 F184 F213" 0.0 1.0
 panchromatic Deep_W40 "F129 F158 F213" 0.0 1.0
-time_domain TDS_Baades_Windows "F062 F087 F106 F129 F213" 100.0 5.0
-time_domain TDS_Galactic_Center "F062 F087 F106 F129 F213" 100.0 5.0
-time_domain TDS_NGC6334_6357 "F062 F087 F106 F129 F213" 100.0 5.0
-time_domain TDS_Carina "F062 F087 F106 F129 F213" 100.0 5.0
-time_domain TDS_W43 "F062 F087 F106 F129 F184" 100.0 5.0
-time_domain TDS_Serpens_W40 F213 0.0 1.0
+time_domain TDS_Baades_Windows "F062 F087 F106 F129 F213" 0.0 1.0
+time_domain TDS_Galactic_Center "F062 F087 F106 F129 F213" 0.0 9.0
+time_domain TDS_NGC6334_6357 "F062 F087 F106 F129 F213" 0.0 1.0
+time_domain TDS_Carina "F062 F087 F106 F129 F213" 0.0 1.0
+time_domain TDS_W43 "F062 F087 F106 F129 F184" 0.0 1.0
+time_domain TDS_Serpens_W40 F213 0.0 8.0

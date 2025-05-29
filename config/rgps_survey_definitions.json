@@ -2615,7 +2615,7 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 0.2,
+                "nvisits": 0.25,
                 "duration": 720.0,
                 "visit_interval": [
                     null
@@ -2647,10 +2647,10 @@
                     -1.045,
                     -0.245
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Carina"
             },
@@ -2663,10 +2663,10 @@
                     -0.488,
                     0.312
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_W43"
             }
@@ -2697,7 +2697,7 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 0.2,
+                "nvisits": 0.25,
                 "duration": 720.0,
                 "visit_interval": [
                     null
@@ -2729,10 +2729,10 @@
                     -1.045,
                     -0.245
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Carina"
             },
@@ -2745,10 +2745,10 @@
                     -0.488,
                     0.312
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_W43"
             }
@@ -2779,7 +2779,7 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 0.2,
+                "nvisits": 0.25,
                 "duration": 720.0,
                 "visit_interval": [
                     null
@@ -2811,10 +2811,10 @@
                     -1.045,
                     -0.245
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Carina"
             },
@@ -2827,10 +2827,10 @@
                     -0.488,
                     0.312
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_W43"
             }
@@ -2861,7 +2861,7 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 0.2,
+                "nvisits": 0.25,
                 "duration": 720.0,
                 "visit_interval": [
                     null
@@ -2893,10 +2893,10 @@
                     -1.045,
                     -0.245
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Carina"
             },
@@ -2909,10 +2909,10 @@
                     -0.488,
                     0.312
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_W43"
             }
@@ -2928,10 +2928,10 @@
                     -0.488,
                     0.312
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_W43"
             }
@@ -2962,10 +2962,10 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 0.2,
-                "duration": 8.0,
+                "nvisits": 8,
+                "duration": 70.0,
                 "visit_interval": [
-                    null
+                    0.0, 4.0, 10.0, 18.0, 28.0, 40.0, 54.0, 70.0
                 ],
                 "name": "TDS_Galactic_Center"
             },
@@ -2994,10 +2994,10 @@
                     -1.045,
                     -0.245
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Carina"
             },
@@ -3010,10 +3010,10 @@
                     2.0,
                     4.5
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 8,
+                "duration": 365.0,
                 "visit_interval": [
-                    720.0
+                    0.0, 4.0, 10.0, 18.0, 28.0, 40.0, 54.0, 70.0
                 ],
                 "name": "TDS_Serpens_W40"
             }

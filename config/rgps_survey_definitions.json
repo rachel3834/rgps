@@ -12,7 +12,7 @@
                     2.0,
                     4.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.333,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -30,7 +30,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -46,7 +46,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -62,7 +62,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -78,7 +78,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -94,7 +94,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -110,7 +110,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -126,7 +126,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -142,12 +142,12 @@
                     2.0,
                     6.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge1_epoch1"
+                "name": "Bulge1"
             },
             {
                 "l": [
@@ -158,12 +158,12 @@
                     2.0,
                     6.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge2_epoch1"
+                "name": "Bulge2"
             },
             {
                 "l": [
@@ -174,12 +174,12 @@
                     2.0,
                     6.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge3_epoch1"
+                "name": "Bulge3"
             },
             {
                 "l": [
@@ -190,12 +190,12 @@
                     -6.0,
                     -2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge4_epoch1"
+                "name": "Bulge4"
             },
             {
                 "l": [
@@ -206,12 +206,12 @@
                     -6.0,
                     -2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge5_epoch1"
+                "name": "Bulge5"
             },
             {
                 "l": [
@@ -222,12 +222,12 @@
                     -6.0,
                     -2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge6_epoch1"
+                "name": "Bulge6"
             },
             {
                 "l": [
@@ -238,7 +238,7 @@
                     2.0,
                     4.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -256,7 +256,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -272,7 +272,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -288,7 +288,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -304,7 +304,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -320,7 +320,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -336,7 +336,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -352,16 +352,47 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
                 "name": "Disk7"
+            },{
+                "l": [
+                    -10.0,
+                    -3.5
+                ],
+                "b": [
+                    2.0,
+                    6.0
+                ],
+                "nvisits": 1,
+                "duration": 720.0,
+                "visit_interval": [
+                    720.0
+                ],
+                "name": "Bulge1"
             },
             {
                 "l": [
-                    -10.0,
+                    -3.5,
+                    3.5
+                ],
+                "b": [
+                    2.0,
+                    6.0
+                ],
+                "nvisits": 1,
+                "duration": 720.0,
+                "visit_interval": [
+                    720.0
+                ],
+                "name": "Bulge2"
+            },
+            {
+                "l": [
+                    3.5,
                     10.0
                 ],
                 "b": [
@@ -373,11 +404,43 @@
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge7_epoch2"
+                "name": "Bulge3"
             },
             {
                 "l": [
                     -10.0,
+                    -3.5
+                ],
+                "b": [
+                    -6.0,
+                    -2.0
+                ],
+                "nvisits": 1,
+                "duration": 720.0,
+                "visit_interval": [
+                    720.0
+                ],
+                "name": "Bulge4"
+            },
+            {
+                "l": [
+                    -3.5,
+                    3.5
+                ],
+                "b": [
+                    -6.0,
+                    -2.0
+                ],
+                "nvisits": 1,
+                "duration": 720.0,
+                "visit_interval": [
+                    720.0
+                ],
+                "name": "Bulge5"
+            },
+            {
+                "l": [
+                    3.5,
                     10.0
                 ],
                 "b": [
@@ -389,7 +452,7 @@
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge8_epoch2"
+                "name": "Bulge6"
             },
             {
                 "l": [
@@ -400,7 +463,7 @@
                     2.0,
                     4.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.333,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -418,7 +481,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -434,7 +497,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -450,7 +513,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -466,7 +529,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -482,7 +545,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -498,7 +561,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -514,7 +577,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -530,7 +593,7 @@
                     2.0,
                     4.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.333,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -548,7 +611,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -564,7 +627,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -580,7 +643,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -596,7 +659,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -612,7 +675,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -628,7 +691,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -644,7 +707,7 @@
                     -2.0,
                     2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -660,12 +723,12 @@
                     2.0,
                     6.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge1_epoch1"
+                "name": "Bulge1"
             },
             {
                 "l": [
@@ -676,12 +739,12 @@
                     2.0,
                     6.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge2_epoch1"
+                "name": "Bulge2"
             },
             {
                 "l": [
@@ -692,12 +755,12 @@
                     2.0,
                     6.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge3_epoch1"
+                "name": "Bulge3"
             },
             {
                 "l": [
@@ -708,12 +771,12 @@
                     -6.0,
                     -2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge4_epoch1"
+                "name": "Bulge4"
             },
             {
                 "l": [
@@ -724,12 +787,12 @@
                     -6.0,
                     -2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge5_epoch1"
+                "name": "Bulge5"
             },
             {
                 "l": [
@@ -740,12 +803,12 @@
                     -6.0,
                     -2.0
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
                 ],
-                "name": "Bulge6_epoch1"
+                "name": "Bulge6"
             },
             {
                 "l": [
@@ -756,7 +819,7 @@
                     2.0,
                     4.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.5,
                 "duration": 720.0,
                 "visit_interval": [
                     720.0
@@ -784,10 +847,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Carina_JWST"
             },
@@ -800,10 +863,10 @@
                     -1.09,
                     0.51
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Acrux"
             },
@@ -816,10 +879,10 @@
                     -1.35,
                     0.25
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_5269_5281"
             },
@@ -832,10 +895,10 @@
                     -1.01,
                     0.59
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_319.5-0.2"
             },
@@ -848,10 +911,10 @@
                     -1.28,
                     0.32
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_G333"
             },
@@ -864,10 +927,10 @@
                     -1.12,
                     0.48
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_ASSC_85"
             },
@@ -880,10 +943,10 @@
                     -1.26,
                     0.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Teutsch_84"
             },
@@ -896,10 +959,10 @@
                     0.05,
                     1.65
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_6357_Lobster"
             },
@@ -912,10 +975,10 @@
                     -1.1,
                     0.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_355.0-0.3"
             },
@@ -928,10 +991,10 @@
                     -1.07,
                     0.53
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M20_Lagoon"
             },
@@ -944,10 +1007,10 @@
                     -1.53,
                     0.07
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M17_Omega"
             },
@@ -960,10 +1023,10 @@
                     -0.86,
                     0.74
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Trumpler_35"
             },
@@ -976,10 +1039,10 @@
                     -1.2,
                     0.4
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W44"
             },
@@ -992,10 +1055,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W51"
             },
@@ -1008,10 +1071,10 @@
                     -0.03,
                     1.57
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_VVV-CL001_UKS_1"
             }
@@ -1026,10 +1089,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Carina_JWST"
             },
@@ -1042,10 +1105,10 @@
                     -1.09,
                     0.51
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Acrux"
             },
@@ -1058,10 +1121,10 @@
                     -1.35,
                     0.25
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_5269_5281"
             },
@@ -1074,10 +1137,10 @@
                     -1.01,
                     0.59
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_319.5-0.2"
             },
@@ -1090,10 +1153,10 @@
                     -1.28,
                     0.32
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_G333"
             },
@@ -1106,10 +1169,10 @@
                     -1.12,
                     0.48
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_ASSC_85"
             },
@@ -1122,10 +1185,10 @@
                     -1.26,
                     0.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Teutsch_84"
             },
@@ -1138,10 +1201,10 @@
                     0.05,
                     1.65
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_6357_Lobster"
             },
@@ -1154,10 +1217,10 @@
                     -1.1,
                     0.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_355.0-0.3"
             },
@@ -1170,10 +1233,10 @@
                     -1.07,
                     0.53
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M20_Lagoon"
             },
@@ -1186,10 +1249,10 @@
                     -1.53,
                     0.07
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M17_Omega"
             },
@@ -1202,10 +1265,10 @@
                     -0.86,
                     0.74
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Trumpler_35"
             },
@@ -1218,10 +1281,10 @@
                     -1.2,
                     0.4
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W44"
             },
@@ -1234,10 +1297,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W51"
             },
@@ -1250,10 +1313,10 @@
                     -0.03,
                     1.57
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_VVV-CL001_UKS_1"
             }
@@ -1268,10 +1331,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Carina_JWST"
             },
@@ -1284,10 +1347,10 @@
                     -1.09,
                     0.51
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Acrux"
             },
@@ -1300,10 +1363,10 @@
                     -1.35,
                     0.25
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_5269_5281"
             },
@@ -1316,10 +1379,10 @@
                     -1.01,
                     0.59
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_319.5-0.2"
             },
@@ -1332,10 +1395,10 @@
                     -1.28,
                     0.32
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_G333"
             },
@@ -1348,10 +1411,10 @@
                     -1.12,
                     0.48
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_ASSC_85"
             },
@@ -1364,10 +1427,10 @@
                     -1.26,
                     0.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Teutsch_84"
             },
@@ -1380,10 +1443,10 @@
                     0.05,
                     1.65
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_6357_Lobster"
             },
@@ -1396,10 +1459,10 @@
                     -1.1,
                     0.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_355.0-0.3"
             },
@@ -1412,10 +1475,10 @@
                     -1.07,
                     0.53
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M20_Lagoon"
             },
@@ -1428,10 +1491,10 @@
                     -1.53,
                     0.07
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M17_Omega"
             },
@@ -1444,10 +1507,10 @@
                     -0.86,
                     0.74
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Trumpler_35"
             },
@@ -1460,10 +1523,10 @@
                     -1.2,
                     0.4
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W44"
             },
@@ -1476,10 +1539,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W51"
             },
@@ -1492,10 +1555,10 @@
                     -0.03,
                     1.57
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_VVV-CL001_UKS_1"
             }
@@ -1510,10 +1573,10 @@
                     2.74,
                     4.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.333,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W40"
             },
@@ -1526,10 +1589,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Carina_JWST"
             },
@@ -1542,10 +1605,10 @@
                     -1.09,
                     0.51
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Acrux"
             },
@@ -1558,10 +1621,10 @@
                     -1.35,
                     0.25
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_5269_5281"
             },
@@ -1574,10 +1637,10 @@
                     -1.01,
                     0.59
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_319.5-0.2"
             },
@@ -1590,10 +1653,10 @@
                     -1.28,
                     0.32
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_G333"
             },
@@ -1606,10 +1669,10 @@
                     -1.12,
                     0.48
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_ASSC_85"
             },
@@ -1622,10 +1685,10 @@
                     -1.26,
                     0.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Teutsch_84"
             },
@@ -1638,10 +1701,10 @@
                     0.05,
                     1.65
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_6357_Lobster"
             },
@@ -1654,10 +1717,10 @@
                     -1.1,
                     0.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_355.0-0.3"
             },
@@ -1670,10 +1733,10 @@
                     -1.07,
                     0.53
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M20_Lagoon"
             },
@@ -1686,10 +1749,10 @@
                     -1.53,
                     0.07
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M17_Omega"
             },
@@ -1702,10 +1765,10 @@
                     -0.86,
                     0.74
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Trumpler_35"
             },
@@ -1718,10 +1781,10 @@
                     -1.2,
                     0.4
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W44"
             },
@@ -1734,10 +1797,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W51"
             },
@@ -1750,10 +1813,10 @@
                     -0.03,
                     1.57
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_VVV-CL001_UKS_1"
             }
@@ -1768,10 +1831,10 @@
                     2.74,
                     4.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.333,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W40"
             },
@@ -1784,10 +1847,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Carina_JWST"
             },
@@ -1800,10 +1863,10 @@
                     -1.09,
                     0.51
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Acrux"
             },
@@ -1816,10 +1879,10 @@
                     -1.35,
                     0.25
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_5269_5281"
             },
@@ -1832,10 +1895,10 @@
                     -1.01,
                     0.59
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_319.5-0.2"
             },
@@ -1848,10 +1911,10 @@
                     -1.28,
                     0.32
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_G333"
             },
@@ -1864,10 +1927,10 @@
                     -1.12,
                     0.48
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_ASSC_85"
             },
@@ -1880,10 +1943,10 @@
                     -1.26,
                     0.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Teutsch_84"
             },
@@ -1896,10 +1959,10 @@
                     0.05,
                     1.65
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_6357_Lobster"
             },
@@ -1912,10 +1975,10 @@
                     -1.1,
                     0.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_355.0-0.3"
             },
@@ -1928,10 +1991,10 @@
                     -1.07,
                     0.53
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M20_Lagoon"
             },
@@ -1944,10 +2007,10 @@
                     -1.53,
                     0.07
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M17_Omega"
             },
@@ -1960,10 +2023,10 @@
                     -0.86,
                     0.74
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Trumpler_35"
             },
@@ -1976,10 +2039,10 @@
                     -1.2,
                     0.4
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W44"
             },
@@ -1992,10 +2055,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W51"
             },
@@ -2008,10 +2071,10 @@
                     -0.03,
                     1.57
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_VVV-CL001_UKS_1"
             }
@@ -2026,10 +2089,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Carina_JWST"
             },
@@ -2042,10 +2105,10 @@
                     -1.09,
                     0.51
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Acrux"
             },
@@ -2058,10 +2121,10 @@
                     -1.35,
                     0.25
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_5269_5281"
             },
@@ -2074,10 +2137,10 @@
                     -1.01,
                     0.59
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_319.5-0.2"
             },
@@ -2090,10 +2153,10 @@
                     -1.28,
                     0.32
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_G333"
             },
@@ -2106,10 +2169,10 @@
                     -1.12,
                     0.48
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_ASSC_85"
             },
@@ -2122,10 +2185,10 @@
                     -1.26,
                     0.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Teutsch_84"
             },
@@ -2138,10 +2201,10 @@
                     0.05,
                     1.65
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_6357_Lobster"
             },
@@ -2154,10 +2217,10 @@
                     -1.1,
                     0.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_355.0-0.3"
             },
@@ -2170,10 +2233,10 @@
                     -1.07,
                     0.53
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M20_Lagoon"
             },
@@ -2186,10 +2249,10 @@
                     -1.53,
                     0.07
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M17_Omega"
             },
@@ -2202,10 +2265,10 @@
                     -0.86,
                     0.74
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Trumpler_35"
             },
@@ -2218,10 +2281,10 @@
                     -1.2,
                     0.4
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W44"
             },
@@ -2234,10 +2297,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W51"
             },
@@ -2250,10 +2313,10 @@
                     -0.03,
                     1.57
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_VVV-CL001_UKS_1"
             }
@@ -2268,10 +2331,10 @@
                     2.74,
                     4.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.333,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W40"
             },
@@ -2284,10 +2347,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Carina_JWST"
             },
@@ -2300,10 +2363,10 @@
                     -1.09,
                     0.51
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Acrux"
             },
@@ -2316,10 +2379,10 @@
                     -1.35,
                     0.25
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_5269_5281"
             },
@@ -2332,10 +2395,10 @@
                     -1.01,
                     0.59
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_319.5-0.2"
             },
@@ -2348,10 +2411,10 @@
                     -1.28,
                     0.32
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_G333"
             },
@@ -2364,10 +2427,10 @@
                     -1.12,
                     0.48
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_ASSC_85"
             },
@@ -2380,10 +2443,10 @@
                     -1.26,
                     0.34
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Teutsch_84"
             },
@@ -2396,10 +2459,10 @@
                     0.05,
                     1.65
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_NGC_6357_Lobster"
             },
@@ -2412,10 +2475,10 @@
                     -1.1,
                     0.5
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Window_355.0-0.3"
             },
@@ -2428,10 +2491,10 @@
                     -1.07,
                     0.53
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M20_Lagoon"
             },
@@ -2444,10 +2507,10 @@
                     -1.53,
                     0.07
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_M17_Omega"
             },
@@ -2460,10 +2523,10 @@
                     -0.86,
                     0.74
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_Trumpler_35"
             },
@@ -2476,10 +2539,10 @@
                     -1.2,
                     0.4
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W44"
             },
@@ -2492,10 +2555,10 @@
                     -1.0,
                     0.6
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_W51"
             },
@@ -2508,10 +2571,10 @@
                     -0.03,
                     1.57
                 ],
-                "nvisits": 1,
+                "nvisits": 0.143,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "Deep_VVV-CL001_UKS_1"
             }
@@ -2536,10 +2599,10 @@
                     -4.515,
                     -3.715
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Baades_Windows"
             },
@@ -2552,10 +2615,10 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Galactic_Center"
             },
@@ -2568,10 +2631,10 @@
                     0.347,
                     1.147
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_NGC6334_6357"
             },
@@ -2618,10 +2681,10 @@
                     -4.515,
                     -3.715
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Baades_Windows"
             },
@@ -2634,10 +2697,10 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Galactic_Center"
             },
@@ -2650,10 +2713,10 @@
                     0.347,
                     1.147
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_NGC6334_6357"
             },
@@ -2700,10 +2763,10 @@
                     -4.515,
                     -3.715
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Baades_Windows"
             },
@@ -2716,10 +2779,10 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Galactic_Center"
             },
@@ -2732,10 +2795,10 @@
                     0.347,
                     1.147
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_NGC6334_6357"
             },
@@ -2782,10 +2845,10 @@
                     -4.515,
                     -3.715
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Baades_Windows"
             },
@@ -2798,10 +2861,10 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Galactic_Center"
             },
@@ -2814,10 +2877,10 @@
                     0.347,
                     1.147
                 ],
-                "nvisits": 1,
+                "nvisits": 0.2,
                 "duration": 720.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_NGC6334_6357"
             },
@@ -2883,10 +2946,10 @@
                     -4.515,
                     -3.715
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Baades_Windows"
             },
@@ -2899,10 +2962,10 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_Galactic_Center"
             },
@@ -2915,10 +2978,10 @@
                     0.347,
                     1.147
                 ],
-                "nvisits": 1,
-                "duration": 720.0,
+                "nvisits": 0.2,
+                "duration": 8.0,
                 "visit_interval": [
-                    720.0
+                    null
                 ],
                 "name": "TDS_NGC6334_6357"
             },

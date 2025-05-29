@@ -101,7 +101,7 @@ def calculate_metrics(args):
 
             if metric_name == 'M3_extended_region_count' and category == 'extended_object_catalog':
                 results = metric_func(sim_config, science_regions, survey_regions)
-            else:
+            elif metric_name == 'M3_extended_region_count' and category != 'extended_object_catalog':
                 results = metric_func(sim_config, science_regions, survey_regions, set_catalogs=False)
 
             if metric_name == 'M4_proper_motion_precision':

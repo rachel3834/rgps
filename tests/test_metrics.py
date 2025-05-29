@@ -155,7 +155,7 @@ def test_M4_proper_motion_precision(test_survey_regions, expected):
     # Test that the metric returns a table of five columns and non-zero rows
     assert (type(results) == type(Table([])))
     assert (len(results) > 0)
-    assert (len(results.colnames) == 4)
+    assert (len(results.colnames) == 5)
 
     # Test for expected metric results
     for i, expected_value in enumerate(expected):

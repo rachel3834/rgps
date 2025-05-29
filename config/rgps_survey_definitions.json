@@ -2600,7 +2600,7 @@
                     -3.715
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2616,7 +2616,7 @@
                     0.275
                 ],
                 "nvisits": 0.25,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2632,7 +2632,7 @@
                     1.147
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2648,7 +2648,7 @@
                     -0.245
                 ],
                 "nvisits": 0.2,
-                "duration": 8.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2664,7 +2664,7 @@
                     0.312
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2682,7 +2682,7 @@
                     -3.715
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2698,7 +2698,7 @@
                     0.275
                 ],
                 "nvisits": 0.25,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2714,7 +2714,7 @@
                     1.147
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2730,7 +2730,7 @@
                     -0.245
                 ],
                 "nvisits": 0.2,
-                "duration": 8.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2746,7 +2746,7 @@
                     0.312
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2764,7 +2764,7 @@
                     -3.715
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2780,7 +2780,7 @@
                     0.275
                 ],
                 "nvisits": 0.25,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2796,7 +2796,7 @@
                     1.147
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2812,7 +2812,7 @@
                     -0.245
                 ],
                 "nvisits": 0.2,
-                "duration": 8.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2828,7 +2828,7 @@
                     0.312
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2846,7 +2846,7 @@
                     -3.715
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2862,7 +2862,7 @@
                     0.275
                 ],
                 "nvisits": 0.25,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2878,7 +2878,7 @@
                     1.147
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2894,7 +2894,7 @@
                     -0.245
                 ],
                 "nvisits": 0.2,
-                "duration": 8.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2910,7 +2910,7 @@
                     0.312
                 ],
                 "nvisits": 0.2,
-                "duration": 720.0,
+                "duration": 0.4,
                 "visit_interval": [
                     null
                 ],
@@ -2928,10 +2928,10 @@
                     -0.488,
                     0.312
                 ],
-                "nvisits": 0.2,
-                "duration": 8.0,
+                "nvisits": 43.0,
+                "duration": 0.4,
                 "visit_interval": [
-                    null
+                    0.18
                 ],
                 "name": "TDS_W43"
             }
@@ -2946,10 +2946,10 @@
                     -4.515,
                     -3.715
                 ],
-                "nvisits": 0.2,
-                "duration": 8.0,
+                "nvisits": 43.0,
+                "duration": 0.4,
                 "visit_interval": [
-                    null
+                    0.18
                 ],
                 "name": "TDS_Baades_Windows"
             },
@@ -2962,10 +2962,10 @@
                     -0.525,
                     0.275
                 ],
-                "nvisits": 8,
-                "duration": 70.0,
+                "nvisits": 51.0,
+                "duration": 3.0,
                 "visit_interval": [
-                    0.0, 4.0, 10.0, 18.0, 28.0, 40.0, 54.0, 70.0
+                    0.18, 4.0, 10.0, 18.0, 28.0, 40.0, 54.0, 70.0
                 ],
                 "name": "TDS_Galactic_Center"
             },
@@ -2978,10 +2978,10 @@
                     0.347,
                     1.147
                 ],
-                "nvisits": 0.2,
-                "duration": 8.0,
+                "nvisits": 43.0,
+                "duration": 0.4,
                 "visit_interval": [
-                    null
+                    0.18
                 ],
                 "name": "TDS_NGC6334_6357"
             },
@@ -2994,10 +2994,10 @@
                     -1.045,
                     -0.245
                 ],
-                "nvisits": 0.2,
-                "duration": 8.0,
+                "nvisits": 43.0,
+                "duration": 0.4,
                 "visit_interval": [
-                    null
+                    0.18
                 ],
                 "name": "TDS_Carina"
             },
@@ -3011,7 +3011,7 @@
                     4.5
                 ],
                 "nvisits": 8,
-                "duration": 365.0,
+                "duration": 3.0,
                 "visit_interval": [
                     0.0, 4.0, 10.0, 18.0, 28.0, 40.0, 54.0, 70.0
                 ],

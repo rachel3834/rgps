@@ -275,7 +275,7 @@ def M4_proper_motion_precision(sim_config, survey_config):
                 for rsurvey in survey_definition[optic]:
                     if rsurvey.name not in region_set.keys():
                         interval_map = np.zeros(NPIX)
-                        interval_map.fill(730.0)  # Start with the maximum possible interval
+                        interval_map.fill(0.0)  # Start with the minimum possible interval
                         region_set[rsurvey.name] = {
                             'survey_name': survey_name,
                             'regions': {optic: rsurvey},
@@ -294,39 +294,10 @@ def M4_proper_motion_precision(sim_config, survey_config):
             for optic in params['filter_list']:
                 rsurvey = params['regions'][optic]
                 nvisits_map[rsurvey.pixels] += np.array([rsurvey.nvisits] * len(rsurvey.pixels))
-
-                # Option 1: A single numerical interval of days between observations is
-                # given in the survey definition.
-                if not np.isnan(rsurvey.visit_interval[0]) and len(rsurvey.visit_interval) == 1 \
-                        and rsurvey.nvisits > 0:
-                    interval_map[rsurvey.pixels] = np.minimum(
-                        interval_map[rsurvey.pixels],
-                        np.array([rsurvey.visit_interval[0]] * len(rsurvey.pixels))
-                    )
-
-                # Option 2: A series of numerical intervals are given
-                elif len(rsurvey.visit_interval) > 1 \
-                        and rsurvey.nvisits > 0:
-                    interval_map[rsurvey.pixels] = np.minimum(
-                        interval_map[rsurvey.pixels],
-                        np.array([np.median(rsurvey.visit_interval)] * len(rsurvey.pixels))
-                    )
-
-                # Option 3: A list containing a single None value is given,
-                # meaning that there is only a single visit to each field.
-                elif np.isnan(rsurvey.visit_interval[0]) and len(rsurvey.visit_interval) == 1 \
-                        and rsurvey.nvisits > 0:
-                    interval_map[rsurvey.pixels] = np.minimum(
-                        interval_map[rsurvey.pixels],
-                        np.array([730.0] * len(rsurvey.pixels))
-                    )
-
-                # Option 4: Multiple nvisits are recorded
-                elif rsurvey.visit_interval[0] >= 720.0 and rsurvey.nvisits > 0:
-                    interval_map[rsurvey.pixels] = np.minimum(
-                        interval_map[rsurvey.pixels],
-                        np.array([730.0] * len(rsurvey.pixels))
-                    )
+                interval_map[rsurvey.pixels] = np.maximum(
+                    interval_map[rsurvey.pixels],
+                    np.array([rsurvey.duration] * len(rsurvey.pixels))
+                )
 
             # Round the nvisit values.
             # Since fractional visits are used to represent visits that use multiple filters,

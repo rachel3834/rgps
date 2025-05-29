@@ -420,11 +420,12 @@ def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
 
     # First establish what combinations of filters were requested by both
     # science cases and the survey design, based on the region data given
+    # -> Calculate just for the filter combinations requested by the community
     filter_sets = []
-    for survey_name, survey_regions in survey_config.items():
-        optic_list = [optic for optic in sim_config['OPTICAL_COMPONENTS'] if len(survey_regions[optic]) > 0]
-        if not optic_list in filter_sets and len(optic_list) > 1:
-            filter_sets.append(optic_list)
+#    for survey_name, survey_regions in survey_config.items():
+#        optic_list = [optic for optic in sim_config['OPTICAL_COMPONENTS'] if len(survey_regions[optic]) > 0]
+#        if not optic_list in filter_sets and len(optic_list) > 1:
+#            filter_sets.append(optic_list)
     for author, params in science_cases.items():
         optic_list = [optic for optic in sim_config['OPTICAL_COMPONENTS'] if len(params[optic]) > 0]
         if not optic_list in filter_sets and len(optic_list) > 1:
@@ -469,7 +470,7 @@ def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
     # Return a table of the metric results
     results = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
-        Column(name='Optic', data=data[:, 1], dtype='S20'),
+        Column(name='Optic', data=data[:, 1], dtype='S50'),
         Column(name='M5_sky_area_single_filter', data=data[:, 2], dtype='f8'),
         Column(name='M5_sky_area_filter_combo', data=data[:, 3], dtype='f8'),
     ])

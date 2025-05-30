@@ -481,46 +481,61 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
     # including only time domain regions
     survey_region_set = {}
     for survey_name, survey_definition in survey_config.items():
-        region_set = []
-
         for optic in sim_config['OPTICAL_COMPONENTS']:
             if len(survey_definition[optic]) > 0:
                 for rsurvey in survey_definition[optic]:
                     if rsurvey.time_domain:
-                        region_set.append(rsurvey)
+                        survey_region_set[rsurvey.name] = rsurvey
+    print('Number of survey regions: ' + str(len(survey_region_set)))
 
-        if len(region_set) > 0:
-            survey_region_set[survey_name] = region_set
-
-    overlap_data = []
+    science_region_set = {}
     for author, science_strategy in science_cases.items():
-
-        region_set = {}
         for optic in sim_config['OPTICAL_COMPONENTS']:
             if optic in science_strategy.keys() and len(science_strategy[optic]) > 0:
                 for rscience in science_strategy[optic]:
-                    if rscience.time_domain and rscience.name not in region_set.keys():
-                        region_set[rscience.name] = rscience
+                    if rscience.time_domain:
+                        science_region_set[rscience.name] = rscience
+    print('Number of science regions: ' + str(len(science_region_set)))
 
-        for rname, rscience in region_set.items():
-            for survey_name, region_set in survey_region_set.items():
-                for rsurvey in region_set:
-                    common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
-                    common_area = len(common_pixels) * PIXAREA
-                    desired_area = len(list(set(rscience.pixels))) * PIXAREA
-                    m1 = (common_area / desired_area) * 100.0
-                    overlap_data.append([survey_name, rsurvey.label, author, rscience.label, common_area, m1])
+    overlap_data = []
+    catalog_sums = {}
+    for rname, rscience in science_region_set.items():
+        # Handle science regions with a limited number of target regions
+        if 'catalog' not in rscience.label:
+            for sname, rsurvey in survey_region_set.items():
+                common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
+                common_area = len(common_pixels) * PIXAREA
+                desired_area = len(list(set(rscience.pixels))) * PIXAREA
+                m1 = (common_area / desired_area) * 100.0
+                overlap_data.append([rsurvey.label, rscience.label, common_area, m1])
+
+        # Handle large catalogs of target by summing over their collective area
+        else:
+            if rscience.label in catalog_sums.keys():
+                common_area = catalog_sums[rscience.label]['common_area']
+                desired_area = catalog_sums[rscience.label]['desired_area']
+            else:
+                common_area = 0.0
+                desired_area = 0.0
+            for sname, rsurvey in survey_region_set.items():
+                common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
+                common_area += len(common_pixels) * PIXAREA
+                desired_area += len(list(set(rscience.pixels))) * PIXAREA
+            catalog_sums[rscience.label] = {'common_area': common_area, 'desired_area': desired_area}
+
+    # Calculate metrics for the catalogs
+    for rname, params in catalog_sums.items():
+        m1 = (params['common_area'] / params['desired_area']) * 100.0
+        overlap_data.append(['time_domain_TDS_all_fields', rname, params['common_area'], m1])
 
     overlap_data = np.array(overlap_data)
 
     # Return a table of the metric results
     results1 = Table([
-        Column(name='Survey_strategy', data=overlap_data[:, 0], dtype='S30'),
-        Column(name='Survey_region', data=overlap_data[:, 1], dtype='S50'),
-        Column(name='Science_case', data=overlap_data[:, 2], dtype='S40'),
-        Column(name='Science_region', data=overlap_data[:, 3], dtype='S40'),
-        Column(name='Common_area', data=overlap_data[:, 4], dtype='f8'),
-        Column(name='M6_%TD_Region', data=overlap_data[:, 5], dtype='f8')
+        Column(name='Survey_region', data=overlap_data[:, 0], dtype='S50'),
+        Column(name='Science_region', data=overlap_data[:, 1], dtype='S40'),
+        Column(name='Common_area', data=overlap_data[:, 2], dtype='f8'),
+        Column(name='M6_%TD_Region', data=overlap_data[:, 3], dtype='f8')
     ])
 
     # Calculate time domain metrics

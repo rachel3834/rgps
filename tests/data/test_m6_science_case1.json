@@ -11,7 +11,7 @@
       "comment": "",
       "questions": "",
       "proper_motions": "False",
-      "time_domain": "False",
+      "time_domain": "True",
       "category": "SFR",
       "ready_for_use": "True",
       "extended_object_catalog": "True"

@@ -1,0 +1,35 @@
+{
+    "De_Furio": {
+      "F129": [{"l": [
+          10.0,
+          42.4
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+          "nvisits": 1,
+          "duration": 730.0,
+          "visit_interval": [null],
+          "name": "Plane"}],
+      "F213": [{"l": [
+          10.0,
+          42.4
+        ],
+        "b": [
+          -2.0,
+          2.0
+        ],
+          "nvisits": 1,
+          "duration": 730.0,
+          "visit_interval": [null],
+          "name": "Plane"}],
+      "comment": "Star forming regions catalog",
+      "questions": "",
+      "proper_motions": "False",
+      "time_domain": "False",
+      "category": "SFR",
+      "ready_for_use": "True",
+      "extended_object_catalog": "True"
+    }
+}

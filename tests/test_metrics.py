@@ -225,16 +225,20 @@ def test_M6_sky_area_nvisits(test_survey_regions, test_cases):
     science_regions = regions.load_regions_from_file(sim_config, test_cases)
 
     # Compute metric
-    results = M6_sky_area_nvisits(sim_config, science_regions, survey_regions)
-    print(results)
+    results1, results2 = M6_sky_area_nvisits(sim_config, science_regions, survey_regions)
+    print(results1)
+    print(results2)
 
     # Test that the metric returns a table of five columns and non-zero rows
-    assert (type(results) == type(Table([])))
-    assert (len(results) > 0)
-    assert (len(results.colnames) == 7)
+    assert (type(results1) == type(Table([])))
+    assert (len(results1) > 0)
+    assert (len(results1.colnames) == 6)
+    assert (type(results2) == type(Table([])))
+    assert (len(results2) > 0)
+    assert (len(results2.colnames) == 7)
 
     # Test metric value equals 100% for one of the tests
-    assert(len(np.where(results['M6_%sky_area_nvisits'].data == 100.0)[0] > 0))
+    assert(len(np.where(results2['M6_%nvisits'].data == 100.0)[0] > 0))
 
 @pytest.mark.parametrize(
     "test_cases",

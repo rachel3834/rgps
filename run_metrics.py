@@ -86,7 +86,6 @@ def calculate_metrics(args):
             if metric_name in [
                 'M1_survey_footprint',
                 'M5_sky_area_optical_elements',
-                'M6_sky_area_nvisits',
             ]:
                 results = metric_func(sim_config, science_regions, survey_regions)
 
@@ -107,13 +106,23 @@ def calculate_metrics(args):
             if metric_name == 'M4_proper_motion_precision':
                 results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
 
+            if metric_name == 'M6_sky_area_nvisits':
+                results1, results2 = metrics.M6_sky_area_nvisits(sim_config, science_regions, survey_regions)
+
             # Store results
             if metric_name == 'M2_star_counts' \
                     or metric_name == 'M4_proper_motion_precision':
                 output_file = path.join(args.data_dir, metric_name + '_results.txt')
+                results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
+            elif metric_name == 'M6_sky_area_nvisits':
+                output_file = path.join(args.data_dir, metric_name + '_overlap_results.txt')
+                results1.write(output_file, format='ascii', delimiter=' ', overwrite=True)
+
+                output_file = path.join(args.data_dir, metric_name + '_results.txt')
+                results2.write(output_file, format='ascii', delimiter=' ', overwrite=True)
             else:
                 output_file = path.join(args.data_dir, metric_name + '_' + category + '_results.txt')
-            results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
+                results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
     print('Completed metric analysis')
 

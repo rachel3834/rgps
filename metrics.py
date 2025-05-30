@@ -401,6 +401,7 @@ def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
         optic_list = [optic for optic in sim_config['OPTICAL_COMPONENTS'] if len(params[optic]) > 0]
         if not optic_list in filter_sets and len(optic_list) > 1:
             filter_sets.append(optic_list)
+    print(filter_sets)
 
     data = []
 
@@ -474,11 +475,57 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
     ### % overlap area with each field
     ### % nvisits and duration per filter
 
-    data = []
-
     PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
 
+    # Calculate the area of overlap between the science and survey regions, regardless of filters,
+    # including only time domain regions
+    survey_region_set = {}
+    for survey_name, survey_definition in survey_config.items():
+        region_set = []
+
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if len(survey_definition[optic]) > 0:
+                for rsurvey in survey_definition[optic]:
+                    if rsurvey.time_domain:
+                        region_set.append(rsurvey)
+
+        if len(region_set) > 0:
+            survey_region_set[survey_name] = region_set
+
+    overlap_data = []
+    for author, science_strategy in science_cases.items():
+
+        region_set = {}
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if optic in science_strategy.keys() and len(science_strategy[optic]) > 0:
+                for rscience in science_strategy[optic]:
+                    if rscience.time_domain and rscience.name not in region_set.keys():
+                        region_set[rscience.name] = rscience
+
+        for rname, rscience in region_set.items():
+            for survey_name, region_set in survey_region_set.items():
+                for rsurvey in region_set:
+                    common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
+                    common_area = len(common_pixels) * PIXAREA
+                    desired_area = len(list(set(rscience.pixels))) * PIXAREA
+                    m1 = (common_area / desired_area) * 100.0
+                    overlap_data.append([survey_name, rsurvey.label, author, rscience.label, common_area, m1])
+
+    overlap_data = np.array(overlap_data)
+
+    # Return a table of the metric results
+    results1 = Table([
+        Column(name='Survey_strategy', data=overlap_data[:, 0], dtype='S30'),
+        Column(name='Survey_region', data=overlap_data[:, 1], dtype='S50'),
+        Column(name='Science_case', data=overlap_data[:, 2], dtype='S40'),
+        Column(name='Science_region', data=overlap_data[:, 3], dtype='S40'),
+        Column(name='Common_area', data=overlap_data[:, 4], dtype='f8'),
+        Column(name='M6_%TD_Region', data=overlap_data[:, 5], dtype='f8')
+    ])
+
+    # Calculate time domain metrics
     # Each science case requests a distinct set of regions for each filter
+    data = []
     for author, science_strategy in science_cases.items():
 
         # Loop over all optical components since the requested footprints can be different
@@ -495,7 +542,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                 # For all regions in each survey design option, calculate the metric for the
                 # current optical component
                 for survey_name, survey_definition in survey_config.items():
-                    # Calculate for time domain regions only
+                    # Calculate for time domain regions in the current filter
                     region_list = []
                     for rsurvey in survey_definition[optic]:
                         if rsurvey.time_domain:
@@ -510,7 +557,6 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                             # fill the pixel values with the number of visits per field
                             survey_visits = np.zeros(rsurvey.NPIX)
                             common_pixels = list(set(rscience.pixels).intersection(set(rsurvey.pixels)))
-                            common_area = len(common_pixels) * PIXAREA
 
                             if len(common_pixels) > 0:
                                 if rsurvey.nvisits is not None and rsurvey.nvisits >= 2:
@@ -527,38 +573,37 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                                 # at at least the required interval.  Here zero or negative values
                                 # of the difference map within the desired survey region indicate
                                 # that the required number of visits have been achieved
-                                diff_map = science_visits - survey_visits
-                                obs_pixels = np.where(diff_map[common_pixels] <= 0.0)[0]
+                                #diff_map = science_visits - survey_visits
+                                #obs_pixels = np.where(diff_map[common_pixels] <= 0.0)[0]
 
-                                m1 = ((len(set(obs_pixels)) * PIXAREA) / (len(set(rscience.pixels)) * PIXAREA)) * 100.0
+                                #m1 = ((len(set(obs_pixels)) * PIXAREA) / (len(set(rscience.pixels)) * PIXAREA)) * 100.0
 
                                 # Calculate the percentage of the number of revisits obtained
-                                m2 = (rsurvey.nvisits / rscience.nvisits) * 100.0
+                                m1 = (rsurvey.nvisits / rscience.nvisits) * 100.0
 
                                 # Calculate the percentage of the duration obtained
-                                m3 = (rsurvey.duration / rscience.duration) * 100.0
+                                m2 = (rsurvey.duration / rscience.duration) * 100.0
 
-                                data.append([survey_name, rsurvey.label, author, rscience.label, common_area, optic, m1, m2, m3])
+                                data.append([survey_name, rsurvey.label, author, rscience.label, optic, m1, m2])
 
                             # Handle case of no overlap between the science and survey region
                             else:
-                                data.append([survey_name, rsurvey.label, author, rscience.label, common_area, optic, 0.0, 0.0, 0.0])
+                                data.append([survey_name, rsurvey.label, author, rscience.label, optic, 0.0, 0.0])
 
                     else:
-                        data.append([survey_name, survey_name, author, rscience.label, 0.0, optic, 0.0, 0.0, 0.0])
+                        data.append([survey_name, survey_name, author, rscience.label, optic, 0.0, 0.0])
 
     data = np.array(data)
 
     # Return a table of the metric results
-    results = Table([
+    results2 = Table([
         Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
         Column(name='Survey_region', data=data[:, 1], dtype='S50'),
         Column(name='Science_case', data=data[:, 2], dtype='S40'),
         Column(name='Science_region', data=data[:, 3], dtype='S40'),
-        Column(name='Common_area', data=data[:,4], dtype='f8'),
-        Column(name='Optic', data=data[:, 5], dtype='S5'),
-        Column(name='M6_%sky_area_nvisits', data=data[:, 6], dtype='f8'),
-        Column(name='M6_%nvisits', data=data[:, 6], dtype='f8'),
+        Column(name='Optic', data=data[:, 4], dtype='S5'),
+        Column(name='M6_%nvisits', data=data[:, 5], dtype='f8'),
+        Column(name='M6_%duration', data=data[:, 6], dtype='f8'),
     ])
 
-    return results
+    return results1, results2

@@ -470,6 +470,10 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
         results        astropy.table   Metric value calculated for all science cases
     """
 
+    ### Calculate:
+    ### % overlap area with each field
+    ### % nvisits and duration per filter
+
     data = []
 
     PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
@@ -510,14 +514,14 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
 
                             if len(common_pixels) > 0:
                                 if rsurvey.nvisits is not None and rsurvey.nvisits >= 2:
-                                    survey_visits[common_pixels].fill(rsurvey.nvisits)
+                                    survey_visits[common_pixels] = rsurvey.nvisits
                                 else:
-                                    survey_visits[common_pixels].fill(1.0)
+                                    survey_visits[common_pixels] = 1.0
 
                                 # Create a similar pixels map of the requested number of visits
                                 # over the whole pixel area
                                 science_visits = np.zeros(rscience.NPIX)
-                                science_visits[rscience.pixels].fill(rscience.nvisits)
+                                science_visits[rscience.pixels] = rscience.nvisits
 
                                 # Calculate the percentage of pixels that receive observations
                                 # at at least the required interval.  Here zero or negative values
@@ -526,16 +530,22 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                                 diff_map = science_visits - survey_visits
                                 obs_pixels = np.where(diff_map[common_pixels] <= 0.0)[0]
 
-                                metric = ((len(set(obs_pixels)) * PIXAREA) / (len(set(rscience.pixels)) * PIXAREA)) * 100.0
+                                m1 = ((len(set(obs_pixels)) * PIXAREA) / (len(set(rscience.pixels)) * PIXAREA)) * 100.0
 
-                                data.append([survey_name, rsurvey.label, author, rscience.label, common_area, optic, metric])
+                                # Calculate the percentage of the number of revisits obtained
+                                m2 = (rsurvey.nvisits / rscience.nvisits) * 100.0
+
+                                # Calculate the percentage of the duration obtained
+                                m3 = (rsurvey.duration / rscience.duration) * 100.0
+
+                                data.append([survey_name, rsurvey.label, author, rscience.label, common_area, optic, m1, m2, m3])
 
                             # Handle case of no overlap between the science and survey region
                             else:
-                                data.append([survey_name, rsurvey.label, author, rscience.label, common_area, optic, 0.0])
+                                data.append([survey_name, rsurvey.label, author, rscience.label, common_area, optic, 0.0, 0.0, 0.0])
 
                     else:
-                        data.append([survey_name, survey_name, author, rscience.label, 0.0, optic, 0.0])
+                        data.append([survey_name, survey_name, author, rscience.label, 0.0, optic, 0.0, 0.0, 0.0])
 
     data = np.array(data)
 
@@ -548,6 +558,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
         Column(name='Common_area', data=data[:,4], dtype='f8'),
         Column(name='Optic', data=data[:, 5], dtype='S5'),
         Column(name='M6_%sky_area_nvisits', data=data[:, 6], dtype='f8'),
+        Column(name='M6_%nvisits', data=data[:, 6], dtype='f8'),
     ])
 
     return results

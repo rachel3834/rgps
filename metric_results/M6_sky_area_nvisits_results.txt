@@ -10,7 +10,7 @@ time_domain time_domain_TDS_Galactic_Center Kupfer Kupfer_NGC6528 F062 0.0 0.0
 time_domain time_domain_TDS_NGC6334_6357 Kupfer Kupfer_NGC6528 F062 0.0 0.0
 time_domain time_domain_TDS_Carina Kupfer Kupfer_NGC6528 F062 0.0 0.0
 time_domain time_domain_TDS_W43 Kupfer Kupfer_NGC6528 F062 0.0 0.0
-time_domain time_domain_TDS_Baades_Windows Kupfer Kupfer_NGC6522 F062 0.33333333333333337 5.0
+time_domain time_domain_TDS_Baades_Windows Kupfer Kupfer_NGC6522 F062 0.33333333333333337 100.0
 time_domain time_domain_TDS_Galactic_Center Kupfer Kupfer_NGC6522 F062 0.0 0.0
 time_domain time_domain_TDS_NGC6334_6357 Kupfer Kupfer_NGC6522 F062 0.0 0.0
 time_domain time_domain_TDS_Carina Kupfer Kupfer_NGC6522 F062 0.0 0.0
@@ -30,7 +30,7 @@ time_domain time_domain_TDS_Galactic_Center Kupfer Kupfer_NGC6528 F087 0.0 0.0
 time_domain time_domain_TDS_NGC6334_6357 Kupfer Kupfer_NGC6528 F087 0.0 0.0
 time_domain time_domain_TDS_Carina Kupfer Kupfer_NGC6528 F087 0.0 0.0
 time_domain time_domain_TDS_W43 Kupfer Kupfer_NGC6528 F087 0.0 0.0
-time_domain time_domain_TDS_Baades_Windows Kupfer Kupfer_NGC6522 F087 0.33333333333333337 5.0
+time_domain time_domain_TDS_Baades_Windows Kupfer Kupfer_NGC6522 F087 0.33333333333333337 100.0
 time_domain time_domain_TDS_Galactic_Center Kupfer Kupfer_NGC6522 F087 0.0 0.0
 time_domain time_domain_TDS_NGC6334_6357 Kupfer Kupfer_NGC6522 F087 0.0 0.0
 time_domain time_domain_TDS_Carina Kupfer Kupfer_NGC6522 F087 0.0 0.0
@@ -45,6 +45,7 @@ time_domain time_domain_TDS_Galactic_Center Kupfer Kupfer_UKS1 F087 0.0 0.0
 time_domain time_domain_TDS_NGC6334_6357 Kupfer Kupfer_UKS1 F087 0.0 0.0
 time_domain time_domain_TDS_Carina Kupfer Kupfer_UKS1 F087 0.0 0.0
 time_domain time_domain_TDS_W43 Kupfer Kupfer_UKS1 F087 0.0 0.0
+time_domain time_domain_TDS_W43 Lian Lian_Carina F184 0.0 0.0
 time_domain time_domain_TDS_W43 DAmmando DAmmando_DAmmando_catalog F184 0.0 0.0
 time_domain time_domain_TDS_W43 DAmmando DAmmando_DAmmando_catalog F184 0.0 0.0
 time_domain time_domain_TDS_W43 DAmmando DAmmando_DAmmando_catalog F184 0.0 0.0
@@ -536,6 +537,11 @@ time_domain time_domain_TDS_Galactic_Center Morihana1 Morihana1_Subaru2 F213 0.0
 time_domain time_domain_TDS_NGC6334_6357 Morihana1 Morihana1_Subaru2 F213 0.0 0.0
 time_domain time_domain_TDS_Carina Morihana1 Morihana1_Subaru2 F213 0.0 0.0
 time_domain time_domain_TDS_Serpens_W40 Morihana1 Morihana1_Subaru2 F213 0.0 0.0
+time_domain time_domain Daylan Daylan_NGC869 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_King7 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_NGC2099 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_NGC2158 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_Berkeley53 F146 0.0 0.0
 time_domain time_domain_TDS_Baades_Windows Bahramian Bahramian_XRB1 F087 0.2222222222222222 0.4444444444444444
 time_domain time_domain_TDS_Galactic_Center Bahramian Bahramian_XRB1 F087 0.2777777777777778 0.4444444444444444
 time_domain time_domain_TDS_NGC6334_6357 Bahramian Bahramian_XRB1 F087 0.2222222222222222 0.4444444444444444
@@ -575,12 +581,12 @@ time_domain time_domain Bahramian Bahramian_XRB2 F146 0.0 0.0
 time_domain time_domain_TDS_W43 Rich2 Rich2_Rich_TDA1 F184 0.0 0.0
 time_domain time_domain_TDS_W43 Rich2 Rich2_Rich_TDA2 F184 0.0 0.0
 time_domain time_domain_TDS_Baades_Windows Rich2 Rich2_Rich_TDA1 F213 0.0 0.0
-time_domain time_domain_TDS_Galactic_Center Rich2 Rich2_Rich_TDA1 F213 159.375 1000.0
+time_domain time_domain_TDS_Galactic_Center Rich2 Rich2_Rich_TDA1 F213 159.375 85.71428571428571
 time_domain time_domain_TDS_NGC6334_6357 Rich2 Rich2_Rich_TDA1 F213 0.0 0.0
 time_domain time_domain_TDS_Carina Rich2 Rich2_Rich_TDA1 F213 0.0 0.0
 time_domain time_domain_TDS_Serpens_W40 Rich2 Rich2_Rich_TDA1 F213 0.0 0.0
 time_domain time_domain_TDS_Baades_Windows Rich2 Rich2_Rich_TDA2 F213 0.0 0.0
-time_domain time_domain_TDS_Galactic_Center Rich2 Rich2_Rich_TDA2 F213 159.375 1000.0
+time_domain time_domain_TDS_Galactic_Center Rich2 Rich2_Rich_TDA2 F213 159.375 85.71428571428571
 time_domain time_domain_TDS_NGC6334_6357 Rich2 Rich2_Rich_TDA2 F213 0.0 0.0
 time_domain time_domain_TDS_Carina Rich2 Rich2_Rich_TDA2 F213 0.0 0.0
 time_domain time_domain_TDS_Serpens_W40 Rich2 Rich2_Rich_TDA2 F213 0.0 0.0

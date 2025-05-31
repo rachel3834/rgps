@@ -485,7 +485,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
             if len(survey_definition[optic]) > 0:
                 for rsurvey in survey_definition[optic]:
                     if rsurvey.time_domain:
-                        survey_region_set[rsurvey.name] = rsurvey
+                        survey_region_set[rsurvey.label] = rsurvey
     print('Number of survey regions: ' + str(len(survey_region_set)))
 
     science_region_set = {}
@@ -494,7 +494,7 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
             if optic in science_strategy.keys() and len(science_strategy[optic]) > 0:
                 for rscience in science_strategy[optic]:
                     if rscience.time_domain:
-                        science_region_set[rscience.name] = rscience
+                        science_region_set[rscience.label] = rscience
     print('Number of science regions: ' + str(len(science_region_set)))
 
     overlap_data = []
@@ -595,9 +595,11 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
 
                                 # Calculate the percentage of the number of revisits obtained
                                 m1 = (rsurvey.nvisits / rscience.nvisits) * 100.0
+                                print('NVisits: ', optic, rsurvey.name, rsurvey.nvisits,  rscience.name, rscience.nvisits, m1)
 
                                 # Calculate the percentage of the duration obtained
                                 m2 = (rsurvey.duration / rscience.duration) * 100.0
+                                print('Duration: ', optic, rsurvey.name, rsurvey.duration,  rscience.name, rscience.duration, m2)
 
                                 data.append([survey_name, rsurvey.label, author, rscience.label, optic, m1, m2])
 

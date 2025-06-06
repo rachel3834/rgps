@@ -471,10 +471,6 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
         results        astropy.table   Metric value calculated for all science cases
     """
 
-    ### Calculate:
-    ### % overlap area with each field
-    ### % nvisits and duration per filter
-
     PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
 
     # Calculate the area of overlap between the science and survey regions, regardless of filters,

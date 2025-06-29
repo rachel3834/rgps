@@ -1,4 +1,0 @@
-Survey_strategy Optic Science_case M1_%pix M1_%priority
-wide_area F062 Bonito 0.0 0.0
-panchromatic F062 Bonito 13.924050632911392 13.924050632911392
-time_domain F062 Bonito 11.39240506329114 11.39240506329114

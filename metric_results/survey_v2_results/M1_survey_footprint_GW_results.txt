@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F213 Pardo 0.0 0.0
+panchromatic F213 Pardo 0.0 0.0
+time_domain F213 Pardo 0.0 0.0

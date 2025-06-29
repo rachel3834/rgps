@@ -1,0 +1,7 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F062 Kupfer 0.0 0.0
+panchromatic F062 Kupfer 28.57142857142857 28.57142857142857
+time_domain F062 Kupfer 21.428571428571427 21.428571428571427
+wide_area F087 Kupfer 0.0 0.0
+panchromatic F087 Kupfer 28.57142857142857 28.57142857142857
+time_domain F087 Kupfer 21.428571428571427 21.428571428571427

@@ -81,15 +81,16 @@ class CelestialRegion:
         self.pixels = np.where(rot_map > 0.0)[0]
 
         # Rotate the pixel priorities
-        self.pixel_priority = hp.get_interp_val(self.pixel_priority, trot, prot)
+        self.pixel_priority = rot_healpixel_map(
+            self.pixel_priority,
+            self.NSIDE,
+            self.NPIX,
+            transform=['G', 'C']
+        )
 
         # Rotate the region map array if there is one
         if type(self.region_map) == type(np.zeros(1)):
-            self.region_map = hp.get_interp_val(self.region_map, trot, prot)
-
-        # Rotate the predefined pixel array if there is one
-        if type(self.predefined_pixels) == type(self.predefined_pixels):
-            self.predefined_pixels = hp.get_interp_val(self.predefined_pixels, trot, prot)
+            self.region_map = rot_healpixel_map(self.region_map, self.NSIDE, self.NPIX, transform=['G', 'C'])
 
     def calc_hp_healpixels_for_circular_region(self):
         """Method calculates the HEALpixels included within the region.
@@ -114,7 +115,6 @@ class CelestialRegion:
         resolution, then a minimum radius of 1 HEALpixel is imposed"""
 
         pix_res = hp.nside2resol(self.NSIDE, arcmin=True) / 60.0
-        print(self.NSIDE, pix_res)
 
         if not self.predefined_pixels:
             pixels = []
@@ -124,9 +124,6 @@ class CelestialRegion:
             b_min = self.b_center - self.halfheight
             b_max = self.b_center + self.halfheight
 
-            print(len(np.arange(l_min.value, l_max.value+pix_res, pix_res)), pix_res)
-            print(len(np.arange(b_min.value, b_max.value+pix_res, pix_res)), pix_res)
-
             for l in np.arange(l_min.value, l_max.value, pix_res):
                 for b in np.arange(b_min.value, b_max.value, pix_res):
                     self.skycoord = SkyCoord(l, b, frame=Galactic(), unit=(u.deg, u.deg))
@@ -135,18 +132,16 @@ class CelestialRegion:
                     phi = np.deg2rad(self.skycoord.ra.deg)
                     theta = (np.pi / 2.0) - np.deg2rad(self.skycoord.dec.deg)
                     ipix = hp.ang2pix(self.NSIDE, theta, phi)
-                    print(l, b, ipix)
                     #radius = np.deg2rad(pix_res)
                     #xyz = hp.ang2vec(theta, phi)
                     #new_pixels = hp.query_disc(self.NSIDE, xyz, radius)
-                    #print('NEW pixels: ', new_pixels)
                     #pixels += new_pixels.tolist()
                     pixels.append(int(ipix))
-            print(self.name, l_min, l_max, b_min, b_max, len(pixels))
+            #print(self.name, l_min, l_max, b_min, b_max, len(pixels))
 
             self.pixels = list(set(pixels))
-            print('Set: ', self.name, l_min, l_max, b_min, b_max, len(pixels))
-            breakpoint()
+            #print('Set: ', self.name, l_min, l_max, b_min, b_max, len(pixels))
+            #breakpoint()
 
     def calc_range_area(self):
         """
@@ -166,7 +161,7 @@ class CelestialRegion:
         set of pixels for the present object
         """
 
-        hp = HEALPix(nside=self.NSIDE, order='ring', frame='icrs')
+        hp = HEALPix(nside=self.NSIDE, order='ring', frame='galactic')
         s = hp.healpix_to_skycoord(pixel_list)
 
         return s
@@ -284,7 +279,6 @@ class CelestialRegion:
         # Convert pixels to SkyCoords in galactic coordinates
         pixels = np.arange(0, self.NPIX, 1, dtype='int')
         coords = self.pixellist_to_skycoords(pixels)
-        coords = coords.transform_to('galactic')
 
         # Built the table
         t = Table([
@@ -451,16 +445,17 @@ def create_region(sim_config, params):
 
     return r
 
-def create_region_from_json(params):
+def create_region_from_json(params, rotate_map=False):
 
     r = CelestialRegion(params)
     r.pixels = np.array(r.pixels, dtype='int')
     r.pixel_priority = np.array(r.pixel_priority, dtype='float')
     r.make_map()
-    r.predefined_pixels = np.array(r.predefined_pixels)
 
     # Convert map HEALpixel coordinates to Galactic
-    r.rot_pixels()
+    # In normal operation, pre-built HEALpixel maps should already be in Galactic coordinates
+    if rotate_map:
+        r.rot_pixels()
 
     return r
 
@@ -696,7 +691,6 @@ def build_region_maps(sim_config, survey_definitions):
                                     r.pixel_priority[r.pixels] = 1.0
                                     r.predefined_pixels = True
                                     r.make_map()
-                                    r.rot_pixels()  # Needed to make sure HEALpixel lists are in Galactic coords
 
                                     requested_regions[name][optic].append(r)
                         except:

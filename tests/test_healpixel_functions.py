@@ -42,14 +42,17 @@ def test_region_pixels(nside, test_region):
     # RESULTS IN GALACTIC COORDINATES!
     ahp = HEALPix(nside=nside, order='ring')
     test_region.calc_ap_healpixels_for_circular_region(ahp)
-    ap_pixels = copy.deepcopy(test_region.pixels)
+    ap_pixels = list(copy.deepcopy(test_region.pixels))
+    ap_pixels.sort()
 
     # Use HEALpy functions to calculate the HEALpixels within the circular region
     # RESULTS IN EQUATORIAL COORDINATES!
     test_region.calc_hp_healpixels_for_circular_region()
-    hp_pixels = copy.deepcopy(test_region.pixels)
+    test_region.rot_pixels()    # Convert to Galactic coordinates
+    hp_pixels = list(copy.deepcopy(test_region.pixels))
+    hp_pixels.sort()
 
     print('Astropy: ', ap_pixels, len(ap_pixels))
     print('HEALpy: ', hp_pixels, len(hp_pixels))
 
-    assert(True == False)
+    assert(ap_pixels == hp_pixels)

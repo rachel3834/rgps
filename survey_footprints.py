@@ -7,8 +7,6 @@ from astropy.io import fits
 import config_utils
 import regions
 
-NSIDE = 64
-
 def load_survey_footprints(sim_config, root_dir):
     """
     Function to load a set of pre-defined survey footprints in the form of HEALpixel maps
@@ -20,7 +18,7 @@ def load_survey_footprints(sim_config, root_dir):
     survey_footprints = {}
 
     # Load Rubin Galactic Plane survey footprint
-    survey_footprints['rubin_galactic_plane'] = load_rubin_galplane_footprint(root_dir)
+    survey_footprints['rubin_galactic_plane'] = load_rubin_galplane_footprint(sim_config, root_dir)
 
     # Load the DECaPS2 survey footprint
     survey_footprints['DECaPS2'] = load_DECaPS2_footprint(sim_config)
@@ -38,13 +36,14 @@ def load_survey_footprints(sim_config, root_dir):
 
     return survey_footprints
 
-def load_catalog(root_dir, catalog_name):
+def load_catalog(sim_config, root_dir, catalog_name):
     """
     Function to load a catalog of regions, defined as centroid locations plus a radial extent from that
     centroid, which is assumed to be circular.  Centroids can be defined in RA, Dec or (l,b), but
     all quantities should be in decimal degrees.  Since the catalogs have been shared in CSV format
     from different authors, this function handles the formatting specific to each catalog.
 
+    :param sim_config: Dictionary with software configuration
     :param root_dir: Path to the config directory where the catalog file can be found
     :param catalog_name: Name of the catalog file
     :return:
@@ -56,7 +55,7 @@ def load_catalog(root_dir, catalog_name):
         raise IOError('Cannot find requested catalog ' + catalog_file)
 
     pointing_set = []
-    pixscale = hp.max_pixrad(NSIDE,degrees=True)
+    pixscale = hp.max_pixrad(sim_config['NSIDE'],degrees=True)
 
     if catalog_name == 'SFRs_for_Roman.csv':
 
@@ -142,17 +141,31 @@ def load_catalog(root_dir, catalog_name):
 
     return pointing_set
 
-def load_rubin_galplane_footprint(root_dir, cat_file='rubin_galplane_survey_footprint.json'):
+def load_rubin_galplane_footprint(sim_config, root_dir, cat_file='rubin_galplane_survey_footprint.json'):
     """
     Function to load the survey footprint map for Rubin in the Galactic Plane
-    :return: HEALpixel array
+    :return: HEALpixel array in equatorial coordinates
     """
 
     file_path = path.join(root_dir, 'config', cat_file)
+    print(file_path)
     with open(file_path, 'r') as f:
         spec = json.load(f)
 
-    return np.array(spec['healpix_map'])
+    # Rubin uses equatorial coordinates
+    survey_map = np.array(spec['healpix_map'])
+
+    # Convert to galactic
+    NPIX = hp.nside2npix(sim_config['NSIDE'])
+    survey_map = regions.rot_healpixel_map(
+        survey_map,
+        sim_config['NSIDE'],
+        NPIX,
+        transform=['G', 'C']
+    )
+
+    return survey_map
+
 
 def load_DECaPS2_footprint(sim_config):
     """
@@ -187,6 +200,7 @@ def load_DECaPS2_footprint(sim_config):
         }
     }
 
+    # This is converted automatically to galactic coordinates
     survey_regions = regions.build_region_maps(sim_config, survey_config)
 
     return survey_regions['DECaPS2']['F213'][0].region_map
@@ -203,7 +217,17 @@ def load_BDBS_footprint(root_dir):
     with open(file_path, 'r') as f:
         spec = json.load(f)
 
-    return np.array(spec['healpix_map'])
+    # Convert to galactic coordinates
+    NPIX = hp.nside2npix(sim_config['NSIDE'])
+    survey_map = np.array(spec['healpix_map'])
+    survey_map = regions.rot_healpixel_map(
+        survey_map,
+        sim_config['NSIDE'],
+        NPIX,
+        transform=['G', 'C']
+    )
+
+    return survey_map
 
 def load_Baade_footprint(sim_config):
     """
@@ -268,6 +292,7 @@ def load_Baade_footprint(sim_config):
         }
     }
 
+    # Converts automatically to Galactic coordinates
     survey_regions = regions.build_region_maps(sim_config, survey_config)
 
     return survey_regions['Baade']['F213'][0].region_map
@@ -282,7 +307,17 @@ def load_stellar_density_footprint(root_dir, sim_config, cat_file='stellar_densi
     with open(file_path, 'r') as f:
         spec = json.load(f)
 
-    return np.array(spec['healpix_map'])
+    # Convert to galactic coordinates
+    NPIX = hp.nside2npix(sim_config['NSIDE'])
+    survey_map = np.array(spec['healpix_map'])
+    survey_map = regions.rot_healpixel_map(
+        survey_map,
+        sim_config['NSIDE'],
+        NPIX,
+        transform=['G', 'C']
+    )
+
+    return survey_map
 
 
 if __name__ == '__main__':

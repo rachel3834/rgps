@@ -34,7 +34,7 @@ def calculate_metrics(args):
 
     # Parse the category option
     if str(args.category).lower() == 'all':
-        category_list = science_categories
+        category_list = [cat for cat in science_categories if cat != 'extended_object_catalog']
     else:
         category_list = [args.category]
 

@@ -1,0 +1,7 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F213 VVV_keyholes_1st_priority 92.3076923076923 92.3076923076923
+panchromatic F213 VVV_keyholes_1st_priority 23.076923076923077 23.076923076923077
+time_domain F213 VVV_keyholes_1st_priority 7.6923076923076925 7.6923076923076925
+wide_area F213 VVV_keyholes_2nd_priority 95.8904109589041 96.34146341463415
+panchromatic F213 VVV_keyholes_2nd_priority 15.068493150684931 13.414634146341465
+time_domain F213 VVV_keyholes_2nd_priority 17.80821917808219 24.390243902439025

@@ -24,8 +24,8 @@ NPIX = hp.nside2npix(SIM_CONFIG['NSIDE'])
                 "b_height": 4.0,
                 "radius": None,
                 "predefined_pixels": True,
-                "NSIDE": 64,
-                "NPIX": 49152,
+                "NSIDE": SIM_CONFIG['NSIDE'],
+                "NPIX": NPIX,
                 "pixels": [33346, 33602, 33603, 33858, 33090, 33345, 33346, 33602],
                 "pixel_priority": [0.0]*NPIX
             },
@@ -64,8 +64,8 @@ def test_create_region_from_json(test_input, expected):
                                 'b_height': 4.0,
                                 'radius': None,
                                 'predefined_pixels': True,
-                                'NSIDE': 64,
-                                'NPIX': 49152,
+                                'NSIDE': SIM_CONFIG['NSIDE'],
+                                'NPIX': NPIX,
                                 'pixels': np.array([]),
                                 'pixel_priority': np.zeros(NPIX)
                             }
@@ -84,8 +84,8 @@ def test_create_region_from_json(test_input, expected):
                                 'b_height': 4.0,
                                 'radius': None,
                                 'predefined_pixels': True,
-                                'NSIDE': 64,
-                                'NPIX': 49152,
+                                'NSIDE': SIM_CONFIG['NSIDE'],
+                                'NPIX': NPIX,
                                 'pixels': np.array([33346,
                                           33602,
                                           33603,
@@ -114,8 +114,8 @@ def test_create_region_from_json(test_input, expected):
                                 'b_height': 4.0,
                                 'radius': None,
                                 'predefined_pixels': True,
-                                'NSIDE': 64,
-                                'NPIX': 49152,
+                                'NSIDE': SIM_CONFIG['NSIDE'],
+                                'NPIX': NPIX,
                                 'pixels': np.array([33346,
                                           33602,
                                           33603,
@@ -144,8 +144,8 @@ def test_create_region_from_json(test_input, expected):
                                 'b_height': 4.0,
                                 'radius': None,
                                 'predefined_pixels': True,
-                                'NSIDE': 64,
-                                'NPIX': 49152,
+                                'NSIDE': SIM_CONFIG['NSIDE'],
+                                'NPIX': NPIX,
                                 'pixels': np.array([33346,
                                           33602,
                                           33603,
@@ -201,8 +201,8 @@ def test_load_regions_from_file(test_input, expected):
                             'b_height': 4.0,
                             'radius': None,
                             'predefined_pixels': True,
-                            'NSIDE': 64,
-                            'NPIX': 49152,
+                            'NSIDE': SIM_CONFIG['NSIDE'],
+                            'NPIX': NPIX,
                             'pixels': np.arange(0, NPIX, 1, dtype='int'),
                             'pixel_priority': np.ones(NPIX)
                         }
@@ -228,3 +228,4 @@ def test_output_pixel_fits_table(test_input, expected):
     for col in ['HEALpixel', 'Nscience_case', 'priority']:
         assert((test_table[col].data == expected[col].data).all())
     assert(path.isfile(path.join(getcwd(), 'data', 'test_region_table.fits')))
+

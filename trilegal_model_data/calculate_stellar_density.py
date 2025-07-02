@@ -176,7 +176,7 @@ def interpolate_density_map(args, l, b, lplot, z, optic):
     # Now we place the interpolated function onto the HEALpixel sky map
     # Note these coordinates are input in galactic coordinates,
     # but s converts to RA, Dec for plotting
-    ahp = HEALPix(nside=NSIDE, order='ring', frame=TETE())
+    ahp = HEALPix(nside=NSIDE, order='ring', frame=Galactic())
     map = np.zeros(NPIX)
     plotx = []
     ploty = []

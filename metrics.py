@@ -345,9 +345,19 @@ def list_pixels_all_regions(region_set):
     in_pixels = []
     for r in region_set:
         in_pixels += list(r.pixels)
+        print(r.name, len(r.pixels))
     in_pixels = list(set(in_pixels))
+    print('Total pixels: ', len(in_pixels))
 
     return in_pixels
+
+def area_all_regions(region_set):
+
+    area = 0.0
+    for r in region_set:
+        area += r.calc_range_area()
+
+    return area
 
 def extract_multiband_science(sim_config, science_cases):
     """
@@ -371,6 +381,7 @@ def extract_multiband_science(sim_config, science_cases):
 
     return multiband_cases
 
+
 def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
     """
     Metric to evaluate the total area of sky to receive observations in each optical element,
@@ -388,6 +399,7 @@ def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
     """
 
     PIXAREA = hp.nside2pixarea(sim_config['NSIDE'], degrees=True)
+    print(PIXAREA, sim_config['NSIDE'])
 
     # First establish what combinations of filters were requested by both
     # science cases and the survey design, based on the region data given
@@ -399,10 +411,9 @@ def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
 #            filter_sets.append(optic_list)
     for author, params in science_cases.items():
         optic_list = [optic for optic in sim_config['OPTICAL_COMPONENTS'] if len(params[optic]) > 0]
-        if not optic_list in filter_sets and len(optic_list) > 1:
-            filter_sets.append(optic_list)
-    print(filter_sets)
-
+        if not optic_list in filter_sets \
+                and len(optic_list) > 1:
+                filter_sets.append(optic_list)
     data = []
 
     for survey_name, survey_definition in survey_config.items():
@@ -412,6 +423,9 @@ def M5_sky_area_optical_elements(sim_config, science_cases, survey_config):
             if optic in survey_definition.keys():
                 in_pixels = list_pixels_all_regions(survey_definition[optic])
                 m1 = len(in_pixels) * PIXAREA
+                print(survey_name, optic, ' pixel area = ', m1)
+                m1 = area_all_regions(survey_definition[optic])
+                print(survey_name, optic, ' sum over coordinates = ', m1)
             else:
                 m1 = 0.0
             data.append([survey_name, optic, m1, None])

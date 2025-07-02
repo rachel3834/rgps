@@ -4,7 +4,7 @@
 # that only positional information is made public since the full results are not
 # yet published.
 
-from os import path
+from os import path, getcwd
 from astropy.io import fits
 from astropy_healpix import HEALPix
 from astropy.coordinates import SkyCoord, ICRS
@@ -13,7 +13,12 @@ import numpy as np
 import argparse
 import healpy as hp
 import json
+import config_utils
+
 def extract_madgics(args):
+
+    # Load the broader configuration parameters of the whole simulation
+    sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
 
     # Load full catalog from its FITS binary table
     with fits.open(args.input_file) as hdul:
@@ -38,7 +43,7 @@ def extract_madgics(args):
 
     # The full MADGICS catalog has >2.6 million objects, so it's unwealdy for our purposes.
     # Here we convert it to count the number of objects per healpixel.
-    NSIDE = 64
+    NSIDE = sim_config['NSIDE']
     NPIX = hp.nside2npix(NSIDE)
     proj = HEALPix(nside=NSIDE, order='ring', frame='icrs')
     coords = SkyCoord(dataset[:,0], dataset[:,1], frame='icrs', unit=(u.deg, u.deg))
@@ -51,9 +56,9 @@ def extract_madgics(args):
 
     # Output the skymap of object counts
     jdata = {
-        "nside": 64,
+        "nside": NSIDE,
         "healpix_resolution_deg": 0.8392936452111668,
-        "n_healpix": 49152,
+        "n_healpix": NPIX,
         "healpix_map": skymap.tolist()
     }
 

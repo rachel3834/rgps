@@ -1,0 +1,13 @@
+Survey_strategy Optic Science_case Category M3_%regions M3_count
+wide_area F062 Bonito YSO 0.0 0
+panchromatic F062 Bonito YSO 20.0 1
+time_domain F062 Bonito YSO 20.0 1
+wide_area F129 Bonito YSO 60.0 3
+panchromatic F129 Bonito YSO 20.0 1
+time_domain F129 Bonito YSO 20.0 1
+wide_area F158 Bonito YSO 60.0 3
+panchromatic F158 Bonito YSO 20.0 1
+time_domain F158 Bonito YSO 20.0 1
+wide_area F146 Bonito YSO 0.0 0
+panchromatic F146 Bonito YSO 0.0 0
+time_domain F146 Bonito YSO 0.0 0

@@ -139,8 +139,7 @@
         "duration": 730.0,
         "visit_interval": [null],
         "name": "Rubin_GP"
-    }
-    ],
+    }],
     "F213": [{"survey_footprint": "rubin_galactic_plane",
         "nvisits": 2,
         "duration": 730.0,

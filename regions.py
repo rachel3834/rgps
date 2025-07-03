@@ -475,7 +475,7 @@ def create_region_set(sim_config, params):
     region_list = []
 
     cat_dir = path.join(sim_config['root_dir'], 'config')
-    pointing_set = survey_footprints.load_catalog(cat_dir, params['catalog'])
+    pointing_set = survey_footprints.load_catalog(sim_config, cat_dir, params['catalog'])
     for i,pointing in enumerate(pointing_set):
         pointing['label'] = params['label']
         pointing['name'] = params['name'] + '_' + str(i)
@@ -673,34 +673,34 @@ def build_region_maps(sim_config, survey_definitions):
             for optic in sim_config['OPTICAL_COMPONENTS']:
                 if optic in info.keys():
                     for region in info[optic]:
-                        try:
-                            region['label'] = name + '_' + region['name']
-                            region['optic'] = optic
-                            region['extended_object_catalog'] = info['extended_object_catalog']
-                            region['time_domain'] = info['time_domain']
-                            region['topics'] = info['topics']
-                            if 'category' in info.keys():
-                                region['category'] = info['category']
+                        #try:
+                        region['label'] = name + '_' + region['name']
+                        region['optic'] = optic
+                        region['extended_object_catalog'] = info['extended_object_catalog']
+                        region['time_domain'] = info['time_domain']
+                        region['topics'] = info['topics']
+                        if 'category' in info.keys():
+                            region['category'] = info['category']
 
-                            if 'catalog' in region.keys():
-                                region_set = create_region_set(sim_config, region)
+                        if 'catalog' in region.keys():
+                            region_set = create_region_set(sim_config, region)
 
-                            else:
-                                region_set = [create_region(sim_config, region)]
+                        else:
+                            region_set = [create_region(sim_config, region)]
 
-                            for r in region_set:
+                        for r in region_set:
 
-                                # If the region is valid, the list of included pixels will be non-zero.
-                                # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
-                                # for each science case.
-                                if len(r.pixels) > 0:
-                                    r.pixel_priority = np.zeros(r.NPIX)
-                                    r.pixel_priority[r.pixels] = 1.0
-                                    r.predefined_pixels = True
-                                    r.make_map()
+                            # If the region is valid, the list of included pixels will be non-zero.
+                            # Each pixel within a region is given a value of 1 - essentially being a 'vote' for that pixel,
+                            # for each science case.
+                            if len(r.pixels) > 0:
+                                r.pixel_priority = np.zeros(r.NPIX)
+                                r.pixel_priority[r.pixels] = 1.0
+                                r.predefined_pixels = True
+                                r.make_map()
 
-                                    requested_regions[name][optic].append(r)
-                        except:
-                            print('Problem with: ', name, info)
-                            exit()
+                                requested_regions[name][optic].append(r)
+                        #except:
+                        #    print('Problem with: ', name, info)
+                        #    exit()
     return requested_regions

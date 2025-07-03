@@ -22,19 +22,30 @@ def build_regions(args):
 
     # Make a list of all configured science categories for future reference
     science_categories = []
+    author_list = []
     for author, info in science_cases.items():
         if info['ready_for_use'] and info['category'] not in science_categories:
             science_categories.append(str(info['category']).lower())
+        if info['ready_for_use']:
+            author_list.append(author)
 
     # Select regions for a specific survey strategy or all depending on user input
     survey_configs = {}
-    if 'all' in str(args.use_case).lower():
+    if 'all_categories' in str(args.use_case).lower():
         survey_configs = {x: {} for x in science_categories}
 
         for category in science_categories:
             for author, info in science_cases.items():
                 if str(info['category']).lower() == category and info['ready_for_use']:
                     survey_configs[category][author] = info
+
+    elif 'each' in str(args.use_case).lower():
+        survey_configs = {x: {} for x in author_list}
+
+        for author in author_list:
+            info = science_cases[author]
+            if info['ready_for_use']:
+                survey_configs[author][author] = info
 
     elif 'time_domain' in str(args.use_case).lower():
         survey_configs['time_domain'] = {name: par for name,par in science_cases.items() if par['time_domain'] and par['ready_for_use']}
@@ -62,38 +73,34 @@ def build_regions(args):
         print(category + ': includes ' + str(len(survey_conf)) + ' science cases')
 
     # Extract the set of regions from the set of science cases
-    survey_regions = {}
     for category, survey_conf in survey_configs.items():
         print('Extracting regions for ' + category)
-        survey_regions[category] = regions.build_region_maps(sim_config, survey_conf)
+        survey_regions = regions.build_region_maps(sim_config, survey_conf)
 
-    # Output survey regions in JSON format
-    output_regions(args, sim_config, survey_regions)
+        # Output survey regions in JSON format
+        output_regions(args, sim_config, category, survey_regions)
 
-def output_regions(args, sim_config, survey_regions):
+def output_regions(args, sim_config, category, survey_conf):
     """
     Function to output a set of Celestial Regions index by survey name and optical elements
     to a JSON file.
     """
 
-    for category, survey_conf in survey_regions.items():
-        regions = {}
-        namelist = list(survey_conf.keys())
-        for name in namelist:
-            optic_regions = survey_conf[name]
-            regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
-            for optic, region_set, in optic_regions.items():
-                for r in region_set:
-                    regions[name][optic].append(r.to_json())
+    regions = {}
+    namelist = list(survey_conf.keys())
+    for name in namelist:
+        optic_regions = survey_conf[name]
+        regions[name] = {f: [] for f in sim_config['OPTICAL_COMPONENTS']}
+        for optic, region_set, in optic_regions.items():
+            for r in region_set:
+                regions[name][optic].append(r.to_json())
 
-        jstr = json.dumps(regions, indent=4)
+    jstr = json.dumps(regions, indent=4)
 
-        output_path = path.join(args.output_dir, 'rgps_science_regions_' + category + '.json')
-        if category == 'science_case':
-            output_path = path.join(args.output_dir, 'rgps_science_regions_' + namelist[0] + '.json')
+    output_path = path.join(args.output_dir, 'rgps_science_regions_' + category + '.json')
 
-        with open(output_path, 'w') as f:
-            f.write(jstr)
+    with open(output_path, 'w') as f:
+        f.write(jstr)
 
 def get_args():
 

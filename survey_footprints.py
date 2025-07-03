@@ -24,7 +24,7 @@ def load_survey_footprints(sim_config, root_dir):
     survey_footprints['DECaPS2'] = load_DECaPS2_footprint(sim_config)
 
     # Load the BDBS survey footprint
-    survey_footprints['BDBS'] = load_BDBS_footprint(root_dir)
+    survey_footprints['BDBS'] = load_BDBS_footprint(sim_config, root_dir)
 
     # Load the Baade's Window survey footprint
     survey_footprints['Baade'] = load_Baade_footprint(sim_config)
@@ -148,12 +148,14 @@ def load_rubin_galplane_footprint(sim_config, root_dir, cat_file='rubin_galplane
     """
 
     file_path = path.join(root_dir, 'config', cat_file)
-    print(file_path)
     with open(file_path, 'r') as f:
         spec = json.load(f)
 
     # Rubin uses equatorial coordinates
     survey_map = np.array(spec['healpix_map'])
+
+    # Upgrade the spatial sampling of the map to match the NSIDE
+    survey_map = hp.ud_grade(survey_map, sim_config['NSIDE'])
 
     # Convert to galactic
     NPIX = hp.nside2npix(sim_config['NSIDE'])
@@ -196,7 +198,8 @@ def load_DECaPS2_footprint(sim_config):
         "comment": "None",
         "ready_for_use": "True",
         "time_domain": "False",
-        "extended_object_catalog": "False"
+        "extended_object_catalog": "False",
+        "topics": ["survey"]
         }
     }
 
@@ -205,7 +208,7 @@ def load_DECaPS2_footprint(sim_config):
 
     return survey_regions['DECaPS2']['F213'][0].region_map
 
-def load_BDBS_footprint(root_dir):
+def load_BDBS_footprint(sim_config, root_dir):
     """
         Function to load the survey footprint for the Blanco DECam Bulge Survey.
         The footprint data was taken from Rich et al (2008), MNRAS, 499, 2340, Table 1.
@@ -217,9 +220,12 @@ def load_BDBS_footprint(root_dir):
     with open(file_path, 'r') as f:
         spec = json.load(f)
 
+    # Upgrade the spatial sampling of the map to match the NSIDE
+    survey_map = np.array(spec['healpix_map'])
+    survey_map = hp.ud_grade(survey_map, sim_config['NSIDE'])
+
     # Convert to galactic coordinates
     NPIX = hp.nside2npix(sim_config['NSIDE'])
-    survey_map = np.array(spec['healpix_map'])
     survey_map = regions.rot_healpixel_map(
         survey_map,
         sim_config['NSIDE'],
@@ -288,7 +294,8 @@ def load_Baade_footprint(sim_config):
         "comment": "None",
         "ready_for_use": "True",
         "time_domain": "False",
-        "extended_object_catalog": "False"
+        "extended_object_catalog": "False",
+        "topics": ["survey"]
         }
     }
 
@@ -307,9 +314,12 @@ def load_stellar_density_footprint(root_dir, sim_config, cat_file='stellar_densi
     with open(file_path, 'r') as f:
         spec = json.load(f)
 
+    survey_map = np.array(spec['healpix_map'])
+    if spec['nside'] != sim_config['NSIDE']:
+        survey_map = hp.ud_grade(survey_map, sim_config['NSIDE'])
+
     # Convert to galactic coordinates
     NPIX = hp.nside2npix(sim_config['NSIDE'])
-    survey_map = np.array(spec['healpix_map'])
     survey_map = regions.rot_healpixel_map(
         survey_map,
         sim_config['NSIDE'],

@@ -26,21 +26,27 @@ def calculate_metrics(args):
     # Load the science case definitions; this is used as a reference for their parameters
     science_cases = config_utils.read_config(path.join(getcwd(), 'config', 'rgps_science_cases.json'))
 
+    # Build a list of the topical categories
+    science_categories = []
+    for author, info in science_cases.items():
+        if info['ready_for_use'] and info['category'] not in science_categories:
+            science_categories.append(info['category'])
+
     # Parse the category option
-    if str(args.science_case).lower() == 'all':
-        case_list = [author for author, info in science_cases.keys() if info['ready_to_use']]
+    if str(args.category).lower() == 'all':
+        category_list = [cat for cat in science_categories if cat != 'extended_object_catalog']
     else:
-        case_list = [args.science_case]
+        category_list = [args.category]
 
     # Analysing each requested category in turn,
     # load the science regions corresponding to each category from file
-    for author in case_list:
-        region_file = path.join(getcwd(),'region_data','rgps_science_regions_' + author + '.json')
+    for category in category_list:
+        region_file = path.join(getcwd(),'region_data','rgps_science_regions_' + category + '.json')
         if not path.isfile(region_file):
             raise IOError('Missing science region file: ' + region_file)
 
         science_regions = regions.load_regions_from_file(sim_config, region_file)
-        print('Loaded science use cases information for ' + author)
+        print('Loaded science use cases information for ' + category)
 
         if 'all' in str(args.survey).lower():
             survey_regions = all_survey_regions
@@ -124,7 +130,7 @@ def get_args():
     """Function to gather commandline arguments"""
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('science_case', help='Science case (authors name) to evaluate for')
+    parser.add_argument('category', help='Category of science case to evaluate for')
     parser.add_argument('survey', help='Name of survey design to evaluate or ALL')
     parser.add_argument('metric', help='Name of metric to evaluate or ALL')
     parser.add_argument('data_dir', help='Path to output directory')

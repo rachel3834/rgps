@@ -323,7 +323,8 @@
         "ready_for_use": "True",
         "category": "Survey",
         "time_domain": "False",
-        "extended_object_catalog": "False"
+        "extended_object_catalog": "False",
+        "topics": ["Wide area survey"]
     },
     "panchromatic": {
         "F062": [
@@ -1519,7 +1520,8 @@
         "ready_for_use": "True",
         "category": "Survey",
         "time_domain": "False",
-        "extended_object_catalog": "False"
+        "extended_object_catalog": "False",
+        "topics": ["Panchromatic fields"]
     },
     "time_domain": {
         "F062": [
@@ -2167,6 +2169,7 @@
         "ready_for_use": "True",
         "category": "Survey",
         "time_domain": "True",
-        "extended_object_catalog": "False"
+        "extended_object_catalog": "False",
+        "topics": ["Time Domain science"]
     }
 }

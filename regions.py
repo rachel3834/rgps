@@ -33,6 +33,7 @@ class CelestialRegion:
         self.category = None
         self.extended_object_catalog = None
         self.time_domain = None
+        self.topics = []
         self.predefined_pixels = False
         self.NSIDE = NSIDE
         self.NPIX = hp.nside2npix(self.NSIDE)
@@ -241,7 +242,8 @@ class CelestialRegion:
                 "NSIDE": self.NSIDE,
                 "NPIX": self.NPIX,
                 "nvisits": self.nvisits,
-                "duration": self.duration
+                "duration": self.duration,
+                "topics": self.topics
             }
         except:
             raise IOError('Config missing necessary parameters ' + repr(self.__dict__))
@@ -369,7 +371,8 @@ def create_region(sim_config, params):
             'nvisits': params['nvisits'],
             'duration': params['duration'],
             'visit_interval': params['visit_interval'],
-            'extended_object_catalog': params['extended_object_catalog']
+            'extended_object_catalog': params['extended_object_catalog'],
+            'topics': params['topics']
         }
         if 'category' in params.keys():
             rparams['category'] = params['category']
@@ -393,6 +396,7 @@ def create_region(sim_config, params):
         r.duration = params['duration']
         r.visit_interval = params['visit_interval']
         r.extended_object_catalog = params['extended_object_catalog']
+        r.topics = params['topics']
         if 'category' in params.keys():
             r.category = params['category']
         if 'time_domain' in params.keys():
@@ -414,7 +418,8 @@ def create_region(sim_config, params):
                 'nvisits': params['nvisits'],
                 'duration': params['duration'],
                 'visit_interval': params['visit_interval'],
-                'extended_object_catalog': params['extended_object_catalog']
+                'extended_object_catalog': params['extended_object_catalog'],
+                'topics': params['topics']
             }
             if 'category' in params.keys():
                 rparams['category'] = params['category']
@@ -479,6 +484,7 @@ def create_region_set(sim_config, params):
         pointing['duration'] = params['duration']
         pointing['visit_interval'] = params['visit_interval']
         pointing['extended_object_catalog'] = params['extended_object_catalog']
+        pointing['topics'] = params['topics']
         if 'category' in params.keys():
             pointing['category'] = params['category']
         if 'time_domain' in params.keys():
@@ -672,6 +678,7 @@ def build_region_maps(sim_config, survey_definitions):
                             region['optic'] = optic
                             region['extended_object_catalog'] = info['extended_object_catalog']
                             region['time_domain'] = info['time_domain']
+                            region['topics'] = info['topics']
                             if 'category' in info.keys():
                                 region['category'] = info['category']
 

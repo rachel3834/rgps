@@ -1,0 +1,7 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F184 Anderson 63.01332901624305 63.01332901624305
+panchromatic F184 Anderson 0.9335707732987966 0.9335707732987966
+time_domain F184 Anderson 1.9211051751119745 1.9211051751119745
+wide_area G150 Anderson 0.0 0.0
+panchromatic G150 Anderson 0.9335707732987966 0.9335707732987966
+time_domain G150 Anderson 0.0 0.0

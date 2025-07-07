@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area G150 Lim3_grism_targets 0.0 0.0
+panchromatic G150 Lim3_grism_targets 13.114754098360656 13.114754098360656
+time_domain G150 Lim3_grism_targets 0.0 0.0

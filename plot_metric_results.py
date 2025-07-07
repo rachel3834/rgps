@@ -13,11 +13,10 @@ from astropy import units as u
 from mw_plot import MWSkyMap
 
 
-def plot_metric_optic_heatmap(sim_config, metric_results, strategy_name, category,
+def plot_metric_optic_heatmap(sim_config, metric_results, strategy_name,
                               metric_name, metric_label, file_path):
     """
-    Function to plot a heatmap of a set of metric results, comparing the all optics for a category of
-    science cases.
+    Function to plot a heatmap of a set of metric results.
     """
 
     # Downselect the metric results table for the entries corresponding to the requested strategy
@@ -42,6 +41,10 @@ def plot_metric_optic_heatmap(sim_config, metric_results, strategy_name, categor
 
             # Not all science cases request all filters, so it is possible to have no results here
             if len(metric_filter[jdx][kdx]) > 0:
+                print(metric_filter[jdx][kdx][metric_name].data)
+                print(jdx)
+                print(kdx)
+                breakpoint()
                 data[iscience, ioptic] = metric_filter[jdx][kdx][metric_name].data
             else:
                 data[iscience, ioptic] = np.nan
@@ -61,7 +64,6 @@ def plot_metric_optic_heatmap(sim_config, metric_results, strategy_name, categor
     ax.set_yticks(ygrid[0:-1] + 0.5)
     ax.set_ylabel('Science case', fontsize=30)
     ax.set_xlabel('Optic', fontsize=30)
-    ax.set_title('Science category ' + category, fontsize=50)
     ax.set_xticklabels(sim_config['OPTICAL_COMPONENTS'], rotation=45.0, horizontalalignment='right', fontsize=30)
     ax.set_yticklabels(science_cases, fontsize=30, horizontalalignment='right')
 

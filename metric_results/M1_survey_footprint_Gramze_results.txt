@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F184 Gramze 100.0 100.0
+panchromatic F184 Gramze 3.389830508474576 3.389830508474576
+time_domain F184 Gramze 21.398305084745765 21.398305084745765

@@ -1,7 +1,0 @@
-Survey_strategy Optic Science_case Category M3_%regions M3_count
-wide_area F213 VVV_keyholes_1st_priority keyholes 90.9090909090909 10
-panchromatic F213 VVV_keyholes_1st_priority keyholes 36.36363636363637 4
-time_domain F213 VVV_keyholes_1st_priority keyholes 9.090909090909092 1
-wide_area F213 VVV_keyholes_2nd_priority keyholes 95.83333333333334 23
-panchromatic F213 VVV_keyholes_2nd_priority keyholes 20.833333333333336 5
-time_domain F213 VVV_keyholes_2nd_priority keyholes 33.33333333333333 8

@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Category M3_%regions M3_count
+wide_area F213 Pardo GW 0.0 0
+panchromatic F213 Pardo GW 0.0 0
+time_domain F213 Pardo GW 0.0 0

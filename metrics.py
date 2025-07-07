@@ -345,9 +345,7 @@ def list_pixels_all_regions(region_set):
     in_pixels = []
     for r in region_set:
         in_pixels += list(r.pixels)
-        print(r.name, len(r.pixels))
     in_pixels = list(set(in_pixels))
-    print('Total pixels: ', len(in_pixels))
 
     return in_pixels
 
@@ -506,6 +504,12 @@ def M6_sky_area_nvisits(sim_config, science_cases, survey_config):
                     if rscience.time_domain:
                         science_region_set[rscience.label] = rscience
     print('Number of science regions: ' + str(len(science_region_set)))
+
+    # If no science regions are selected by this point, it means that the science
+    # case wasn't classified as time domain so this metric isn't relevant
+    if len(science_region_set) == 0:
+        print('WARNING: No time domain science cases found in M6, so no output')
+        return None, None
 
     overlap_data = []
     catalog_sums = {}

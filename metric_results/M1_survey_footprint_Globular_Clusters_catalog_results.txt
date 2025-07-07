@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F213 Globular_Clusters 22.614840989399294 23.319327731092436
+panchromatic F213 Globular_Clusters 1.342756183745583 1.680672268907563
+time_domain F213 Globular_Clusters 0.0 0.0

@@ -13,6 +13,7 @@ config/*_regions*.json
 tests/data/*regions*json
 region_data/
 region_data/*regions*json
+trilegal_model_data/trilegal_nir_stellar_density_extinction_256.json
 
 # Ignore temporary files
 config/notes

@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area G150 Pascucci 0.0 0.0
+panchromatic G150 Pascucci 0.0 0.0
+time_domain G150 Pascucci 0.0 0.0

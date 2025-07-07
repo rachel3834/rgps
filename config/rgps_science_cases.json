@@ -2323,7 +2323,7 @@
     "code": "member",
     "topics": []
   },
-  "Globular_Clusters": {
+  "Globular_Clusters_catalog": {
     "F213": [
       {"catalog": "baumgardt_harris_GCs.csv",
         "nvisits": 1,
@@ -2340,7 +2340,7 @@
     "code": "member",
     "topics": []
   },
-  "Open_Clusters": {
+  "Open_Clusters_catalog": {
     "F213": [
       {"catalog": "hunt_openclusters.fits",
         "nvisits": 1,
@@ -2349,7 +2349,7 @@
         "name": "OCs_catalog"}
     ],
     "comment": "All known Open Clusters; used for field selection.  Switched off for metrics due to memory limitations for region calculations",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "open_clusters",

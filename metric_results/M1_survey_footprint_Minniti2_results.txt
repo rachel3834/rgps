@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case M1_%pix M1_%priority
+wide_area F213 Minniti2 100.0 100.0
+panchromatic F213 Minniti2 50.0 50.0
+time_domain F213 Minniti2 0.0 0.0

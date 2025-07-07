@@ -1,7 +1,0 @@
-Survey_strategy Optic Science_case M1_%pix M1_%priority
-wide_area F184 Craig2 76.92307692307693 76.92307692307693
-panchromatic F184 Craig2 30.76923076923077 30.76923076923077
-time_domain F184 Craig2 0.0 0.0
-wide_area F213 Craig2 76.92307692307693 76.92307692307693
-panchromatic F213 Craig2 30.76923076923077 30.76923076923077
-time_domain F213 Craig2 0.0 0.0

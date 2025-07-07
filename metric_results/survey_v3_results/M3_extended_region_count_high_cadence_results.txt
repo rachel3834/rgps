@@ -1,0 +1,10 @@
+Survey_strategy Optic Science_case Category M3_%regions M3_count
+wide_area F062 Kupfer high_cadence 0.0 0
+panchromatic F062 Kupfer high_cadence 25.0 1
+time_domain F062 Kupfer high_cadence 0.0 0
+wide_area F087 Kupfer high_cadence 0.0 0
+panchromatic F087 Kupfer high_cadence 25.0 1
+time_domain F087 Kupfer high_cadence 0.0 0
+wide_area F146 Daylan high_cadence 0.0 0
+panchromatic F146 Daylan high_cadence 0.0 0
+time_domain F146 Daylan high_cadence 0.0 0

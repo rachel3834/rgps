@@ -1,0 +1,10 @@
+Survey_strategy Optic Science_case Category M3_%regions M3_count
+wide_area G150 Ivanov1 stellar_spectra 0.0 0
+panchromatic G150 Ivanov1 stellar_spectra 100.0 1
+time_domain G150 Ivanov1 stellar_spectra 0.0 0
+wide_area G150 Hillenbrand stellar_spectra 0.0 0
+panchromatic G150 Hillenbrand stellar_spectra 50.0 5
+time_domain G150 Hillenbrand stellar_spectra 0.0 0
+wide_area G150 Pal stellar_spectra 0.0 0
+panchromatic G150 Pal stellar_spectra 0.0 0
+time_domain G150 Pal stellar_spectra 0.0 0

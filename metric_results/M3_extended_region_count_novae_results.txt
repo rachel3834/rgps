@@ -1,7 +1,0 @@
-Survey_strategy Optic Science_case Category M3_%regions M3_count
-wide_area F184 Craig2 novae 100.0 1
-panchromatic F184 Craig2 novae 100.0 1
-time_domain F184 Craig2 novae 0.0 0
-wide_area F213 Craig2 novae 100.0 1
-panchromatic F213 Craig2 novae 100.0 1
-time_domain F213 Craig2 novae 0.0 0

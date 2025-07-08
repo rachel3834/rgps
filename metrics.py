@@ -31,6 +31,7 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
     # and compare the HEALpixel maps of the survey footprint with the region map
     # for each science case
     for author, science_strategy in science_cases.items():
+        code = get_science_code(science_strategy)
 
         # Loop over all optical components since the requested footprints can be different
         for optic in sim_config['OPTICAL_COMPONENTS']:
@@ -68,12 +69,12 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
                         else:
                             m1 = 0.0
                             m2 = 0.0
-                        data.append([survey_name, optic, author, m1, m2])
+                        data.append([survey_name, optic, author, code, m1, m2])
 
                     # Otherwise this survey strategy doesn't provide any coverage in this
                     # optic, so return a metric value of zero
                     else:
-                        data.append([survey_name, optic, author, 0.0, 0.0])
+                        data.append([survey_name, optic, author, code, 0.0, 0.0])
 
     data = np.array(data)
 
@@ -82,11 +83,22 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
         Column(name='Survey_strategy', data=data[:,0], dtype='S30'),
         Column(name='Optic', data=data[:,1], dtype='S5'),
         Column(name='Science_case', data=data[:,2], dtype='S30'),
-        Column(name='M1_%pix', data=data[:,3], dtype='f8'),
-        Column(name='M1_%priority', data=data[:,4], dtype='f8')
+        Column(name='Science_code', data=data[:,3], dtype='S30'),
+        Column(name='M1_%pix', data=data[:,4], dtype='f8'),
+        Column(name='M1_%priority', data=data[:,5], dtype='f8')
     ])
 
     return results
+
+def get_science_code(science_strategy):
+    """Function to extract the code assigned to the science case from the region data"""
+
+    code = None
+    for optic, rlist in science_strategy.items():
+        if len(rlist) > 0:
+            code = rlist[0].code
+
+    return code
 
 def M2_star_counts(sim_config, survey_config, stellar_density_data):
     """

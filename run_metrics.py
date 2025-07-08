@@ -13,6 +13,15 @@ def calculate_metrics(args):
     Input:
         args    arguments object    User-specified options
     """
+    # Identify which metrics the user requested to run:
+    all_metrics = {
+        'M1_survey_footprint': metrics.M1_survey_footprint,
+        'M2_star_counts': metrics.M2_star_counts,
+        'M3_extended_region_count': metrics.M3_extended_region_count,
+        'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
+        'M5_sky_area_optical_elements': metrics.M5_sky_area_optical_elements,
+        'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits,
+    }
 
     # Load simulation parameters
     sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
@@ -50,50 +59,40 @@ def calculate_metrics(args):
         raise IOError('Metric ' + args.metric + ' not recognised.  Available metrics are '
                       + ', '.join(all_metrics.keys()))
 
-    # Analysing each requested category in turn,
-    # load the science regions corresponding to each category from file
-    for author in case_list:
-        proposal = science_cases[author]
-        category = proposal['category']
-        region_file = path.join(getcwd(),'region_data','rgps_science_regions_' + author + '.json')
-        if not path.isfile(region_file):
-            raise IOError('Missing science region file: ' + region_file)
+    # Some metrics are calculated over the survey footprint rather than applied to a specific science
+    if args.metric in ['M2_star_counts', 'M4_proper_motion_precision']:
 
-        science_regions = regions.load_regions_from_file(sim_config, region_file)
-        print('Loaded science use cases information for ' + author)
+        if args.metric == 'M2_star_counts':
+            # Load the galatic model stellar density data
+            galactic_model_file = path.join(getcwd(), 'trilegal_model_data',
+                                            'trilegal_nir_stellar_density_extinction_256.json')
+            galactic_model_data = config_utils.read_config(galactic_model_file)
+            stellar_density_data = {optic: np.array(galactic_model_data['healpix_map_' + optic])
+                                    for optic in sim_config['OPTICAL_COMPONENTS']}
 
-        # Identify which metrics the user requested to run:
-        all_metrics = {
-            'M1_survey_footprint': metrics.M1_survey_footprint,
-            'M2_star_counts': metrics.M2_star_counts,
-            'M3_extended_region_count': metrics.M3_extended_region_count,
-            'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
-            'M5_sky_area_optical_elements': metrics.M5_sky_area_optical_elements,
-            'M6_sky_area_nvisits': metrics.M6_sky_area_nvisits,
-        }
+            results = metrics.M2_star_counts(sim_config, survey_regions, stellar_density_data)
 
-        # Some metrics are calculated over the survey footprint rather than applied to a specific science
-        if args.metric in ['M2_star_counts', 'M4_proper_motion_precision']:
+        elif args.metric == 'M4_proper_motion_precision':
+            results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
 
-            if args.metric == 'M2_star_counts':
-                # Load the galatic model stellar density data
-                galactic_model_file = path.join(getcwd(), 'trilegal_model_data',
-                                                'trilegal_nir_stellar_density_extinction_256.json')
-                galactic_model_data = config_utils.read_config(galactic_model_file)
-                stellar_density_data = {optic: np.array(galactic_model_data['healpix_map_' + optic])
-                                        for optic in sim_config['OPTICAL_COMPONENTS']}
+        # Output results:
+        output_file = path.join(args.data_dir, args.metric + '_results.txt')
+        results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
-                results = metrics.M2_star_counts(sim_config, survey_regions, stellar_density_data)
+    # For metrics that are calculated for each science case, we loop over each case in turn
+    # loading the science regions corresponding to each category from file
+    else:
+        for author in case_list:
+            proposal = science_cases[author]
+            category = proposal['category']
+            region_file = path.join(getcwd(),'region_data','rgps_science_regions_' + author + '.json')
+            if not path.isfile(region_file):
+                raise IOError('Missing science region file: ' + region_file)
 
-            elif args.metric == 'M4_proper_motion_precision':
-                results = metrics.M4_proper_motion_precision(sim_config, survey_regions)
+            science_regions = regions.load_regions_from_file(sim_config, region_file)
+            print('Loaded science use cases information for ' + author)
 
-            # Output results:
-            output_file = path.join(args.data_dir, metric_name + '_results.txt')
-            results.write(output_file, format='ascii', delimiter=' ', overwrite=True)
-
-        # Calculate metrics that are applied to specific science cases
-        else:
+            # Calculate metrics that are applied to specific science cases
             for metric_name, metric_func in metric_set.items():
                 print('Calculating metric ' + metric_name + ' for all selected science cases...')
 

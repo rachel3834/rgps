@@ -1,4 +1,4 @@
-Survey_strategy Optic Science_case M1_%pix M1_%priority
-wide_area F213 VVV_keyholes_1st_priority 83.20610687022901 83.20610687022901
-panchromatic F213 VVV_keyholes_1st_priority 16.030534351145036 16.030534351145036
-time_domain F213 VVV_keyholes_1st_priority 3.816793893129771 3.816793893129771
+Survey_strategy Optic Science_case Science_code M1_%pix M1_%priority
+wide_area F213 VVV_keyholes_1st_priority SP35 83.20610687022901 83.20610687022901
+deep_spec F213 VVV_keyholes_1st_priority SP35 16.030534351145036 16.030534351145036
+time_domain F213 VVV_keyholes_1st_priority SP35 3.816793893129771 3.816793893129771

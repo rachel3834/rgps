@@ -1,13 +1,13 @@
-Survey_strategy Optic Science_case M1_%pix M1_%priority
-wide_area F129 Lim1 0.0 0.0
-panchromatic F129 Lim1 0.0 0.0
-time_domain F129 Lim1 0.0 0.0
-wide_area F158 Lim1 0.0 0.0
-panchromatic F158 Lim1 0.0 0.0
-time_domain F158 Lim1 0.0 0.0
-wide_area F213 Lim1 0.0 0.0
-panchromatic F213 Lim1 0.0 0.0
-time_domain F213 Lim1 0.0 0.0
-wide_area G150 Lim1 0.0 0.0
-panchromatic G150 Lim1 0.0 0.0
-time_domain G150 Lim1 0.0 0.0
+Survey_strategy Optic Science_case Science_code M1_%pix M1_%priority
+wide_area F129 Lim1 SP11 0.0 0.0
+deep_spec F129 Lim1 SP11 0.0 0.0
+time_domain F129 Lim1 SP11 0.0 0.0
+wide_area F158 Lim1 SP11 0.0 0.0
+deep_spec F158 Lim1 SP11 0.0 0.0
+time_domain F158 Lim1 SP11 0.0 0.0
+wide_area F213 Lim1 SP11 0.0 0.0
+deep_spec F213 Lim1 SP11 0.0 0.0
+time_domain F213 Lim1 SP11 0.0 0.0
+wide_area G150 Lim1 SP11 0.0 0.0
+deep_spec G150 Lim1 SP11 0.0 0.0
+time_domain G150 Lim1 SP11 0.0 0.0

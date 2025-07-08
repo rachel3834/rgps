@@ -39,7 +39,7 @@ def build_regions(args):
                 if str(info['category']).lower() == category and info['ready_for_use']:
                     survey_configs[category][author] = info
 
-    elif 'each' in str(args.use_case).lower():
+    elif str(args.use_case).lower() in ['each']:
         survey_configs = {x: {} for x in author_list}
 
         for author in author_list:
@@ -64,7 +64,7 @@ def build_regions(args):
 
     else:
         if science_cases[args.use_case]['ready_for_use']:
-            survey_configs['science_case'] = {args.use_case: science_cases[args.use_case]}
+            survey_configs[args.use_case] = {args.use_case: science_cases[args.use_case]}
         else:
             raise IOError('Science case ' + args.use_case + ' flagged as not ready for use')
 

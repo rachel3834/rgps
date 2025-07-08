@@ -1,7 +1,7 @@
-Survey_strategy Optic Science_case M1_%pix M1_%priority
-wide_area F158 Freeman 24.646128226477934 24.646128226477934
-panchromatic F158 Freeman 0.0 0.0
-time_domain F158 Freeman 4.8293089092422985 4.8293089092422985
-wide_area F213 Freeman 24.646128226477934 24.646128226477934
-panchromatic F213 Freeman 0.0 0.0
-time_domain F213 Freeman 4.8293089092422985 4.8293089092422985
+Survey_strategy Optic Science_case Science_code M1_%pix M1_%priority
+wide_area F158 Freeman SP13 24.646128226477934 24.646128226477934
+deep_spec F158 Freeman SP13 0.0 0.0
+time_domain F158 Freeman SP13 4.8293089092422985 4.8293089092422985
+wide_area F213 Freeman SP13 24.646128226477934 24.646128226477934
+deep_spec F213 Freeman SP13 0.0 0.0
+time_domain F213 Freeman SP13 4.8293089092422985 4.8293089092422985

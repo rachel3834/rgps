@@ -324,9 +324,10 @@
         "category": "Survey",
         "time_domain": "False",
         "extended_object_catalog": "False",
-        "topics": ["Wide area survey"]
+        "topics": ["Wide area survey"],
+        "code": "survey"
     },
-    "panchromatic": {
+    "deep_spec": {
         "F062": [
             {
                 "pointing": [-73.8, -0.2, 0.3],
@@ -1521,7 +1522,8 @@
         "category": "Survey",
         "time_domain": "False",
         "extended_object_catalog": "False",
-        "topics": ["Panchromatic fields"]
+        "topics": ["Deep/spectroscopic fields"],
+        "code": "survey"
     },
     "time_domain": {
         "F062": [
@@ -2170,6 +2172,7 @@
         "category": "Survey",
         "time_domain": "True",
         "extended_object_catalog": "False",
-        "topics": ["Time Domain science"]
+        "topics": ["Time Domain science"],
+        "code": "survey"
     }
 }

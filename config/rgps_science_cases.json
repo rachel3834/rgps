@@ -2349,7 +2349,7 @@
         "name": "OCs_catalog"}
     ],
     "comment": "All known Open Clusters; used for field selection.  Switched off for metrics due to memory limitations for region calculations",
-    "ready_for_use": "True",
+    "ready_for_use": "False",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "open_clusters",

@@ -1,13 +1,13 @@
-Survey_strategy Optic Science_case M1_%pix M1_%priority
-wide_area F106 Saydjari 0.0 0.0
-panchromatic F106 Saydjari 6.722689075630252 6.722689075630252
-time_domain F106 Saydjari 0.0 0.0
-wide_area F129 Saydjari 70.58823529411765 70.58823529411765
-panchromatic F129 Saydjari 6.722689075630252 6.722689075630252
-time_domain F129 Saydjari 0.0 0.0
-wide_area F158 Saydjari 70.58823529411765 70.58823529411765
-panchromatic F158 Saydjari 6.722689075630252 6.722689075630252
-time_domain F158 Saydjari 0.0 0.0
-wide_area F184 Saydjari 70.58823529411765 70.58823529411765
-panchromatic F184 Saydjari 6.722689075630252 6.722689075630252
-time_domain F184 Saydjari 0.0 0.0
+Survey_strategy Optic Science_case Science_code M1_%pix M1_%priority
+wide_area F106 Saydjari SP43 0.0 0.0
+deep_spec F106 Saydjari SP43 6.722689075630252 6.722689075630252
+time_domain F106 Saydjari SP43 0.0 0.0
+wide_area F129 Saydjari SP43 70.58823529411765 70.58823529411765
+deep_spec F129 Saydjari SP43 6.722689075630252 6.722689075630252
+time_domain F129 Saydjari SP43 0.0 0.0
+wide_area F158 Saydjari SP43 70.58823529411765 70.58823529411765
+deep_spec F158 Saydjari SP43 6.722689075630252 6.722689075630252
+time_domain F158 Saydjari SP43 0.0 0.0
+wide_area F184 Saydjari SP43 70.58823529411765 70.58823529411765
+deep_spec F184 Saydjari SP43 6.722689075630252 6.722689075630252
+time_domain F184 Saydjari SP43 0.0 0.0

@@ -14,6 +14,7 @@ tests/data/*regions*json
 region_data/
 region_data/*regions*json
 trilegal_model_data/trilegal_nir_stellar_density_extinction_256.json
+config/healpix_grid_new.fits
 
 # Ignore temporary files
 config/notes

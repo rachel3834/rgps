@@ -1,6 +1,5 @@
 from os import getcwd, path
 import survey_footprints
-import regions
 from mw_plot import MWSkyMap
 from astropy_healpix import HEALPix
 from astropy import units as u
@@ -622,9 +621,9 @@ def calc_healpixel_regions(sim_config, requested_regions):
         regions_for_optic = []
         for box in region_list:
             if 'catalog' in box.keys():
-                region_set = regions.create_region_set(sim_config, box)
+                region_set = create_region_set(sim_config, box)
             else:
-                region_set = [regions.create_region(sim_config, box)]
+                region_set = [create_region(sim_config, box)]
 
             for r in region_set:
                 # If the region is valid, the list of included pixels will be non-zero.
@@ -660,7 +659,7 @@ def combine_regions_per_filter(desired_regions):
     # In order to use the plotting method of the CelestialRegion object, we can create separate regions for the combined maps
     for optic, region_list in desired_regions.items():
         if len(region_list) > 0:
-            r_merge = regions.combine_regions(region_list)
+            r_merge = combine_regions(region_list)
             r_merge.optic = optic
             r_merge.label = 'Combined survey footprint'
 

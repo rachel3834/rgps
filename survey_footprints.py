@@ -7,32 +7,32 @@ from astropy.io import fits
 import config_utils
 import regions
 
-def load_survey_footprints(sim_config, root_dir, optic):
-    """
-    Function to load a set of pre-defined survey footprints in the form of HEALpixel maps
-
-    :param root_dir:
-    :return: survey_footprints dict
-    """
+def load_survey_footprint(sim_config, root_dir, footprint_id, optic):
+    """Function to load an individual survey footprint"""
 
     survey_footprints = {}
 
     # Load Rubin Galactic Plane survey footprint - EQUATORIAL COORDS
-    survey_footprints['rubin_galactic_plane'] = load_rubin_galplane_footprint(sim_config, root_dir)
+    if footprint_id == 'rubin_galactic_plane':
+        survey_footprints['rubin_galactic_plane'] = load_rubin_galplane_footprint(sim_config, root_dir)
 
     # Load the DECaPS2 survey footprint - WARNING: Gal Coords
-    survey_footprints['DECaPS2'] = load_DECaPS2_footprint(sim_config)
+    elif footprint_id == 'DECaPS2':
+        survey_footprints['DECaPS2'] = load_DECaPS2_footprint(sim_config)
 
     # Load the BDBS survey footprint - EQUATORIAL COORDS
-    survey_footprints['BDBS'] = load_BDBS_footprint(sim_config, root_dir)
+    elif footprint_id == 'BDBS':
+        survey_footprints['BDBS'] = load_BDBS_footprint(sim_config, root_dir)
 
     # Load the Baade's Window survey footprint - WARNING: Gal Coords
-    survey_footprints['Baade'] = load_Baade_footprint(sim_config)
+    elif footprint_id == 'Baade':
+        survey_footprints['Baade'] = load_Baade_footprint(sim_config)
 
     # Load stellar density map - EQUATORIAL COORDS
-    survey_footprints['stellar_density'] = load_stellar_density_footprint(
-        root_dir, sim_config, optic
-    )
+    elif footprint_id == 'stellar_density':
+        survey_footprints['stellar_density'] = load_stellar_density_footprint(
+            root_dir, sim_config, optic
+        )
 
     return survey_footprints
 
@@ -346,5 +346,6 @@ if __name__ == '__main__':
     root_dir = './'
     sim_config = config_utils.read_config(path.join(getcwd(), 'config', 'sim_config.json'))
     optic = 'F213'
-    survey_footprints = load_survey_footprints(sim_config, root_dir, optic)
+    footprint_id = 'stellar_density'
+    survey_footprints = load_survey_footprint(sim_config, root_dir, footprint_id, optic)
     print(survey_footprints)

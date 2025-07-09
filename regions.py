@@ -390,9 +390,12 @@ def create_region(sim_config, params):
     # a pre-existing configuration file.
     elif 'survey_footprint' in params.keys():
 
-        ### MAKE THIS MORE EFFICIENT AND USE OPTIC
-        survey_regions = survey_footprints.load_survey_footprints(sim_config, getcwd())
-        XXX
+        survey_regions = survey_footprints.load_survey_footprint(
+            sim_config,
+            getcwd(),
+            params['survey_footprint'],
+            params['optic']
+        )
 
         r = CelestialRegion()
         r.label = params['label']

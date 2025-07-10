@@ -1,0 +1,3 @@
+"Deep/spectro/TD field" Science_case Science_code Science_topics
+Deep_W40 Paladini2 WP08 YSO,Exoplanets
+TDS_Serpens_W40 Paladini2 WP08 YSO,Exoplanets

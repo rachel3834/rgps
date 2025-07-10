@@ -1,0 +1,12 @@
+"Deep/spectro/TD field" Science_case Science_code Science_topics
+Deep_W40 De_Furio SP19 SFR
+Deep_Window_319.5-0.2 De_Furio SP19 SFR
+Deep_G333 De_Furio SP19 SFR
+Deep_ASSC_85 De_Furio SP19 SFR
+Deep_Teutsch_84 De_Furio SP19 SFR
+Deep_NGC6357_Lobster De_Furio SP19 SFR
+Deep_Trumpler_35 De_Furio SP19 SFR
+TDS_Galactic_Center_Q4 De_Furio SP19 SFR
+TDS_NGC6334_6357 De_Furio SP19 SFR
+TDS_Serpens_W40 De_Furio SP19 SFR
+TDS_W43 De_Furio SP19 SFR

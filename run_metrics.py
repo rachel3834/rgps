@@ -16,6 +16,7 @@ def calculate_metrics(args):
     # Identify which metrics the user requested to run:
     all_metrics = {
         'M1_survey_footprint': metrics.M1_survey_footprint,
+        'M1a_ddf_footprint': metrics.M1a_ddf_footprint,
         'M2_star_counts': metrics.M2_star_counts,
         'M3_extended_region_count': metrics.M3_extended_region_count,
         'M4_proper_motion_precision': metrics.M4_proper_motion_precision,
@@ -98,6 +99,7 @@ def calculate_metrics(args):
 
                 if metric_name in [
                     'M1_survey_footprint',
+                    'M1a_ddf_footprint',
                     'M5_sky_area_optical_elements',
                 ]:
                     results = metric_func(sim_config, science_regions, survey_regions)

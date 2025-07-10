@@ -1,0 +1,7 @@
+"Deep/spectro/TD field" Science_case Science_code Science_topics
+Deep_Window_319.5-0.2 VVV_keyholes_2nd_priority SP35 Keyholes
+Deep_Window_355.0-0.3 VVV_keyholes_2nd_priority SP35 Keyholes
+Deep_M17_Omega VVV_keyholes_2nd_priority SP35 Keyholes
+TDS_Galactic_Center_Q4 VVV_keyholes_2nd_priority SP35 Keyholes
+TDS_Galactic_Center_Q1 VVV_keyholes_2nd_priority SP35 Keyholes
+TDS_Carina VVV_keyholes_2nd_priority SP35 Keyholes

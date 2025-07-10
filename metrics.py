@@ -90,6 +90,77 @@ def M1_survey_footprint(sim_config, science_cases, survey_config):
 
     return results
 
+def M1a_ddf_footprint(sim_config, science_cases, survey_config):
+    """
+    Metric to calculate how well the deep/spectroscopic and time domain fields defined cover the
+    survey footprint recommended in White Papers/Science Pitches.
+
+    This metric makes use of the CelestialRegion.region_map pre-computed for all science cases.
+    This map of HEALpixel priority for the science in question is compared with the region_maps of the
+    survey definition for each optical element requested by the science case.
+
+    The metric values returned are:
+        percent_map: % of pixels in the desired region included in survey design’s footprint per filter
+        priority_map: % of the summed pixel priority values in the desired region included
+                        in survey design’s footprint per filter
+
+    Parameters:
+        sim_config    dict   General configuration parameters common to the whole simulation
+        science_cases dict   CelestialRegions representing the community-proposed science cases
+        survey_config dict   Description of the proposed survey configuration
+
+    Returns:
+        results        astropy.table   Metric value calculated for all science cases
+    """
+
+    # Make a list of the deep/spectroscopic and time domain regions; since these are covered in
+    # all filters, we can use the set from the F213 config
+    select_fields = [r for r in survey_config['deep_spec']['F213']]
+    select_fields += [r for r in survey_config['time_domain']['F213']]
+
+    # For each science case, compare the HEALpixel maps of the survey footprint with the region map
+    data = []
+    for author, science_strategy in science_cases.items():
+        code = get_science_code(science_strategy)
+        topics = get_science_topics(science_strategy)
+
+        # List all regions requested by this science case in any filter;
+        # list all HEALpixels within those regions
+        case_regions = []
+        for optic in sim_config['OPTICAL_COMPONENTS']:
+            if len(science_strategy[optic]) > 0:
+                case_regions += science_strategy[optic]
+        science_pixels = list_pixels_all_regions(case_regions)
+
+        # Test whether any of the deep/spectroscopic fields overlap with
+        # the requested science regions
+        for select_region in select_fields:
+            common_pixels = list(set(science_pixels).intersection(set(select_region.pixels)))
+
+            if len(common_pixels) > 0:
+                data.append([select_region.name, author, code, topics])
+
+    data = np.array(data)
+
+    # Return a table of the metric results
+    if len(data) > 0:
+        results = Table([
+            Column(name='Deep/spectro/TD field', data=data[:,0], dtype='S30'),
+            Column(name='Science_case', data=data[:,1], dtype='S30'),
+            Column(name='Science_code', data=data[:,2], dtype='S30'),
+            Column(name='Science_topics', data=data[:,3], dtype='S100'),
+        ])
+    else:
+        results = Table([
+            Column(name='Deep/spectro/TD field', data=[], dtype='S30'),
+            Column(name='Science_case', data=[], dtype='S30'),
+            Column(name='Science_code', data=[], dtype='S30'),
+            Column(name='Science_topics', data=[], dtype='S100'),
+        ])
+
+    return results
+
+
 def get_science_code(science_strategy):
     """Function to extract the code assigned to the science case from the region data"""
 
@@ -99,6 +170,17 @@ def get_science_code(science_strategy):
             code = rlist[0].code
 
     return code
+
+def get_science_topics(science_strategy):
+    """Function to extract the code assigned to the science case from the region data"""
+
+    topics = None
+    for optic, rlist in science_strategy.items():
+        if len(rlist) > 0:
+            topics = rlist[0].topics
+    topics = ','.join(topics)
+
+    return topics
 
 def M2_star_counts(sim_config, survey_config, stellar_density_data):
     """

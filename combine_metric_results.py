@@ -18,7 +18,8 @@ def combine_results_tables(args):
                 metric_table = Table.read(results_file, format='ascii')
             else:
                 results = Table.read(results_file, format='ascii')
-                metric_table = vstack([metric_table, results])
+                if len(results) > 0:
+                    metric_table = vstack([metric_table, results])
     # Output
     output_file = path.join(args.data_dir, args.metric+'_combined_results.txt')
     metric_table.write(output_file, format='ascii', delimiter=' ', overwrite=True)

@@ -1,0 +1,6 @@
+"Deep/spectro/TD field" Science_case Science_code Science_topics
+Deep_NGC3324_Carina Minniti SP16 FFP
+Deep_Acrux Minniti SP16 FFP
+Deep_NGC5269_5281 Minniti SP16 FFP
+Deep_Window_319.5-0.2 Minniti SP16 FFP
+TDS_Carina Minniti SP16 FFP

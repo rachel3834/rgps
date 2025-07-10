@@ -1,0 +1,7 @@
+"Deep/spectro/TD field" Science_case Science_code Science_topics
+Deep_NGC6357_Lobster Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+Deep_Window_355.0-0.3 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+Deep_VVV_CL001_UKS_1 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+TDS_Galactic_Center_Q4 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+TDS_Galactic_Center_Q1 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+TDS_NGC6334_6357 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"

@@ -1,0 +1,3 @@
+"Deep/spectro/TD field" Science_case Science_code Science_topics
+TDS_Galactic_Center_Q4 Freeman SP13 "RR Lyrae"
+TDS_Galactic_Center_Q1 Freeman SP13 "RR Lyrae"

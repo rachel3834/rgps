@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F213 VVV_keyholes_1st_priority SP35 keyholes 90.9090909090909 10
+deep_spec F213 VVV_keyholes_1st_priority SP35 keyholes 18.181818181818183 2
+time_domain F213 VVV_keyholes_1st_priority SP35 keyholes 9.090909090909092 1

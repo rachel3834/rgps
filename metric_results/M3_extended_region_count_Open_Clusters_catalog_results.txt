@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F213 Open_Clusters_catalog member open_clusters 25.51974326775499 1829
+deep_spec F213 Open_Clusters_catalog member open_clusters 2.2743128226594114 163
+time_domain F213 Open_Clusters_catalog member open_clusters 1.9115389981861308 137

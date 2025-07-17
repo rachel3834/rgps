@@ -1,0 +1,10 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F106 Gallart SP36 wide_area 100.0 1
+deep_spec F106 Gallart SP36 wide_area 100.0 1
+time_domain F106 Gallart SP36 wide_area 100.0 1
+wide_area F129 Gallart SP36 wide_area 100.0 1
+deep_spec F129 Gallart SP36 wide_area 100.0 1
+time_domain F129 Gallart SP36 wide_area 100.0 1
+wide_area F213 Gallart SP36 wide_area 100.0 1
+deep_spec F213 Gallart SP36 wide_area 100.0 1
+time_domain F213 Gallart SP36 wide_area 100.0 1

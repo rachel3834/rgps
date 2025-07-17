@@ -253,7 +253,7 @@
     "category": "variable_stars",
     "ready_for_use": "False",
     "extended_object_catalog": "False",
-    "code": "SP02",
+    "code": "SP03",
     "topics": ["Variable stars"]
   },
   "Lodieu": {
@@ -493,7 +493,7 @@
     "category": "globular_clusters",
     "ready_for_use": "True",
     "extended_object_catalog": "False",
-    "code": "SP02",
+    "code": "SP03",
     "topics": ["Brown Dwarfs", "GC"]
   },
   "Soam": {
@@ -2338,7 +2338,7 @@
     "category": "globular_clusters",
     "extended_object_catalog": "True",
     "code": "member",
-    "topics": []
+    "topics": ["GC"]
   },
   "Open_Clusters_catalog": {
     "F213": [
@@ -2349,13 +2349,13 @@
         "name": "OCs_catalog"}
     ],
     "comment": "All known Open Clusters; used for field selection.  Switched off for metrics due to memory limitations for region calculations",
-    "ready_for_use": "False",
+    "ready_for_use": "True",
     "proper_motions": "False",
     "time_domain": "False",
     "category": "open_clusters",
     "extended_object_catalog": "True",
     "code": "member",
-    "topics": []
+    "topics": ["OC"]
   },
   "VVV_keyholes_1st_priority": {
     "F213": [

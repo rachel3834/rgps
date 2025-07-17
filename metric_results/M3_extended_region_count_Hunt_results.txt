@@ -1,0 +1,13 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F106 Hunt SP05 wide_area 100.0 1
+deep_spec F106 Hunt SP05 wide_area 100.0 1
+time_domain F106 Hunt SP05 wide_area 100.0 1
+wide_area F129 Hunt SP05 wide_area 100.0 1
+deep_spec F129 Hunt SP05 wide_area 100.0 1
+time_domain F129 Hunt SP05 wide_area 100.0 1
+wide_area F158 Hunt SP05 wide_area 100.0 1
+deep_spec F158 Hunt SP05 wide_area 100.0 1
+time_domain F158 Hunt SP05 wide_area 100.0 1
+wide_area F213 Hunt SP05 wide_area 100.0 1
+deep_spec F213 Hunt SP05 wide_area 100.0 1
+time_domain F213 Hunt SP05 wide_area 100.0 1

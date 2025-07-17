@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area G150 Pascucci SP37 SFR 0.0 0
+deep_spec G150 Pascucci SP37 SFR 0.0 0
+time_domain G150 Pascucci SP37 SFR 0.0 0

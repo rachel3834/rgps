@@ -1,0 +1,10 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F158 Kuhn SP42 SFR 50.0 1
+deep_spec F158 Kuhn SP42 SFR 0.0 0
+time_domain F158 Kuhn SP42 SFR 50.0 1
+wide_area F184 Kuhn SP42 SFR 50.0 1
+deep_spec F184 Kuhn SP42 SFR 0.0 0
+time_domain F184 Kuhn SP42 SFR 50.0 1
+wide_area F213 Kuhn SP42 SFR 50.0 1
+deep_spec F213 Kuhn SP42 SFR 0.0 0
+time_domain F213 Kuhn SP42 SFR 50.0 1

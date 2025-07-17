@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F184 DAmmando SP12 AGN 5.896805896805897 24
+deep_spec F184 DAmmando SP12 AGN 0.4914004914004914 2
+time_domain F184 DAmmando SP12 AGN 0.2457002457002457 1

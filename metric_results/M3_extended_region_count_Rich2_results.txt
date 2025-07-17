@@ -1,0 +1,13 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F184 Rich2 "SP31, WP04" galactic_center 100.0 2
+deep_spec F184 Rich2 "SP31, WP04" galactic_center 0.0 0
+time_domain F184 Rich2 "SP31, WP04" galactic_center 100.0 2
+wide_area F213 Rich2 "SP31, WP04" galactic_center 100.0 2
+deep_spec F213 Rich2 "SP31, WP04" galactic_center 0.0 0
+time_domain F213 Rich2 "SP31, WP04" galactic_center 100.0 2
+wide_area G150 Rich2 "SP31, WP04" galactic_center 0.0 0
+deep_spec G150 Rich2 "SP31, WP04" galactic_center 0.0 0
+time_domain G150 Rich2 "SP31, WP04" galactic_center 0.0 0
+wide_area P127 Rich2 "SP31, WP04" galactic_center 0.0 0
+deep_spec P127 Rich2 "SP31, WP04" galactic_center 0.0 0
+time_domain P127 Rich2 "SP31, WP04" galactic_center 0.0 0

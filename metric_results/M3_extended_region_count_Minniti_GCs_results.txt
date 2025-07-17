@@ -1,0 +1,10 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F129 Minniti_GCs SP49 wide_area 100.0 1
+deep_spec F129 Minniti_GCs SP49 wide_area 100.0 1
+time_domain F129 Minniti_GCs SP49 wide_area 100.0 1
+wide_area F158 Minniti_GCs SP49 wide_area 100.0 1
+deep_spec F158 Minniti_GCs SP49 wide_area 100.0 1
+time_domain F158 Minniti_GCs SP49 wide_area 100.0 1
+wide_area F213 Minniti_GCs SP49 wide_area 100.0 1
+deep_spec F213 Minniti_GCs SP49 wide_area 100.0 1
+time_domain F213 Minniti_GCs SP49 wide_area 100.0 1

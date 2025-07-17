@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F213 Globular_Clusters_catalog member globular_clusters 24.528301886792452 39
+deep_spec F213 Globular_Clusters_catalog member globular_clusters 1.8867924528301887 3
+time_domain F213 Globular_Clusters_catalog member globular_clusters 0.0 0

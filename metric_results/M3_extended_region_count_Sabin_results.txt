@@ -1,0 +1,13 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F062 Sabin SP47 wide_area 0.0 0
+deep_spec F062 Sabin SP47 wide_area 100.0 2
+time_domain F062 Sabin SP47 wide_area 100.0 2
+wide_area F129 Sabin SP47 wide_area 100.0 2
+deep_spec F129 Sabin SP47 wide_area 100.0 2
+time_domain F129 Sabin SP47 wide_area 100.0 2
+wide_area F158 Sabin SP47 wide_area 100.0 2
+deep_spec F158 Sabin SP47 wide_area 100.0 2
+time_domain F158 Sabin SP47 wide_area 100.0 2
+wide_area F213 Sabin SP47 wide_area 100.0 2
+deep_spec F213 Sabin SP47 wide_area 100.0 2
+time_domain F213 Sabin SP47 wide_area 100.0 2

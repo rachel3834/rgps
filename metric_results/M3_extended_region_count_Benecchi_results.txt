@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F146 Benecchi WP05 solar_system 0.0 0
+deep_spec F146 Benecchi WP05 solar_system 0.0 0
+time_domain F146 Benecchi WP05 solar_system 0.0 0

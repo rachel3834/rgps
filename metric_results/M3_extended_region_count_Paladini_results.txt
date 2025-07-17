@@ -1,0 +1,13 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F129 Paladini WP08 wide_area 100.0 3
+deep_spec F129 Paladini WP08 wide_area 100.0 3
+time_domain F129 Paladini WP08 wide_area 66.66666666666666 2
+wide_area F158 Paladini WP08 wide_area 100.0 3
+deep_spec F158 Paladini WP08 wide_area 100.0 3
+time_domain F158 Paladini WP08 wide_area 66.66666666666666 2
+wide_area F184 Paladini WP08 wide_area 100.0 3
+deep_spec F184 Paladini WP08 wide_area 100.0 3
+time_domain F184 Paladini WP08 wide_area 66.66666666666666 2
+wide_area F213 Paladini WP08 wide_area 100.0 3
+deep_spec F213 Paladini WP08 wide_area 100.0 3
+time_domain F213 Paladini WP08 wide_area 66.66666666666666 2

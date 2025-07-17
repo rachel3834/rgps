@@ -1,0 +1,7 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F087 Kruszynska WP07 wide_area 0.0 0
+deep_spec F087 Kruszynska WP07 wide_area 100.0 1
+time_domain F087 Kruszynska WP07 wide_area 100.0 1
+wide_area F213 Kruszynska WP07 wide_area 100.0 1
+deep_spec F213 Kruszynska WP07 wide_area 100.0 1
+time_domain F213 Kruszynska WP07 wide_area 100.0 1

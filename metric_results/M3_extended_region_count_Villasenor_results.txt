@@ -1,0 +1,10 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F062 Villasenor SP15 molecular_clouds 0.0 0
+deep_spec F062 Villasenor SP15 molecular_clouds 25.0 11
+time_domain F062 Villasenor SP15 molecular_clouds 15.909090909090908 7
+wide_area F129 Villasenor SP15 molecular_clouds 56.81818181818182 25
+deep_spec F129 Villasenor SP15 molecular_clouds 27.27272727272727 12
+time_domain F129 Villasenor SP15 molecular_clouds 18.181818181818183 8
+wide_area F213 Villasenor SP15 molecular_clouds 56.81818181818182 25
+deep_spec F213 Villasenor SP15 molecular_clouds 27.27272727272727 12
+time_domain F213 Villasenor SP15 molecular_clouds 18.181818181818183 8

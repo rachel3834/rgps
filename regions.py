@@ -13,14 +13,13 @@ import json
 import copy
 
 OPTICAL_COMPONENTS = ['F087', 'F106', 'F129', 'F158', 'F184', 'F213', 'F146', 'G150', 'P127']
-NSIDE = 256
 
 class CelestialRegion:
     """Class to describe a region on sky, including its position and
     extent for on-sky visualization, and cadence parameters for repeated visits
     """
 
-    def __init__(self, params={}):
+    def __init__(self, NSIDE, params={}):
         self.label = None
         self.name = None
         self.optic = None
@@ -82,12 +81,13 @@ class CelestialRegion:
         self.pixels = np.where(rot_map > 0.0)[0]
 
         # Rotate the pixel priorities
-        self.pixel_priority = rot_healpixel_map(
-            self.pixel_priority,
-            self.NSIDE,
-            self.NPIX,
-            transform=['G', 'C']
-        )
+        if type(self.pixel_priority) == type(np.zeros(1)):
+            self.pixel_priority = rot_healpixel_map(
+                self.pixel_priority,
+                self.NSIDE,
+                self.NPIX,
+                transform=['G', 'C']
+            )
 
         # Rotate the region map array if there is one
         if type(self.region_map) == type(np.zeros(1)):
@@ -221,6 +221,7 @@ class CelestialRegion:
         else:
             mw1.title = self.label + ' ' + self.optic
         s = self.pixels_to_skycoords()
+        s = s.transform_to('icrs')
         mw1.scatter(s.ra.deg * u.deg, s.dec.deg * u.deg, c=plot_color, s=5, alpha=plot_alpha)
         plt.rcParams.update({'font.size': 22})
 
@@ -380,7 +381,7 @@ def create_region(sim_config, params):
             rparams['category'] = params['category']
         if 'time_domain' in params.keys():
             rparams['time_domain'] = params['time_domain']
-        r = CelestialRegion(rparams)
+        r = CelestialRegion(sim_config['NSIDE'], rparams)
 
         # Calculate which HEALpixels belong to this region.
         # This method creates the pixels list attribute
@@ -397,7 +398,7 @@ def create_region(sim_config, params):
             params['optic']
         )
 
-        r = CelestialRegion()
+        r = CelestialRegion(sim_config['NSIDE'])
         r.label = params['label']
         r.name = params['name']
         r.optic = params['optic']
@@ -436,7 +437,7 @@ def create_region(sim_config, params):
                 rparams['category'] = params['category']
             if 'time_domain' in params.keys():
                 rparams['time_domain'] = params['time_domain']
-            r = CelestialRegion(rparams)
+            r = CelestialRegion(sim_config['NSIDE'], rparams)
         except KeyError:
             raise KeyError('Input region configuration missing necessary entries: ' + repr(params))
 
@@ -461,12 +462,13 @@ def create_region(sim_config, params):
 
     return r
 
-def create_region_from_json(params, rotate_map=False):
+def create_region_from_json(NSIDE, params, rotate_map=False):
 
-    r = CelestialRegion(params)
+    r = CelestialRegion(NSIDE, params)
     r.pixels = np.array(r.pixels, dtype='int')
-    r.pixel_priority = np.array(r.pixel_priority, dtype='float')
-    r.make_map()
+    if not np.isnan(r.pixel_priority).all():
+        r.pixel_priority = np.array(r.pixel_priority, dtype='float')
+        r.make_map()
 
     # Convert map HEALpixel coordinates to Galactic
     # In normal operation, pre-built HEALpixel maps should already be in Galactic coordinates
@@ -503,8 +505,22 @@ def create_region_set(sim_config, params):
             pointing['time_domain'] = params['time_domain']
         r = create_region(sim_config, pointing)
         region_list.append(r)
+        print(i, r, r.NSIDE, len(pointing_set))
 
     return region_list
+
+def merge_string_param(par, r_merge, r):
+    val = getattr(r_merge, par)
+    new_val = getattr(r, par)
+
+    if len(val) == 0:
+        val = getattr(r, par)
+    elif new_val not in val:
+        val = val + '_' + new_val
+
+    setattr(r_merge, par, val)
+
+    return r_merge
 
 def combine_regions(region_list):
     """
@@ -516,20 +532,7 @@ def combine_regions(region_list):
     :return: r_merge: CelestialRegion of the combined footprint
     """
 
-    def merge_string_param(par, r_merge, r):
-        val = getattr(r_merge, par)
-        new_val = getattr(r, par)
-
-        if len(val) == 0:
-            val = getattr(r, par)
-        elif new_val not in val:
-            val = val + '_' + new_val
-
-        setattr(r_merge, par, val)
-
-        return r_merge
-
-    r_merge = CelestialRegion()
+    r_merge = CelestialRegion(region_list[0].NSIDE)
     r_merge.label = ''
     r_merge.optic = ''
 
@@ -549,6 +552,40 @@ def combine_regions(region_list):
     uniq = set()
     uniq_pixels = [int(x) for x in pixels if x not in uniq and (uniq.add(x) or True)]
     r_merge.pixels = uniq_pixels
+
+    return r_merge
+
+def combine_regions_pixels(region_list):
+    """
+    Function to combine a list of pixels covered by CelestialRegions into a single object, without
+    touching the region maps.
+    This is designed to merge multiple regions that are defined separately for whatever reason.
+
+    :param region_list: list of CelestialRegions with valid pixel maps
+
+    :return: r_merge: CelestialRegion of the combined footprint
+    """
+
+    r_merge = CelestialRegion(region_list[0].NSIDE)
+    r_merge.label = ''
+    r_merge.optic = ''
+
+    pixels = np.array([], dtype='int')
+
+    for r in region_list:
+        r_merge = merge_string_param('label', r_merge, r)
+        r_merge = merge_string_param('optic', r_merge, r)
+        pixels = np.concatenate((pixels, r.pixels))
+
+    uniq = set()
+    uniq_pixels = [int(x) for x in pixels if x not in uniq and (uniq.add(x) or True)]
+    r_merge.pixels = uniq_pixels
+
+    map = np.zeros(r_merge.NPIX)
+    map[r_merge.pixels] = 1.0
+    r_merge.region_map = map
+    r_merge.pixel_priority = map
+    r_merge.predefined_pixels = True
 
     return r_merge
 
@@ -572,7 +609,7 @@ def load_regions_from_file(sim_config, file_path):
                 survey_regions[name][optic] = []
 
                 for params in survey_params[optic]:
-                    r = create_region_from_json(params)
+                    r = create_region_from_json(sim_config['NSIDE'], params)
                     survey_regions[name][optic].append(r)
 
     return survey_regions

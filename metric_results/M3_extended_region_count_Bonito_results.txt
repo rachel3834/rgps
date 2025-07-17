@@ -1,0 +1,13 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F062 Bonito SP48 YSO 0.0 0
+deep_spec F062 Bonito SP48 YSO 20.0 1
+time_domain F062 Bonito SP48 YSO 20.0 1
+wide_area F129 Bonito SP48 YSO 60.0 3
+deep_spec F129 Bonito SP48 YSO 20.0 1
+time_domain F129 Bonito SP48 YSO 20.0 1
+wide_area F158 Bonito SP48 YSO 60.0 3
+deep_spec F158 Bonito SP48 YSO 20.0 1
+time_domain F158 Bonito SP48 YSO 20.0 1
+wide_area F146 Bonito SP48 YSO 0.0 0
+deep_spec F146 Bonito SP48 YSO 0.0 0
+time_domain F146 Bonito SP48 YSO 0.0 0

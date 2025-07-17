@@ -1,9 +1,15 @@
-from os import path, getcwd
+from os import path, getcwd, remove
 import glob
 import argparse
 from astropy.table import Table, vstack
 
 def combine_results_tables(args):
+
+    # Remove any previous results from this script to avoid
+    # including it in the process
+    output_file = path.join(args.data_dir, args.metric + '_combined_results.txt')
+    if path.isfile(output_file):
+        remove(output_file)
 
     # Identify all results files for the selected metric
     file_list = glob.glob(path.join(args.data_dir, args.metric+'*_results.txt'))
@@ -21,7 +27,6 @@ def combine_results_tables(args):
                 if len(results) > 0:
                     metric_table = vstack([metric_table, results])
     # Output
-    output_file = path.join(args.data_dir, args.metric+'_combined_results.txt')
     metric_table.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
 def get_args():

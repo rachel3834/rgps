@@ -274,6 +274,7 @@ def M3_extended_region_count(sim_config, science_cases, survey_config, set_catal
     # optical component.  So we need to check for intersections of the HEALpixels for all cases
     for author in case_list:
         science_strategy = science_cases[author]
+        code = get_science_code(science_strategy)
 
         for optic in sim_config['OPTICAL_COMPONENTS']:
 
@@ -304,9 +305,9 @@ def M3_extended_region_count(sim_config, science_cases, survey_config, set_catal
                         # (due to the HEALpixels providing irregular coverage of the regions)
                         m1 = (nregions / float(len(science_strategy[optic])))*100.0
                         m2 = int(nregions)
-                        data.append([survey_name, optic, author, category, m1, m2])
+                        data.append([survey_name, optic, author, code, category, m1, m2])
                     else:
-                        data.append([survey_name, optic, author, category, 0.0, 0.0])
+                        data.append([survey_name, optic, author, code, category, 0.0, 0.0])
 
     data = np.array(data)
 
@@ -316,15 +317,17 @@ def M3_extended_region_count(sim_config, science_cases, survey_config, set_catal
             Column(name='Survey_strategy', data=data[:, 0], dtype='S30'),
             Column(name='Optic', data=data[:, 1], dtype='S5'),
             Column(name='Science_case', data=data[:, 2], dtype='S30'),
-            Column(name='Category', data=data[:, 3], dtype='S30'),
-            Column(name='M3_%regions', data=data[:, 4], dtype='f8'),
-            Column(name='M3_count', data=data[:, 5].astype('int'), dtype='int'),
+            Column(name='Science_code', data=data[:, 3], dtype='S30'),
+            Column(name='Category', data=data[:, 4], dtype='S30'),
+            Column(name='M3_%regions', data=data[:, 5], dtype='f8'),
+            Column(name='M3_count', data=data[:, 6].astype('int'), dtype='int'),
         ])
     else:
         results = Table([
             Column(name='Survey_strategy', data=np.array([]), dtype='S30'),
             Column(name='Optic', data=np.array([]), dtype='S5'),
             Column(name='Science_case', data=np.array([]), dtype='S30'),
+            Column(name='Science_code', data=np.array([]), dtype='S30'),
             Column(name='Category', data=np.array([]), dtype='S30'),
             Column(name='M3_%regions', data=np.array([]), dtype='f8'),
             Column(name='M3_count', data=np.array([]), dtype='int'),

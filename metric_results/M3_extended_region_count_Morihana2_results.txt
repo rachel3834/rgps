@@ -1,0 +1,10 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F129 Morihana2 SP08 variable_stars 100.0 2
+deep_spec F129 Morihana2 SP08 variable_stars 100.0 2
+time_domain F129 Morihana2 SP08 variable_stars 50.0 1
+wide_area F184 Morihana2 SP08 variable_stars 100.0 2
+deep_spec F184 Morihana2 SP08 variable_stars 100.0 2
+time_domain F184 Morihana2 SP08 variable_stars 50.0 1
+wide_area F213 Morihana2 SP08 variable_stars 100.0 2
+deep_spec F213 Morihana2 SP08 variable_stars 100.0 2
+time_domain F213 Morihana2 SP08 variable_stars 50.0 1

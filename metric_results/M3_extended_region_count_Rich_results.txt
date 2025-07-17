@@ -1,0 +1,7 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area F184 Rich "SP31, WP04" wide_area 100.0 3
+deep_spec F184 Rich "SP31, WP04" wide_area 100.0 3
+time_domain F184 Rich "SP31, WP04" wide_area 100.0 3
+wide_area F213 Rich "SP31, WP04" wide_area 100.0 3
+deep_spec F213 Rich "SP31, WP04" wide_area 100.0 3
+time_domain F213 Rich "SP31, WP04" wide_area 100.0 3

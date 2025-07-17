@@ -1,0 +1,4 @@
+Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
+wide_area G150 Ivanov1 SP38 stellar_spectra 0.0 0
+deep_spec G150 Ivanov1 SP38 stellar_spectra 100.0 1
+time_domain G150 Ivanov1 SP38 stellar_spectra 0.0 0

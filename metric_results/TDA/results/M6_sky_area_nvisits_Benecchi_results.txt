@@ -1,0 +1,4 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%nvisits M6_%duration
+wide_area wide_area Benecchi Benecchi_Benecchi1 F146 0.0 0.0
+deep_spec deep_spec Benecchi Benecchi_Benecchi1 F146 0.0 0.0
+time_domain time_domain Benecchi Benecchi_Benecchi1 F146 0.0 0.0

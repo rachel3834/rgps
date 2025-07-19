@@ -115,10 +115,10 @@ def calculate_metrics(args):
                 # Store results
                 if metric_name == 'M6_sky_area_nvisits':
                     if results1 and results2:
-                        output_file = path.join(args.data_dir, metric_name + '_overlap_results.txt')
+                        output_file = path.join(args.data_dir, metric_name + '_' + author + '_overlap_results.txt')
                         results1.write(output_file, format='ascii', delimiter=' ', overwrite=True)
 
-                        output_file = path.join(args.data_dir, metric_name + '_results.txt')
+                        output_file = path.join(args.data_dir, metric_name + '_' + author + '_results.txt')
                         results2.write(output_file, format='ascii', delimiter=' ', overwrite=True)
                 else:
                     output_file = path.join(args.data_dir, metric_name + '_' + author + '_results.txt')

@@ -1,0 +1,31 @@
+Survey_region Science_region Common_area M6_%TD_Region
+time_domain_TDS_Galactic_Center_Q4 Bonito_Carina 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Bonito_Carina 0.0 0.0
+time_domain_TDS_NGC6334_6357 Bonito_Carina 0.0 0.0
+time_domain_TDS_Carina Bonito_Carina 3.514542139321761 6.454720616570328
+time_domain_TDS_W43 Bonito_Carina 0.0 0.0
+time_domain_TDS_Serpens_W40 Bonito_Carina 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Carina "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_W43 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Carina "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_W43 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Carina "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_W43 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_Carina "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_W43 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_NGC 2264" 0.0 0.0

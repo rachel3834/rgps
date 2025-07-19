@@ -1,0 +1,131 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%nvisits M6_%duration
+wide_area wide_area Bonito Bonito_Carina F062 0.0 0.0
+deep_spec deep_spec Bonito Bonito_Carina F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito Bonito_Carina F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito Bonito_Carina F062 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito Bonito_Carina F062 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito Bonito_Carina F062 0.11458333333333333 40.0
+time_domain time_domain_TDS_W43 Bonito Bonito_Carina F062 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6611" F062 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6611" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 6611" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 6611" F062 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 6611" F062 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 6611" F062 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 6611" F062 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6530" F062 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6530" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 6530" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 6530" F062 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 6530" F062 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 6530" F062 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 6530" F062 0.0 0.0
+wide_area wide_area Bonito "Bonito_Orion Nebula Cluster" F062 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_Orion Nebula Cluster" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_Orion Nebula Cluster" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_Orion Nebula Cluster" F062 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_Orion Nebula Cluster" F062 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_Orion Nebula Cluster" F062 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_Orion Nebula Cluster" F062 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 2264" F062 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 2264" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 2264" F062 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 2264" F062 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 2264" F062 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 2264" F062 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 2264" F062 0.0 0.0
+wide_area wide_area Bonito Bonito_Carina F129 0.0 0.0
+deep_spec deep_spec Bonito Bonito_Carina F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito Bonito_Carina F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito Bonito_Carina F129 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito Bonito_Carina F129 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito Bonito_Carina F129 0.11458333333333333 40.0
+time_domain time_domain_TDS_W43 Bonito Bonito_Carina F129 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito Bonito_Carina F129 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6611" F129 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6611" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 6611" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 6611" F129 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 6611" F129 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 6611" F129 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 6611" F129 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_NGC 6611" F129 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6530" F129 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6530" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 6530" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 6530" F129 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 6530" F129 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 6530" F129 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 6530" F129 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_NGC 6530" F129 0.0 0.0
+wide_area wide_area Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_Orion Nebula Cluster" F129 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 2264" F129 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 2264" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 2264" F129 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 2264" F129 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 2264" F129 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 2264" F129 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 2264" F129 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_NGC 2264" F129 0.0 0.0
+wide_area wide_area Bonito Bonito_Carina F158 0.0 0.0
+deep_spec deep_spec Bonito Bonito_Carina F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito Bonito_Carina F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito Bonito_Carina F158 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito Bonito_Carina F158 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito Bonito_Carina F158 0.14583333333333334 40.0
+time_domain time_domain_TDS_W43 Bonito Bonito_Carina F158 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito Bonito_Carina F158 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6611" F158 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6611" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 6611" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 6611" F158 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 6611" F158 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 6611" F158 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 6611" F158 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_NGC 6611" F158 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6530" F158 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6530" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 6530" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 6530" F158 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 6530" F158 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 6530" F158 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 6530" F158 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_NGC 6530" F158 0.0 0.0
+wide_area wide_area Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_Orion Nebula Cluster" F158 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 2264" F158 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 2264" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Bonito "Bonito_NGC 2264" F158 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Bonito "Bonito_NGC 2264" F158 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Bonito "Bonito_NGC 2264" F158 0.0 0.0
+time_domain time_domain_TDS_Carina Bonito "Bonito_NGC 2264" F158 0.0 0.0
+time_domain time_domain_TDS_W43 Bonito "Bonito_NGC 2264" F158 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Bonito "Bonito_NGC 2264" F158 0.0 0.0
+wide_area wide_area Bonito Bonito_Carina F146 0.0 0.0
+deep_spec deep_spec Bonito Bonito_Carina F146 0.0 0.0
+time_domain time_domain Bonito Bonito_Carina F146 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6611" F146 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6611" F146 0.0 0.0
+time_domain time_domain Bonito "Bonito_NGC 6611" F146 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 6530" F146 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 6530" F146 0.0 0.0
+time_domain time_domain Bonito "Bonito_NGC 6530" F146 0.0 0.0
+wide_area wide_area Bonito "Bonito_Orion Nebula Cluster" F146 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_Orion Nebula Cluster" F146 0.0 0.0
+time_domain time_domain Bonito "Bonito_Orion Nebula Cluster" F146 0.0 0.0
+wide_area wide_area Bonito "Bonito_NGC 2264" F146 0.0 0.0
+deep_spec deep_spec Bonito "Bonito_NGC 2264" F146 0.0 0.0
+time_domain time_domain Bonito "Bonito_NGC 2264" F146 0.0 0.0

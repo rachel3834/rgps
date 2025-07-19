@@ -1,0 +1,17 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%nvisits M6_%duration
+wide_area wide_area Pardo Pardo_-90deg F213 0.0 0.0
+deep_spec deep_spec Pardo Pardo_-90deg F213 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Pardo Pardo_-90deg F213 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Pardo Pardo_-90deg F213 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Pardo Pardo_-90deg F213 0.0 0.0
+time_domain time_domain_TDS_Carina Pardo Pardo_-90deg F213 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Pardo Pardo_-90deg F213 0.0 0.0
+time_domain time_domain_TDS_W43 Pardo Pardo_-90deg F213 0.0 0.0
+wide_area wide_area Pardo Pardo_90deg F213 0.0 0.0
+deep_spec deep_spec Pardo Pardo_90deg F213 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Pardo Pardo_90deg F213 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Pardo Pardo_90deg F213 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Pardo Pardo_90deg F213 0.0 0.0
+time_domain time_domain_TDS_Carina Pardo Pardo_90deg F213 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Pardo Pardo_90deg F213 0.0 0.0
+time_domain time_domain_TDS_W43 Pardo Pardo_90deg F213 0.0 0.0

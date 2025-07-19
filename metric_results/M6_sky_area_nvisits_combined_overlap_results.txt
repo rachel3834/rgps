@@ -1,0 +1,194 @@
+Survey_region Science_region Common_area M6_%TD_Region
+time_domain_TDS_Galactic_Center_Q4 Freeman_RRLyrae1 2.203145818679313 14.18918918918919
+time_domain_TDS_Galactic_Center_Q1 Freeman_RRLyrae1 1.5212197319452399 9.797297297297296
+time_domain_TDS_NGC6334_6357 Freeman_RRLyrae1 0.0 0.0
+time_domain_TDS_Carina Freeman_RRLyrae1 0.0 0.0
+time_domain_TDS_W43 Freeman_RRLyrae1 0.0 0.0
+time_domain_TDS_Serpens_W40 Freeman_RRLyrae1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Freeman_RRLyrae2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Freeman_RRLyrae2 0.0 0.0
+time_domain_TDS_NGC6334_6357 Freeman_RRLyrae2 0.0 0.0
+time_domain_TDS_Carina Freeman_RRLyrae2 0.0 0.0
+time_domain_TDS_W43 Freeman_RRLyrae2 0.0 0.0
+time_domain_TDS_Serpens_W40 Freeman_RRLyrae2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Freeman_RRLyrae3 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Freeman_RRLyrae3 0.0 0.0
+time_domain_TDS_NGC6334_6357 Freeman_RRLyrae3 0.0 0.0
+time_domain_TDS_Carina Freeman_RRLyrae3 0.0 0.0
+time_domain_TDS_W43 Freeman_RRLyrae3 0.0 0.0
+time_domain_TDS_Serpens_W40 Freeman_RRLyrae3 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Freeman_RRLyrae4 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Freeman_RRLyrae4 0.0 0.0
+time_domain_TDS_NGC6334_6357 Freeman_RRLyrae4 0.0 0.0
+time_domain_TDS_Carina Freeman_RRLyrae4 0.0 0.0
+time_domain_TDS_W43 Freeman_RRLyrae4 0.0 0.0
+time_domain_TDS_Serpens_W40 Freeman_RRLyrae4 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Bonito_Carina 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Bonito_Carina 0.0 0.0
+time_domain_TDS_NGC6334_6357 Bonito_Carina 0.0 0.0
+time_domain_TDS_Carina Bonito_Carina 3.514542139321761 6.454720616570328
+time_domain_TDS_W43 Bonito_Carina 0.0 0.0
+time_domain_TDS_Serpens_W40 Bonito_Carina 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Carina "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_W43 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_NGC 6611" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Carina "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_W43 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_NGC 6530" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Carina "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_W43 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_Orion Nebula Cluster" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_NGC6334_6357 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_Carina "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_W43 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_Serpens_W40 "Bonito_NGC 2264" 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Bahramian_XRB1 4.458747490184323 0.10026067776218166
+time_domain_TDS_Galactic_Center_Q1 Bahramian_XRB1 3.514542139321761 0.0790290048243079
+time_domain_TDS_NGC6334_6357 Bahramian_XRB1 3.8817331091016465 0.08728576652236993
+time_domain_TDS_Carina Bahramian_XRB1 3.514542139321761 0.0790290048243079
+time_domain_TDS_W43 Bahramian_XRB1 3.986644814753042 0.08964484129324478
+time_domain_TDS_Serpens_W40 Bahramian_XRB1 11.59274347447924 0.2606777621816723
+time_domain_TDS_Galactic_Center_Q4 Bahramian_XRB2 4.458747490184323 0.278469401126982
+time_domain_TDS_Galactic_Center_Q1 Bahramian_XRB2 3.514542139321761 0.21949941030009174
+time_domain_TDS_NGC6334_6357 Bahramian_XRB2 3.8817331091016465 0.24243218451054904
+time_domain_TDS_Carina Bahramian_XRB2 3.514542139321761 0.21949941030009174
+time_domain_TDS_W43 Bahramian_XRB2 3.986644814753042 0.24898440571353686
+time_domain_TDS_Serpens_W40 Bahramian_XRB2 6.189790633432355 0.3865810509762809
+time_domain_TDS_Galactic_Center_Q4 Rich2_Rich_TDA1 0.6294702339083751 100.0
+time_domain_TDS_Galactic_Center_Q1 Rich2_Rich_TDA1 0.15736755847709377 25.0
+time_domain_TDS_NGC6334_6357 Rich2_Rich_TDA1 0.0 0.0
+time_domain_TDS_Carina Rich2_Rich_TDA1 0.0 0.0
+time_domain_TDS_W43 Rich2_Rich_TDA1 0.0 0.0
+time_domain_TDS_Serpens_W40 Rich2_Rich_TDA1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Rich2_Rich_TDA2 0.5770143810826771 91.66666666666666
+time_domain_TDS_Galactic_Center_Q1 Rich2_Rich_TDA2 0.5245585282569792 83.33333333333334
+time_domain_TDS_NGC6334_6357 Rich2_Rich_TDA2 0.0 0.0
+time_domain_TDS_Carina Rich2_Rich_TDA2 0.0 0.0
+time_domain_TDS_W43 Rich2_Rich_TDA2 0.0 0.0
+time_domain_TDS_Serpens_W40 Rich2_Rich_TDA2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Kupfer_NGC6528 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Kupfer_NGC6528 0.0 0.0
+time_domain_TDS_NGC6334_6357 Kupfer_NGC6528 0.0 0.0
+time_domain_TDS_Carina Kupfer_NGC6528 0.0 0.0
+time_domain_TDS_W43 Kupfer_NGC6528 0.0 0.0
+time_domain_TDS_Serpens_W40 Kupfer_NGC6528 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Kupfer_NGC6522 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Kupfer_NGC6522 0.0 0.0
+time_domain_TDS_NGC6334_6357 Kupfer_NGC6522 0.0 0.0
+time_domain_TDS_Carina Kupfer_NGC6522 0.0 0.0
+time_domain_TDS_W43 Kupfer_NGC6522 0.0 0.0
+time_domain_TDS_Serpens_W40 Kupfer_NGC6522 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Kupfer_VVV_CL001 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Kupfer_VVV_CL001 0.0 0.0
+time_domain_TDS_NGC6334_6357 Kupfer_VVV_CL001 0.0 0.0
+time_domain_TDS_Carina Kupfer_VVV_CL001 0.0 0.0
+time_domain_TDS_W43 Kupfer_VVV_CL001 0.0 0.0
+time_domain_TDS_Serpens_W40 Kupfer_VVV_CL001 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Kupfer_UKS1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Kupfer_UKS1 0.0 0.0
+time_domain_TDS_NGC6334_6357 Kupfer_UKS1 0.0 0.0
+time_domain_TDS_Carina Kupfer_UKS1 0.0 0.0
+time_domain_TDS_W43 Kupfer_UKS1 0.0 0.0
+time_domain_TDS_Serpens_W40 Kupfer_UKS1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Morihana1_Subaru1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Morihana1_Subaru1 0.0 0.0
+time_domain_TDS_NGC6334_6357 Morihana1_Subaru1 0.0 0.0
+time_domain_TDS_Carina Morihana1_Subaru1 0.0 0.0
+time_domain_TDS_W43 Morihana1_Subaru1 0.0 0.0
+time_domain_TDS_Serpens_W40 Morihana1_Subaru1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Morihana1_Subaru2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Morihana1_Subaru2 0.0 0.0
+time_domain_TDS_NGC6334_6357 Morihana1_Subaru2 0.0 0.0
+time_domain_TDS_Carina Morihana1_Subaru2 0.0 0.0
+time_domain_TDS_W43 Morihana1_Subaru2 3.986644814753042 5.255878284923928
+time_domain_TDS_Serpens_W40 Morihana1_Subaru2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Lian_Carina 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Lian_Carina 0.0 0.0
+time_domain_TDS_NGC6334_6357 Lian_Carina 0.0 0.0
+time_domain_TDS_Carina Lian_Carina 3.514542139321761 6.454720616570328
+time_domain_TDS_W43 Lian_Carina 0.0 0.0
+time_domain_TDS_Serpens_W40 Lian_Carina 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Daylan_NGC869 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Daylan_NGC869 0.0 0.0
+time_domain_TDS_NGC6334_6357 Daylan_NGC869 0.0 0.0
+time_domain_TDS_Carina Daylan_NGC869 0.0 0.0
+time_domain_TDS_W43 Daylan_NGC869 0.0 0.0
+time_domain_TDS_Serpens_W40 Daylan_NGC869 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Daylan_King7 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Daylan_King7 0.0 0.0
+time_domain_TDS_NGC6334_6357 Daylan_King7 0.0 0.0
+time_domain_TDS_Carina Daylan_King7 0.0 0.0
+time_domain_TDS_W43 Daylan_King7 0.0 0.0
+time_domain_TDS_Serpens_W40 Daylan_King7 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Daylan_NGC2099 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Daylan_NGC2099 0.0 0.0
+time_domain_TDS_NGC6334_6357 Daylan_NGC2099 0.0 0.0
+time_domain_TDS_Carina Daylan_NGC2099 0.0 0.0
+time_domain_TDS_W43 Daylan_NGC2099 0.0 0.0
+time_domain_TDS_Serpens_W40 Daylan_NGC2099 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Daylan_NGC2158 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Daylan_NGC2158 0.0 0.0
+time_domain_TDS_NGC6334_6357 Daylan_NGC2158 0.0 0.0
+time_domain_TDS_Carina Daylan_NGC2158 0.0 0.0
+time_domain_TDS_W43 Daylan_NGC2158 0.0 0.0
+time_domain_TDS_Serpens_W40 Daylan_NGC2158 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Daylan_Berkeley53 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Daylan_Berkeley53 0.0 0.0
+time_domain_TDS_NGC6334_6357 Daylan_Berkeley53 0.0 0.0
+time_domain_TDS_Carina Daylan_Berkeley53 0.0 0.0
+time_domain_TDS_W43 Daylan_Berkeley53 0.0 0.0
+time_domain_TDS_Serpens_W40 Daylan_Berkeley53 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Morihana2_CVs1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Morihana2_CVs1 0.0 0.0
+time_domain_TDS_NGC6334_6357 Morihana2_CVs1 0.0 0.0
+time_domain_TDS_Carina Morihana2_CVs1 0.0 0.0
+time_domain_TDS_W43 Morihana2_CVs1 0.0 0.0
+time_domain_TDS_Serpens_W40 Morihana2_CVs1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Morihana2_CVs2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Morihana2_CVs2 0.0 0.0
+time_domain_TDS_NGC6334_6357 Morihana2_CVs2 0.0 0.0
+time_domain_TDS_Carina Morihana2_CVs2 0.0 0.0
+time_domain_TDS_W43 Morihana2_CVs2 3.986644814753042 5.255878284923928
+time_domain_TDS_Serpens_W40 Morihana2_CVs2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_NGC6334_6357 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_Carina Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_W43 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_Serpens_W40 Paladini2_Paladini2 11.59274347447924 34.210526315789465
+time_domain_TDS_all_fields DAmmando_DAmmando_catalog 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Pardo_-90deg 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Pardo_-90deg 0.0 0.0
+time_domain_TDS_NGC6334_6357 Pardo_-90deg 0.0 0.0
+time_domain_TDS_Carina Pardo_-90deg 0.0 0.0
+time_domain_TDS_W43 Pardo_-90deg 0.0 0.0
+time_domain_TDS_Serpens_W40 Pardo_-90deg 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Pardo_90deg 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Pardo_90deg 0.0 0.0
+time_domain_TDS_NGC6334_6357 Pardo_90deg 0.0 0.0
+time_domain_TDS_Carina Pardo_90deg 0.0 0.0
+time_domain_TDS_W43 Pardo_90deg 0.0 0.0
+time_domain_TDS_Serpens_W40 Pardo_90deg 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Navarro_ulens1 4.458747490184323 9.004237288135593
+time_domain_TDS_Galactic_Center_Q1 Navarro_ulens1 3.514542139321761 7.0974576271186445
+time_domain_TDS_NGC6334_6357 Navarro_ulens1 3.3047187280189694 6.673728813559323
+time_domain_TDS_Carina Navarro_ulens1 0.0 0.0
+time_domain_TDS_W43 Navarro_ulens1 0.0 0.0
+time_domain_TDS_Serpens_W40 Navarro_ulens1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q4 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_NGC6334_6357 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_Carina Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_W43 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_Serpens_W40 Benecchi_Benecchi1 0.0 0.0

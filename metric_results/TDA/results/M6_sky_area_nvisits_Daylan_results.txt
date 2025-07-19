@@ -1,0 +1,16 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%nvisits M6_%duration
+wide_area wide_area Daylan Daylan_NGC869 F146 0.0 0.0
+deep_spec deep_spec Daylan Daylan_NGC869 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_NGC869 F146 0.0 0.0
+wide_area wide_area Daylan Daylan_King7 F146 0.0 0.0
+deep_spec deep_spec Daylan Daylan_King7 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_King7 F146 0.0 0.0
+wide_area wide_area Daylan Daylan_NGC2099 F146 0.0 0.0
+deep_spec deep_spec Daylan Daylan_NGC2099 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_NGC2099 F146 0.0 0.0
+wide_area wide_area Daylan Daylan_NGC2158 F146 0.0 0.0
+deep_spec deep_spec Daylan Daylan_NGC2158 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_NGC2158 F146 0.0 0.0
+wide_area wide_area Daylan Daylan_Berkeley53 F146 0.0 0.0
+deep_spec deep_spec Daylan Daylan_Berkeley53 F146 0.0 0.0
+time_domain time_domain Daylan Daylan_Berkeley53 F146 0.0 0.0

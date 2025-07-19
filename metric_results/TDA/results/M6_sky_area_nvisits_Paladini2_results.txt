@@ -1,0 +1,9 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%nvisits M6_%duration
+wide_area wide_area Paladini2 Paladini2_Paladini2 F213 0.0 0.0
+deep_spec deep_spec Paladini2 Paladini2_Paladini2 F213 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q4 Paladini2 Paladini2_Paladini2 F213 0.0 0.0
+time_domain time_domain_TDS_Galactic_Center_Q1 Paladini2 Paladini2_Paladini2 F213 0.0 0.0
+time_domain time_domain_TDS_NGC6334_6357 Paladini2 Paladini2_Paladini2 F213 0.0 0.0
+time_domain time_domain_TDS_Carina Paladini2 Paladini2_Paladini2 F213 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Paladini2 Paladini2_Paladini2 F213 100.0 83.42857142857143
+time_domain time_domain_TDS_W43 Paladini2 Paladini2_Paladini2 F213 0.0 0.0

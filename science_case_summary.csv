@@ -1,0 +1,62 @@
+Identifier,Author,Topics,Time-Domain,Spectroscopy,Widefield,Star Formation
+WP08,Paladini,"Red Giant Stars, YSO, Extinction map, Ionized gas",False,False,True,False
+WP08,Paladini2,"YSO, Exoplanets",True,False,False,False
+WP09,Zari,YSO,False,False,False,True
+WP07,Kruszynska,"Microlensing, Compact binaries, CV, RR Lyrae, Galactic structure, SFR, YSO, Neptune Trojans, GC",False,False,True,False
+WP05,Benecchi,KBO,True,False,False,False
+WP03,Kupfer,Compact binaries,True,False,False,False
+SP01,Elowitz,Interstellar Objects,False,False,False,False
+SP03,Amrar,Variable stars,False,False,False,False
+SP03,Lodieu,Brown Dwarfs,False,False,False,False
+SP03,Lodieu2,"Brown Dwarfs, GC",False,False,False,False
+SP04,Soam,High latitude clouds,False,False,False,False
+SP05,Hunt,OC,False,False,True,False
+SP06,Werner,SFR,False,False,False,True
+SP07,Bryant,OC,False,False,False,False
+SP09,Lian,Microlensing,True,False,False,True
+SP10,Anderson,Ionized gas,False,True,False,False
+SP11,Lim1,YSO,False,True,False,True
+SP12,DAmmando,AGN,True,False,False,False
+SP13,Freeman,RR Lyrae,True,False,True,False
+SP14,Bachelet,Microlensing,False,False,True,False
+SP15,Villasenor,Massive stars,False,False,False,False
+SP16,Minniti,FFP,False,False,False,False
+SP17,Smith,Hypervelocity stars,False,False,True,False
+SP18,Navarro,Microlensing,True,False,True,False
+SP19,De_Furio,SFR,False,False,False,True
+SP20,Baravalle,"Galaxies, AGN",False,False,False,False
+SP21,Meli,"Gal. mag. field, Cosmic rays, SNR, Sgr A*, Galaxies",False,False,True,False
+SP08,Morihana2,CV,True,False,False,False
+SP22,Morihana1,CV,True,False,False,False
+SP23,Wang,"Galactic Center, Sgr A*",False,False,False,False
+SP24,Lucas,"YSO, OC",False,False,True,False
+SP25,Lim2,"SFR, Molecular Clouds",False,False,False,True
+SP26,Daylan,Microlensing,True,False,False,False
+SP27,Bahramian,X-ray binaries,True,False,True,False
+SP28,Carey1,Survey overlap,False,False,True,False
+SP29,Kuzuhara,Hypervelocity stars,False,False,True,False
+SP30,Carey2,"NEO, Interstellar Objects",False,False,False,False
+"SP31, WP04",Rich,Galactic Center,False,False,True,False
+"SP31, WP04",Rich2,Galactic Center,True,True,False,False
+SP39,Ivanov,Star clusters,False,False,True,False
+SP35,VVV_keyholes_1st_priority,Keyholes,False,False,False,False
+SP35,VVV_keyholes_2nd_priority,Keyholes,False,False,False,False
+SP11,Lim3_grism_targets,SFR,False,True,False,True
+SP33,Sankrit,Extinction map,False,False,True,False
+SP36,Gallart,Stellar ages,False,False,True,False
+SP37,Pascucci,SFR,False,True,False,True
+SP38,Ivanov1,Stellar spectroscopy,False,True,False,False
+SP39,Ivanov2,Extinction map,False,False,False,False
+SP40,Craig1,Extinction map,False,False,True,False
+SP41,Craig2,Novae,False,False,False,False
+SP42,Kuhn,SFR,False,False,False,True
+SP43,Saydjari,ISM,False,False,False,False
+SP44,Hillenbrand,"Stellar properties, Extinction map",False,True,False,False
+SP45,Gramze,SFR,False,False,False,True
+SP47,Sabin,"AGB, Planetary nebulae, Novae, CV, Symbiotic stars",False,False,True,False
+SP48,Bonito,"YSO, SFR",True,False,False,False
+SP49,Minniti_GCs,GC,False,False,True,False
+SP50,Pal,Stellar spectroscopy,False,True,False,False
+SP51,Saito,"Stellar populations, Galactic Center, Galactic structure, Stellar populations, Solar System Objects",False,False,True,False
+SP40,Craig,Novae,False,False,True,False
+SP52,Pardo,GW,True,False,False,False

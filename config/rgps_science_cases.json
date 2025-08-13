@@ -253,7 +253,7 @@
     "category": "variable_stars",
     "ready_for_use": "False",
     "extended_object_catalog": "False",
-    "code": "SP03",
+    "code": "SP02",
     "topics": ["Variable stars"]
   },
   "Lodieu": {
@@ -1988,7 +1988,7 @@
     "category": "wide_area",
     "ready_for_use": "True",
     "extended_object_catalog": "False",
-    "code": "SP39",
+    "code": "SP32",
     "topics": ["Star clusters"]
   },
   "Schlafly": {
@@ -2928,7 +2928,7 @@
     "category": "SFR",
     "min_area": 40.0,
     "extended_object_catalog": "False",
-    "code": "SP45",
+    "code": "SP46",
     "topics": ["SFR"]
   },
   "Sabin": {
@@ -3242,7 +3242,7 @@
     "time_domain": "True",
     "category": "GW",
     "extended_object_catalog": "False",
-    "code": "NONE",
+    "code": "SP52",
     "topics": ["GW"]
   }
 }

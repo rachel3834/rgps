@@ -1,0 +1,2 @@
+Survey_region Science_region Common_area M6_%TD_Region
+time_domain_TDS_all_fields DAmmando_DAmmando_catalog 0.0 0.0

@@ -10,10 +10,10 @@ deep_spec F129 Carey1 SP28 wide_area 100.0 2
 time_domain F129 Carey1 SP28 wide_area 100.0 2
 wide_area F158 Carey1 SP28 wide_area 100.0 2
 deep_spec F158 Carey1 SP28 wide_area 100.0 2
-time_domain F158 Carey1 SP28 wide_area 100.0 2
+time_domain F158 Carey1 SP28 wide_area 0.0 0
 wide_area F184 Carey1 SP28 wide_area 100.0 2
 deep_spec F184 Carey1 SP28 wide_area 100.0 2
-time_domain F184 Carey1 SP28 wide_area 100.0 2
+time_domain F184 Carey1 SP28 wide_area 50.0 1
 wide_area F213 Carey1 SP28 wide_area 100.0 2
 deep_spec F213 Carey1 SP28 wide_area 100.0 2
 time_domain F213 Carey1 SP28 wide_area 100.0 2

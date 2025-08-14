@@ -3,7 +3,7 @@ Deep_NGC3324_Carina Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,G
 Deep_Acrux Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
 Deep_NGC5269_5281 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
 Deep_Window_319.5-0.2 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
-Deep_ASSC_85 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_ASCC_85 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
 Deep_Teutsch_84 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
 Deep_NGC6357_Lobster Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
 Deep_Window_355.0-0.3 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"

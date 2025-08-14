@@ -7,7 +7,7 @@ deep_spec F129 Sabin SP47 wide_area 100.0 2
 time_domain F129 Sabin SP47 wide_area 100.0 2
 wide_area F158 Sabin SP47 wide_area 100.0 2
 deep_spec F158 Sabin SP47 wide_area 100.0 2
-time_domain F158 Sabin SP47 wide_area 100.0 2
+time_domain F158 Sabin SP47 wide_area 50.0 1
 wide_area F213 Sabin SP47 wide_area 100.0 2
 deep_spec F213 Sabin SP47 wide_area 100.0 2
 time_domain F213 Sabin SP47 wide_area 100.0 2

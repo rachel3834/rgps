@@ -1,4 +1,4 @@
 Survey_strategy Optic Science_case Science_code M1_%pix M1_%priority
 wide_area F184 Gramze SP45 100.0 100.0
 deep_spec F184 Gramze SP45 3.389830508474576 3.389830508474576
-time_domain F184 Gramze SP45 21.398305084745765 21.398305084745765
+time_domain F184 Gramze SP45 0.0 0.0

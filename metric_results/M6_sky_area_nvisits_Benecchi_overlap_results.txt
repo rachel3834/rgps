@@ -1,0 +1,7 @@
+Survey_region Science_region Common_area M6_%TD_Region
+time_domain_TDS_Galactic_Center_Q4 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_NGC6334_6357 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_Carina Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_W43 Benecchi_Benecchi1 0.0 0.0
+time_domain_TDS_Serpens_W40 Benecchi_Benecchi1 0.0 0.0

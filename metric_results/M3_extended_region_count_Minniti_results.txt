@@ -4,7 +4,7 @@ deep_spec F106 Minniti SP16 open_clusters 100.0 1
 time_domain F106 Minniti SP16 open_clusters 100.0 1
 wide_area F158 Minniti SP16 open_clusters 100.0 1
 deep_spec F158 Minniti SP16 open_clusters 100.0 1
-time_domain F158 Minniti SP16 open_clusters 100.0 1
+time_domain F158 Minniti SP16 open_clusters 0.0 0
 wide_area F213 Minniti SP16 open_clusters 100.0 1
 deep_spec F213 Minniti SP16 open_clusters 100.0 1
 time_domain F213 Minniti SP16 open_clusters 100.0 1

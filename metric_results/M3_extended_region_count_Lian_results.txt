@@ -1,4 +1,4 @@
 Survey_strategy Optic Science_case Science_code Category M3_%regions M3_count
 wide_area F184 Lian SP09 SFR 100.0 1
 deep_spec F184 Lian SP09 SFR 100.0 1
-time_domain F184 Lian SP09 SFR 100.0 1
+time_domain F184 Lian SP09 SFR 0.0 0

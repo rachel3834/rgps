@@ -1,4 +1,4 @@
 "Deep/spectro/TD field" Science_case Science_code Science_topics
-Deep_ASSC_85 DAmmando SP12 AGN
+Deep_ASCC_85 DAmmando SP12 AGN
 Deep_Window_355.0-0.3 DAmmando SP12 AGN
 TDS_Galactic_Center_Q4 DAmmando SP12 AGN

@@ -5,7 +5,7 @@ Deep_Acrux Craig SP40 Novae
 Deep_NGC5269_5281 Craig SP40 Novae
 Deep_Window_319.5-0.2 Craig SP40 Novae
 Deep_G333 Craig SP40 Novae
-Deep_ASSC_85 Craig SP40 Novae
+Deep_ASCC_85 Craig SP40 Novae
 Deep_Teutsch_84 Craig SP40 Novae
 Deep_NGC6357_Lobster Craig SP40 Novae
 Deep_Window_355.0-0.3 Craig SP40 Novae

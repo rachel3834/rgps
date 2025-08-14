@@ -40,7 +40,7 @@ deep_spec F129 Navarro SP18 wide_area 100.0 1
 time_domain F129 Navarro SP18 wide_area 100.0 1
 wide_area F158 Navarro SP18 wide_area 100.0 1
 deep_spec F158 Navarro SP18 wide_area 100.0 1
-time_domain F158 Navarro SP18 wide_area 100.0 1
+time_domain F158 Navarro SP18 wide_area 0.0 0
 wide_area F213 Navarro SP18 wide_area 100.0 1
 deep_spec F213 Navarro SP18 wide_area 100.0 1
 time_domain F213 Navarro SP18 wide_area 100.0 1
@@ -49,7 +49,7 @@ deep_spec F129 Morihana1 SP22 variable_stars 100.0 2
 time_domain F129 Morihana1 SP22 variable_stars 50.0 1
 wide_area F158 Morihana1 SP22 variable_stars 100.0 2
 deep_spec F158 Morihana1 SP22 variable_stars 100.0 2
-time_domain F158 Morihana1 SP22 variable_stars 50.0 1
+time_domain F158 Morihana1 SP22 variable_stars 0.0 0
 wide_area F213 Morihana1 SP22 variable_stars 100.0 2
 deep_spec F213 Morihana1 SP22 variable_stars 100.0 2
 time_domain F213 Morihana1 SP22 variable_stars 50.0 1
@@ -91,7 +91,7 @@ deep_spec F129 Smith SP17 wide_area 100.0 1
 time_domain F129 Smith SP17 wide_area 100.0 1
 wide_area F158 Smith SP17 wide_area 100.0 1
 deep_spec F158 Smith SP17 wide_area 100.0 1
-time_domain F158 Smith SP17 wide_area 100.0 1
+time_domain F158 Smith SP17 wide_area 0.0 0
 wide_area F213 Smith SP17 wide_area 100.0 1
 deep_spec F213 Smith SP17 wide_area 100.0 1
 time_domain F213 Smith SP17 wide_area 100.0 1
@@ -103,17 +103,17 @@ deep_spec F129 Sabin SP47 wide_area 100.0 2
 time_domain F129 Sabin SP47 wide_area 100.0 2
 wide_area F158 Sabin SP47 wide_area 100.0 2
 deep_spec F158 Sabin SP47 wide_area 100.0 2
-time_domain F158 Sabin SP47 wide_area 100.0 2
+time_domain F158 Sabin SP47 wide_area 50.0 1
 wide_area F213 Sabin SP47 wide_area 100.0 2
 deep_spec F213 Sabin SP47 wide_area 100.0 2
 time_domain F213 Sabin SP47 wide_area 100.0 2
-wide_area F213 VVV_keyholes_2nd_priority SP35 keyholes 95.83333333333334 23
+wide_area F213 VVV_keyholes_2nd_priority SP35 keyholes 91.66666666666666 22
 deep_spec F213 VVV_keyholes_2nd_priority SP35 keyholes 12.5 3
 time_domain F213 VVV_keyholes_2nd_priority SP35 keyholes 29.166666666666668 7
 wide_area G150 Pascucci SP37 SFR 0.0 0
 deep_spec G150 Pascucci SP37 SFR 0.0 0
 time_domain G150 Pascucci SP37 SFR 0.0 0
-wide_area F213 VVV_keyholes_1st_priority SP35 keyholes 90.9090909090909 10
+wide_area F213 VVV_keyholes_1st_priority SP35 keyholes 81.81818181818183 9
 deep_spec F213 VVV_keyholes_1st_priority SP35 keyholes 18.181818181818183 2
 time_domain F213 VVV_keyholes_1st_priority SP35 keyholes 9.090909090909092 1
 wide_area F129 Lim2 SP25 SFR 18.181818181818183 2
@@ -121,19 +121,19 @@ deep_spec F129 Lim2 SP25 SFR 18.181818181818183 2
 time_domain F129 Lim2 SP25 SFR 18.181818181818183 2
 wide_area F158 Lim2 SP25 SFR 18.181818181818183 2
 deep_spec F158 Lim2 SP25 SFR 18.181818181818183 2
-time_domain F158 Lim2 SP25 SFR 18.181818181818183 2
+time_domain F158 Lim2 SP25 SFR 9.090909090909092 1
 wide_area F213 Lim2 SP25 SFR 18.181818181818183 2
 deep_spec F213 Lim2 SP25 SFR 18.181818181818183 2
 time_domain F213 Lim2 SP25 SFR 18.181818181818183 2
 wide_area F184 Gramze SP45 SFR 100.0 1
 deep_spec F184 Gramze SP45 SFR 100.0 1
-time_domain F184 Gramze SP45 SFR 100.0 1
+time_domain F184 Gramze SP45 SFR 0.0 0
 wide_area F106 Wang SP23 galactic_center 0.0 0
 deep_spec F106 Wang SP23 galactic_center 0.0 0
 time_domain F106 Wang SP23 galactic_center 100.0 1
 wide_area F158 Wang SP23 galactic_center 100.0 1
 deep_spec F158 Wang SP23 galactic_center 0.0 0
-time_domain F158 Wang SP23 galactic_center 100.0 1
+time_domain F158 Wang SP23 galactic_center 0.0 0
 wide_area F213 Wang SP23 galactic_center 100.0 1
 deep_spec F213 Wang SP23 galactic_center 0.0 0
 time_domain F213 Wang SP23 galactic_center 100.0 1
@@ -163,7 +163,7 @@ deep_spec F213 Morihana2 SP08 variable_stars 100.0 2
 time_domain F213 Morihana2 SP08 variable_stars 50.0 1
 wide_area F184 Rich2 "SP31, WP04" galactic_center 100.0 2
 deep_spec F184 Rich2 "SP31, WP04" galactic_center 0.0 0
-time_domain F184 Rich2 "SP31, WP04" galactic_center 100.0 2
+time_domain F184 Rich2 "SP31, WP04" galactic_center 0.0 0
 wide_area F213 Rich2 "SP31, WP04" galactic_center 100.0 2
 deep_spec F213 Rich2 "SP31, WP04" galactic_center 0.0 0
 time_domain F213 Rich2 "SP31, WP04" galactic_center 100.0 2
@@ -175,10 +175,10 @@ deep_spec P127 Rich2 "SP31, WP04" galactic_center 0.0 0
 time_domain P127 Rich2 "SP31, WP04" galactic_center 0.0 0
 wide_area F158 Kuhn SP42 SFR 50.0 1
 deep_spec F158 Kuhn SP42 SFR 0.0 0
-time_domain F158 Kuhn SP42 SFR 50.0 1
+time_domain F158 Kuhn SP42 SFR 0.0 0
 wide_area F184 Kuhn SP42 SFR 50.0 1
 deep_spec F184 Kuhn SP42 SFR 0.0 0
-time_domain F184 Kuhn SP42 SFR 50.0 1
+time_domain F184 Kuhn SP42 SFR 0.0 0
 wide_area F213 Kuhn SP42 SFR 50.0 1
 deep_spec F213 Kuhn SP42 SFR 0.0 0
 time_domain F213 Kuhn SP42 SFR 50.0 1
@@ -187,7 +187,7 @@ deep_spec F106 Minniti SP16 open_clusters 100.0 1
 time_domain F106 Minniti SP16 open_clusters 100.0 1
 wide_area F158 Minniti SP16 open_clusters 100.0 1
 deep_spec F158 Minniti SP16 open_clusters 100.0 1
-time_domain F158 Minniti SP16 open_clusters 100.0 1
+time_domain F158 Minniti SP16 open_clusters 0.0 0
 wide_area F213 Minniti SP16 open_clusters 100.0 1
 deep_spec F213 Minniti SP16 open_clusters 100.0 1
 time_domain F213 Minniti SP16 open_clusters 100.0 1
@@ -208,16 +208,16 @@ deep_spec F106 Meli SP21 wide_area 20.0 2
 time_domain F106 Meli SP21 wide_area 30.0 3
 wide_area F158 Meli SP21 wide_area 40.0 4
 deep_spec F158 Meli SP21 wide_area 20.0 2
-time_domain F158 Meli SP21 wide_area 30.0 3
+time_domain F158 Meli SP21 wide_area 10.0 1
 wide_area F184 Meli SP21 wide_area 40.0 4
 deep_spec F184 Meli SP21 wide_area 20.0 2
-time_domain F184 Meli SP21 wide_area 30.0 3
+time_domain F184 Meli SP21 wide_area 10.0 1
 wide_area F129 Baravalle SP20 AGN 62.5 5
 deep_spec F129 Baravalle SP20 AGN 62.5 5
 time_domain F129 Baravalle SP20 AGN 37.5 3
 wide_area F158 Baravalle SP20 AGN 62.5 5
 deep_spec F158 Baravalle SP20 AGN 62.5 5
-time_domain F158 Baravalle SP20 AGN 37.5 3
+time_domain F158 Baravalle SP20 AGN 0.0 0
 wide_area F213 Baravalle SP20 AGN 62.5 5
 deep_spec F213 Baravalle SP20 AGN 62.5 5
 time_domain F213 Baravalle SP20 AGN 37.5 3
@@ -262,10 +262,10 @@ deep_spec F129 Carey1 SP28 wide_area 100.0 2
 time_domain F129 Carey1 SP28 wide_area 100.0 2
 wide_area F158 Carey1 SP28 wide_area 100.0 2
 deep_spec F158 Carey1 SP28 wide_area 100.0 2
-time_domain F158 Carey1 SP28 wide_area 100.0 2
+time_domain F158 Carey1 SP28 wide_area 0.0 0
 wide_area F184 Carey1 SP28 wide_area 100.0 2
 deep_spec F184 Carey1 SP28 wide_area 100.0 2
-time_domain F184 Carey1 SP28 wide_area 100.0 2
+time_domain F184 Carey1 SP28 wide_area 50.0 1
 wide_area F213 Carey1 SP28 wide_area 100.0 2
 deep_spec F213 Carey1 SP28 wide_area 100.0 2
 time_domain F213 Carey1 SP28 wide_area 100.0 2
@@ -274,31 +274,31 @@ deep_spec F129 Saito SP51 wide_area 100.0 1
 time_domain F129 Saito SP51 wide_area 100.0 1
 wide_area F158 Saito SP51 wide_area 100.0 1
 deep_spec F158 Saito SP51 wide_area 100.0 1
-time_domain F158 Saito SP51 wide_area 100.0 1
+time_domain F158 Saito SP51 wide_area 0.0 0
 wide_area F213 Saito SP51 wide_area 100.0 1
 deep_spec F213 Saito SP51 wide_area 100.0 1
 time_domain F213 Saito SP51 wide_area 100.0 1
 wide_area F184 Lian SP09 SFR 100.0 1
 deep_spec F184 Lian SP09 SFR 100.0 1
-time_domain F184 Lian SP09 SFR 100.0 1
+time_domain F184 Lian SP09 SFR 0.0 0
 wide_area F146 Daylan SP26 high_cadence 0.0 0
 deep_spec F146 Daylan SP26 high_cadence 0.0 0
 time_domain F146 Daylan SP26 high_cadence 0.0 0
-wide_area F129 De_Furio SP19 SFR 15.789473684210526 9
+wide_area F129 De_Furio SP19 SFR 14.035087719298245 8
 deep_spec F129 De_Furio SP19 SFR 8.771929824561402 5
 time_domain F129 De_Furio SP19 SFR 7.017543859649122 4
-wide_area F184 De_Furio SP19 SFR 15.789473684210526 9
+wide_area F184 De_Furio SP19 SFR 14.035087719298245 8
 deep_spec F184 De_Furio SP19 SFR 8.771929824561402 5
-time_domain F184 De_Furio SP19 SFR 7.017543859649122 4
-wide_area F213 De_Furio SP19 SFR 15.789473684210526 9
+time_domain F184 De_Furio SP19 SFR 1.7543859649122806 1
+wide_area F213 De_Furio SP19 SFR 14.035087719298245 8
 deep_spec F213 De_Furio SP19 SFR 8.771929824561402 5
 time_domain F213 De_Furio SP19 SFR 7.017543859649122 4
 wide_area F184 DAmmando SP12 AGN 5.896805896805897 24
 deep_spec F184 DAmmando SP12 AGN 0.4914004914004914 2
-time_domain F184 DAmmando SP12 AGN 0.2457002457002457 1
+time_domain F184 DAmmando SP12 AGN 0.0 0
 wide_area F158 Freeman SP13 wide_area 25.0 1
 deep_spec F158 Freeman SP13 wide_area 0.0 0
-time_domain F158 Freeman SP13 wide_area 25.0 1
+time_domain F158 Freeman SP13 wide_area 0.0 0
 wide_area F213 Freeman SP13 wide_area 25.0 1
 deep_spec F213 Freeman SP13 wide_area 0.0 0
 time_domain F213 Freeman SP13 wide_area 25.0 1
@@ -310,7 +310,7 @@ deep_spec F213 Globular_Clusters_catalog member globular_clusters 1.886792452830
 time_domain F213 Globular_Clusters_catalog member globular_clusters 0.0 0
 wide_area F184 Rich "SP31, WP04" wide_area 100.0 3
 deep_spec F184 Rich "SP31, WP04" wide_area 100.0 3
-time_domain F184 Rich "SP31, WP04" wide_area 100.0 3
+time_domain F184 Rich "SP31, WP04" wide_area 66.66666666666666 2
 wide_area F213 Rich "SP31, WP04" wide_area 100.0 3
 deep_spec F213 Rich "SP31, WP04" wide_area 100.0 3
 time_domain F213 Rich "SP31, WP04" wide_area 100.0 3
@@ -337,7 +337,7 @@ deep_spec F129 Bonito SP48 YSO 20.0 1
 time_domain F129 Bonito SP48 YSO 20.0 1
 wide_area F158 Bonito SP48 YSO 60.0 3
 deep_spec F158 Bonito SP48 YSO 20.0 1
-time_domain F158 Bonito SP48 YSO 20.0 1
+time_domain F158 Bonito SP48 YSO 0.0 0
 wide_area F146 Bonito SP48 YSO 0.0 0
 deep_spec F146 Bonito SP48 YSO 0.0 0
 time_domain F146 Bonito SP48 YSO 0.0 0
@@ -353,12 +353,12 @@ time_domain F213 Craig2 SP41 novae 0.0 0
 wide_area F213 Paladini2 WP08 time_domain 100.0 1
 deep_spec F213 Paladini2 WP08 time_domain 100.0 1
 time_domain F213 Paladini2 WP08 time_domain 100.0 1
-wide_area F213 Pardo NONE GW 0.0 0
-deep_spec F213 Pardo NONE GW 0.0 0
-time_domain F213 Pardo NONE GW 0.0 0
+wide_area F213 Pardo SP52 GW 0.0 0
+deep_spec F213 Pardo SP52 GW 0.0 0
+time_domain F213 Pardo SP52 GW 0.0 0
 wide_area F158 Ivanov SP39 wide_area 100.0 3
 deep_spec F158 Ivanov SP39 wide_area 100.0 3
-time_domain F158 Ivanov SP39 wide_area 100.0 3
+time_domain F158 Ivanov SP39 wide_area 0.0 0
 wide_area F213 Ivanov SP39 wide_area 100.0 3
 deep_spec F213 Ivanov SP39 wide_area 100.0 3
 time_domain F213 Ivanov SP39 wide_area 100.0 3
@@ -388,7 +388,7 @@ deep_spec F129 Lucas SP24 wide_area 100.0 1
 time_domain F129 Lucas SP24 wide_area 100.0 1
 wide_area F158 Lucas SP24 wide_area 100.0 1
 deep_spec F158 Lucas SP24 wide_area 100.0 1
-time_domain F158 Lucas SP24 wide_area 100.0 1
+time_domain F158 Lucas SP24 wide_area 0.0 0
 wide_area F213 Lucas SP24 wide_area 100.0 1
 deep_spec F213 Lucas SP24 wide_area 100.0 1
 time_domain F213 Lucas SP24 wide_area 100.0 1
@@ -400,7 +400,7 @@ deep_spec F106 Carey2 SP30 solar_system 100.0 1
 time_domain F106 Carey2 SP30 solar_system 100.0 1
 wide_area F158 Carey2 SP30 solar_system 100.0 1
 deep_spec F158 Carey2 SP30 solar_system 100.0 1
-time_domain F158 Carey2 SP30 solar_system 100.0 1
+time_domain F158 Carey2 SP30 solar_system 0.0 0
 wide_area F213 Carey2 SP30 solar_system 100.0 1
 deep_spec F213 Carey2 SP30 solar_system 100.0 1
 time_domain F213 Carey2 SP30 solar_system 100.0 1
@@ -415,7 +415,7 @@ deep_spec F129 Minniti_GCs SP49 wide_area 100.0 1
 time_domain F129 Minniti_GCs SP49 wide_area 100.0 1
 wide_area F158 Minniti_GCs SP49 wide_area 100.0 1
 deep_spec F158 Minniti_GCs SP49 wide_area 100.0 1
-time_domain F158 Minniti_GCs SP49 wide_area 100.0 1
+time_domain F158 Minniti_GCs SP49 wide_area 0.0 0
 wide_area F213 Minniti_GCs SP49 wide_area 100.0 1
 deep_spec F213 Minniti_GCs SP49 wide_area 100.0 1
 time_domain F213 Minniti_GCs SP49 wide_area 100.0 1

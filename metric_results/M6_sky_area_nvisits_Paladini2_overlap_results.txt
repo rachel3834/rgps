@@ -1,0 +1,7 @@
+Survey_region Science_region Common_area M6_%TD_Region
+time_domain_TDS_Galactic_Center_Q4 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_NGC6334_6357 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_Carina Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_W43 Paladini2_Paladini2 0.0 0.0
+time_domain_TDS_Serpens_W40 Paladini2_Paladini2 11.59274347447924 34.210526315789465

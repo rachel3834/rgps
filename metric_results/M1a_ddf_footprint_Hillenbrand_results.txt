@@ -1,5 +1,5 @@
 "Deep/spectro/TD field" Science_case Science_code Science_topics
 Deep_Acrux Hillenbrand SP44 "Stellar properties,Extinction map"
 Deep_Window_319.5-0.2 Hillenbrand SP44 "Stellar properties,Extinction map"
-Deep_ASSC_85 Hillenbrand SP44 "Stellar properties,Extinction map"
+Deep_ASCC_85 Hillenbrand SP44 "Stellar properties,Extinction map"
 TDS_W43 Hillenbrand SP44 "Stellar properties,Extinction map"

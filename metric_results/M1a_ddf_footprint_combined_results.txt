@@ -1,467 +1,452 @@
-"Deep/spectro/TD field" Science_case Science_code Science_topics "Deep/spectro field" Science_cases Science_codes
-Deep_NGC6357_Lobster Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects" "" "" ""
-Deep_Window_355.0-0.3 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects" "" "" ""
-Deep_VVV_CL001_UKS_1 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects" "" "" ""
-TDS_Galactic_Center_Q4 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects" "" "" ""
-TDS_Galactic_Center_Q1 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects" "" "" ""
-TDS_NGC6334_6357 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects" "" "" ""
-Deep_M17_Omega Saydjari SP43 ISM "" "" ""
-Deep_NGC6357_Lobster Minniti_GCs SP49 GC "" "" ""
-Deep_Window_355.0-0.3 Minniti_GCs SP49 GC "" "" ""
-Deep_VVV_CL001_UKS_1 Minniti_GCs SP49 GC "" "" ""
-TDS_Galactic_Center_Q4 Minniti_GCs SP49 GC "" "" ""
-TDS_Galactic_Center_Q1 Minniti_GCs SP49 GC "" "" ""
-TDS_NGC6334_6357 Minniti_GCs SP49 GC "" "" ""
-Deep_W40 Sankrit SP33 "Extinction map" "" "" ""
-Deep_Acrux Sankrit SP33 "Extinction map" "" "" ""
-Deep_NGC5269_5281 Sankrit SP33 "Extinction map" "" "" ""
-Deep_Window_319.5-0.2 Sankrit SP33 "Extinction map" "" "" ""
-Deep_G333 Sankrit SP33 "Extinction map" "" "" ""
-Deep_ASSC_85 Sankrit SP33 "Extinction map" "" "" ""
-Deep_Teutsch_84 Sankrit SP33 "Extinction map" "" "" ""
-Deep_NGC6357_Lobster Sankrit SP33 "Extinction map" "" "" ""
-Deep_Window_355.0-0.3 Sankrit SP33 "Extinction map" "" "" ""
-Deep_VVV_CL001_UKS_1 Sankrit SP33 "Extinction map" "" "" ""
-Deep_M17_Omega Sankrit SP33 "Extinction map" "" "" ""
-Deep_Trumpler_35 Sankrit SP33 "Extinction map" "" "" ""
-Deep_W44 Sankrit SP33 "Extinction map" "" "" ""
-Deep_W51 Sankrit SP33 "Extinction map" "" "" ""
-TDS_Galactic_Center_Q4 Sankrit SP33 "Extinction map" "" "" ""
-TDS_Galactic_Center_Q1 Sankrit SP33 "Extinction map" "" "" ""
-TDS_NGC6334_6357 Sankrit SP33 "Extinction map" "" "" ""
-TDS_Serpens_W40 Sankrit SP33 "Extinction map" "" "" ""
-TDS_W43 Sankrit SP33 "Extinction map" "" "" ""
-Deep_W40 Villasenor SP15 "Massive stars" "" "" ""
-Deep_NGC3324_Carina Villasenor SP15 "Massive stars" "" "" ""
-Deep_G333 Villasenor SP15 "Massive stars" "" "" ""
-Deep_Teutsch_84 Villasenor SP15 "Massive stars" "" "" ""
-Deep_NGC6357_Lobster Villasenor SP15 "Massive stars" "" "" ""
-Deep_Window_355.0-0.3 Villasenor SP15 "Massive stars" "" "" ""
-Deep_M17_Omega Villasenor SP15 "Massive stars" "" "" ""
-Deep_W44 Villasenor SP15 "Massive stars" "" "" ""
-Deep_W51 Villasenor SP15 "Massive stars" "" "" ""
-TDS_NGC6334_6357 Villasenor SP15 "Massive stars" "" "" ""
-TDS_Carina Villasenor SP15 "Massive stars" "" "" ""
-TDS_Serpens_W40 Villasenor SP15 "Massive stars" "" "" ""
-TDS_W43 Villasenor SP15 "Massive stars" "" "" ""
-Deep_NGC3324_Carina Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_Acrux Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_NGC5269_5281 Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_Window_319.5-0.2 Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_G333 Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_ASSC_85 Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_Teutsch_84 Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_NGC6357_Lobster Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_Window_355.0-0.3 Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_VVV_CL001_UKS_1 Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_M17_Omega Baravalle SP20 Galaxies,AGN "" "" ""
-TDS_Galactic_Center_Q4 Baravalle SP20 Galaxies,AGN "" "" ""
-TDS_Galactic_Center_Q1 Baravalle SP20 Galaxies,AGN "" "" ""
-TDS_NGC6334_6357 Baravalle SP20 Galaxies,AGN "" "" ""
-TDS_Carina Baravalle SP20 Galaxies,AGN "" "" ""
-Deep_W40 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_NGC3324_Carina Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_Acrux Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_NGC5269_5281 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_Window_319.5-0.2 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_G333 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_ASSC_85 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_Teutsch_84 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_NGC6357_Lobster Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_Window_355.0-0.3 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_VVV_CL001_UKS_1 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_M17_Omega Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_Trumpler_35 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_W44 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_W51 Bahramian SP27 "X-ray binaries" "" "" ""
-TDS_Galactic_Center_Q4 Bahramian SP27 "X-ray binaries" "" "" ""
-TDS_Galactic_Center_Q1 Bahramian SP27 "X-ray binaries" "" "" ""
-TDS_NGC6334_6357 Bahramian SP27 "X-ray binaries" "" "" ""
-TDS_Carina Bahramian SP27 "X-ray binaries" "" "" ""
-TDS_Serpens_W40 Bahramian SP27 "X-ray binaries" "" "" ""
-TDS_W43 Bahramian SP27 "X-ray binaries" "" "" ""
-Deep_VVV_CL001_UKS_1 Kupfer WP03 "Compact binaries" "" "" ""
-TDS_Galactic_Center_Q4 Freeman SP13 "RR Lyrae" "" "" ""
-TDS_Galactic_Center_Q1 Freeman SP13 "RR Lyrae" "" "" ""
-Deep_Acrux Hillenbrand SP44 "Stellar properties,Extinction map" "" "" ""
-Deep_Window_319.5-0.2 Hillenbrand SP44 "Stellar properties,Extinction map" "" "" ""
-Deep_ASSC_85 Hillenbrand SP44 "Stellar properties,Extinction map" "" "" ""
-TDS_W43 Hillenbrand SP44 "Stellar properties,Extinction map" "" "" ""
-Deep_M17_Omega Lim3_grism_targets SP11 SFR "" "" ""
-Deep_W51 Lim3_grism_targets SP11 SFR "" "" ""
-Deep_NGC6357_Lobster Gramze SP45 SFR "" "" ""
-Deep_Window_355.0-0.3 Gramze SP45 SFR "" "" ""
-Deep_VVV_CL001_UKS_1 Gramze SP45 SFR "" "" ""
-TDS_Galactic_Center_Q4 Gramze SP45 SFR "" "" ""
-TDS_Galactic_Center_Q1 Gramze SP45 SFR "" "" ""
-TDS_NGC6334_6357 Gramze SP45 SFR "" "" ""
-"" "" "" "SFR,Red Giant Stars,GC,Sgr A*,Cosmic rays,Stellar properties,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,X-ray binaries,CV,OC,Novae,AGB,Star clusters,RR Lyrae,Galactic Center,Galaxies,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_ASSC_85 Sankrit,Baravalle,Bahramian,Hillenbrand,Rich,Gallart,Kruszynska,Lucas,De_Furio,Meli,DAmmando,Carey1,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Zari "SP33,SP20,SP27,SP44,SP31, WP04,SP36,WP07,SP24,SP19,SP21,SP12,SP28,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,WP09"
-"" "" "" "SFR,Red Giant Stars,GC,Sgr A*,Cosmic rays,Stellar properties,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,X-ray binaries,CV,OC,Novae,AGB,Star clusters,RR Lyrae,Galactic Center,FFP,Galaxies,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,YSO,Ionized gas,Survey overlap" Deep_Acrux Sankrit,Baravalle,Bahramian,Hillenbrand,Rich,Kruszynska,Lucas,Meli,Carey1,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Minniti,Zari "SP33,SP20,SP27,SP44,SP31, WP04,WP07,SP24,SP21,SP28,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,SP16,WP09"
-"" "" "" "SFR,Red Giant Stars,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,AGN,Symbiotic stars,SNR,X-ray binaries,Massive stars,OC,Novae,AGB,CV,Galactic Center,Galaxies,Planetary nebulae,Extinction map,Stellar ages,Survey overlap,YSO,Ionized gas,Star clusters" Deep_G333 Sankrit,Villasenor,Baravalle,Bahramian,Rich,Gallart,Lucas,De_Furio,Meli,Carey1,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Zari "SP33,SP15,SP20,SP27,SP31, WP04,SP36,SP24,SP19,SP21,SP28,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,WP09"
-"" "" "" "SFR,Keyholes,Red Giant Stars,GC,Sgr A*,Cosmic rays,ISM,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,Stellar spectroscopy,Massive stars,X-ray binaries,CV,OC,Novae,AGB,Star clusters,RR Lyrae,Galactic Center,Galaxies,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_M17_Omega Saydjari,Sankrit,Villasenor,Baravalle,Bahramian,Lim3_grism_targets,Rich,VVV_keyholes_2nd_priority,Gallart,Kruszynska,Lucas,Meli,Ivanov2,Carey1,Craig1,Anderson,Bachelet,Ivanov,Hunt,Craig2,Paladini,Werner,Sabin,Craig,Ivanov1,Zari "SP43,SP33,SP15,SP20,SP27,SP11,SP31, WP04,SP35,SP36,WP07,SP24,SP21,SP39,SP28,SP40,SP10,SP14,SP39,SP05,SP41,WP08,SP06,SP47,SP40,SP38,WP09"
-"" "" "" "SFR,GC,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,AGN,Compact binaries,SNR,X-ray binaries,Massive stars,CV,OC,Molecular Clouds,Novae,RR Lyrae,Galactic Center,FFP,Galaxies,Galactic structure,Neptune Trojans,YSO,Ionized gas" Deep_NGC3324_Carina Villasenor,Baravalle,Bahramian,Rich,Kruszynska,Lian,Lucas,Meli,Anderson,Bachelet,Lim2,Bonito,Werner,Craig,Minniti,Zari "SP15,SP20,SP27,SP31, WP04,WP07,SP09,SP24,SP21,SP10,SP14,SP25,SP48,SP06,SP40,SP16,WP09"
-"" "" "" "SFR,Red Giant Stars,GC,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,X-ray binaries,CV,OC,Novae,AGB,Star clusters,RR Lyrae,Galactic Center,FFP,Galaxies,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,YSO,Ionized gas,Survey overlap" Deep_NGC5269_5281 Sankrit,Baravalle,Bahramian,Rich,Kruszynska,Lucas,Meli,Carey1,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Minniti,Zari "SP33,SP20,SP27,SP31, WP04,WP07,SP24,SP21,SP28,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,SP16,WP09"
-"" "" "" "SFR,Red Giant Stars,GC,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,Massive stars,X-ray binaries,CV,OC,AGB,Novae,Star clusters,RR Lyrae,Galactic Center,Stellar populations,Galaxies,Solar System Objects,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_NGC6357_Lobster Saito,Minniti_GCs,Sankrit,Villasenor,Baravalle,Bahramian,Gramze,Rich,Gallart,Kruszynska,Lucas,De_Furio,Meli,Carey1,Navarro,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Zari "SP51,SP49,SP33,SP15,SP20,SP27,SP45,SP31, WP04,SP36,WP07,SP24,SP19,SP21,SP28,SP18,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,WP09"
-"" "" "" "SFR,Red Giant Stars,GC,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,X-ray binaries,Massive stars,CV,OC,AGB,Novae,Star clusters,RR Lyrae,Galactic Center,Galaxies,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_Teutsch_84 Sankrit,Villasenor,Baravalle,Bahramian,Rich,Gallart,Kruszynska,Lucas,De_Furio,Meli,Carey1,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Zari "SP33,SP15,SP20,SP27,SP31, WP04,SP36,WP07,SP24,SP19,SP21,SP28,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,WP09"
-"" "" "" "SFR,Red Giant Stars,GC,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,Symbiotic stars,Compact binaries,SNR,X-ray binaries,CV,OC,Novae,AGB,Star clusters,RR Lyrae,Galactic Center,Galaxies,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_Trumpler_35 Sankrit,Bahramian,Rich,Gallart,Kruszynska,Lucas,De_Furio,Meli,Carey1,Anderson,Bachelet,Morihana1,Morihana2,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Zari "SP33,SP27,SP31, WP04,SP36,WP07,SP24,SP19,SP21,SP28,SP10,SP14,SP22,SP08,SP39,SP05,WP08,SP06,SP47,SP40,WP09"
-"" "" "" "SFR,Red Giant Stars,GC,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,Interstellar Objects,X-ray binaries,CV,OC,Novae,AGB,NEO,Star clusters,RR Lyrae,Galactic Center,Stellar populations,Galaxies,Solar System Objects,Galactic structure,Hypervelocity stars,Extinction map,Planetary nebulae,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_VVV_CL001_UKS_1 Saito,Minniti_GCs,Sankrit,Baravalle,Bahramian,Kupfer,Gramze,Rich,Gallart,Kruszynska,Lucas,Meli,Carey1,Navarro,Smith,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Carey2,Zari "SP51,SP49,SP33,SP20,SP27,WP03,SP45,SP31, WP04,SP36,WP07,SP24,SP21,SP28,SP18,SP17,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,SP30,WP09"
-"" "" "" "SFR,Red Giant Stars,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,Symbiotic stars,SNR,X-ray binaries,Massive stars,Molecular Clouds,Novae,AGB,CV,Galaxies,Planetary nebulae,Extinction map,Stellar ages,Exoplanets,YSO,Ionized gas" Deep_W40 Sankrit,Villasenor,Bahramian,Gallart,Paladini2,De_Furio,Meli,Bachelet,Lim2,Paladini,Werner,Sabin,Craig SP33,SP15,SP27,SP36,WP08,SP19,SP21,SP14,SP25,WP08,SP06,SP47,SP40
-"" "" "" "SFR,Red Giant Stars,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,Symbiotic stars,SNR,X-ray binaries,Massive stars,OC,CV,AGB,Novae,Galactic Center,Galaxies,Planetary nebulae,Extinction map,Stellar ages,Survey overlap,YSO,Ionized gas,Star clusters" Deep_W44 Sankrit,Villasenor,Bahramian,Rich,Gallart,Lucas,Meli,Carey1,Anderson,Bachelet,Morihana1,Morihana2,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Zari "SP33,SP15,SP27,SP31, WP04,SP36,SP24,SP21,SP28,SP10,SP14,SP22,SP08,SP39,SP05,WP08,SP06,SP47,SP40,WP09"
-"" "" "" "SFR,Red Giant Stars,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,Symbiotic stars,SNR,X-ray binaries,Massive stars,OC,CV,AGB,Novae,Galactic Center,Galaxies,Planetary nebulae,Extinction map,Stellar ages,Survey overlap,YSO,Ionized gas,Star clusters" Deep_W51 Sankrit,Villasenor,Bahramian,Lim3_grism_targets,Rich,Gallart,Lucas,Meli,Carey1,Anderson,Bachelet,Morihana1,Morihana2,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Zari "SP33,SP15,SP27,SP11,SP31, WP04,SP36,SP24,SP21,SP28,SP10,SP14,SP22,SP08,SP39,SP05,WP08,SP06,SP47,SP40,WP09"
-"" "" "" "SFR,Keyholes,Red Giant Stars,GC,Sgr A*,Cosmic rays,Stellar properties,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,X-ray binaries,CV,OC,Novae,AGB,Star clusters,RR Lyrae,Galactic Center,FFP,Galaxies,Galactic structure,Planetary nebulae,Extinction map,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_Window_319.5-0.2 Sankrit,Baravalle,Bahramian,Hillenbrand,Rich,VVV_keyholes_2nd_priority,Gallart,Kruszynska,VVV_keyholes_1st_priority,Lucas,De_Furio,Meli,Carey1,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Minniti,Zari "SP33,SP20,SP27,SP44,SP31, WP04,SP35,SP36,WP07,SP35,SP24,SP19,SP21,SP28,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,SP16,WP09"
-"" "" "" "SFR,Keyholes,Red Giant Stars,GC,Sgr A*,Cosmic rays,Microlensing,Gal. mag. field,AGN,Symbiotic stars,Compact binaries,SNR,Interstellar Objects,Massive stars,X-ray binaries,CV,OC,AGB,Novae,NEO,Star clusters,RR Lyrae,Galactic Center,Stellar populations,Galaxies,Solar System Objects,Galactic structure,Hypervelocity stars,Extinction map,Planetary nebulae,Neptune Trojans,Stellar ages,YSO,Ionized gas,Survey overlap" Deep_Window_355.0-0.3 Saito,Minniti_GCs,Sankrit,Villasenor,Baravalle,Bahramian,Gramze,Rich,VVV_keyholes_2nd_priority,Gallart,Kruszynska,VVV_keyholes_1st_priority,Lucas,Meli,DAmmando,Carey1,Navarro,Smith,Anderson,Bachelet,Ivanov,Hunt,Paladini,Werner,Sabin,Craig,Carey2,Zari "SP51,SP49,SP33,SP15,SP20,SP27,SP45,SP31, WP04,SP35,SP36,WP07,SP35,SP24,SP21,SP12,SP28,SP18,SP17,SP10,SP14,SP39,SP05,WP08,SP06,SP47,SP40,SP30,WP09"
-Deep_NGC3324_Carina Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_Acrux Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_NGC5269_5281 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_Window_319.5-0.2 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_G333 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_ASSC_85 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_Teutsch_84 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_NGC6357_Lobster Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_Window_355.0-0.3 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_VVV_CL001_UKS_1 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_M17_Omega Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_Trumpler_35 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_W44 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_W51 Rich "SP31, WP04" "Galactic Center" "" "" ""
-TDS_Galactic_Center_Q4 Rich "SP31, WP04" "Galactic Center" "" "" ""
-TDS_Galactic_Center_Q1 Rich "SP31, WP04" "Galactic Center" "" "" ""
-TDS_NGC6334_6357 Rich "SP31, WP04" "Galactic Center" "" "" ""
-TDS_Carina Rich "SP31, WP04" "Galactic Center" "" "" ""
-TDS_W43 Rich "SP31, WP04" "Galactic Center" "" "" ""
-Deep_Window_319.5-0.2 VVV_keyholes_2nd_priority SP35 Keyholes "" "" ""
-Deep_Window_355.0-0.3 VVV_keyholes_2nd_priority SP35 Keyholes "" "" ""
-Deep_M17_Omega VVV_keyholes_2nd_priority SP35 Keyholes "" "" ""
-TDS_Galactic_Center_Q4 VVV_keyholes_2nd_priority SP35 Keyholes "" "" ""
-TDS_Galactic_Center_Q1 VVV_keyholes_2nd_priority SP35 Keyholes "" "" ""
-TDS_Carina VVV_keyholes_2nd_priority SP35 Keyholes "" "" ""
-Deep_W40 Gallart SP36 "Stellar ages" "" "" ""
-Deep_Window_319.5-0.2 Gallart SP36 "Stellar ages" "" "" ""
-Deep_G333 Gallart SP36 "Stellar ages" "" "" ""
-Deep_ASSC_85 Gallart SP36 "Stellar ages" "" "" ""
-Deep_Teutsch_84 Gallart SP36 "Stellar ages" "" "" ""
-Deep_NGC6357_Lobster Gallart SP36 "Stellar ages" "" "" ""
-Deep_Window_355.0-0.3 Gallart SP36 "Stellar ages" "" "" ""
-Deep_VVV_CL001_UKS_1 Gallart SP36 "Stellar ages" "" "" ""
-Deep_M17_Omega Gallart SP36 "Stellar ages" "" "" ""
-Deep_Trumpler_35 Gallart SP36 "Stellar ages" "" "" ""
-Deep_W44 Gallart SP36 "Stellar ages" "" "" ""
-Deep_W51 Gallart SP36 "Stellar ages" "" "" ""
-TDS_Galactic_Center_Q4 Gallart SP36 "Stellar ages" "" "" ""
-TDS_Galactic_Center_Q1 Gallart SP36 "Stellar ages" "" "" ""
-TDS_NGC6334_6357 Gallart SP36 "Stellar ages" "" "" ""
-TDS_Serpens_W40 Gallart SP36 "Stellar ages" "" "" ""
-TDS_W43 Gallart SP36 "Stellar ages" "" "" ""
-Deep_NGC3324_Carina Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_Acrux Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_NGC5269_5281 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_Window_319.5-0.2 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_ASSC_85 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_Teutsch_84 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_NGC6357_Lobster Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_Window_355.0-0.3 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_VVV_CL001_UKS_1 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_M17_Omega Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_Trumpler_35 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-TDS_Galactic_Center_Q4 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-TDS_Galactic_Center_Q1 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-TDS_NGC6334_6357 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-TDS_Carina Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-TDS_Serpens_W40 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-TDS_W43 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC" "" "" ""
-Deep_Window_319.5-0.2 VVV_keyholes_1st_priority SP35 Keyholes "" "" ""
-Deep_Window_355.0-0.3 VVV_keyholes_1st_priority SP35 Keyholes "" "" ""
-TDS_Carina VVV_keyholes_1st_priority SP35 Keyholes "" "" ""
-Deep_NGC3324_Carina Lian SP09 Microlensing "" "" ""
-TDS_Carina Lian SP09 Microlensing "" "" ""
-Deep_W40 Paladini2 WP08 YSO,Exoplanets "" "" ""
-TDS_Serpens_W40 Paladini2 WP08 YSO,Exoplanets "" "" ""
-Deep_NGC3324_Carina Lucas SP24 YSO,OC "" "" ""
-Deep_Acrux Lucas SP24 YSO,OC "" "" ""
-Deep_NGC5269_5281 Lucas SP24 YSO,OC "" "" ""
-Deep_Window_319.5-0.2 Lucas SP24 YSO,OC "" "" ""
-Deep_G333 Lucas SP24 YSO,OC "" "" ""
-Deep_ASSC_85 Lucas SP24 YSO,OC "" "" ""
-Deep_Teutsch_84 Lucas SP24 YSO,OC "" "" ""
-Deep_NGC6357_Lobster Lucas SP24 YSO,OC "" "" ""
-Deep_Window_355.0-0.3 Lucas SP24 YSO,OC "" "" ""
-Deep_VVV_CL001_UKS_1 Lucas SP24 YSO,OC "" "" ""
-Deep_M17_Omega Lucas SP24 YSO,OC "" "" ""
-Deep_Trumpler_35 Lucas SP24 YSO,OC "" "" ""
-Deep_W44 Lucas SP24 YSO,OC "" "" ""
-Deep_W51 Lucas SP24 YSO,OC "" "" ""
-TDS_Galactic_Center_Q4 Lucas SP24 YSO,OC "" "" ""
-TDS_Galactic_Center_Q1 Lucas SP24 YSO,OC "" "" ""
-TDS_NGC6334_6357 Lucas SP24 YSO,OC "" "" ""
-TDS_Carina Lucas SP24 YSO,OC "" "" ""
-TDS_W43 Lucas SP24 YSO,OC "" "" ""
-Deep_W40 De_Furio SP19 SFR "" "" ""
-Deep_Window_319.5-0.2 De_Furio SP19 SFR "" "" ""
-Deep_G333 De_Furio SP19 SFR "" "" ""
-Deep_ASSC_85 De_Furio SP19 SFR "" "" ""
-Deep_Teutsch_84 De_Furio SP19 SFR "" "" ""
-Deep_NGC6357_Lobster De_Furio SP19 SFR "" "" ""
-Deep_Trumpler_35 De_Furio SP19 SFR "" "" ""
-TDS_Galactic_Center_Q4 De_Furio SP19 SFR "" "" ""
-TDS_NGC6334_6357 De_Furio SP19 SFR "" "" ""
-TDS_Serpens_W40 De_Furio SP19 SFR "" "" ""
-TDS_W43 De_Furio SP19 SFR "" "" ""
-Deep_W40 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_NGC3324_Carina Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_Acrux Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_NGC5269_5281 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_Window_319.5-0.2 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_G333 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_ASSC_85 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_Teutsch_84 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_NGC6357_Lobster Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_Window_355.0-0.3 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_VVV_CL001_UKS_1 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_M17_Omega Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_Trumpler_35 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_W44 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_W51 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-TDS_Galactic_Center_Q4 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-TDS_Galactic_Center_Q1 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-TDS_NGC6334_6357 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-TDS_Carina Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-TDS_Serpens_W40 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-TDS_W43 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies" "" "" ""
-Deep_ASSC_85 DAmmando SP12 AGN "" "" ""
-Deep_Window_355.0-0.3 DAmmando SP12 AGN "" "" ""
-TDS_Galactic_Center_Q4 DAmmando SP12 AGN "" "" ""
-Deep_M17_Omega Ivanov2 SP39 "Extinction map" "" "" ""
-Deep_Acrux Carey1 SP28 "Survey overlap" "" "" ""
-Deep_NGC5269_5281 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_Window_319.5-0.2 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_G333 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_ASSC_85 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_Teutsch_84 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_NGC6357_Lobster Carey1 SP28 "Survey overlap" "" "" ""
-Deep_Window_355.0-0.3 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_VVV_CL001_UKS_1 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_M17_Omega Carey1 SP28 "Survey overlap" "" "" ""
-Deep_Trumpler_35 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_W44 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_W51 Carey1 SP28 "Survey overlap" "" "" ""
-TDS_Galactic_Center_Q4 Carey1 SP28 "Survey overlap" "" "" ""
-TDS_Galactic_Center_Q1 Carey1 SP28 "Survey overlap" "" "" ""
-TDS_NGC6334_6357 Carey1 SP28 "Survey overlap" "" "" ""
-TDS_W43 Carey1 SP28 "Survey overlap" "" "" ""
-Deep_NGC6357_Lobster Navarro SP18 Microlensing "" "" ""
-Deep_Window_355.0-0.3 Navarro SP18 Microlensing "" "" ""
-Deep_VVV_CL001_UKS_1 Navarro SP18 Microlensing "" "" ""
-TDS_Galactic_Center_Q4 Navarro SP18 Microlensing "" "" ""
-TDS_Galactic_Center_Q1 Navarro SP18 Microlensing "" "" ""
-TDS_NGC6334_6357 Navarro SP18 Microlensing "" "" ""
-TDS_Carina Kuhn SP42 SFR "" "" ""
-Deep_Window_355.0-0.3 Smith SP17 "Hypervelocity stars" "" "" ""
-Deep_VVV_CL001_UKS_1 Smith SP17 "Hypervelocity stars" "" "" ""
-TDS_Galactic_Center_Q4 Smith SP17 "Hypervelocity stars" "" "" ""
-TDS_Galactic_Center_Q1 Smith SP17 "Hypervelocity stars" "" "" ""
-Deep_M17_Omega Craig1 SP40 "Extinction map" "" "" ""
-Deep_NGC3324_Carina Anderson SP10 "Ionized gas" "" "" ""
-Deep_Acrux Anderson SP10 "Ionized gas" "" "" ""
-Deep_NGC5269_5281 Anderson SP10 "Ionized gas" "" "" ""
-Deep_Window_319.5-0.2 Anderson SP10 "Ionized gas" "" "" ""
-Deep_G333 Anderson SP10 "Ionized gas" "" "" ""
-Deep_ASSC_85 Anderson SP10 "Ionized gas" "" "" ""
-Deep_Teutsch_84 Anderson SP10 "Ionized gas" "" "" ""
-Deep_NGC6357_Lobster Anderson SP10 "Ionized gas" "" "" ""
-Deep_Window_355.0-0.3 Anderson SP10 "Ionized gas" "" "" ""
-Deep_VVV_CL001_UKS_1 Anderson SP10 "Ionized gas" "" "" ""
-Deep_M17_Omega Anderson SP10 "Ionized gas" "" "" ""
-Deep_Trumpler_35 Anderson SP10 "Ionized gas" "" "" ""
-Deep_W44 Anderson SP10 "Ionized gas" "" "" ""
-Deep_W51 Anderson SP10 "Ionized gas" "" "" ""
-TDS_Galactic_Center_Q4 Anderson SP10 "Ionized gas" "" "" ""
-TDS_Galactic_Center_Q1 Anderson SP10 "Ionized gas" "" "" ""
-TDS_NGC6334_6357 Anderson SP10 "Ionized gas" "" "" ""
-TDS_Carina Anderson SP10 "Ionized gas" "" "" ""
-TDS_Serpens_W40 Anderson SP10 "Ionized gas" "" "" ""
-TDS_W43 Anderson SP10 "Ionized gas" "" "" ""
-TDS_Galactic_Center_Q4 Wang SP23 "Galactic Center,Sgr A*" "" "" ""
-TDS_Galactic_Center_Q1 Wang SP23 "Galactic Center,Sgr A*" "" "" ""
-Deep_W40 Bachelet SP14 Microlensing "" "" ""
-Deep_NGC3324_Carina Bachelet SP14 Microlensing "" "" ""
-Deep_Acrux Bachelet SP14 Microlensing "" "" ""
-Deep_NGC5269_5281 Bachelet SP14 Microlensing "" "" ""
-Deep_Window_319.5-0.2 Bachelet SP14 Microlensing "" "" ""
-Deep_G333 Bachelet SP14 Microlensing "" "" ""
-Deep_ASSC_85 Bachelet SP14 Microlensing "" "" ""
-Deep_Teutsch_84 Bachelet SP14 Microlensing "" "" ""
-Deep_NGC6357_Lobster Bachelet SP14 Microlensing "" "" ""
-Deep_Window_355.0-0.3 Bachelet SP14 Microlensing "" "" ""
-Deep_VVV_CL001_UKS_1 Bachelet SP14 Microlensing "" "" ""
-Deep_M17_Omega Bachelet SP14 Microlensing "" "" ""
-Deep_Trumpler_35 Bachelet SP14 Microlensing "" "" ""
-Deep_W44 Bachelet SP14 Microlensing "" "" ""
-Deep_W51 Bachelet SP14 Microlensing "" "" ""
-TDS_Galactic_Center_Q4 Bachelet SP14 Microlensing "" "" ""
-TDS_Galactic_Center_Q1 Bachelet SP14 Microlensing "" "" ""
-TDS_NGC6334_6357 Bachelet SP14 Microlensing "" "" ""
-TDS_Carina Bachelet SP14 Microlensing "" "" ""
-TDS_Serpens_W40 Bachelet SP14 Microlensing "" "" ""
-TDS_W43 Bachelet SP14 Microlensing "" "" ""
-Deep_W40 Lim2 SP25 "SFR,Molecular Clouds" "" "" ""
-Deep_NGC3324_Carina Lim2 SP25 "SFR,Molecular Clouds" "" "" ""
-TDS_Carina Lim2 SP25 "SFR,Molecular Clouds" "" "" ""
-TDS_Serpens_W40 Lim2 SP25 "SFR,Molecular Clouds" "" "" ""
-Deep_Trumpler_35 Morihana1 SP22 CV "" "" ""
-Deep_W44 Morihana1 SP22 CV "" "" ""
-Deep_W51 Morihana1 SP22 CV "" "" ""
-TDS_W43 Morihana1 SP22 CV "" "" ""
-Deep_Trumpler_35 Morihana2 SP08 CV "" "" ""
-Deep_W44 Morihana2 SP08 CV "" "" ""
-Deep_W51 Morihana2 SP08 CV "" "" ""
-TDS_W43 Morihana2 SP08 CV "" "" ""
-Deep_Acrux Ivanov SP39 "Star clusters" "" "" ""
-Deep_NGC5269_5281 Ivanov SP39 "Star clusters" "" "" ""
-Deep_Window_319.5-0.2 Ivanov SP39 "Star clusters" "" "" ""
-Deep_G333 Ivanov SP39 "Star clusters" "" "" ""
-Deep_ASSC_85 Ivanov SP39 "Star clusters" "" "" ""
-Deep_Teutsch_84 Ivanov SP39 "Star clusters" "" "" ""
-Deep_NGC6357_Lobster Ivanov SP39 "Star clusters" "" "" ""
-Deep_Window_355.0-0.3 Ivanov SP39 "Star clusters" "" "" ""
-Deep_VVV_CL001_UKS_1 Ivanov SP39 "Star clusters" "" "" ""
-Deep_M17_Omega Ivanov SP39 "Star clusters" "" "" ""
-Deep_Trumpler_35 Ivanov SP39 "Star clusters" "" "" ""
-Deep_W44 Ivanov SP39 "Star clusters" "" "" ""
-Deep_W51 Ivanov SP39 "Star clusters" "" "" ""
-TDS_Galactic_Center_Q4 Ivanov SP39 "Star clusters" "" "" ""
-TDS_Galactic_Center_Q1 Ivanov SP39 "Star clusters" "" "" ""
-TDS_NGC6334_6357 Ivanov SP39 "Star clusters" "" "" ""
-TDS_W43 Ivanov SP39 "Star clusters" "" "" ""
-Deep_Acrux Hunt SP05 OC "" "" ""
-Deep_NGC5269_5281 Hunt SP05 OC "" "" ""
-Deep_Window_319.5-0.2 Hunt SP05 OC "" "" ""
-Deep_G333 Hunt SP05 OC "" "" ""
-Deep_ASSC_85 Hunt SP05 OC "" "" ""
-Deep_Teutsch_84 Hunt SP05 OC "" "" ""
-Deep_NGC6357_Lobster Hunt SP05 OC "" "" ""
-Deep_Window_355.0-0.3 Hunt SP05 OC "" "" ""
-Deep_VVV_CL001_UKS_1 Hunt SP05 OC "" "" ""
-Deep_M17_Omega Hunt SP05 OC "" "" ""
-Deep_Trumpler_35 Hunt SP05 OC "" "" ""
-Deep_W44 Hunt SP05 OC "" "" ""
-Deep_W51 Hunt SP05 OC "" "" ""
-TDS_Galactic_Center_Q4 Hunt SP05 OC "" "" ""
-TDS_Galactic_Center_Q1 Hunt SP05 OC "" "" ""
-TDS_NGC6334_6357 Hunt SP05 OC "" "" ""
-TDS_Serpens_W40 Hunt SP05 OC "" "" ""
-TDS_W43 Hunt SP05 OC "" "" ""
-Deep_NGC3324_Carina Bonito SP48 YSO,SFR "" "" ""
-TDS_Carina Bonito SP48 YSO,SFR "" "" ""
-Deep_M17_Omega Craig2 SP41 Novae "" "" ""
-Deep_W40 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_Acrux Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_NGC5269_5281 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_Window_319.5-0.2 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_G333 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_ASSC_85 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_Teutsch_84 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_NGC6357_Lobster Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_Window_355.0-0.3 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_VVV_CL001_UKS_1 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_M17_Omega Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_Trumpler_35 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_W44 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_W51 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-TDS_Galactic_Center_Q4 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-TDS_Galactic_Center_Q1 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-TDS_NGC6334_6357 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-TDS_Serpens_W40 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-TDS_W43 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas" "" "" ""
-Deep_W40 Werner SP06 SFR "" "" ""
-Deep_NGC3324_Carina Werner SP06 SFR "" "" ""
-Deep_Acrux Werner SP06 SFR "" "" ""
-Deep_NGC5269_5281 Werner SP06 SFR "" "" ""
-Deep_Window_319.5-0.2 Werner SP06 SFR "" "" ""
-Deep_G333 Werner SP06 SFR "" "" ""
-Deep_ASSC_85 Werner SP06 SFR "" "" ""
-Deep_Teutsch_84 Werner SP06 SFR "" "" ""
-Deep_NGC6357_Lobster Werner SP06 SFR "" "" ""
-Deep_Window_355.0-0.3 Werner SP06 SFR "" "" ""
-Deep_VVV_CL001_UKS_1 Werner SP06 SFR "" "" ""
-Deep_M17_Omega Werner SP06 SFR "" "" ""
-Deep_Trumpler_35 Werner SP06 SFR "" "" ""
-Deep_W44 Werner SP06 SFR "" "" ""
-Deep_W51 Werner SP06 SFR "" "" ""
-TDS_Galactic_Center_Q4 Werner SP06 SFR "" "" ""
-TDS_Galactic_Center_Q1 Werner SP06 SFR "" "" ""
-TDS_NGC6334_6357 Werner SP06 SFR "" "" ""
-TDS_Carina Werner SP06 SFR "" "" ""
-TDS_Serpens_W40 Werner SP06 SFR "" "" ""
-TDS_W43 Werner SP06 SFR "" "" ""
-Deep_W40 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_Acrux Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_NGC5269_5281 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_Window_319.5-0.2 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_G333 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_ASSC_85 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_Teutsch_84 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_NGC6357_Lobster Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_Window_355.0-0.3 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_VVV_CL001_UKS_1 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_M17_Omega Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_Trumpler_35 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_W44 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_W51 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-TDS_Galactic_Center_Q4 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-TDS_Galactic_Center_Q1 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-TDS_NGC6334_6357 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-TDS_Serpens_W40 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-TDS_W43 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars" "" "" ""
-Deep_W40 Craig SP40 Novae "" "" ""
-Deep_NGC3324_Carina Craig SP40 Novae "" "" ""
-Deep_Acrux Craig SP40 Novae "" "" ""
-Deep_NGC5269_5281 Craig SP40 Novae "" "" ""
-Deep_Window_319.5-0.2 Craig SP40 Novae "" "" ""
-Deep_G333 Craig SP40 Novae "" "" ""
-Deep_ASSC_85 Craig SP40 Novae "" "" ""
-Deep_Teutsch_84 Craig SP40 Novae "" "" ""
-Deep_NGC6357_Lobster Craig SP40 Novae "" "" ""
-Deep_Window_355.0-0.3 Craig SP40 Novae "" "" ""
-Deep_VVV_CL001_UKS_1 Craig SP40 Novae "" "" ""
-Deep_M17_Omega Craig SP40 Novae "" "" ""
-Deep_Trumpler_35 Craig SP40 Novae "" "" ""
-Deep_W44 Craig SP40 Novae "" "" ""
-Deep_W51 Craig SP40 Novae "" "" ""
-TDS_Galactic_Center_Q4 Craig SP40 Novae "" "" ""
-TDS_Galactic_Center_Q1 Craig SP40 Novae "" "" ""
-TDS_NGC6334_6357 Craig SP40 Novae "" "" ""
-TDS_Carina Craig SP40 Novae "" "" ""
-TDS_Serpens_W40 Craig SP40 Novae "" "" ""
-TDS_W43 Craig SP40 Novae "" "" ""
-Deep_Window_355.0-0.3 Carey2 SP30 "NEO,Interstellar Objects" "" "" ""
-Deep_VVV_CL001_UKS_1 Carey2 SP30 "NEO,Interstellar Objects" "" "" ""
-TDS_Galactic_Center_Q4 Carey2 SP30 "NEO,Interstellar Objects" "" "" ""
-TDS_Galactic_Center_Q1 Carey2 SP30 "NEO,Interstellar Objects" "" "" ""
-Deep_NGC3324_Carina Minniti SP16 FFP "" "" ""
-Deep_Acrux Minniti SP16 FFP "" "" ""
-Deep_NGC5269_5281 Minniti SP16 FFP "" "" ""
-Deep_Window_319.5-0.2 Minniti SP16 FFP "" "" ""
-TDS_Carina Minniti SP16 FFP "" "" ""
-TDS_Galactic_Center_Q4 Rich2 "SP31, WP04" "Galactic Center" "" "" ""
-TDS_Galactic_Center_Q1 Rich2 "SP31, WP04" "Galactic Center" "" "" ""
-Deep_M17_Omega Ivanov1 SP38 "Stellar spectroscopy" "" "" ""
-Deep_NGC3324_Carina Zari WP09 YSO "" "" ""
-Deep_Acrux Zari WP09 YSO "" "" ""
-Deep_NGC5269_5281 Zari WP09 YSO "" "" ""
-Deep_Window_319.5-0.2 Zari WP09 YSO "" "" ""
-Deep_G333 Zari WP09 YSO "" "" ""
-Deep_ASSC_85 Zari WP09 YSO "" "" ""
-Deep_Teutsch_84 Zari WP09 YSO "" "" ""
-Deep_NGC6357_Lobster Zari WP09 YSO "" "" ""
-Deep_Window_355.0-0.3 Zari WP09 YSO "" "" ""
-Deep_VVV_CL001_UKS_1 Zari WP09 YSO "" "" ""
-Deep_M17_Omega Zari WP09 YSO "" "" ""
-Deep_Trumpler_35 Zari WP09 YSO "" "" ""
-Deep_W44 Zari WP09 YSO "" "" ""
-Deep_W51 Zari WP09 YSO "" "" ""
-TDS_Galactic_Center_Q4 Zari WP09 YSO "" "" ""
-TDS_Galactic_Center_Q1 Zari WP09 YSO "" "" ""
-TDS_NGC6334_6357 Zari WP09 YSO "" "" ""
-TDS_Carina Zari WP09 YSO "" "" ""
-TDS_Serpens_W40 Zari WP09 YSO "" "" ""
-TDS_W43 Zari WP09 YSO "" "" ""
+"Deep/spectro/TD field" Science_case Science_code Science_topics
+Deep_NGC6357_Lobster Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+Deep_Window_355.0-0.3 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+Deep_VVV_CL001_UKS_1 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+TDS_Galactic_Center_Q4 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+TDS_Galactic_Center_Q1 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+TDS_NGC6334_6357 Saito SP51 "Stellar populations,Galactic Center,Galactic structure,Stellar populations,Solar System Objects"
+Deep_M17_Omega Saydjari SP43 ISM
+Deep_NGC6357_Lobster Minniti_GCs SP49 GC
+Deep_Window_355.0-0.3 Minniti_GCs SP49 GC
+Deep_VVV_CL001_UKS_1 Minniti_GCs SP49 GC
+TDS_Galactic_Center_Q4 Minniti_GCs SP49 GC
+TDS_Galactic_Center_Q1 Minniti_GCs SP49 GC
+TDS_NGC6334_6357 Minniti_GCs SP49 GC
+Deep_W40 Sankrit SP33 "Extinction map"
+Deep_Acrux Sankrit SP33 "Extinction map"
+Deep_NGC5269_5281 Sankrit SP33 "Extinction map"
+Deep_Window_319.5-0.2 Sankrit SP33 "Extinction map"
+Deep_G333 Sankrit SP33 "Extinction map"
+Deep_ASCC_85 Sankrit SP33 "Extinction map"
+Deep_Teutsch_84 Sankrit SP33 "Extinction map"
+Deep_NGC6357_Lobster Sankrit SP33 "Extinction map"
+Deep_Window_355.0-0.3 Sankrit SP33 "Extinction map"
+Deep_VVV_CL001_UKS_1 Sankrit SP33 "Extinction map"
+Deep_M17_Omega Sankrit SP33 "Extinction map"
+Deep_Trumpler_35 Sankrit SP33 "Extinction map"
+Deep_W44 Sankrit SP33 "Extinction map"
+Deep_W51 Sankrit SP33 "Extinction map"
+TDS_Galactic_Center_Q4 Sankrit SP33 "Extinction map"
+TDS_Galactic_Center_Q1 Sankrit SP33 "Extinction map"
+TDS_NGC6334_6357 Sankrit SP33 "Extinction map"
+TDS_Serpens_W40 Sankrit SP33 "Extinction map"
+TDS_W43 Sankrit SP33 "Extinction map"
+Deep_W40 Villasenor SP15 "Massive stars"
+Deep_NGC3324_Carina Villasenor SP15 "Massive stars"
+Deep_G333 Villasenor SP15 "Massive stars"
+Deep_Teutsch_84 Villasenor SP15 "Massive stars"
+Deep_NGC6357_Lobster Villasenor SP15 "Massive stars"
+Deep_Window_355.0-0.3 Villasenor SP15 "Massive stars"
+Deep_M17_Omega Villasenor SP15 "Massive stars"
+Deep_W44 Villasenor SP15 "Massive stars"
+Deep_W51 Villasenor SP15 "Massive stars"
+TDS_NGC6334_6357 Villasenor SP15 "Massive stars"
+TDS_Carina Villasenor SP15 "Massive stars"
+TDS_Serpens_W40 Villasenor SP15 "Massive stars"
+TDS_W43 Villasenor SP15 "Massive stars"
+Deep_NGC3324_Carina Baravalle SP20 Galaxies,AGN
+Deep_Acrux Baravalle SP20 Galaxies,AGN
+Deep_NGC5269_5281 Baravalle SP20 Galaxies,AGN
+Deep_Window_319.5-0.2 Baravalle SP20 Galaxies,AGN
+Deep_G333 Baravalle SP20 Galaxies,AGN
+Deep_ASCC_85 Baravalle SP20 Galaxies,AGN
+Deep_Teutsch_84 Baravalle SP20 Galaxies,AGN
+Deep_NGC6357_Lobster Baravalle SP20 Galaxies,AGN
+Deep_Window_355.0-0.3 Baravalle SP20 Galaxies,AGN
+Deep_VVV_CL001_UKS_1 Baravalle SP20 Galaxies,AGN
+Deep_M17_Omega Baravalle SP20 Galaxies,AGN
+TDS_Galactic_Center_Q4 Baravalle SP20 Galaxies,AGN
+TDS_Galactic_Center_Q1 Baravalle SP20 Galaxies,AGN
+TDS_NGC6334_6357 Baravalle SP20 Galaxies,AGN
+TDS_Carina Baravalle SP20 Galaxies,AGN
+Deep_W40 Bahramian SP27 "X-ray binaries"
+Deep_NGC3324_Carina Bahramian SP27 "X-ray binaries"
+Deep_Acrux Bahramian SP27 "X-ray binaries"
+Deep_NGC5269_5281 Bahramian SP27 "X-ray binaries"
+Deep_Window_319.5-0.2 Bahramian SP27 "X-ray binaries"
+Deep_G333 Bahramian SP27 "X-ray binaries"
+Deep_ASCC_85 Bahramian SP27 "X-ray binaries"
+Deep_Teutsch_84 Bahramian SP27 "X-ray binaries"
+Deep_NGC6357_Lobster Bahramian SP27 "X-ray binaries"
+Deep_Window_355.0-0.3 Bahramian SP27 "X-ray binaries"
+Deep_VVV_CL001_UKS_1 Bahramian SP27 "X-ray binaries"
+Deep_M17_Omega Bahramian SP27 "X-ray binaries"
+Deep_Trumpler_35 Bahramian SP27 "X-ray binaries"
+Deep_W44 Bahramian SP27 "X-ray binaries"
+Deep_W51 Bahramian SP27 "X-ray binaries"
+TDS_Galactic_Center_Q4 Bahramian SP27 "X-ray binaries"
+TDS_Galactic_Center_Q1 Bahramian SP27 "X-ray binaries"
+TDS_NGC6334_6357 Bahramian SP27 "X-ray binaries"
+TDS_Carina Bahramian SP27 "X-ray binaries"
+TDS_Serpens_W40 Bahramian SP27 "X-ray binaries"
+TDS_W43 Bahramian SP27 "X-ray binaries"
+Deep_VVV_CL001_UKS_1 Kupfer WP03 "Compact binaries"
+TDS_Galactic_Center_Q4 Freeman SP13 "RR Lyrae"
+TDS_Galactic_Center_Q1 Freeman SP13 "RR Lyrae"
+Deep_Acrux Hillenbrand SP44 "Stellar properties,Extinction map"
+Deep_Window_319.5-0.2 Hillenbrand SP44 "Stellar properties,Extinction map"
+Deep_ASCC_85 Hillenbrand SP44 "Stellar properties,Extinction map"
+TDS_W43 Hillenbrand SP44 "Stellar properties,Extinction map"
+Deep_M17_Omega Lim3_grism_targets SP11 SFR
+Deep_W51 Lim3_grism_targets SP11 SFR
+Deep_NGC6357_Lobster Gramze SP45 SFR
+Deep_Window_355.0-0.3 Gramze SP45 SFR
+Deep_VVV_CL001_UKS_1 Gramze SP45 SFR
+TDS_Galactic_Center_Q4 Gramze SP45 SFR
+TDS_Galactic_Center_Q1 Gramze SP45 SFR
+TDS_NGC6334_6357 Gramze SP45 SFR
+Deep_NGC3324_Carina Rich "SP31, WP04" "Galactic Center"
+Deep_Acrux Rich "SP31, WP04" "Galactic Center"
+Deep_NGC5269_5281 Rich "SP31, WP04" "Galactic Center"
+Deep_Window_319.5-0.2 Rich "SP31, WP04" "Galactic Center"
+Deep_G333 Rich "SP31, WP04" "Galactic Center"
+Deep_ASCC_85 Rich "SP31, WP04" "Galactic Center"
+Deep_Teutsch_84 Rich "SP31, WP04" "Galactic Center"
+Deep_NGC6357_Lobster Rich "SP31, WP04" "Galactic Center"
+Deep_Window_355.0-0.3 Rich "SP31, WP04" "Galactic Center"
+Deep_VVV_CL001_UKS_1 Rich "SP31, WP04" "Galactic Center"
+Deep_M17_Omega Rich "SP31, WP04" "Galactic Center"
+Deep_Trumpler_35 Rich "SP31, WP04" "Galactic Center"
+Deep_W44 Rich "SP31, WP04" "Galactic Center"
+Deep_W51 Rich "SP31, WP04" "Galactic Center"
+TDS_Galactic_Center_Q4 Rich "SP31, WP04" "Galactic Center"
+TDS_Galactic_Center_Q1 Rich "SP31, WP04" "Galactic Center"
+TDS_NGC6334_6357 Rich "SP31, WP04" "Galactic Center"
+TDS_Carina Rich "SP31, WP04" "Galactic Center"
+TDS_W43 Rich "SP31, WP04" "Galactic Center"
+Deep_Window_319.5-0.2 VVV_keyholes_2nd_priority SP35 Keyholes
+Deep_Window_355.0-0.3 VVV_keyholes_2nd_priority SP35 Keyholes
+Deep_M17_Omega VVV_keyholes_2nd_priority SP35 Keyholes
+TDS_Galactic_Center_Q4 VVV_keyholes_2nd_priority SP35 Keyholes
+TDS_Galactic_Center_Q1 VVV_keyholes_2nd_priority SP35 Keyholes
+TDS_Carina VVV_keyholes_2nd_priority SP35 Keyholes
+Deep_W40 Gallart SP36 "Stellar ages"
+Deep_Window_319.5-0.2 Gallart SP36 "Stellar ages"
+Deep_G333 Gallart SP36 "Stellar ages"
+Deep_ASCC_85 Gallart SP36 "Stellar ages"
+Deep_Teutsch_84 Gallart SP36 "Stellar ages"
+Deep_NGC6357_Lobster Gallart SP36 "Stellar ages"
+Deep_Window_355.0-0.3 Gallart SP36 "Stellar ages"
+Deep_VVV_CL001_UKS_1 Gallart SP36 "Stellar ages"
+Deep_M17_Omega Gallart SP36 "Stellar ages"
+Deep_Trumpler_35 Gallart SP36 "Stellar ages"
+Deep_W44 Gallart SP36 "Stellar ages"
+Deep_W51 Gallart SP36 "Stellar ages"
+TDS_Galactic_Center_Q4 Gallart SP36 "Stellar ages"
+TDS_Galactic_Center_Q1 Gallart SP36 "Stellar ages"
+TDS_NGC6334_6357 Gallart SP36 "Stellar ages"
+TDS_Serpens_W40 Gallart SP36 "Stellar ages"
+TDS_W43 Gallart SP36 "Stellar ages"
+Deep_NGC3324_Carina Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_Acrux Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_NGC5269_5281 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_Window_319.5-0.2 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_ASCC_85 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_Teutsch_84 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_NGC6357_Lobster Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_Window_355.0-0.3 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_VVV_CL001_UKS_1 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_M17_Omega Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_Trumpler_35 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+TDS_Galactic_Center_Q4 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+TDS_Galactic_Center_Q1 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+TDS_NGC6334_6357 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+TDS_Carina Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+TDS_Serpens_W40 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+TDS_W43 Kruszynska WP07 "Microlensing,Compact binaries,CV,RR Lyrae,Galactic structure,SFR,YSO,Neptune Trojans,GC"
+Deep_Window_319.5-0.2 VVV_keyholes_1st_priority SP35 Keyholes
+Deep_Window_355.0-0.3 VVV_keyholes_1st_priority SP35 Keyholes
+TDS_Carina VVV_keyholes_1st_priority SP35 Keyholes
+Deep_NGC3324_Carina Lian SP09 Microlensing
+TDS_Carina Lian SP09 Microlensing
+Deep_W40 Paladini2 WP08 YSO,Exoplanets
+TDS_Serpens_W40 Paladini2 WP08 YSO,Exoplanets
+Deep_NGC3324_Carina Lucas SP24 YSO,OC
+Deep_Acrux Lucas SP24 YSO,OC
+Deep_NGC5269_5281 Lucas SP24 YSO,OC
+Deep_Window_319.5-0.2 Lucas SP24 YSO,OC
+Deep_G333 Lucas SP24 YSO,OC
+Deep_ASCC_85 Lucas SP24 YSO,OC
+Deep_Teutsch_84 Lucas SP24 YSO,OC
+Deep_NGC6357_Lobster Lucas SP24 YSO,OC
+Deep_Window_355.0-0.3 Lucas SP24 YSO,OC
+Deep_VVV_CL001_UKS_1 Lucas SP24 YSO,OC
+Deep_M17_Omega Lucas SP24 YSO,OC
+Deep_Trumpler_35 Lucas SP24 YSO,OC
+Deep_W44 Lucas SP24 YSO,OC
+Deep_W51 Lucas SP24 YSO,OC
+TDS_Galactic_Center_Q4 Lucas SP24 YSO,OC
+TDS_Galactic_Center_Q1 Lucas SP24 YSO,OC
+TDS_NGC6334_6357 Lucas SP24 YSO,OC
+TDS_Carina Lucas SP24 YSO,OC
+TDS_W43 Lucas SP24 YSO,OC
+Deep_W40 De_Furio SP19 SFR
+Deep_Window_319.5-0.2 De_Furio SP19 SFR
+Deep_G333 De_Furio SP19 SFR
+Deep_ASCC_85 De_Furio SP19 SFR
+Deep_Teutsch_84 De_Furio SP19 SFR
+Deep_NGC6357_Lobster De_Furio SP19 SFR
+Deep_Trumpler_35 De_Furio SP19 SFR
+TDS_Galactic_Center_Q4 De_Furio SP19 SFR
+TDS_NGC6334_6357 De_Furio SP19 SFR
+TDS_Serpens_W40 De_Furio SP19 SFR
+TDS_W43 De_Furio SP19 SFR
+Deep_W40 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_NGC3324_Carina Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_Acrux Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_NGC5269_5281 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_Window_319.5-0.2 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_G333 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_ASCC_85 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_Teutsch_84 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_NGC6357_Lobster Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_Window_355.0-0.3 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_VVV_CL001_UKS_1 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_M17_Omega Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_Trumpler_35 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_W44 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_W51 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+TDS_Galactic_Center_Q4 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+TDS_Galactic_Center_Q1 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+TDS_NGC6334_6357 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+TDS_Carina Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+TDS_Serpens_W40 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+TDS_W43 Meli SP21 "Gal. mag. field,Cosmic rays,SNR,Sgr A*,Galaxies"
+Deep_ASCC_85 DAmmando SP12 AGN
+Deep_Window_355.0-0.3 DAmmando SP12 AGN
+TDS_Galactic_Center_Q4 DAmmando SP12 AGN
+Deep_M17_Omega Ivanov2 SP39 "Extinction map"
+Deep_Acrux Carey1 SP28 "Survey overlap"
+Deep_NGC5269_5281 Carey1 SP28 "Survey overlap"
+Deep_Window_319.5-0.2 Carey1 SP28 "Survey overlap"
+Deep_G333 Carey1 SP28 "Survey overlap"
+Deep_ASCC_85 Carey1 SP28 "Survey overlap"
+Deep_Teutsch_84 Carey1 SP28 "Survey overlap"
+Deep_NGC6357_Lobster Carey1 SP28 "Survey overlap"
+Deep_Window_355.0-0.3 Carey1 SP28 "Survey overlap"
+Deep_VVV_CL001_UKS_1 Carey1 SP28 "Survey overlap"
+Deep_M17_Omega Carey1 SP28 "Survey overlap"
+Deep_Trumpler_35 Carey1 SP28 "Survey overlap"
+Deep_W44 Carey1 SP28 "Survey overlap"
+Deep_W51 Carey1 SP28 "Survey overlap"
+TDS_Galactic_Center_Q4 Carey1 SP28 "Survey overlap"
+TDS_Galactic_Center_Q1 Carey1 SP28 "Survey overlap"
+TDS_NGC6334_6357 Carey1 SP28 "Survey overlap"
+TDS_W43 Carey1 SP28 "Survey overlap"
+Deep_NGC6357_Lobster Navarro SP18 Microlensing
+Deep_Window_355.0-0.3 Navarro SP18 Microlensing
+Deep_VVV_CL001_UKS_1 Navarro SP18 Microlensing
+TDS_Galactic_Center_Q4 Navarro SP18 Microlensing
+TDS_Galactic_Center_Q1 Navarro SP18 Microlensing
+TDS_NGC6334_6357 Navarro SP18 Microlensing
+TDS_Carina Kuhn SP42 SFR
+Deep_Window_355.0-0.3 Smith SP17 "Hypervelocity stars"
+Deep_VVV_CL001_UKS_1 Smith SP17 "Hypervelocity stars"
+TDS_Galactic_Center_Q4 Smith SP17 "Hypervelocity stars"
+TDS_Galactic_Center_Q1 Smith SP17 "Hypervelocity stars"
+Deep_M17_Omega Craig1 SP40 "Extinction map"
+Deep_NGC3324_Carina Anderson SP10 "Ionized gas"
+Deep_Acrux Anderson SP10 "Ionized gas"
+Deep_NGC5269_5281 Anderson SP10 "Ionized gas"
+Deep_Window_319.5-0.2 Anderson SP10 "Ionized gas"
+Deep_G333 Anderson SP10 "Ionized gas"
+Deep_ASCC_85 Anderson SP10 "Ionized gas"
+Deep_Teutsch_84 Anderson SP10 "Ionized gas"
+Deep_NGC6357_Lobster Anderson SP10 "Ionized gas"
+Deep_Window_355.0-0.3 Anderson SP10 "Ionized gas"
+Deep_VVV_CL001_UKS_1 Anderson SP10 "Ionized gas"
+Deep_M17_Omega Anderson SP10 "Ionized gas"
+Deep_Trumpler_35 Anderson SP10 "Ionized gas"
+Deep_W44 Anderson SP10 "Ionized gas"
+Deep_W51 Anderson SP10 "Ionized gas"
+TDS_Galactic_Center_Q4 Anderson SP10 "Ionized gas"
+TDS_Galactic_Center_Q1 Anderson SP10 "Ionized gas"
+TDS_NGC6334_6357 Anderson SP10 "Ionized gas"
+TDS_Carina Anderson SP10 "Ionized gas"
+TDS_Serpens_W40 Anderson SP10 "Ionized gas"
+TDS_W43 Anderson SP10 "Ionized gas"
+TDS_Galactic_Center_Q4 Wang SP23 "Galactic Center,Sgr A*"
+TDS_Galactic_Center_Q1 Wang SP23 "Galactic Center,Sgr A*"
+Deep_W40 Bachelet SP14 Microlensing
+Deep_NGC3324_Carina Bachelet SP14 Microlensing
+Deep_Acrux Bachelet SP14 Microlensing
+Deep_NGC5269_5281 Bachelet SP14 Microlensing
+Deep_Window_319.5-0.2 Bachelet SP14 Microlensing
+Deep_G333 Bachelet SP14 Microlensing
+Deep_ASCC_85 Bachelet SP14 Microlensing
+Deep_Teutsch_84 Bachelet SP14 Microlensing
+Deep_NGC6357_Lobster Bachelet SP14 Microlensing
+Deep_Window_355.0-0.3 Bachelet SP14 Microlensing
+Deep_VVV_CL001_UKS_1 Bachelet SP14 Microlensing
+Deep_M17_Omega Bachelet SP14 Microlensing
+Deep_Trumpler_35 Bachelet SP14 Microlensing
+Deep_W44 Bachelet SP14 Microlensing
+Deep_W51 Bachelet SP14 Microlensing
+TDS_Galactic_Center_Q4 Bachelet SP14 Microlensing
+TDS_Galactic_Center_Q1 Bachelet SP14 Microlensing
+TDS_NGC6334_6357 Bachelet SP14 Microlensing
+TDS_Carina Bachelet SP14 Microlensing
+TDS_Serpens_W40 Bachelet SP14 Microlensing
+TDS_W43 Bachelet SP14 Microlensing
+Deep_W40 Lim2 SP25 "SFR,Molecular Clouds"
+Deep_NGC3324_Carina Lim2 SP25 "SFR,Molecular Clouds"
+TDS_Carina Lim2 SP25 "SFR,Molecular Clouds"
+TDS_Serpens_W40 Lim2 SP25 "SFR,Molecular Clouds"
+Deep_Trumpler_35 Morihana1 SP22 CV
+Deep_W44 Morihana1 SP22 CV
+Deep_W51 Morihana1 SP22 CV
+TDS_W43 Morihana1 SP22 CV
+Deep_Trumpler_35 Morihana2 SP08 CV
+Deep_W44 Morihana2 SP08 CV
+Deep_W51 Morihana2 SP08 CV
+TDS_W43 Morihana2 SP08 CV
+Deep_Acrux Ivanov SP39 "Star clusters"
+Deep_NGC5269_5281 Ivanov SP39 "Star clusters"
+Deep_Window_319.5-0.2 Ivanov SP39 "Star clusters"
+Deep_G333 Ivanov SP39 "Star clusters"
+Deep_ASCC_85 Ivanov SP39 "Star clusters"
+Deep_Teutsch_84 Ivanov SP39 "Star clusters"
+Deep_NGC6357_Lobster Ivanov SP39 "Star clusters"
+Deep_Window_355.0-0.3 Ivanov SP39 "Star clusters"
+Deep_VVV_CL001_UKS_1 Ivanov SP39 "Star clusters"
+Deep_M17_Omega Ivanov SP39 "Star clusters"
+Deep_Trumpler_35 Ivanov SP39 "Star clusters"
+Deep_W44 Ivanov SP39 "Star clusters"
+Deep_W51 Ivanov SP39 "Star clusters"
+TDS_Galactic_Center_Q4 Ivanov SP39 "Star clusters"
+TDS_Galactic_Center_Q1 Ivanov SP39 "Star clusters"
+TDS_NGC6334_6357 Ivanov SP39 "Star clusters"
+TDS_W43 Ivanov SP39 "Star clusters"
+Deep_Acrux Hunt SP05 OC
+Deep_NGC5269_5281 Hunt SP05 OC
+Deep_Window_319.5-0.2 Hunt SP05 OC
+Deep_G333 Hunt SP05 OC
+Deep_ASCC_85 Hunt SP05 OC
+Deep_Teutsch_84 Hunt SP05 OC
+Deep_NGC6357_Lobster Hunt SP05 OC
+Deep_Window_355.0-0.3 Hunt SP05 OC
+Deep_VVV_CL001_UKS_1 Hunt SP05 OC
+Deep_M17_Omega Hunt SP05 OC
+Deep_Trumpler_35 Hunt SP05 OC
+Deep_W44 Hunt SP05 OC
+Deep_W51 Hunt SP05 OC
+TDS_Galactic_Center_Q4 Hunt SP05 OC
+TDS_Galactic_Center_Q1 Hunt SP05 OC
+TDS_NGC6334_6357 Hunt SP05 OC
+TDS_Serpens_W40 Hunt SP05 OC
+TDS_W43 Hunt SP05 OC
+Deep_NGC3324_Carina Bonito SP48 YSO,SFR
+TDS_Carina Bonito SP48 YSO,SFR
+Deep_M17_Omega Craig2 SP41 Novae
+Deep_W40 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_Acrux Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_NGC5269_5281 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_Window_319.5-0.2 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_G333 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_ASCC_85 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_Teutsch_84 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_NGC6357_Lobster Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_Window_355.0-0.3 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_VVV_CL001_UKS_1 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_M17_Omega Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_Trumpler_35 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_W44 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_W51 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+TDS_Galactic_Center_Q4 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+TDS_Galactic_Center_Q1 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+TDS_NGC6334_6357 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+TDS_Serpens_W40 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+TDS_W43 Paladini WP08 "Red Giant Stars,YSO,Extinction map,Ionized gas"
+Deep_W40 Werner SP06 SFR
+Deep_NGC3324_Carina Werner SP06 SFR
+Deep_Acrux Werner SP06 SFR
+Deep_NGC5269_5281 Werner SP06 SFR
+Deep_Window_319.5-0.2 Werner SP06 SFR
+Deep_G333 Werner SP06 SFR
+Deep_ASCC_85 Werner SP06 SFR
+Deep_Teutsch_84 Werner SP06 SFR
+Deep_NGC6357_Lobster Werner SP06 SFR
+Deep_Window_355.0-0.3 Werner SP06 SFR
+Deep_VVV_CL001_UKS_1 Werner SP06 SFR
+Deep_M17_Omega Werner SP06 SFR
+Deep_Trumpler_35 Werner SP06 SFR
+Deep_W44 Werner SP06 SFR
+Deep_W51 Werner SP06 SFR
+TDS_Galactic_Center_Q4 Werner SP06 SFR
+TDS_Galactic_Center_Q1 Werner SP06 SFR
+TDS_NGC6334_6357 Werner SP06 SFR
+TDS_Carina Werner SP06 SFR
+TDS_Serpens_W40 Werner SP06 SFR
+TDS_W43 Werner SP06 SFR
+Deep_W40 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_Acrux Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_NGC5269_5281 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_Window_319.5-0.2 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_G333 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_ASCC_85 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_Teutsch_84 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_NGC6357_Lobster Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_Window_355.0-0.3 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_VVV_CL001_UKS_1 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_M17_Omega Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_Trumpler_35 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_W44 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_W51 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+TDS_Galactic_Center_Q4 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+TDS_Galactic_Center_Q1 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+TDS_NGC6334_6357 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+TDS_Serpens_W40 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+TDS_W43 Sabin SP47 "AGB,Planetary nebulae,Novae,CV,Symbiotic stars"
+Deep_W40 Craig SP40 Novae
+Deep_NGC3324_Carina Craig SP40 Novae
+Deep_Acrux Craig SP40 Novae
+Deep_NGC5269_5281 Craig SP40 Novae
+Deep_Window_319.5-0.2 Craig SP40 Novae
+Deep_G333 Craig SP40 Novae
+Deep_ASCC_85 Craig SP40 Novae
+Deep_Teutsch_84 Craig SP40 Novae
+Deep_NGC6357_Lobster Craig SP40 Novae
+Deep_Window_355.0-0.3 Craig SP40 Novae
+Deep_VVV_CL001_UKS_1 Craig SP40 Novae
+Deep_M17_Omega Craig SP40 Novae
+Deep_Trumpler_35 Craig SP40 Novae
+Deep_W44 Craig SP40 Novae
+Deep_W51 Craig SP40 Novae
+TDS_Galactic_Center_Q4 Craig SP40 Novae
+TDS_Galactic_Center_Q1 Craig SP40 Novae
+TDS_NGC6334_6357 Craig SP40 Novae
+TDS_Carina Craig SP40 Novae
+TDS_Serpens_W40 Craig SP40 Novae
+TDS_W43 Craig SP40 Novae
+Deep_Window_355.0-0.3 Carey2 SP30 "NEO,Interstellar Objects"
+Deep_VVV_CL001_UKS_1 Carey2 SP30 "NEO,Interstellar Objects"
+TDS_Galactic_Center_Q4 Carey2 SP30 "NEO,Interstellar Objects"
+TDS_Galactic_Center_Q1 Carey2 SP30 "NEO,Interstellar Objects"
+Deep_NGC3324_Carina Minniti SP16 FFP
+Deep_Acrux Minniti SP16 FFP
+Deep_NGC5269_5281 Minniti SP16 FFP
+Deep_Window_319.5-0.2 Minniti SP16 FFP
+TDS_Carina Minniti SP16 FFP
+TDS_Galactic_Center_Q4 Rich2 "SP31, WP04" "Galactic Center"
+TDS_Galactic_Center_Q1 Rich2 "SP31, WP04" "Galactic Center"
+Deep_M17_Omega Ivanov1 SP38 "Stellar spectroscopy"
+Deep_NGC3324_Carina Zari WP09 YSO
+Deep_Acrux Zari WP09 YSO
+Deep_NGC5269_5281 Zari WP09 YSO
+Deep_Window_319.5-0.2 Zari WP09 YSO
+Deep_G333 Zari WP09 YSO
+Deep_ASCC_85 Zari WP09 YSO
+Deep_Teutsch_84 Zari WP09 YSO
+Deep_NGC6357_Lobster Zari WP09 YSO
+Deep_Window_355.0-0.3 Zari WP09 YSO
+Deep_VVV_CL001_UKS_1 Zari WP09 YSO
+Deep_M17_Omega Zari WP09 YSO
+Deep_Trumpler_35 Zari WP09 YSO
+Deep_W44 Zari WP09 YSO
+Deep_W51 Zari WP09 YSO
+TDS_Galactic_Center_Q4 Zari WP09 YSO
+TDS_Galactic_Center_Q1 Zari WP09 YSO
+TDS_NGC6334_6357 Zari WP09 YSO
+TDS_Carina Zari WP09 YSO
+TDS_Serpens_W40 Zari WP09 YSO
+TDS_W43 Zari WP09 YSO

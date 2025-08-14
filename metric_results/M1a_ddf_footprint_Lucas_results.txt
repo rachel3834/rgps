@@ -4,7 +4,7 @@ Deep_Acrux Lucas SP24 YSO,OC
 Deep_NGC5269_5281 Lucas SP24 YSO,OC
 Deep_Window_319.5-0.2 Lucas SP24 YSO,OC
 Deep_G333 Lucas SP24 YSO,OC
-Deep_ASSC_85 Lucas SP24 YSO,OC
+Deep_ASCC_85 Lucas SP24 YSO,OC
 Deep_Teutsch_84 Lucas SP24 YSO,OC
 Deep_NGC6357_Lobster Lucas SP24 YSO,OC
 Deep_Window_355.0-0.3 Lucas SP24 YSO,OC

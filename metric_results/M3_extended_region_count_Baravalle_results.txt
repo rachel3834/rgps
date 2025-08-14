@@ -4,7 +4,7 @@ deep_spec F129 Baravalle SP20 AGN 62.5 5
 time_domain F129 Baravalle SP20 AGN 37.5 3
 wide_area F158 Baravalle SP20 AGN 62.5 5
 deep_spec F158 Baravalle SP20 AGN 62.5 5
-time_domain F158 Baravalle SP20 AGN 37.5 3
+time_domain F158 Baravalle SP20 AGN 0.0 0
 wide_area F213 Baravalle SP20 AGN 62.5 5
 deep_spec F213 Baravalle SP20 AGN 62.5 5
 time_domain F213 Baravalle SP20 AGN 37.5 3

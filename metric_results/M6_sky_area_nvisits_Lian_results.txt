@@ -1,0 +1,5 @@
+Survey_strategy Survey_region Science_case Science_region Optic M6_%nvisits M6_%duration
+wide_area wide_area Lian Lian_Carina F184 0.0 0.0
+deep_spec deep_spec Lian Lian_Carina F184 0.0 0.0
+time_domain time_domain_TDS_W43 Lian Lian_Carina F184 0.0 0.0
+time_domain time_domain_TDS_Serpens_W40 Lian Lian_Carina F184 0.0 0.0

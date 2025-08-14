@@ -1,7 +1,7 @@
 Survey_strategy Optic Science_case Science_code M1_%pix M1_%priority
 wide_area F184 Rich2 "SP31, WP04" 100.0 100.0
 deep_spec F184 Rich2 "SP31, WP04" 0.0 0.0
-time_domain F184 Rich2 "SP31, WP04" 100.0 100.0
+time_domain F184 Rich2 "SP31, WP04" 0.0 0.0
 wide_area F213 Rich2 "SP31, WP04" 100.0 100.0
 deep_spec F213 Rich2 "SP31, WP04" 0.0 0.0
 time_domain F213 Rich2 "SP31, WP04" 100.0 100.0

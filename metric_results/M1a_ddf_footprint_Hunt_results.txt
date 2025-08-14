@@ -3,7 +3,7 @@ Deep_Acrux Hunt SP05 OC
 Deep_NGC5269_5281 Hunt SP05 OC
 Deep_Window_319.5-0.2 Hunt SP05 OC
 Deep_G333 Hunt SP05 OC
-Deep_ASSC_85 Hunt SP05 OC
+Deep_ASCC_85 Hunt SP05 OC
 Deep_Teutsch_84 Hunt SP05 OC
 Deep_NGC6357_Lobster Hunt SP05 OC
 Deep_Window_355.0-0.3 Hunt SP05 OC

@@ -4,7 +4,7 @@ deep_spec F106 Meli SP21 wide_area 20.0 2
 time_domain F106 Meli SP21 wide_area 30.0 3
 wide_area F158 Meli SP21 wide_area 40.0 4
 deep_spec F158 Meli SP21 wide_area 20.0 2
-time_domain F158 Meli SP21 wide_area 30.0 3
+time_domain F158 Meli SP21 wide_area 10.0 1
 wide_area F184 Meli SP21 wide_area 40.0 4
 deep_spec F184 Meli SP21 wide_area 20.0 2
-time_domain F184 Meli SP21 wide_area 30.0 3
+time_domain F184 Meli SP21 wide_area 10.0 1

@@ -1,0 +1,7 @@
+Survey_region Science_region Common_area M6_%TD_Region
+time_domain_TDS_Galactic_Center_Q4 Navarro_ulens1 3.986644814753042 8.050847457627118
+time_domain_TDS_Galactic_Center_Q1 Navarro_ulens1 3.9341889619273442 7.944915254237288
+time_domain_TDS_NGC6334_6357 Navarro_ulens1 2.9375277582390837 5.932203389830509
+time_domain_TDS_Carina Navarro_ulens1 0.0 0.0
+time_domain_TDS_W43 Navarro_ulens1 0.0 0.0
+time_domain_TDS_Serpens_W40 Navarro_ulens1 0.0 0.0

@@ -2,7 +2,7 @@
 Deep_W40 Gallart SP36 "Stellar ages"
 Deep_Window_319.5-0.2 Gallart SP36 "Stellar ages"
 Deep_G333 Gallart SP36 "Stellar ages"
-Deep_ASSC_85 Gallart SP36 "Stellar ages"
+Deep_ASCC_85 Gallart SP36 "Stellar ages"
 Deep_Teutsch_84 Gallart SP36 "Stellar ages"
 Deep_NGC6357_Lobster Gallart SP36 "Stellar ages"
 Deep_Window_355.0-0.3 Gallart SP36 "Stellar ages"

@@ -1,0 +1,7 @@
+Survey_region Science_region Common_area M6_%TD_Region
+time_domain_TDS_Galactic_Center_Q4 Lian_Carina 0.0 0.0
+time_domain_TDS_Galactic_Center_Q1 Lian_Carina 0.0 0.0
+time_domain_TDS_NGC6334_6357 Lian_Carina 0.0 0.0
+time_domain_TDS_Carina Lian_Carina 3.619453844973157 6.647398843930636
+time_domain_TDS_W43 Lian_Carina 0.0 0.0
+time_domain_TDS_Serpens_W40 Lian_Carina 0.0 0.0

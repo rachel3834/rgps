@@ -4,7 +4,7 @@ Deep_Acrux Baravalle SP20 Galaxies,AGN
 Deep_NGC5269_5281 Baravalle SP20 Galaxies,AGN
 Deep_Window_319.5-0.2 Baravalle SP20 Galaxies,AGN
 Deep_G333 Baravalle SP20 Galaxies,AGN
-Deep_ASSC_85 Baravalle SP20 Galaxies,AGN
+Deep_ASCC_85 Baravalle SP20 Galaxies,AGN
 Deep_Teutsch_84 Baravalle SP20 Galaxies,AGN
 Deep_NGC6357_Lobster Baravalle SP20 Galaxies,AGN
 Deep_Window_355.0-0.3 Baravalle SP20 Galaxies,AGN
